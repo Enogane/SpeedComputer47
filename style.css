@@ -55,20 +55,54 @@ header{
 .btn.ghost{background:transparent}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-.hero::before{
-  content:"";position:absolute;inset:-20% -10% auto -10%;height:480px;
-  background:radial-gradient(800px 260px at 10% 20%, #f4b00022 0, transparent 60%),
-             radial-gradient(600px 220px at 90% 10%, #35a0ff22 0, transparent 60%);
-  filter:saturate(120%)
-}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;padding:36px 0}
-@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
-h1{font-size:38px;line-height:1.15;margin:14px 0 8px}
-.lead{color:var(--muted);font-size:18px;margin:0 0 18px}
-.pay{margin-top:12px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.hero{
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
 
+  /* image de fond + voile sombre pour le contraste */
+  background:
+    linear-gradient(to bottom right, rgba(11,13,16,.82), rgba(11,13,16,.72)),
+    url("background.png") 60% center / cover no-repeat;
+}
+
+/* on coupe l'ancien halo décoratif */
+.hero::before{ content: none; }
+
+/* grille + un peu plus d'air dans le hero */
+.hero-grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 30px;
+  padding: clamp(28px, 6vw, 64px) 0;
+  min-height: 420px;              /* donne de la présence au visuel */
+  align-items: center;
+}
+
+@media (max-width:900px){
+  .hero{ background-position: center; }
+  .hero-grid{
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 28px 0;
+  }
+}
+
+/* titres & textes hero */
+h1{
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.15;
+  margin: 14px 0 8px;
+}
+.lead{
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0 0 18px;
+  max-width: 60ch;                /* meilleure lisibilité */
+}
+.pay{ margin-top: 12px; }
+.cta-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
 /* CARDS */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .cards.three{grid-template-columns:repeat(3,1fr)}
