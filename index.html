@@ -9,7 +9,7 @@
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://speedcomputer47.fr/">
 
-  <!-- Couleur du navigateur -->
+  <!-- Couleur navigateur -->
   <meta name="theme-color" content="#121417">
 
   <!-- Open Graph / Twitter -->
@@ -18,24 +18,33 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://speedcomputer47.fr/">
   <meta property="og:image" content="https://speedcomputer47.fr/logo.png">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SpeedComputer47 – Informatique à domicile & entreprises">
-  <meta name="twitter:description" content="Dépannage, installation, formation, cybersécurité, domotique.">
-  <meta name="twitter:image" content="https://speedcomputer47.fr/logo.png">
 
-  <!-- Indices de géolocalisation (SEO local) -->
+  <!-- SEO local -->
   <meta name="geo.region" content="FR-47">
   <meta name="geo.placename" content="Villeneuve-sur-Lot">
   <meta name="geo.position" content="44.4097;0.7047">
   <meta name="ICBM" content="44.4097, 0.7047">
 
-  <!-- CSS -->
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Perf -->
   <link rel="preload" as="image" href="logo.png">
+  <link rel="preload" as="image" href="background.png">
+
+  <!-- Force le background image du hero au cas où l'ancien CSS prend le dessus -->
+  <style>
+    .hero.bg-photo{
+      position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+      background:
+        linear-gradient(180deg,#0b0d10f2 0%, #0b0d10c0 35%, #0b0d10 85%),
+        url('background.png') center/cover no-repeat;
+    }
+    .hero.bg-photo .container{position:relative;z-index:1}
+    /* petit ajustement pour la card "Prestations phares" sur le héro */
+    @media (min-width: 901px){
+      .hero .card.prestas{max-width: 520px}
+    }
+  </style>
 
   <!-- JSON-LD : LocalBusiness + Services + FAQ -->
   <script type="application/ld+json">
@@ -72,12 +81,12 @@
         "paymentAccepted": ["Card","Contactless","MobilePayment","Cash","BankTransfer"],
         "priceRange": "€",
         "sameAs": [
+          "https://g.page/r/CbsMlPzTZUw2EAE/review",
           "https://www.facebook.com/speedcomputer47/",
           "https://www.linkedin.com/company/speedcomputer47/",
           "https://www.pagesjaunes.fr/pros/64032762"
         ]
       },
-
       { "@type":"Service", "serviceType":"Dépannage informatique à domicile",
         "provider": { "@id": "https://speedcomputer47.fr/#business" },
         "areaServed":"Villeneuve-sur-Lot et 50 km",
@@ -109,7 +118,6 @@
           "description":"Prix HT / poste / mois. Support N1/N2, mises à jour, supervision."
         }
       },
-
       {
         "@type":"FAQPage",
         "@id":"https://speedcomputer47.fr/#faq",
@@ -121,50 +129,41 @@
           { "@type":"Question","name":"Puis-je obtenir un devis rapide ?",
             "acceptedAnswer":{"@type":"Answer","text":"Oui, devis gratuit par téléphone ou via le formulaire — réponse rapide."} }
         ]
-      },
-
-      { "@type":"WebSite",
-        "@id":"https://speedcomputer47.fr/#website",
-        "url":"https://speedcomputer47.fr/",
-        "name":"SpeedComputer47",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://speedcomputer47.fr/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
       }
     ]
   }
   </script>
 </head>
 
-<body id="top">
+<body>
   <!-- HEADER -->
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="logo.png" alt="Logo SpeedComputer47">
+        <img src="logo.png" alt="SpeedComputer47 logo">
         <span class="site-name">SpeedComputer47</span>
       </div>
-      <nav class="links" aria-label="Navigation">
-        <a class="btn ghost" href="#top">Accueil</a>
+      <nav class="links" aria-label="Navigation principale">
+        <a class="btn ghost" aria-current="page" href="index.html">Accueil</a>
         <a class="btn ghost" href="particuliers.html">Particuliers</a>
         <a class="btn ghost" href="pro.html">Entreprises</a>
         <a class="btn" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Voir nos avis</a>
         <a class="btn ghost" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="mentions.html">Mentions légales</a>
+        <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
+      </nav>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero bg-photo">
       <div class="container hero-grid">
         <div>
           <h1>Dépannage, installation & formation informatique</h1>
           <p class="lead">
-            PC, imprimantes, box internet, suppression de virus, optimisation, cybersécurité, domotique et TV connectées.
-            Interventions à domicile et en entreprise.
+            PC, imprimantes, box internet, suppression de virus, optimisation,
+            cybersécurité, domotique et TV connectées. Interventions à domicile et en entreprise.
           </p>
           <div class="cta-row">
             <a class="btn primary" href="tel:+33666235143">📞 Appeler</a>
@@ -173,7 +172,7 @@
           <p class="muted pay">💳 CB & sans contact via SumUp • Apple/Google Pay • Virements & espèces • Chèques non acceptés.</p>
         </div>
         <div>
-          <div class="card">
+          <div class="card prestas">
             <h3>Prestations phares</h3>
             <ul class="list">
               <li>• Dépannage et assistance PC / Mac</li>
@@ -187,7 +186,7 @@
       </div>
     </section>
 
-    <!-- ATOUTS COMMERCIAUX -->
+    <!-- ATOUTS -->
     <section id="atouts">
       <div class="container cards three">
         <div class="card"><h3>🚐 Intervention rapide</h3><p>Dépannage à domicile & à distance. Devis gratuit, créneau au plus vite.</p></div>
@@ -203,8 +202,8 @@
         <div class="cards">
           <div class="card"><h3>💻 PC lent / SSD + clonage</h3><p>Migration SSD, optimisation Windows/macOS, démarrage accéléré.</p></div>
           <div class="card"><h3>🛡️ Virus / malwares</h3><p>Nettoyage complet, sécurisation, mises à jour, protection.</p></div>
-          <div class="card"><h3>📶 Wi-Fi / réseau</h3><p>Box, CPL, routeur, amélioration de la couverture maison/bureau.</p></div>
-          <div class="card"><h3>🖨️ Imprimantes & scans</h3><p>Installation, partage, dépannage des pilotes et impressions.</p></div>
+          <div class="card"><h3>📶 Wi-Fi / réseau</h3><p>Box, CPL, routeur, amélioration couverture maison/bureau.</p></div>
+          <div class="card"><h3>🖨️ Imprimantes & scans</h3><p>Installation, partage, dépannage pilotes et impressions.</p></div>
           <div class="card"><h3>📧 Messagerie</h3><p>Outlook, Gmail, sauvegardes, signatures, anti-spam.</p></div>
           <div class="card"><h3>☁️ Sauvegarde & NAS</h3><p>Synology/QNAP, Time Machine, sauvegardes locales & cloud.</p></div>
         </div>
@@ -216,17 +215,62 @@
       </div>
     </section>
 
-  
+    <!-- TARIFS -->
+    <section id="tarifs">
+      <div class="container">
+        <h2 class="section-title">Tarifs particuliers</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Interventions à domicile</h3>
+            <ul class="list">
+              <li>• Dépannage / assistance : <strong>40€ / h</strong></li>
+              <li>• Formation personnalisée : <strong>35€ / h</strong></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Forfaits</h3>
+            <ul class="list">
+              <li>• Installation PC/imprimante/box/logiciels : <strong>50€</strong></li>
+              <li>• Suppression virus + optimisation : <strong>60€</strong></li>
+              <li>• Mise en service complète PC : <strong>90€</strong></li>
+              <li>• Domotique (TV, caméras, alarme) : <strong>à partir de 120€</strong></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Entreprises (HT / poste / mois)</h3>
+            <table class="table" aria-label="Formules entreprises">
+              <thead>
+                <tr class="row"><th>Formule</th><th>1–5</th><th>6–10</th><th>11–20</th><th>Inclus</th></tr>
+              </thead>
+              <tbody>
+                <tr class="row"><td><strong>Light</strong></td><td>25€</td><td>22€</td><td>20€</td><td>Support de base, mises à jour essentielles, assistance ponctuelle</td></tr>
+                <tr class="row"><td><strong>Standard</strong></td><td>45€</td><td>42€</td><td>40€</td><td>Support illimité, assistance à distance, 1 intervention sur site / mois, maintenance préventive</td></tr>
+                <tr class="row"><td><strong>Premium</strong></td><td>75€</td><td>72€</td><td>70€</td><td>Support illimité, interventions illimitées, supervision proactive, audit cybersécurité, formations</td></tr>
+              </tbody>
+            </table>
+            <div class="cta-row" style="margin-top:10px">
+              <a class="btn" href="pro.html">➡️ Voir les offres Entreprises</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- ZONE D’INTERVENTION + CARTE -->
+    <!-- ZONE D'INTERVENTION -->
     <section id="zone">
       <div class="container">
         <h2 class="section-title">Zone d’intervention (≈ 50 km)</h2>
-        <div class="card">
-          <p class="muted">Intervention rapide autour de Villeneuve-sur-Lot : Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux, Sainte-Livrade, Monflanquin…</p>
-          <p>Besoin d’un dépannage en dehors de ce périmètre ? <strong>Appelez-moi</strong> pour voir ensemble la meilleure solution.</p>
-          <p style="margin:10px 0"><a class="btn" href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a></p>
-          <img src="zone_remplie.png" alt="Zone d’intervention SpeedComputer47 autour de Villeneuve-sur-Lot" style="width:100%;border-radius:12px;border:1px solid var(--line)">
+        <div class="card" style="overflow:hidden">
+          <a href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu"
+             target="_blank" rel="noopener" title="Ouvrir dans Google Maps">
+            <img src="zone_remplie.png" alt="Zone d'intervention SpeedComputer47" style="width:100%;height:auto;border-radius:12px">
+          </a>
+          <p class="muted" style="margin-top:8px">
+            Villes desservies : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux, Sainte-Livrade, Monflanquin…
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a>
+          </div>
         </div>
       </div>
     </section>
@@ -270,12 +314,12 @@
       <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
       <p class="social">
-        <a href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Laisser un avis Google</a> ·
+        <a href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Avis Google</a> ·
         <a href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">👍 Facebook</a> ·
         <a href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">🔗 LinkedIn</a> ·
         <a href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">📒 PagesJaunes</a>
       </p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales & Politique de confidentialité</a></p>
+      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales</a></p>
     </div>
   </footer>
 
@@ -286,7 +330,7 @@
     // Année dynamique
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Envoi devis express par mailto
+    // Envoi mailto devis express
     const form = document.getElementById('devisForm');
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
