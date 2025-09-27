@@ -79,6 +79,7 @@ header{
   padding: clamp(28px, 6vw, 64px) 0;
   min-height: 500px;             /* un peu plus haut pour voir l'image */
   align-items: center;
+
 }
 
 @media (max-width:900px){
@@ -95,8 +96,10 @@ h1{
   line-height: 1.15;
   margin: 14px 0 8px;
 }
+
+
 .lead{
-  color: var(--muted);
+  color: #fff;
   font-size: 18px;
   margin: 0 0 18px;
   max-width: 60ch;                /* meilleure lisibilité */
