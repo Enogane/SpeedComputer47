@@ -3,92 +3,126 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Dépannage informatique & services numériques | SpeedComputer47</title>
-  <meta name="description" content="Dépannage, installation, formation, cybersécurité, maintenance et domotique. Interventions à domicile et en entreprise autour de Villeneuve-sur-Lot (Agen, Marmande, Fumel, Bergerac, Cahors, Montauban...).">
-  <link rel="canonical" href="https://speedcomputer47.fr/">
+  <meta name="description" content="Dépannage, installation, formation, cybersécurité, maintenance entreprises et domotique. Interventions à domicile et en entreprise dans un rayon de 50 km autour de Villeneuve-sur-Lot (Agen, Marmande, Fumel, Bergerac, Cahors, Montauban...).">
   <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://speedcomputer47.fr/">
+
+  <!-- Couleur navigateur -->
   <meta name="theme-color" content="#121417">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="SpeedComputer47 – Informatique à domicile & entreprises">
-  <meta property="og:description" content="Dépannage, installation, cybersécurité, formation, domotique. Villeneuve-sur-Lot et 50 km.">
+  <meta property="og:title" content="SpeedComputer47 – Informatique à domicile & entreprises (Villeneuve-sur-Lot et 50 km)">
+  <meta property="og:description" content="Dépannage, installation, cybersécurité, formation, domotique. Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban...">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://speedcomputer47.fr/">
   <meta property="og:image" content="https://speedcomputer47.fr/logo.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpeedComputer47 – Informatique à domicile & entreprises">
+  <meta name="twitter:description" content="Dépannage, installation, formation, cybersécurité, domotique.">
+  <meta name="twitter:image" content="https://speedcomputer47.fr/logo.png">
 
-  <!-- Local SEO hints -->
+  <!-- Indices de géolocalisation -->
   <meta name="geo.region" content="FR-47">
   <meta name="geo.placename" content="Villeneuve-sur-Lot">
   <meta name="geo.position" content="44.4097;0.7047">
   <meta name="ICBM" content="44.4097, 0.7047">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=7">
+  <!-- Pré-chargement images -->
   <link rel="preload" as="image" href="background.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="logo.png">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"LocalBusiness",
-        "@id":"https://speedcomputer47.fr/#business",
-        "name":"SpeedComputer47",
-        "url":"https://speedcomputer47.fr/",
-        "image":"https://speedcomputer47.fr/logo.png",
-        "logo":"https://speedcomputer47.fr/logo.png",
-        "telephone":"+33666235143",
-        "email":"contact@speedcomputer47.fr",
-        "address":{"@type":"PostalAddress","streetAddress":"8 rue Gambetta","postalCode":"47300","addressLocality":"Villeneuve-sur-Lot","addressCountry":"FR"},
-        "geo":{"@type":"GeoCoordinates","latitude":44.4097,"longitude":0.7047},
-        "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"}],
-        "paymentAccepted":["Card","Contactless","MobilePayment","Cash","BankTransfer"],
-        "priceRange":"€",
-        "areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Bergerac","Cahors","Montauban","Fumel","Nérac","Tonneins","Casteljaloux","Sainte-Livrade","Monflanquin","Condom","Moissac","Langon","Libourne"]
+        "@type": "LocalBusiness",
+        "@id": "https://speedcomputer47.fr/#business",
+        "name": "SpeedComputer47",
+        "url": "https://speedcomputer47.fr/",
+        "image": "https://speedcomputer47.fr/logo.png",
+        "logo": "https://speedcomputer47.fr/logo.png",
+        "telephone": "+33666235143",
+        "email": "contact@speedcomputer47.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue Gambetta",
+          "postalCode": "47300",
+          "addressLocality": "Villeneuve-sur-Lot",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type":"GeoCoordinates", "latitude": 44.4097, "longitude": 0.7047 },
+        "areaServed": [
+          "Villeneuve-sur-Lot","Agen","Marmande","Bergerac","Cahors",
+          "Montauban","Fumel","Nérac","Tonneins","Casteljaloux",
+          "Sainte-Livrade","Monflanquin","Condom","Moissac","Langon","Libourne"
+        ],
+        "openingHoursSpecification": [{
+          "@type":"OpeningHoursSpecification",
+          "dayOfWeek":[ "Monday","Tuesday","Wednesday","Thursday","Friday" ],
+          "opens":"09:00","closes":"19:00"
+        }],
+        "paymentAccepted": ["Card","Contactless","MobilePayment","Cash","BankTransfer"],
+        "priceRange": "€",
+        "sameAs": [ "https://www.facebook.com/speedcomputer47/" ]
       },
-      {"@type":"WebSite","@id":"https://speedcomputer47.fr/#site","url":"https://speedcomputer47.fr/","name":"SpeedComputer47"}
+      { "@type":"WebSite",
+        "@id":"https://speedcomputer47.fr/#website",
+        "url":"https://speedcomputer47.fr/",
+        "name":"SpeedComputer47",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://speedcomputer47.fr/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
     ]
   }
   </script>
 </head>
+
 <body>
   <!-- HEADER -->
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Retour accueil">
-        <img src="logo.png" alt="SpeedComputer47 logo">
+      <div class="brand">
+        <img src="logo.png" alt="Logo SpeedComputer47">
         <span class="site-name">SpeedComputer47</span>
-      </a>
+      </div>
       <nav class="links" aria-label="Navigation">
         <a class="btn ghost" href="#interventions">Interventions</a>
         <a class="btn ghost" href="#tarifs">Tarifs</a>
         <a class="btn ghost" href="particuliers.html">Particuliers</a>
         <a class="btn ghost" href="pro.html">Entreprises</a>
         <a class="btn" href="mentions.html">Mentions légales</a>
-        <a class="btn star" href="https://www.google.com/search?hl=fr&q=Speedcomputer47#lkt=LocalPoiReviews" rel="noopener">★ Voir nos avis</a>
         <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero has-bg">
+    <!-- HERO avec photo -->
+    <section class="hero hero--photo">
       <div class="container hero-grid">
         <div>
           <h1>Dépannage, installation & formation informatique</h1>
           <p class="lead">
-            PC, imprimantes, box internet, suppression de virus, optimisation, cybersécurité, domotique et TV connectées. Interventions à domicile et en entreprise.
+            PC, imprimantes, box internet, suppression de virus, optimisation, cybersécurité,
+            domotique et TV connectées. Interventions à domicile et en entreprise.
           </p>
           <div class="cta-row">
             <a class="btn primary" href="tel:+33666235143">📞 Appeler</a>
             <a class="btn" href="#contact">🧾 Devis gratuit</a>
           </div>
-          <p class="muted pay">💳 CB & sans contact (SumUp) • Apple/Google Pay • Virements & espèces • Chèques non acceptés.</p>
+          <p class="muted pay">💳 CB & sans contact via SumUp • Apple/Google Pay • Virements & espèces • Chèques non acceptés.</p>
         </div>
-        <aside>
+        <div>
           <div class="card">
             <h3>Prestations phares</h3>
             <ul class="list">
@@ -99,7 +133,7 @@
               <li>• Domotique, TV connectée, smartphone</li>
             </ul>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
 
@@ -124,8 +158,9 @@
           <div class="card"><h3>📧 Messagerie</h3><p>Outlook, Gmail, sauvegardes, signatures, anti-spam.</p></div>
           <div class="card"><h3>☁️ Sauvegarde & NAS</h3><p>Synology/QNAP, Time Machine, sauvegardes locales & cloud.</p></div>
         </div>
-
-        <p class="muted" style="margin-top:10px">Zone couverte : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban et communes voisines.</p>
+        <p class="muted" style="margin-top:10px">
+          Zone couverte : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban et communes voisines.
+        </p>
         <div class="cta-row">
           <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
           <a class="btn" href="#contact">🧾 Demande de devis express</a>
@@ -156,34 +191,38 @@
           </div>
           <div class="card">
             <h3>Entreprises</h3>
-            <p class="muted">Contrats mensuels HT / poste / mois.</p>
             <table class="table" aria-label="Formules entreprises">
-              <thead><tr class="row"><th>Formule</th><th>1–5</th><th>6–10</th><th>11–20</th><th>Inclus</th></tr></thead>
+              <thead>
+                <tr class="row"><th>Formule</th><th>1–5</th><th>6–10</th><th>11–20</th><th>Inclus</th></tr>
+              </thead>
               <tbody>
-                <tr class="row"><td><strong>Light</strong></td><td>25€</td><td>22€</td><td>20€</td><td>Support de base, mises à jour essentielles</td></tr>
-                <tr class="row"><td><strong>Standard</strong></td><td>45€</td><td>42€</td><td>40€</td><td>Support illimité, 1 intervention/mois sur site</td></tr>
-                <tr class="row"><td><strong>Premium</strong></td><td>75€</td><td>72€</td><td>70€</td><td>Interventions illimitées, supervision proactive</td></tr>
+                <tr class="row"><td><strong>Light</strong></td><td>25€</td><td>22€</td><td>20€</td><td>Support de base, mises à jour essentielles, assistance ponctuelle</td></tr>
+                <tr class="row"><td><strong>Standard</strong></td><td>45€</td><td>42€</td><td>40€</td><td>Support illimité, assistance à distance, 1 intervention sur site / mois, maintenance préventive</td></tr>
+                <tr class="row"><td><strong>Premium</strong></td><td>75€</td><td>72€</td><td>70€</td><td>Support illimité, interventions illimitées, supervision proactive, audit cybersécurité, formations</td></tr>
               </tbody>
             </table>
-            <div class="cta-row" style="margin-top:8px">
-              <a class="btn" href="pro.html">→ Voir les offres Entreprises</a>
-            </div>
+            <p style="margin-top:10px"><a class="btn" href="pro.html">→ Voir les offres Entreprises</a></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ZONE D’INTERVENTION -->
+    <!-- ZONE D'INTERVENTION -->
     <section id="zone">
       <div class="container">
         <h2 class="section-title">Zone d’intervention (≈ 50 km)</h2>
-        <div class="zone-card">
-          <img src="zone_remplie.png" alt="Périmètre d’intervention SpeedComputer47 (Villeneuve-sur-Lot et 50 km)" loading="lazy">
-          <div class="zone-text">
-            Intervention rapide autour de Villeneuve-sur-Lot : Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux, Sainte-Livrade, Monflanquin…
-            <div class="cta-row" style="margin-top:10px">
-              <a class="btn" href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a>
-            </div>
+        <div class="card">
+          <p><strong>Villes desservies</strong></p>
+          <p class="muted">
+            Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux,
+            Sainte-Livrade, Monflanquin…
+          </p>
+          <a href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu"
+             class="btn">📍 Itinéraire Google Maps</a>
+          <div class="zone-map">
+            <a href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu">
+              <img src="zone_remplie.png" alt="Périmètre d’intervention SpeedComputer47 (≈50 km)">
+            </a>
           </div>
         </div>
       </div>
@@ -202,12 +241,20 @@
         <div class="card">
           <h3>Demande de devis express</h3>
           <form id="devisForm">
-            <label>Nom / Prénom<br><input required name="name" type="text" placeholder="Votre nom"></label><br><br>
-            <label>Email<br><input required name="email" type="email" placeholder="vous@exemple.fr"></label><br><br>
-            <label>Téléphone<br><input required name="phone" type="tel" placeholder="06 xx xx xx xx"></label><br><br>
-            <label>Votre besoin<br><textarea required name="message" rows="5" placeholder="Décrivez le problème / installation souhaitée"></textarea></label><br><br>
+            <label>Nom / Prénom<br>
+              <input required name="name" type="text" placeholder="Votre nom">
+            </label><br><br>
+            <label>Email<br>
+              <input required name="email" type="email" placeholder="vous@exemple.fr">
+            </label><br><br>
+            <label>Téléphone<br>
+              <input required name="phone" type="tel" placeholder="06 xx xx xx xx">
+            </label><br><br>
+            <label>Votre besoin<br>
+              <textarea required name="message" rows="5" placeholder="Décrivez le problème / installation souhaitée"></textarea>
+            </label><br><br>
             <button class="btn primary" type="submit">Envoyer la demande</button>
-            <p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
+            <p class="muted" style="margin-top:8px">Un email pré-rempli s'ouvre dans votre messagerie.</p>
           </form>
         </div>
       </div>
@@ -223,17 +270,24 @@
     </div>
   </footer>
 
+  <!-- Bouton d'appel flottant -->
   <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
 
   <script>
+    // Année dynamique
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Envoi devis express
     const form = document.getElementById('devisForm');
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
       const data = new FormData(form);
       const subject = encodeURIComponent('Demande de devis – SpeedComputer47');
       const body = encodeURIComponent(
-        `Nom: ${data.get('name')}\nEmail: ${data.get('email')}\nTéléphone: ${data.get('phone')}\n\nBesoin:\n${data.get('message')}`
+        `Nom: ${data.get('name')}\n` +
+        `Email: ${data.get('email')}\n` +
+        `Téléphone: ${data.get('phone')}\n\n` +
+        `Besoin:\n${data.get('message')}`
       );
       window.location.href = `mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
     });
