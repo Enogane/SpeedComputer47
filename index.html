@@ -8,15 +8,16 @@
   <link rel="canonical" href="https://speedcomputer47.fr/" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#121417" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta property="og:title" content="SpeedComputer47 – Informatique à domicile & entreprises (Villeneuve-sur-Lot et 50 km)" />
   <meta property="og:description" content="Dépannage, installation, cybersécurité, formation, domotique. Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban..." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://speedcomputer47.fr/" />
   <meta property="og:locale" content="fr_FR" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta property="og:image" content="https://speedcomputer47.fr/assets/logo.jpg" />
 
   <!-- SEO Keywords -->
-  <meta name="keywords" content="dépannage informatique Villeneuve-sur-Lot, dépannage informatique Agen, dépannage informatique Marmande, dépannage informatique Bergerac, dépannage informatique Cahors, dépannage informatique Montauban, dépannage informatique Fumel, installation PC Villeneuve, réparation ordinateur Lot-et-Garonne, assistance informatique 47, formation bureautique Villeneuve, maintenance informatique entreprises Agen, cybersécurité Lot-et-Garonne, installation imprimante Villeneuve, installation box internet Agen, domotique Lot-et-Garonne, TV connectée Villeneuve" />
+  <meta name="keywords" content="dépannage informatique Villeneuve-sur-Lot, dépannage informatique Agen, dépannage informatique Marmande, dépannage informatique Bergerac, dépannage informatique Cahors, dépannage informatique Montauban, dépannage informatique Fumel, installation PC Villeneuve, réparation ordinateur Lot-et-Garonne, assistance informatique 47, formation bureautique Villeneuve, maintenance informatique entreprises Agen, cybersécurité Lot-et-Garonne, installation imprimante Villeneuve, installation box internet Agen, domotique Lot-et-Garonne, TV connectée Villeneuve, réseau wifi, lenteur PC, récupération de données, installation SSD, sauvegardes, NAS Synology, Office 365, Google Workspace" />
 
   <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
 
@@ -43,20 +44,88 @@
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     @media (max-width:900px){.cards{grid-template-columns:1fr}}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .muted{color:var(--muted)}
     footer{border-top:1px solid var(--line);background:#0b0d10}
     .foot{display:grid;gap:10px}
     .pill{display:inline-block;background:#171b21;border:1px solid var(--line);color:#e9eef5;padding:6px 10px;border-radius:999px;font-size:13px;margin-right:6px}
     .floating-call{position:fixed;right:16px;bottom:16px;background:var(--brand);color:#0b0d10;padding:14px 16px;border-radius:999px;border:2px solid #0b0d10;font-weight:800;z-index:60;box-shadow:0 8px 30px #0008}
-  </style>
+
+    /* villes grid */
+    .cities{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:900px){.cities{grid-template-columns:1fr}}
+    .city{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .cta-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media (max-width:900px){.benefits{grid-template-columns:1fr}}
+    /* Promo bar */
+  .promo-bar{background:linear-gradient(90deg,#f4b000,#ffd86b);color:#0b0d10;padding:10px 0}
+  .promo-inner{max-width:1100px;margin:0 auto;padding:8px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;font-weight:800}
+  .promo-inner .small{font-weight:600;opacity:.9}
+  .promo-inner .btn{background:#0b0d10;color:#ffd86b;border-color:#0b0d10}
+
+  /* Reviews */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:900px){.reviews{grid-template-columns:1fr}}
+  .review{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+  .stars{letter-spacing:2px}
+  /* Promo bar */
+  .promo-bar{background:linear-gradient(90deg,#f4b000,#ffd86b);color:#0b0d10;padding:10px 0}
+  .promo-inner{max-width:1100px;margin:0 auto;padding:8px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;font-weight:800}
+  .promo-inner .small{font-weight:600;opacity:.9}
+  .promo-inner .btn{background:#0b0d10;color:#ffd86b;border-color:#0b0d10}
+
+  /* Reviews */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:900px){.reviews{grid-template-columns:1fr}}
+  .review{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+  .stars{letter-spacing:2px}
+
+  /* Interventions list */
+  .checks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media (max-width:900px){.checks{grid-template-columns:1fr}}
+  .check{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+</style>
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr/","telephone":"+33666235143","email":"contact@speedcomputer47.fr","address":{"@type":"PostalAddress","streetAddress":"8 rue Gambetta","postalCode":"47300","addressLocality":"Villeneuve-sur-Lot","addressCountry":"FR"},"areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Bergerac","Cahors","Montauban","Fumel","Nérac","Tonneins","Casteljaloux","Sainte-Livrade","Monflanquin","Condom","Moissac","Langon","Libourne"],"openingHours":"Mo-Fr 09:00-19:00","paymentAccepted":["Card","Contactless","MobilePayment","Cash","BankTransfer"],"priceRange":"€","identifier":"SIREN 988008629"},
-      {"@type":"Service","name":"Dépannage informatique à domicile","provider":"SpeedComputer47","areaServed":"Rayon 50 km autour de Villeneuve-sur-Lot","offers":{"@type":"Offer","price":"40","priceCurrency":"EUR","description":"Assistance et installation informatique à domicile."}},
-      {"@type":"Service","name":"Maintenance informatique entreprises","provider":"SpeedComputer47","areaServed":"Villeneuve-sur-Lot, Agen, Marmande, Bergerac, Cahors, Montauban","offers":{"@type":"Offer","price":"25","priceCurrency":"EUR","description":"Contrats mensuels HT / poste."}},
-      {"@type":"Service","name":"Formation bureautique et sécurité","provider":"SpeedComputer47","areaServed":"Lot-et-Garonne et départements voisins","offers":{"@type":"Offer","price":"35","priceCurrency":"EUR","description":"Word, Excel, Outlook, sensibilisation cybersécurité."}}
+      {
+        "@type":"LocalBusiness",
+        "name":"SpeedComputer47",
+        "url":"https://speedcomputer47.fr/",
+        "image":"https://speedcomputer47.fr/assets/logo.jpg",
+        "telephone":"+33666235143",
+        "email":"contact@speedcomputer47.fr",
+        "address":{"@type":"PostalAddress","streetAddress":"8 rue Gambetta","postalCode":"47300","addressLocality":"Villeneuve-sur-Lot","addressCountry":"FR"},
+        "geo":{"@type":"GeoCoordinates","latitude":44.41,"longitude":0.70},
+        "hasMap":"https://maps.google.com/?q=8+rue+Gambetta+47300+Villeneuve-sur-Lot",
+        "sameAs":["https://www.facebook.com/speedcomputer47/"],
+        "areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Bergerac","Cahors","Montauban","Fumel","Nérac","Tonneins","Casteljaloux","Sainte-Livrade","Monflanquin","Penne-d'Agenais","Pujols","Boé","Le Passage"],
+        "openingHours":"Mo-Fr 09:00-19:00",
+        "paymentAccepted":["Card","Contactless","MobilePayment","Cash","BankTransfer"],
+        "priceRange":"€",
+        "identifier":"SIREN 988008629",
+        "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"27"},
+        "review":[
+          {"@type":"Review","author":"Martine R.","reviewBody":"PC très lent, tout a été remis à neuf avec un SSD. Intervention rapide et prix correct.","reviewRating":{"@type":"Rating","ratingValue":"5"},"itemReviewed":{"@type":"LocalBusiness","name":"SpeedComputer47"}},
+          {"@type":"Review","author":"Thierry P.","reviewBody":"Installation box + Wi‑Fi maison, plus aucun problème de débit. Très pro.","reviewRating":{"@type":"Rating","ratingValue":"5"},"itemReviewed":{"@type":"LocalBusiness","name":"SpeedComputer47"}},
+          {"@type":"Review","author":"Sonia D.","reviewBody":"Suppression d’un virus et configuration sauvegardes. Pédagogie au top.","reviewRating":{"@type":"Rating","ratingValue":"5"},"itemReviewed":{"@type":"LocalBusiness","name":"SpeedComputer47"}}
+        ],
+        "hasOfferCatalog":{
+          "@type":"OfferCatalog","name":"Catalogue de services","itemListElement":[
+            {"@type":"Offer","name":"Dépannage informatique à domicile","price":"40","priceCurrency":"EUR"},
+            {"@type":"Offer","name":"Installation PC / imprimante / box","price":"50","priceCurrency":"EUR"},
+            {"@type":"Offer","name":"Suppression virus + optimisation","price":"60","priceCurrency":"EUR"},
+            {"@type":"Offer","name":"Mise en service complète PC","price":"90","priceCurrency":"EUR"},
+            {"@type":"Offer","name":"Pack formation bureautique","price":"35","priceCurrency":"EUR"}
+          ]}
+      },
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"Intervenez-vous à domicile ?","acceptedAnswer":{"@type":"Answer","text":"Oui, sur Villeneuve‑sur‑Lot et jusqu’à 50 km. Devis gratuit et rendez-vous rapide."}},
+        {"@type":"Question","name":"Quels moyens de paiement ?","acceptedAnswer":{"@type":"Answer","text":"CB sans contact via SumUp, Google/Apple Pay, virement et espèces (chèques non acceptés)."}},
+        {"@type":"Question","name":"Aidez-vous aussi les entreprises ?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec des formules mensuelles (support illimité, maintenance préventive, cybersécurité)."}}
+      ]}
     ]
   }
   </script>
@@ -74,6 +143,12 @@
       </div>
     </div>
   </header>
+  <div class="promo-bar" role="complementary" aria-label="Offres en cours">
+    <div class="promo-inner">
+      <div>🔧 <strong>-10€ sur la 1<sup>re</sup> heure</strong> pour toute intervention locale* • 📞 <strong>Diagnostic téléphonique 15 min offert</strong></div>
+      <div><a class="btn" href="tel:+33666235143">Appeler maintenant</a></div>
+    </div>
+  </div>
 
   <main>
     <section class="hero">
@@ -81,11 +156,11 @@
         <div>
           <h1>Dépannage, installation & formation informatique</h1>
           <p class="lead">PC, imprimantes, box internet, suppression de virus, optimisation, cybersécurité, domotique et TV connectées. Interventions à domicile et en entreprise.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
-            <a class="btn primary" href="tel:+33666235143">📞 Appeler</a>
+          <div class="cta-strip">
+            <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
             <a class="btn" href="#contact">🧾 Devis gratuit</a>
           </div>
-          <p class="muted" style="margin-top:12px">Zones couvertes : Villeneuve-sur-Lot, Agen, Marmande, Bergerac, Cahors, Montauban, Fumel et toutes communes dans un rayon de 50 km.</p>
+          <p class="muted" style="margin-top:12px">Zones couvertes : Villeneuve‑sur‑Lot, Agen, Marmande, Bergerac, Cahors, Montauban, Fumel et toutes communes dans un rayon de 50 km.</p>
         </div>
         <div>
           <div class="card">
@@ -93,81 +168,106 @@
             <ul class="list">
               <li>• Dépannage et assistance PC / Mac</li>
               <li>• Installation PC, box, imprimante, logiciels</li>
-              <li>• Suppression de virus, optimisation PC</li>
-              <li>• Formation bureautique et cybersécurité</li>
-              <li>• Domotique, TV connectée, smartphone</li>
+              <li>• Optimisation, suppression de virus, sauvegardes</li>
+              <li>• Réseau & Wi‑Fi (CPL, routeurs, répéteurs)</li>
+              <li>• Domotique / TV connectée / smartphone</li>
+              <li>• Formation bureautique & cybersécurité</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="tarifs">
+    <section id="services">
       <div class="container">
-        <h2 class="section-title">Tarifs particuliers</h2>
+        <h2 class="section-title">Tous nos services </h2>
         <div class="cards">
           <div class="card">
-            <h3>Interventions à domicile</h3>
+            <h3>Dépannage & optimisation</h3>
             <ul class="list">
-              <li>• Dépannage / assistance : <strong>40€ / h</strong></li>
-              <li>• Formation personnalisée : <strong>35€ / h</strong></li>
+              <li>Réparation ordinateur (PC/Mac), lenteurs, écran noir, démarrage</li>
+              <li>Nettoyage complet, suppression virus/malwares, optimisation</li>
+              <li>Installation SSD, ajout de RAM, récupération simple de données</li>
+              <li>Sauvegardes locales & cloud, restauration système</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Forfaits</h3>
+            <h3>Installation & réseau</h3>
             <ul class="list">
-              <li>• Installation PC/imprimante/box/logiciels : <strong>50€</strong></li>
-              <li>• Suppression virus + optimisation : <strong>60€</strong></li>
-              <li>• Mise en service complète PC : <strong>90€</strong></li>
-              <li>• Domotique (TV, caméras, alarme) : <strong>à partir de 120€</strong></li>
+              <li>Installation PC, imprimantes, box internet, logiciels</li>
+              <li>Wi‑Fi maison/pro, répéteurs, CPL, routeur, NAS (Synology)</li>
+              <li>Paramétrage TV connectée, streaming, Chromecast</li>
+              <li>Microsoft 365 / Google Workspace, messageries</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Zone d'intervention</h3>
-            <p class="muted">Villeneuve-sur-Lot et jusqu’à 50 km (Lot-et-Garonne, Dordogne, Tarn-et-Garonne, Lot, Gironde).</p>
-            <p><span class="pill">Villeneuve-sur-Lot</span><span class="pill">Agen</span><span class="pill">Marmande</span><span class="pill">Bergerac</span><span class="pill">Cahors</span><span class="pill">Montauban</span><span class="pill">Fumel</span><span class="pill">Nérac</span><span class="pill">Tonneins</span><span class="pill">Casteljaloux</span><span class="pill">Monflanquin</span></p>
+            <h3>Cybersécurité & formation</h3>
+            <ul class="list">
+              <li>Antivirus, pare‑feu, sauvegardes et bonnes pratiques</li>
+              <li>Formation Word, Excel, Outlook, débutant → avancé</li>
+              <li>Sensibilisation phishing, MFA, mots de passe</li>
+              <li>Contrats de maintenance pour entreprises</li>
+            </ul>
           </div>
+        </div>
+
+        <div class="benefits" style="margin-top:18px">
+          <div class="card"><strong>Devis gratuit</strong><br><span class="muted">au téléphone ou par email</span></div>
+          <div class="card"><strong>Intervention rapide</strong><br><span class="muted">selon disponibilité</span></div>
+          <div class="card"><strong>Paiement CB/Contactless</strong><br><span class="muted">SumUp, Google/Apple Pay</span></div>
         </div>
       </div>
     </section>
 
-    <section id="pro">
+    <section id="interventions">
       <div class="container">
-        <h2 class="section-title">Formules entreprises (HT / poste / mois)</h2>
-        <div class="card">
-          <table class="table" aria-label="Formules entreprises">
-            <thead>
-              <tr class="row"><th>Formule</th><th>1–5 postes</th><th>6–10</th><th>11–20</th><th>Inclus</th></tr>
-            </thead>
-            <tbody>
-              <tr class="row"><td><strong>Light</strong></td><td>25€</td><td>22€</td><td>20€</td><td>Support de base, mises à jour essentielles, assistance ponctuelle</td></tr>
-              <tr class="row"><td><strong>Standard</strong></td><td>45€</td><td>42€</td><td>40€</td><td>Support illimité, assistance à distance, 1 intervention sur site / mois, maintenance préventive</td></tr>
-              <tr class="row"><td><strong>Premium</strong></td><td>75€</td><td>72€</td><td>70€</td><td>Support illimité, interventions illimitées, supervision proactive, audit cybersécurité, formations</td></tr>
-            </tbody>
-          </table>
-        </div>
+        <h2 class="section-title">Interventions les plus demandées</h2>
+        <ul class="checks" aria-label="Liste d'interventions">
+          <li class="check">✓ Dépannage / diagnostic PC & Mac</li>
+          <li class="check">✓ Réinstallation & optimisation Windows</li>
+          <li class="check">✓ Suppression virus / malwares</li>
+          <li class="check">✓ Remplacement disque → SSD + clonage</li>
+          <li class="check">✓ Récupération simple de données</li>
+          <li class="check">✓ Installation imprimante / scanner</li>
+          <li class="check">✓ Box Internet : installation & paramétrage</li>
+          <li class="check">✓ Wi‑Fi : répéteurs, CPL, routeur, maillage</li>
+          <li class="check">✓ E‑mail : Outlook/Thunderbird, contacts, agenda</li>
+          <li class="check">✓ Sauvegardes : cloud, disque, NAS (Synology)</li>
+          <li class="check">✓ Mise en service PC neuf + sécurisation</li>
+          <li class="check">✓ Suites bureautiques : Microsoft 365 / Google</li>
+          <li class="check">✓ TV connectée, Chromecast, Box Android</li>
+          <li class="check">✓ Domotique : caméras IP, alarme basique</li>
+          <li class="check">✓ Smartphones : mails, sauvegardes</li>
+          <li class="check">✓ Formation Word, Excel, PowerPoint, Outlook</li>
+          <li class="check">✓ Entreprises : maintenance, sauvegardes, sécurité</li>
+        </ul>
+        <p class="muted" style="margin-top:10px">Un besoin spécifique ? Appelez‑nous, on s'adapte à votre matériel et à votre niveau.</p>
       </div>
     </section>
 
-    <section id="plus">
+    <section id="avis">
       <div class="container">
-        <h2 class="section-title">Prestations complémentaires</h2>
-        <div class="cards">
-          <div class="card"><h3>🔎 Audit IT & cybersécurité</h3><p>Diagnostic de base : <strong>150€</strong>.</p></div>
-          <div class="card"><h3>👩‍🏫 Formation bureautique & sécurité</h3><p>Word, Excel, Outlook, cybersécurité : <strong>100€ / h</strong>.</p></div>
-          <div class="card"><h3>🌐 Sites & visibilité</h3><p>Vitrine dès <strong>1 800€</strong> • E-commerce dès <strong>4 500€</strong> • SEO sur devis.</p></div>
+        <h2 class="section-title">Avis clients</h2>
+        <div class="reviews">
+          <div class="review"><div class="stars">★★★★★</div><strong>Martine R. – Villeneuve‑sur‑Lot</strong><br><span class="muted">“PC très lent, tout a été remis à neuf avec un SSD. Intervention rapide et prix correct.”</span></div>
+          <div class="review"><div class="stars">★★★★★</div><strong>Thierry P. – Agen</strong><br><span class="muted">“Installation box + Wi‑Fi maison, plus aucun problème de débit. Très pro.”</span></div>
+          <div class="review"><div class="stars">★★★★★</div><strong>Sonia D. – Marmande</strong><br><span class="muted">“Suppression d’un virus et configuration sauvegardes. Pédagogie au top.”</span></div>
         </div>
+        <p class="muted" style="margin-top:10px">Note moyenne 4,9/5 sur 27 avis • *Offre -10€ valable dans un rayon de 15 km autour de Villeneuve‑sur‑Lot, hors forfaits fixes.</p>
       </div>
     </section>
 
     <section id="contact">
       <div class="container" style="display:grid;grid-template-columns:1.1fr .9fr;gap:20px">
         <div>
-          <h2 class="section-title">Contact</h2>
+          <h2 class="section-title">Contact & devis express</h2>
           <p class="muted">Réponse rapide. Expliquez votre besoin, on vous rappelle.</p>
           <p style="font-size:22px;font-weight:800;margin:8px 0">📞 <a href="tel:+33666235143">06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a></p>
           <p style="font-size:18px;margin:6px 0">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-          <p class="muted">Si vous préférez, demandez un devis express ➜</p>
+          <div class="cta-strip">
+            <a class="btn primary" href="tel:+33666235143">Appeler maintenant</a>
+            <a class="btn" href="#interventions">Voir les villes desservies</a>
+          </div>
         </div>
         <div class="card">
           <h3>Demande de devis express</h3>
@@ -185,7 +285,7 @@
               <textarea required name="message" rows="5" placeholder="Décrivez le problème / installation souhaitée" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0f1216;color:#e9eef5"></textarea>
             </label><br><br>
             <button class="btn primary" type="submit">Envoyer la demande</button>
-            <p class="muted" style="margin-top:8px">Un email pré-rempli s'ouvre dans votre messagerie.</p>
+            <p class="muted" style="margin-top:8px">Un email pré‑rempli s'ouvre dans votre messagerie.</p>
           </form>
         </div>
       </div>
@@ -194,7 +294,7 @@
 
   <footer>
     <div class="container foot">
-      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve‑sur‑Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
       <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales & Politique de confidentialité</a></p>
     </div>
@@ -204,6 +304,14 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('devisForm');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = new FormData(form);
+      const subject = encodeURIComponent('Demande de devis – SpeedComputer47');
+      const body = encodeURIComponent(`Nom: ${data.get('name')}\nEmail: ${data.get('email')}\nTéléphone: ${data.get('phone')}\n\nBesoin:\n${data.get('message')}`);
+      window.location.href = `mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
+    });
   </script>
 </body>
 </html>
