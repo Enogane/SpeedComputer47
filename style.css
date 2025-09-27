@@ -214,3 +214,44 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
 
 .benefits{ margin-top:12px }
 .benefits .pill{ margin-right:6px; margin-bottom:6px }
+
+
+/* === Brand plein écran & gros titre === */
+.nav{ flex-wrap: wrap; }           /* autorise un retour à la ligne */
+.brand{
+  flex: 1 1 100%;                  /* prend toute la ligne */
+  display: flex;
+  align-items: center;
+  justify-content: center;         /* centre logo + nom (met à 'flex-start' si tu le veux à gauche) */
+  gap: 14px;
+  padding: 8px 0 4px;
+}
+.site-name{
+  display: block;
+  font-weight: 900;
+  letter-spacing: .3px;
+  line-height: 1.05;
+  /* taille adaptative : ~56px desktop, plus petit sur mobile */
+  font-size: clamp(34px, 4.2vw + 6px, 56px);
+}
+
+/* option : ajuste la taille du logo si besoin */
+.brand img{
+  height: 110px;          /* mets 120–140px si tu veux encore plus gros */
+  width: auto;
+}
+
+/* La barre de navigation passe en dessous et centrée */
+.links{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;   /* centre les boutons sous le titre */
+}
+
+/* Petits écrans : garde un bon équilibre */
+@media (max-width: 640px){
+  .brand img{ height: 72px; }
+  .site-name{ font-size: 36px; }
+}
