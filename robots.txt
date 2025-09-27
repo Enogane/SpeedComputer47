@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://enogane.github.io/SpeedComputer47/sitemap.xml
+Sitemap: https://speedcomputer47.fr/sitemap.xml
