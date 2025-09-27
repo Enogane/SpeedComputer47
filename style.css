@@ -7,6 +7,20 @@ body {
   color: #333;
 }
 
+/* Logo plus grand sur desktop */
+.brand img{
+  height:64px;       /* 56–72px selon ton goût */
+  width:auto;
+  border-radius:8px;
+}
+
+/* Un peu plus petit sur mobile */
+@media (max-width:640px){
+  .brand img{ height:44px; }
+}
+
+
+
 /* En-tête */
 header {
   background: #222;
