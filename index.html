@@ -17,9 +17,52 @@
   <meta name="twitter:description" content="Dépannage, installation, formation, à Villeneuve-sur-Lot." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <style>
-    /* (le même CSS optimisé que précédemment) */
-  </style>
+:root{
+  --brand:#f4b000; /* jaune/orange */
+  --ink:#111; --bg:#fff; --muted:#555; --card:#fff; --cardBorder:#eee; --accent:#0a66c2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin-inline:auto;padding:24px}
+header.nav{position:sticky;top:0;background:#fff8e0d9;backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid var(--cardBorder);z-index:40}
+.nav-inner{display:flex;gap:16px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:40px;height:40px;border-radius:50%;background:var(--brand);display:grid;place-items:center;color:#000;font-weight:800}
+.site-name{font-size:18px;margin:0;font-weight:800}
+.nav a.btn{padding:10px 14px;border-radius:999px;border:1px solid var(--ink);color:#000;font-weight:600}
+.hero{background:radial-gradient(1000px 400px at 10% 20%, #ffefc0 0, transparent 60%);}
+.hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:24px}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff5cc;border:1px solid #ffe69b;color:#6b4b00;border-radius:999px;padding:6px 10px;font-size:14px}
+h1{font-size:34px;margin:8px 0}
+h2.section-title{font-size:28px;margin:0 0 8px}
+p.lead{font-size:18px;color:var(--muted);margin:0 0 18px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid var(--ink);background:#000;color:#fff;font-weight:700}
+.btn.alt{background:var(--brand);color:#000;border-color:#000}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--cardBorder);border-radius:16px;padding:18px}
+.card h3{margin:0 0 8px}
+.list{margin:0;padding-left:18px}
+.pill{display:inline-block;background:#111;color:#fff;padding:6px 10px;border-radius:999px;font-size:13px;margin-right:6px}
+.table{width:100%;border-collapse:separate;border-spacing:0 10px}
+.table th{text-align:left;color:#333;font-size:14px}
+.table td,.table th{padding:10px 12px;background:#fff}
+.row{border:1px solid var(--cardBorder);border-radius:12px;overflow:hidden}
+section{padding:34px 0}
+.muted{color:var(--muted)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+footer{background:#0f0f10;color:#eaeaea}
+footer a{color:#eaeaea}
+.foot{display:grid;gap:10px}
+.dot{width:10px;height:10px;border-radius:50%;background:#000;display:inline-block;margin-right:6px}
+.sap{background:#fff3c0;padding:10px 12px;border:1px dashed #d9b200;border-radius:10px}
+.floating-call{position:fixed;right:16px;bottom:16px;background:var(--brand);color:#000;padding:14px 16px;border-radius:999px;border:2px solid #000;font-weight:800;z-index:50}
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
