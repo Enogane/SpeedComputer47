@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://enogane.github.io/SpeedComputer47/</loc>
-    <lastmod>2025-09-27</lastmod>
+    <loc>https://speedcomputer47.fr/</loc>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://enogane.github.io/SpeedComputer47/mentions.html</loc>
-    <lastmod>2025-09-27</lastmod>
-    <priority>0.8</priority>
+    <loc>https://speedcomputer47.fr/mentions.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
