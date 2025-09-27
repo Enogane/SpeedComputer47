@@ -39,7 +39,6 @@ header{
   object-fit:contain;
 }
 .site-name{font-weight:800;letter-spacing:.2px;font-size:1.15rem}
-@media (max-width:640px){ .brand img{ height:72px } }
 
 /* Boutons */
 .btn{
@@ -163,30 +162,20 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
 .links{ width:100%; display:flex; gap:10px; flex-wrap:wrap; justify-content:center }
 @media (max-width:640px){ .brand img{ height:72px } .site-name{ font-size:36px } }
 
-/* === Carte (Leaflet) & zone === */
+/* === Carte / zone === */
 .map-wrap{
   display:grid;
   grid-template-columns: 1.1fr .9fr;
   gap:16px;
   align-items:start;
 }
-#map{
+.map-img{
+  width:100%;
   height:420px;
+  object-fit:cover;
   border-radius:12px;
   border:1px solid var(--line);
-  overflow:hidden;
-  background:#0f1216;
-}
-.pill{
-  display:inline-block;
-  background:#171b21;
-  border:1px solid var(--line);
-  color:#e9eef5;
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:13px;
-  margin-right:6px;
-  margin-bottom:6px;
+  display:block;
 }
 @media (max-width:900px){
   .map-wrap{ grid-template-columns:1fr }
