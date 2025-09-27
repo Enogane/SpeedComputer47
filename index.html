@@ -37,7 +37,7 @@
   <!-- Perf -->
   <link rel="preload" as="image" href="logo.png">
 
-  <!-- JSON-LD : LocalBusiness + Services + FAQ -->
+  <!-- JSON-LD : LocalBusiness + Services + ItemList + FAQ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -71,9 +71,7 @@
         }],
         "paymentAccepted": ["Card","Contactless","MobilePayment","Cash","BankTransfer"],
         "priceRange": "€",
-        "sameAs": [
-          "https://www.facebook.com/speedcomputer47/"
-        ]
+        "sameAs": ["https://www.facebook.com/speedcomputer47/"]
       },
 
       { "@type":"Service", "serviceType":"Dépannage informatique à domicile",
@@ -106,6 +104,24 @@
         "offers": { "@type":"Offer","price":"25","priceCurrency":"EUR",
           "description":"Prix HT / poste / mois. Support N1/N2, mises à jour, supervision."
         }
+      },
+
+      {
+        "@type": "ItemList",
+        "name": "Catalogue d'interventions",
+        "itemListElement": [
+          {"@type":"Service","name":"Assistance à distance","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Réinstallation Windows/macOS","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Récupération de données","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Clonage & migration SSD","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Installation imprimantes & scanners","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Box internet, Wi-Fi & mesh","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Microsoft 365 / Outlook","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"NAS & sauvegardes 3-2-1","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Domotique & TV connectée","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Montage/upgrade PC","provider":{"@id":"https://speedcomputer47.fr/#business"}},
+          {"@type":"Service","name":"Sites vitrines & e-commerce","provider":{"@id":"https://speedcomputer47.fr/#business"}}
+        ]
       },
 
       {
