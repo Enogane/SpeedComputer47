@@ -9,7 +9,7 @@ body {
 
 /* Logo plus grand sur desktop */
 .brand img{
-  height:64px;       /* 56–72px selon ton goût */
+  height:100px;       /* 56–72px selon ton goût */
   width:auto;
   border-radius:8px;
 }
