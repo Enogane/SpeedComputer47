@@ -7,6 +7,9 @@
   <meta name="description" content="Dépannage informatique à domicile : réparation PC/Mac, Wi-Fi, imprimantes, sécurité, sauvegardes, récupération de données, support à distance. Villeneuve-sur-Lot et 50 km." />
   <link rel="canonical" href="https://speedcomputer47.fr/particuliers.html">
   <link rel="stylesheet" href="style.css" />
+  <meta name="google-site-verification" content="A_REMPLACER_PAR_TON_TOKEN_GSC" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
 <body>
   <header class="site-header">
@@ -25,7 +28,7 @@
   </header>
 
   <main>
-    <section class="hero" style="--hero:url('background.png')">
+    <section class="hero" style="--hero:url('background.webp')">
       <div class="container hero-grid">
         <div>
           <h1>Dépannage & installation à domicile (particuliers)</h1>
@@ -52,30 +55,12 @@
     <section class="container">
       <h2 class="section-title">Services détaillés</h2>
       <div class="services-grid">
-        <div class="service-card">
-          <h3>Dépannage / réparation</h3>
-          <p>Diagnostic matériel/logiciel, remplacement de composants (SSD, RAM, alim, carte graphique…), portables & fixes.</p>
-        </div>
-        <div class="service-card">
-          <h3>Installation & configuration</h3>
-          <p>PC neufs, Windows/Linux, logiciels (antivirus, bureautique), imprimantes & scanners, box / modems / routeurs.</p>
-        </div>
-        <div class="service-card">
-          <h3>Réseaux & connectivité</h3>
-          <p>Wi-Fi, Ethernet, répéteurs, CPL, sécurisation du réseau, partage de connexion & périphériques.</p>
-        </div>
-        <div class="service-card">
-          <h3>Sécurité & performance</h3>
-          <p>Suppression virus/malwares, pare-feu/antivirus, nettoyage système, mises à jour & optimisation.</p>
-        </div>
-        <div class="service-card">
-          <h3>Sauvegarde & données</h3>
-          <p>Récupération de fichiers, sauvegardes locales & cloud, stratégies automatiques (NAS/Drive).</p>
-        </div>
-        <div class="service-card">
-          <h3>Support & conseils</h3>
-          <p>Prise en main à distance, assistance téléphonique, conseils d’achat & bonnes pratiques sécurité.</p>
-        </div>
+        <div class="service-card"><h3>Dépannage / réparation</h3><p>Diagnostic matériel/logiciel, remplacement (SSD, RAM, alim, carte graphique…), portables & fixes.</p></div>
+        <div class="service-card"><h3>Installation & configuration</h3><p>PC neufs, Windows/Linux, logiciels (antivirus, bureautique), imprimantes & scanners, box / modems / routeurs.</p></div>
+        <div class="service-card"><h3>Réseaux & connectivité</h3><p>Wi-Fi, Ethernet, répéteurs, CPL, sécurisation réseau, partage de périphériques.</p></div>
+        <div class="service-card"><h3>Sécurité & performance</h3><p>Suppression virus/malwares, pare-feu/antivirus, nettoyage système, mises à jour & optimisation.</p></div>
+        <div class="service-card"><h3>Sauvegarde & données</h3><p>Récupération de fichiers, sauvegardes locales & cloud, stratégies automatiques (NAS/Drive).</p></div>
+        <div class="service-card"><h3>Support & conseils</h3><p>Prise en main à distance, assistance téléphonique, conseils d’achat & bonnes pratiques sécurité.</p></div>
       </div>
     </section>
 
@@ -101,21 +86,18 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container foot">
-      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot • <a href="mentions.html">Mentions légales</a></p>
-    </div>
-  </footer>
-
+  <footer><div class="container foot">
+    <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot • <a href="mentions.html">Mentions légales</a></p>
+  </div></footer>
   <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
 
   <script>
-    document.getElementById('devisP').addEventListener('submit', (e)=>{
+    document.getElementById('devisP').addEventListener('submit',(e)=>{
       e.preventDefault();
-      const d = new FormData(e.target);
-      const s = encodeURIComponent('Demande de devis – Particuliers');
-      const b = encodeURIComponent(`Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nBesoin:\n${d.get('message')}`);
-      location.href = `mailto:contact@speedcomputer47.fr?subject=${s}&body=${b}`;
+      const d=new FormData(e.target);
+      const s=encodeURIComponent('Demande de devis – Particuliers');
+      const b=encodeURIComponent(`Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nBesoin:\n${d.get('message')}`);
+      location.href=`mailto:contact@speedcomputer47.fr?subject=${s}&body=${b}`;
     });
   </script>
 </body>
