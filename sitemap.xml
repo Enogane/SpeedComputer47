@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://speedcomputer47.fr/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://speedcomputer47.fr/mentions.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://speedcomputer47.fr/</loc><lastmod>2025-09-28</lastmod><priority>1.00</priority></url>
+  <url><loc>https://speedcomputer47.fr/particuliers.html</loc><lastmod>2025-09-28</lastmod><priority>0.90</priority></url>
+  <url><loc>https://speedcomputer47.fr/pro.html</loc><lastmod>2025-09-28</lastmod><priority>0.90</priority></url>
+  <url><loc>https://speedcomputer47.fr/mentions.html</loc><lastmod>2025-09-28</lastmod><priority>0.40</priority></url>
+
+  <!-- Pages SEO local -->
+  <url><loc>https://speedcomputer47.fr/depannage-informatique-villeneuve-sur-lot.html</loc><lastmod>2025-09-28</lastmod><priority>0.85</priority></url>
+  <url><loc>https://speedcomputer47.fr/reparation-pc-agen.html</loc><lastmod>2025-09-28</lastmod><priority>0.85</priority></url>
+  <url><loc>https://speedcomputer47.fr/installation-informatique-marmande.html</loc><lastmod>2025-09-28</lastmod><priority>0.80</priority></url>
+  <url><loc>https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html</loc><lastmod>2025-09-28</lastmod><priority>0.80</priority></url>
 </urlset>
