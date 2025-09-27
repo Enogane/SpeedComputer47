@@ -4,54 +4,73 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentions légales & Politique de confidentialité | SpeedComputer47</title>
-  <meta name="robots" content="noindex,follow">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Mentions légales, éditeur, hébergeur, propriété intellectuelle, données personnelles, cookies pour SpeedComputer47." />
+  <link rel="canonical" href="https://speedcomputer47.fr/mentions.html">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-           <nav class="links" aria-label="Navigation">
-        <a class="btn ghost" href="#top">Accueil</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="logo.png" alt="Logo" /><span class="site-name">SpeedComputer47</span></a>
+      <nav class="links" aria-label="Navigation">
+        <a class="btn ghost" href="index.html">Accueil</a>
         <a class="btn ghost" href="particuliers.html">Particuliers</a>
         <a class="btn ghost" href="pro.html">Entreprises</a>
-        <a class="btn" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Voir nos avis</a>
+        <a class="btn ghost" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="nofollow noopener">⭐ Voir nos avis</a>
         <a class="btn ghost" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="mentions.html">Mentions légales</a>
-</header>
+        <a class="btn ghost active" href="mentions.html">Mentions légales</a>
+        <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="container legal">
-  <h1>Mentions légales</h1>
+  <main class="legal container">
+    <h1>Mentions légales & Politique de confidentialité</h1>
 
-  <div class="legal-card">
-    <h2>Éditeur du site</h2>
-    <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot<br>
-    SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629<br>
-    Tél. : <a href="tel:+33666235143">06 66 23 51 43</a> — Email : <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-  </div>
+    <div class="legal-card">
+      <h2>Éditeur du site</h2>
+      <p><strong>SpeedComputer47</strong> – 8 rue Gambetta, 47300 Villeneuve-sur-Lot – France</p>
+      <p>SIREN : 988 008 629 – SIRET : 988 008 629 00012 – TVA : FR03988008629</p>
+      <p>Contact : <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a> – Tel : <a href="tel:+33666235143">06 66 23 51 43</a></p>
+    </div>
 
-  <div class="legal-card">
-    <h2>Hébergement</h2>
-    <p>Site statique hébergé via GitHub Pages.</p>
-  </div>
+    <div class="legal-card">
+      <h2>Hébergement</h2>
+      <p>Site hébergé via <strong>GitHub Pages</strong> (GitHub, Inc.).</p>
+    </div>
 
-  <div class="legal-card">
-    <h2>Protection des données</h2>
-    <p>Les données transmises via e-mail sont utilisées exclusivement pour répondre à votre demande. Vous disposez de droits d’accès, de rectification et de suppression en nous contactant.</p>
-  </div>
+    <div class="legal-card">
+      <h2>Propriété intellectuelle</h2>
+      <p>Les contenus, textes, visuels et logos de ce site sont protégés. Toute reproduction est interdite sans autorisation écrite.</p>
+    </div>
 
-  <p class="legal-updated">Dernière mise à jour : <span id="dateMaj"></span></p>
-  <p class="legal-back"><a class="btn" href="index.html">← Retour à l’accueil</a></p>
-</main>
+    <div class="legal-card">
+      <h2>Données personnelles</h2>
+      <p>Les données transmises via le formulaire (nom, email, téléphone, message) servent exclusivement à répondre à votre demande.</p>
+      <ul class="legal-list">
+        <li>Responsable de traitement : SpeedComputer47</li>
+        <li>Durée de conservation : le temps nécessaire au traitement et aux obligations légales</li>
+        <li>Droits : accès, rectification, suppression – par email à <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></li>
+      </ul>
+    </div>
 
-<footer>
-  <div class="container foot">
-    <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
-    <p>© <span id="year"></span></p>
-  </div>
-</footer>
+    <div class="legal-card">
+      <h2>Cookies</h2>
+      <p>Ce site n’exploite pas de cookies publicitaires. Des cookies techniques peuvent être utilisés pour le bon fonctionnement.</p>
+    </div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('dateMaj').textContent = new Date().toLocaleDateString('fr-FR');
-</script>
+    <p class="legal-updated">Dernière mise à jour : <span id="legalYear"></span></p>
+    <p class="legal-back"><a class="btn" href="index.html">← Retour à l’accueil</a></p>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+    </div>
+  </footer>
+
+  <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
+
+  <script>document.getElementById('legalYear').textContent=new Date().toLocaleDateString('fr-FR');</script>
 </body>
 </html>
