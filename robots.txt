@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enogane.github.io/SpeedComputer47/sitemap.xml
