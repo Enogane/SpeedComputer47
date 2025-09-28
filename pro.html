@@ -1,141 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Maintenance & Support Informatique pour Professionnels | SpeedComputer47</title>
-  <meta name="description" content="TPE/PME : interventions ponctuelles, contrats de maintenance au poste (essai 1 mois, puis engagement 12 mois dégressif), sauvegardes, cybersécurité et réseau. Délais rapides en Lot-et-Garonne." />
-
+  <meta name="description" content="TPE/PME : interventions ponctuelles, contrats de maintenance au poste (essai 1 mois, puis engagement dégressif 3/6/12 mois), sauvegardes, cybersécurité et réseau. Villeneuve-sur-Lot & 50 km." />
   <link rel="canonical" href="https://speedcomputer47.fr/pro.html" />
   <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Maintenance & Support Informatique Pro — SpeedComputer47" />
   <meta property="og:description" content="Contrats au poste avec essai 1 mois. Interventions rapides, sauvegardes, cybersécurité et réseau pour TPE/PME." />
   <meta property="og:url" content="https://speedcomputer47.fr/pro.html" />
   <meta property="og:image" content="logo.png" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:locale" content="fr_FR" />
 
-  <!-- JSON-LD: Service (IT Support) -->
+  <!-- JSON-LD : Offre Entreprises (synthèse) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Service",
-    "serviceType":"Maintenance et support informatique",
-    "provider":{
-      "@type":"LocalBusiness",
-      "name":"SpeedComputer47",
-      "areaServed":"Lot-et-Garonne",
-      "url":"https://speedcomputer47.fr"
-    },
-    "areaServed":"Villeneuve-sur-Lot, Agen, Marmande",
+    "serviceType":"Maintenance et support informatique (Entreprises)",
+    "provider":{"@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr"},
+    "areaServed":"Villeneuve-sur-Lot et 50 km",
     "offers":{
-      "@type":"Offer",
+      "@type":"AggregateOffer",
       "priceCurrency":"EUR",
-      "priceSpecification":{
-        "@type":"PriceSpecification",
-        "price":"25-40",
-        "unitText":"par poste et par mois"
-      },
-      "description":"Forfaits au poste : Essai 1 mois sans engagement, puis engagement 12 mois tarif dégressif."
+      "lowPrice":"25",
+      "highPrice":"50",
+      "offerCount":"3",
+      "description":"Contrats au poste (Essentielle, Pro, Prime), tarifs dégressifs par volume et engagement (1,3,6,12 mois)."
     }
   }
   </script>
 
+  <!-- Styles additionnels (menu Avis, icônes, configurateur) -->
+  <style>
+    html{ scroll-behavior:smooth; }
 
-  <!-- HEADER (commun) -->
+    /* Header/nav */
+    .site-header{ position:sticky; top:0; z-index:40; background:#0b0f16; }
+    .nav{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; }
+    .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; }
+    .brand img{ width:44px; height:44px; border-radius:10px; object-fit:cover; }
+    .site-name{ font-weight:800; font-size:22px; color:#38bdf8; }
+    .links{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; text-decoration:none; color:#e5e7eb; background:#0f172a; border:1px solid #1f2937; }
+    .btn:hover{ background:#111b2e; }
+    .btn.ghost{ background:transparent; border:1px solid #1f2937; }
+    .btn.primary{ background:#f59e0b; color:#111827; border-color:#f59e0b; }
+    .btn.primary:hover{ filter:brightness(0.95); }
+    .btn .icon, .dropdown-item .icon{ height:22px; width:22px; object-fit:contain; border-radius:4px; }
+
+    /* Dropdown Avis */
+    .dropdown{ position:relative; }
+    .dropdown-menu{
+      position:absolute; right:0; top:calc(100% + 8px);
+      min-width:220px; z-index:50; display:none; padding:8px;
+      background:#0b1220; border:1px solid #1f2937; border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.35);
+    }
+    .dropdown.open .dropdown-menu{ display:block; }
+    .dropdown-item{
+      display:flex; align-items:center; gap:10px; padding:8px 10px;
+      border-radius:10px; color:#e5e7eb; text-decoration:none;
+    }
+    .dropdown-item:hover{ background:rgba(14,165,233,.15); }
+
+    /* Hero */
+    .hero{ padding:36px 0; }
+    .hero--bg{ background:#0a0f17 url('background.png') center/cover no-repeat; }
+    .hero-grid{ display:grid; grid-template-columns:1fr; gap:18px; }
+    @media(min-width:980px){ .hero-grid{ grid-template-columns:1.1fr .9fr; } }
+    .hero-box{ background:#0c121d; border:1px solid #1f2937; border-radius:14px; padding:16px; }
+
+    /* Sections & cards */
+    .section{ padding:36px 0; }
+    .section--alt{ background:#0a0f17; }
+    .section-title, h1, h2{ color:#e5e7eb; }
+    .muted{ color:#9ca3af; }
+    .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
+    .card{ background:#0c121d; border:1px solid #1f2937; border-radius:14px; padding:16px; }
+    .table-wrapper{ overflow:auto; }
+    .table{ width:100%; border-collapse:separate; border-spacing:0; }
+    .table th, .table td{ padding:10px; border-bottom:1px solid #1f2937; vertical-align:top; }
+    .table thead th{ background:#0f172a; color:#e5e7eb; position:sticky; top:0; }
+    .price{ color:#e5e7eb; }
+    .note{ color:#9ca3af; margin-top:8px; }
+
+    /* Configurateur forfaits */
+    .cfg{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:14px; }
+    .cfg input, .cfg select{ padding:8px 10px; border-radius:10px; background:#0b0f16; border:1px solid #1f2937; color:#e5e7eb; }
+    .list{ padding-left:16px; margin:0; }
+    .list li{ margin:2px 0; }
+
+    /* Footer */
+    footer{ padding:18px 0 30px; color:#9ca3af; }
+    .foot{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; text-align:center; }
+    .foot p{ margin:0; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
         <img src="logo.png" alt="SpeedComputer47 logo">
         <span class="site-name">SpeedComputer47</span>
       </a>
-      </a>>
+
       <nav class="links" aria-label="Navigation">
         <a class="btn ghost" href="index.html">Accueil</a>
         <a class="btn ghost" href="particuliers.html">Particuliers</a>
         <a class="btn ghost" href="pro.html">Entreprises</a>
+
+        <!-- Bouton Avis (dropdown) -->
+        <div class="dropdown" id="reviewsDropdown">
+          <button class="btn" id="btnReviews" aria-expanded="false" aria-controls="reviewsMenu">⭐ Avis</button>
+          <div class="dropdown-menu" id="reviewsMenu" role="menu">
+            <a class="dropdown-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
+              <img class="icon" src="google-avis.jpg" alt="Google"> Google
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
+              <img class="icon" src="Facebook_icon.svg.png" alt="Facebook"> Facebook
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
+              <img class="icon" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
+              <img class="icon" src="linkedin-logo.png" alt="LinkedIn"> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Bouton Contact / Devis -->
+        <a class="btn ghost" href="#contact">📩 Contact / Devis</a>
+
+        <!-- Appel -->
         <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO AVEC BACKGROUND (même que Particuliers) -->
- <section class="hero hero--bg" style="background-image:url('background.png');">
-      <div class="container hero-grid">
-        <div>
-      <h1>Support & maintenance informatique pour professionnels</h1>
-      <p class="lead">
-        Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité & réseau.<br>
-        <strong>Essai 1 mois sans engagement</strong>, puis <strong>engagement 12 mois</strong> tarif dégressif.
-      </p>
-      <div class="hero-actions">
-        <a href="mailto:contact@speedcomputer47.fr" class="btn btn-primary">Demander un devis</a>
-        <a href="#forfaits" class="btn">Voir les forfaits</a>
+  <!-- HERO -->
+  <section class="hero hero--bg">
+    <div class="container hero-grid">
+      <div>
+        <h1>Support & maintenance informatique pour professionnels</h1>
+        <p class="lead muted">
+          Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité & réseau.<br>
+          <strong>Essai 1 mois sans engagement</strong>, puis <strong>engagement 3/6/12 mois</strong> à tarif dégressif.
+        </p>
+        <div class="cta-row" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="mailto:contact@speedcomputer47.fr" class="btn primary">Demander un devis</a>
+          <a href="#forfaits" class="btn">Voir les forfaits</a>
+        </div>
       </div>
 
-      <!-- Encadré latéral comme sur Particuliers (si tu l’utilises) -->
       <aside class="hero-box">
         <h3>Interventions fréquentes</h3>
-        <ul>
-          <li>PC lents → optimisation & mise à jour</li>
+        <ul class="list muted">
+          <li>PC lents → optimisation & SSD</li>
           <li>Réseau & Wi-Fi d’entreprise</li>
           <li>Sauvegardes local & cloud</li>
-          <li>Cybersécurité (antivirus, filtrage)</li>
-          <li>Migrations postes & déploiements</li>
+          <li>Cybersécurité (AV, filtrage, MFA)</li>
+          <li>Migrations & déploiements multi-postes</li>
         </ul>
       </aside>
     </div>
-  </div>
-</section>
-  <main class="site-main">
+  </section>
 
+  <main>
     <!-- Interventions ponctuelles -->
     <section class="section">
       <div class="container">
-        <h2>Interventions ponctuelles</h2>
+        <h2 class="section-title">Interventions ponctuelles</h2>
         <p class="muted">Pour les besoins immédiats, sans engagement.</p>
 
-        <div class="cards cards--3">
+        <div class="cards">
           <article class="card">
-            <h3>Intervention sur site (1h)</h3>
-            <p>Dépannage, diagnostic, configuration.</p>
+            <h3>Intervention sur site (1 h)</h3>
+            <p class="muted">Dépannage, diagnostic, configuration.</p>
             <p class="price"><strong>75 € HT</strong> <span class="muted">/ 90 € TTC</span></p>
-            <p class="note">Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km.</p>
+            <p class="note">Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km (AR).</p>
           </article>
 
           <article class="card">
-            <h3>Demi-journée (4h)</h3>
-            <p>Interventions lourdes, déploiements.</p>
-            <p class="price"><strong>240 € HT</strong> <span class="muted">/ 288 € TTC</span></p>
+            <h3>Demi-journée (4 h)</h3>
+            <p class="muted">Interventions lourdes, déploiements.</p>
+            <p class="price"><strong>250 € HT</strong> <span class="muted">/ 300 € TTC</span></p>
           </article>
 
           <article class="card">
-            <h3>Journée (7h)</h3>
-            <p>Projets, migrations, multi-postes.</p>
-            <p class="price"><strong>420 € HT</strong> <span class="muted">/ 504 € TTC</span></p>
-          </article>
-        </div>
-
-        <div class="cards cards--3">
-          <article class="card">
-            <h4>Installation / réinstallation poste</h4>
-            <p>Poste prêt à l’emploi (sans migration complexe).</p>
-            <p class="price"><strong>120 € HT</strong> <span class="muted">/ 144 € TTC</span></p>
+            <h3>Journée (7 h)</h3>
+            <p class="muted">Projets, migrations, multi-postes.</p>
+            <p class="price"><strong>450 € HT</strong> <span class="muted">/ 540 € TTC</span></p>
           </article>
 
           <article class="card">
-            <h4>Migration données & paramétrage</h4>
-            <p>PC→PC, disque→PC, profils, logiciels.</p>
-            <p class="price"><strong>150 € HT</strong> <span class="muted">/ 180 € TTC</span></p>
+            <h3>Installation / réinstallation poste</h3>
+            <p class="muted">Poste prêt à l’emploi (hors migration complexe).</p>
+            <p class="price"><strong>108,33 € HT</strong> <span class="muted">/ 130 € TTC</span></p>
           </article>
 
           <article class="card">
-            <h4>Audit réseau & sécurité</h4>
-            <p>État des lieux, rapport & recommandations.</p>
+            <h3>Migration données & paramétrage</h3>
+            <p class="muted">PC→PC, profils, logiciels (par poste).</p>
+            <p class="price"><strong>141,67 € HT</strong> <span class="muted">/ 170 € TTC</span></p>
+          </article>
+
+          <article class="card">
+            <h3>Audit réseau & sécurité</h3>
+            <p class="muted">État des lieux, rapport & recommandations.</p>
             <p class="price"><strong>200 € HT</strong> <span class="muted">/ 240 € TTC</span></p>
           </article>
         </div>
@@ -145,202 +225,193 @@
     <!-- Forfaits maintenance au poste -->
     <section id="forfaits" class="section section--alt">
       <div class="container">
-        <h2>Forfaits maintenance — au poste</h2>
-        <p class="muted">Essai 1 mois sans engagement, puis prix dégressif avec engagement 12 mois.</p>
+        <h2 class="section-title">Forfaits maintenance — au poste</h2>
+        <p class="muted">Essai 1 mois sans engagement, puis tarifs dégressifs selon <strong>volume</strong> et <strong>engagement 3/6/12 mois</strong>.</p>
 
-        <div class="table-wrapper">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Formule</th>
-                <th>Nombre de postes</th>
-                <th>Contenu</th>
-                <th>Essai 1 mois<br><span class="small">sans engagement</span></th>
-                <th>Engagement 12 mois<br><span class="small">tarif dégressif</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Essentielle</strong></td>
-                <td>1 à 5</td>
-                <td>
-                  <ul class="list">
-                    <li>Mises à jour & optimisation</li>
-                    <li>Antivirus géré</li>
-                    <li>Support téléphonique & prise en main à distance</li>
-                    <li>Intervention sous 48h</li>
-                  </ul>
-                </td>
-                <td><strong>40 € HT</strong> / poste</td>
-                <td><strong>35 € HT</strong> / poste</td>
-              </tr>
-
-              <tr>
-                <td><strong>Pro</strong></td>
-                <td>6 à 10</td>
-                <td>
-                  <ul class="list">
-                    <li>Tous les services “Essentielle”</li>
-                    <li>Sauvegarde cloud/locale incluse (jusqu’à 500 Go)</li>
-                    <li>Intervention sous 24h</li>
-                    <li>2h de formation/an offerte</li>
-                  </ul>
-                </td>
-                <td><strong>35 € HT</strong> / poste</td>
-                <td><strong>30 € HT</strong> / poste</td>
-              </tr>
-
-              <tr>
-                <td><strong>Premium</strong></td>
-                <td>11 et +</td>
-                <td>
-                  <ul class="list">
-                    <li>Tous les services “Pro”</li>
-                    <li>Audit annuel du parc</li>
-                    <li>Supervision réseau & sécurité en continu</li>
-                    <li>Intervention prioritaire sous 12h</li>
-                    <li>Formation cybersécurité incluse</li>
-                  </ul>
-                </td>
-                <td><strong>30 € HT</strong> / poste</td>
-                <td><strong>25 € HT</strong> / poste</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Configurateur -->
+        <div class="card cfg">
+          <label>Nombre de postes
+            <input id="seats" type="number" min="1" max="20" value="6" style="margin-left:8px; width:90px">
+          </label>
+          <label>Engagement
+            <select id="term" style="margin-left:8px">
+              <option value="1">1 mois (sans engagement)</option>
+              <option value="3">3 mois (–5%)</option>
+              <option value="6">6 mois (–10%)</option>
+              <option value="12">12 mois (–15%)</option>
+            </select>
+          </label>
+          <span class="muted">Déplacement ≤ 20 km inclus, puis +0,50 €/km</span>
         </div>
+
+        <div id="packs" class="cards"><!-- injecté par JS --></div>
 
         <p class="note">
-          Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km.
-          Ajout d’un poste hors tranche : +30 €/poste/mois (sans engagement) ou 25 €/poste/mois (engagé).
+          Pièces & licences non incluses lorsque mentionnées. Sauvegarde incluse (Pro/Prime) : pool 500 Go par parc.
         </p>
-
-        <div class="actions">
-          <a href="mailto:contact@speedcomputer47.fr" class="btn btn-primary">Tester 1 mois sans engagement</a>
-          <a href="mailto:contact@speedcomputer47.fr" class="btn">Recevoir un contrat 12 mois</a>
-        </div>
       </div>
     </section>
 
-    <!-- Sécurité & Réseau -->
+    <!-- Options & services à la carte -->
     <section class="section">
       <div class="container">
-        <h2>Sécurité & réseau</h2>
-
-        <div class="cards cards--3">
+        <h2 class="section-title">Options & services à la carte</h2>
+        <div class="cards">
           <article class="card">
-            <h3>Antivirus pro (par poste)</h3>
-            <p>Déploiement centralisé, supervision, alertes.</p>
-            <p class="price"><strong>40 € HT</strong> <span class="muted">(+ abonnement logiciel)</span></p>
+            <h3>Serveur / NAS managé</h3>
+            <p class="muted">Supervision, patchs, sauvegardes + test de restauration.</p>
+            <p class="price">À partir de <strong>120–160 € HT / serveur / mois</strong></p>
           </article>
-
           <article class="card">
-            <h3>Pare-feu & filtrage web</h3>
-            <p>Sécurisation périmètre, VPN, politiques d’accès.</p>
+            <h3>Pare-feu & VPN managés</h3>
+            <p class="muted">Filtrage web, politiques d’accès, journalisation.</p>
+            <p class="price"><strong>Sur devis</strong> (selon matériel & périmètre)</p>
+          </article>
+          <article class="card">
+            <h3>Sécurité e-mail</h3>
+            <p class="muted">Anti-phishing, sandbox PJ, archivage.</p>
+            <p class="price">À partir de <strong>3–6 € HT / utilisateur / mois</strong></p>
+          </article>
+          <article class="card">
+            <h3>Microsoft 365 / Google Workspace</h3>
+            <p class="muted">Licences, migration, administration & durcissement.</p>
+            <p class="price"><strong>Sur devis</strong> (licences selon éditeur)</p>
+          </article>
+          <article class="card">
+            <h3>MDM / Intune</h3>
+            <p class="muted">Enrôlement, politiques, chiffrement poste/mobile.</p>
             <p class="price"><strong>Sur devis</strong></p>
           </article>
-
           <article class="card">
-            <h3>Sauvegardes local & cloud</h3>
-            <p>Stratégie 3-2-1, tests de restauration, monitoring.</p>
-            <p class="price">Inclus en Pro/Premium • Options sur mesure</p>
+            <h3>Sauvegarde cloud managée</h3>
+            <p class="muted">Supervision + tests (PRA simplifié).</p>
+            <p class="price">Stockage : <strong>0,03–0,05 € / Go / mois</strong></p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Formations -->
-    <section class="section section--alt">
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
       <div class="container">
-        <h2>Formations & accompagnement</h2>
-
-        <div class="table-wrapper">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Service</th>
-                <th>Prix HT</th>
-                <th>Conditions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Formation bureautique (Word, Excel, Teams…)</td>
-                <td>100 € / h</td>
-                <td>Sur site, minimum 2h</td>
-              </tr>
-              <tr>
-                <td>Sensibilisation cybersécurité (atelier collectif)</td>
-                <td>300 €</td>
-                <td>Session 2h, 5–10 personnes</td>
-              </tr>
-              <tr>
-                <td>Accompagnement transition numérique</td>
-                <td>Sur devis</td>
-                <td>Diagnostic & plan d’action</td>
-              </tr>
-              <tr>
-                <td>Audit RGPD simplifié</td>
-                <td>Sur devis</td>
-                <td>Rapport & recommandations</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FAQ courte -->
-    <section class="section">
-      <div class="container">
-        <h2>FAQ</h2>
-        <div class="faq">
-          <details>
-            <summary>Comment fonctionne l’essai 1 mois ?</summary>
-            <p>Vous profitez des services de la formule choisie pendant 30 jours, sans engagement. À l’issue, vous pouvez basculer vers l’engagement 12 mois (tarif dégressif) ou arrêter.</p>
-          </details>
-          <details>
-            <summary>Pouvons-nous ajouter / retirer des postes ?</summary>
-            <p>Oui, à tout moment. Les ajouts sont facturés au prix par poste de votre formule. En engagement, le tarif par poste reste dégressif.</p>
-          </details>
-          <details>
-            <summary>Quelle est votre zone d’intervention ?</summary>
-            <p>Lot-et-Garonne. Déplacement ≤ 20 km inclus depuis Villeneuve-sur-Lot. Au-delà : +0,50 €/km.</p>
-          </details>
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">Un ticket ponctuel, un audit, ou un contrat au poste ? Réponse sous 24h ouvrées.</p>
+        <div class="cards">
+          <article class="card">
+            <p>📞 <a class="btn ghost" href="tel:+33666235143">06 66 23 51 43</a></p>
+            <p>✉️ <a class="btn ghost" href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
+          </article>
+          <article class="card">
+            <h3>Devis express par e-mail</h3>
+            <p class="muted">Décrivez votre besoin (parc, postes, contraintes, délais).</p>
+            <a class="btn primary" href="mailto:contact@speedcomputer47.fr?subject=Demande de devis – Entreprise&body=Bonjour,%0A%0ANous souhaitons un devis pour :%0A- Nombre de postes :%0A- Formule (Essentielle/Pro/Prime) :%0A- Engagement (1/3/6/12 mois) :%0A- Options (serveur, pare-feu, M365/Workspace...) :%0A- Ville / distance approx. :%0A%0AMerci,">📩 Envoyer ma demande</a>
+          </article>
         </div>
       </div>
     </section>
-
-    <!-- Call to action final -->
-    <section class="section section--cta">
-      <div class="container">
-        <h2>Parlons de votre besoin</h2>
-        <p class="lead">Un ticket ponctuel, un audit, ou un contrat au poste ? Réponse sous 24h.</p>
-        <div class="actions">
-          <a href="mailto:contact@speedcomputer47.fr" class="btn btn-primary">Demander un devis</a>
-          <a href="tel:+33600000000" class="btn">Appeler maintenant</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container foot">
       <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales & Politique de confidentialité</a></p>
+      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
     </div>
   </footer>
 
+  <!-- JS : année, dropdown Avis, configurateur -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Année
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    // Dropdown Avis
+    const dd = document.getElementById('reviewsDropdown');
+    const btnReviews = document.getElementById('btnReviews');
+    const menu = document.getElementById('reviewsMenu');
+    if (btnReviews && dd && menu){
+      btnReviews.addEventListener('click', (e)=>{
+        e.preventDefault();
+        dd.classList.toggle('open');
+        btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
+      });
+      document.addEventListener('click', (e)=>{
+        if (!dd.contains(e.target)) { dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
+      });
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape'){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
+      });
+    }
+
+    // Configurateur forfaits
+    const base = {
+      Essentielle: { tier1:35, tier2:32, tier3:30 }, // 1–5 / 6–10 / 11–20
+      Pro:         { tier1:40, tier2:37, tier3:35 },
+      Prime:       { tier1:50, tier2:45, tier3:42 }
+    };
+    const features = {
+      Essentielle:[
+        "Mises à jour & optimisation",
+        "Antivirus géré (console)",
+        "Support téléphone & à distance",
+        "Intervention ≤ 48h ouvrées"
+      ],
+      Pro:[
+        "Tout Essentielle +",
+        "Sauvegarde locale/cloud incluse (pool 500 Go)",
+        "Intervention ≤ 24h ouvrées",
+        "2h de formation / an offertes"
+      ],
+      Prime:[
+        "Tout Pro +",
+        "Supervision 24/7 poste & réseau",
+        "Priorité ≤ 12h ouvrées",
+        "Audit annuel & sensibilisation cyber"
+      ]
+    };
+    const discounts = { 1:0, 3:0.05, 6:0.10, 12:0.15 };
+
+    const seatsEl = document.getElementById('seats');
+    const termEl  = document.getElementById('term');
+    const packsEl = document.getElementById('packs');
+
+    function tierFor(n){ if (n<=5) return 'tier1'; if (n<=10) return 'tier2'; return 'tier3'; }
+    function euro(n){ return n.toFixed(2).replace('.', ',') + ' €'; }
+
+    function render(){
+      const n = Math.min(20, Math.max(1, parseInt(seatsEl.value||'1',10)));
+      seatsEl.value = n;
+      const t = parseInt(termEl.value,10);
+      const disc = discounts[t] || 0;
+      const tier = tierFor(n);
+
+      packsEl.innerHTML = '';
+      Object.keys(base).forEach(pack=>{
+        const priceBase = base[pack][tier];
+        const priceSeat = priceBase * (1 - disc);
+        const total = priceSeat * n;
+        const li = features[pack].map(f=>`<li>• ${f}</li>`).join('');
+        const html = `
+          <article class="card">
+            <h3 style="margin:0 0 6px">${pack}</h3>
+            <p class="muted" style="margin:0 0 8px">
+              ${n<=5?'1–5 postes':(n<=10?'6–10 postes':'11–20 postes')} • Engagement ${t} mois
+            </p>
+            <ul class="list muted" style="margin:0 0 10px">${li}</ul>
+            <div class="price">
+              <p style="margin:0"><strong>${euro(priceSeat)}</strong> / poste / mois (HT)</p>
+              <p class="muted" style="margin:4px 0 8px">Total parc : <strong>${euro(total)}</strong> / mois (HT)</p>
+            </div>
+            <div class="cta-row" style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="#contact">Demander un devis</a>
+            </div>
+          </article>`;
+        packsEl.insertAdjacentHTML('beforeend', html);
+      });
+    }
+    seatsEl.addEventListener('input', render);
+    termEl.addEventListener('change', render);
+    render();
   </script>
 </body>
 </html>
-
-
-
-
-
-
