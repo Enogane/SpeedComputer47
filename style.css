@@ -132,6 +132,53 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
   .btn.social .icon{ height:22px; width:22px; }
 }
 
+/* === Header unifié SpeedComputer47 === */
+.sc47-header{position:sticky;top:0;z-index:40;background:#0b0f16;border-bottom:1px solid #111827}
+.sc47-container{width:min(1100px,92%);margin:0 auto;display:flex;align-items:center;gap:14px;padding:12px 0}
+
+/* Brand */
+.sc47-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.sc47-logo{width:44px;height:44px;border-radius:10px;object-fit:cover}
+.sc47-name{font-weight:800;font-size:22px;color:#38bdf8}
+
+/* Burger (mobile) */
+.sc47-burger{display:none;margin-left:auto;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;border-radius:10px;padding:8px 10px;cursor:pointer}
+
+/* Nav & links */
+.sc47-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-left:auto}
+.sc47-link{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937}
+.sc47-link:hover{background:#111b2e}
+.sc47-link--ghost{background:transparent}
+
+.sc47-link.is-active{outline:2px solid rgba(56,189,248,.4);}
+
+/* Actions */
+.sc47-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.sc47-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937}
+.sc47-btn:hover{background:#111b2e}
+.sc47-btn--primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
+.sc47-btn--primary:hover{filter:brightness(.95)}
+
+/* Dropdown Avis */
+.sc47-dropdown{position:relative}
+.sc47-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:220px;display:none;padding:8px;background:#0b1220;border:1px solid #1f2937;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35);z-index:50}
+.sc47-dropdown.open .sc47-menu{display:block}
+.sc47-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none}
+.sc47-item:hover{background:rgba(14,165,233,.15)}
+.sc47-ico{height:22px;width:22px;object-fit:contain;border-radius:4px}
+
+/* Responsive */
+@media (max-width: 880px){
+  .sc47-burger{display:block}
+  .sc47-nav{
+    position:fixed;left:0;right:0;top:60px; /* approx hauteur header */
+    background:#0b0f16;border-top:1px solid #111827;display:none;flex-direction:column;gap:8px;
+    padding:10px 4%;z-index:39
+  }
+  .sc47-nav.open{display:flex}
+  .sc47-actions{margin-left:0;align-self:stretch;justify-content:space-between}
+}
+
 /* Map */
 .map-img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
 .map-link:hover .map-img{outline:2px solid var(--accent)}
