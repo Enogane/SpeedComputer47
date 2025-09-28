@@ -94,6 +94,17 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
 .service-card h3{margin:0 0 6px;font-size:18px}
 .service-card p{margin:0;color:#cbd3dc;line-height:1.5}
 
+  /* Icônes dans les boutons */
+  .btn .icon {
+    height: 1em;          /* s’aligne sur la taille du texte */
+    width: auto;
+    margin-right: 8px;
+    vertical-align: -2px;  /* léger alignement visuel */
+    border-radius: 2px;
+  }
+  .btn.ghost .icon { opacity: 0.9; }
+
+
 /* Map */
 .map-img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
 .map-link:hover .map-img{outline:2px solid var(--accent)}
