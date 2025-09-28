@@ -230,176 +230,185 @@
     </section>
 
     <!-- TARIFS -->
-    <section id="tarifs">
-      <div class="container">
-        <h2 class="section-title">Tarifs particuliers (TTC)</h2>
+   <!-- TARIFS -->
+<section id="tarifs">
+  <div class="container">
+    <h2 class="section-title">Tarifs particuliers (TTC)</h2>
 
-        <div class="card" style="overflow:auto">
-          <table class="table pricing" aria-label="Grille tarifaire particuliers TTC">
-            <thead>
-              <tr class="row">
-                <th class="cat">Catégorie</th>
-                <th>Service</th>
-                <th>Prix TTC</th>
-                <th>Conditions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Dépannage -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-                <td data-label="Service">Diagnostic simple</td>
-                <td data-label="Prix TTC"><strong>30 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km, +0,50 €/km au-delà</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-                <td data-label="Service">Dépannage / assistance 1h</td>
-                <td data-label="Prix TTC"><strong>70 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-                <td data-label="Service">Nettoyage / optimisation PC</td>
-                <td data-label="Prix TTC"><strong>60 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-                <td data-label="Service">Suppression virus / malwares</td>
-                <td data-label="Prix TTC"><strong>70 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+    <div class="card" style="overflow:auto">
+      <table class="table pricing" aria-label="Grille tarifaire particuliers TTC à deux niveaux">
+        <caption class="sr-only">Tarifs particuliers avec deux niveaux : entrée / de base et complexité modérée</caption>
+        <thead>
+          <tr class="row">
+            <th class="cat">Catégorie</th>
+            <th>Service</th>
+            <th>Tarif entrée / de base</th>
+            <th>Tarif complexité modérée</th>
+            <th>Conditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dépannage -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
+            <td data-label="Service">Diagnostic simple / estimation</td>
+            <td data-label="Entrée"><strong>25 €</strong></td>
+            <td data-label="Complexité"><strong>35 €</strong></td>
+            <td data-label="Conditions">Déplacement ≤ 20 km inclus</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
+            <td data-label="Service">Dépannage / assistance 1 h (petite tâche)</td>
+            <td data-label="Entrée"><strong>55 €</strong></td>
+            <td data-label="Complexité"><strong>70 €</strong></td>
+            <td data-label="Conditions">Selon complexité ou matériel ancien</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
+            <td data-label="Service">Dépannage 1 h 30</td>
+            <td data-label="Entrée"><strong>80 €</strong></td>
+            <td data-label="Complexité"><strong>100 €</strong></td>
+            <td data-label="Conditions">Pour pannes lourdes (virus, OS…)</td>
+          </tr>
 
-              <!-- Sauvegarde -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">💾 Sauvegarde & restauration</td>
-                <td data-label="Service">Sauvegarde / restauration de données simples</td>
-                <td data-label="Prix TTC"><strong>80 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">💾 Sauvegarde & restauration</td>
-                <td data-label="Service">Migration données vers nouveau PC</td>
-                <td data-label="Prix TTC"><strong>90 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Optimisation / sécurité -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
+            <td data-label="Service">Nettoyage / optimisation PC</td>
+            <td data-label="Entrée"><strong>50 €</strong></td>
+            <td data-label="Complexité"><strong>70 €</strong></td>
+            <td data-label="Conditions">Inclut mises à jour & nettoyage</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
+            <td data-label="Service">Suppression virus / malwares</td>
+            <td data-label="Entrée"><strong>65 €</strong></td>
+            <td data-label="Complexité"><strong>85 €</strong></td>
+            <td data-label="Conditions">Selon gravité / volume de fichiers</td>
+          </tr>
 
-              <!-- Réinstallation & config -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
-                <td data-label="Service">Réinstallation Windows (sans sauvegarde)</td>
-                <td data-label="Prix TTC"><strong>110 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
-                <td data-label="Service">Réinstallation + sauvegarde fichiers (petit volume)</td>
-                <td data-label="Prix TTC"><strong>140 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
-                <td data-label="Service">Installation logiciels essentiels</td>
-                <td data-label="Prix TTC"><strong>50 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Réinstallation & configuration -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
+            <td data-label="Service">Réinstallation Windows (sans sauvegarde)</td>
+            <td data-label="Entrée"><strong>90 €</strong></td>
+            <td data-label="Complexité"><strong>120 €</strong></td>
+            <td data-label="Conditions">Selon version & temps requis</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
+            <td data-label="Service">Réinstallation + sauvegarde / transfert (petit volume)</td>
+            <td data-label="Entrée"><strong>120 €</strong></td>
+            <td data-label="Complexité"><strong>150 €</strong></td>
+            <td data-label="Conditions">Supplément si volumétrie importante</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">⚙️ Réinstallation & configuration</td>
+            <td data-label="Service">Installation logiciel(s) essentiels</td>
+            <td data-label="Entrée"><strong>40 €</strong></td>
+            <td data-label="Complexité"><strong>60 €</strong></td>
+            <td data-label="Conditions">Selon nombre de logiciels</td>
+          </tr>
 
-              <!-- Matériel -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
-                <td data-label="Service">Installation imprimante / périphérique</td>
-                <td data-label="Prix TTC"><strong>50 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
-                <td data-label="Service">Remplacement disque dur / SSD (hors pièces)</td>
-                <td data-label="Prix TTC"><strong>70 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
-                <td data-label="Service">Ajout mémoire RAM (hors pièces)</td>
-                <td data-label="Prix TTC"><strong>60 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Matériel & périphériques -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
+            <td data-label="Service">Installation imprimante / périphérique</td>
+            <td data-label="Entrée"><strong>30 €</strong></td>
+            <td data-label="Complexité"><strong>50 €</strong></td>
+            <td data-label="Conditions">Selon difficulté / compatibilité</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
+            <td data-label="Service">Remplacement disque dur / SSD (hors pièces)</td>
+            <td data-label="Entrée"><strong>60 €</strong></td>
+            <td data-label="Complexité"><strong>80 €</strong></td>
+            <td data-label="Conditions">Main d’œuvre uniquement</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🔧 Matériel & périphériques</td>
+            <td data-label="Service">Ajout mémoire RAM (hors pièces)</td>
+            <td data-label="Entrée"><strong>50 €</strong></td>
+            <td data-label="Complexité"><strong>70 €</strong></td>
+            <td data-label="Conditions">Selon installation / compatibilité</td>
+          </tr>
 
-              <!-- Réseau -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🌐 Réseau & Internet</td>
-                <td data-label="Service">Installation / configuration box</td>
-                <td data-label="Prix TTC"><strong>70 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🌐 Réseau & Internet</td>
-                <td data-label="Service">Mise en place réseau Wi-Fi / câblé</td>
-                <td data-label="Prix TTC"><strong>90 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Réseau & Internet -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🌐 Réseau & Internet</td>
+            <td data-label="Service">Installation / configuration box / modem</td>
+            <td data-label="Entrée"><strong>60 €</strong></td>
+            <td data-label="Complexité"><strong>80 €</strong></td>
+            <td data-label="Conditions">Selon complexité FAI / logement</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🌐 Réseau & Internet</td>
+            <td data-label="Service">Mise en place réseau Wi-Fi / câblé (petit réseau)</td>
+            <td data-label="Entrée"><strong>80 €</strong></td>
+            <td data-label="Complexité"><strong>100 €</strong></td>
+            <td data-label="Conditions">Maison / surface modérée</td>
+          </tr>
 
-              <!-- Sécurité -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
-                <td data-label="Service">Installation / paramétrage antivirus</td>
-                <td data-label="Prix TTC"><strong>50 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
-                <td data-label="Service">Conseils cybersécurité (1h)</td>
-                <td data-label="Prix TTC"><strong>70 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Sécurité / Formation -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
+            <td data-label="Service">Installation / paramétrage antivirus</td>
+            <td data-label="Entrée"><strong>40 €</strong></td>
+            <td data-label="Complexité"><strong>60 €</strong></td>
+            <td data-label="Conditions">Selon licence & nombre de postes</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
+            <td data-label="Service">Conseils cybersécurité (1 h)</td>
+            <td data-label="Entrée"><strong>60 €</strong></td>
+            <td data-label="Complexité"><strong>80 €</strong></td>
+            <td data-label="Conditions">Audit léger, bonnes pratiques</td>
+          </tr>
 
-              <!-- Formation -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">📚 Formation & accompagnement</td>
-                <td data-label="Service">Initiation bureautique / internet (1h)</td>
-                <td data-label="Prix TTC"><strong>60 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">📚 Formation & accompagnement</td>
-                <td data-label="Service">Formation réseaux sociaux (1h)</td>
-                <td data-label="Prix TTC"><strong>60 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">📚 Formation & accompagnement</td>
+            <td data-label="Service">Formation / accompagnement 1 h (bureautique, internet…)</td>
+            <td data-label="Entrée"><strong>50 €</strong></td>
+            <td data-label="Complexité"><strong>70 €</strong></td>
+            <td data-label="Conditions">Selon niveau & lieu d’intervention</td>
+          </tr>
 
-              <!-- Maison connectée -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
-                <td data-label="Service">Installation caméra IP / domotique simple</td>
-                <td data-label="Prix TTC"><strong>80 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
-                <td data-label="Service">Mise en service TV / box multimédia</td>
-                <td data-label="Prix TTC"><strong>50 €</strong></td>
-                <td data-label="Conditions">Inclus ≤ 20 km</td>
-              </tr>
+          <!-- Maison connectée -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
+            <td data-label="Service">Installation caméra IP / domotique simple</td>
+            <td data-label="Entrée"><strong>70 €</strong></td>
+            <td data-label="Complexité"><strong>100 €</strong></td>
+            <td data-label="Conditions">Selon distance / configuration</td>
+          </tr>
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
+            <td data-label="Service">Mise en service TV / box multimédia</td>
+            <td data-label="Entrée"><strong>40 €</strong></td>
+            <td data-label="Complexité"><strong>60 €</strong></td>
+            <td data-label="Conditions">Smart TV, apps, réseau…</td>
+          </tr>
 
-              <!-- Pros (info) -->
-              <tr class="row">
-                <td class="cat" data-label="Catégorie">👔 Solutions pros (TPE/PME)</td>
-                <td data-label="Service">Maintenance parc (1–20 postes), sauvegardes & sécurisation réseau</td>
-                <td data-label="Prix TTC"><strong>Sur devis</strong></td>
-                <td data-label="Conditions">Déplacement facturé selon distance — <a href="pro.html">voir nos offres</a></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="pricing-note">✅ Déplacement inclus dans un rayon de 20 km autour de Villeneuve-sur-Lot. Au-delà : +0,50 €/km (aller-retour). Pièces matérielles non incluses lorsque mentionnées.</p>
-        </div>
+          <!-- Pros (info) -->
+          <tr class="row">
+            <td class="cat" data-label="Catégorie">👔 Solutions pros (TPE/PME)</td>
+            <td data-label="Service">Maintenance parc, sauvegardes & sécurisation réseau</td>
+            <td data-label="Entrée"><strong>—</strong></td>
+            <td data-label="Complexité"><strong>Sur devis</strong></td>
+            <td data-label="Conditions">Déplacement selon distance — <a href="pro.html">voir nos offres</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-        <div class="cta-row" style="margin-top:14px">
-          <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
-          <a class="btn" href="mailto:contact@speedcomputer47.fr?subject=Demande%20devis%20particulier%20SpeedComputer47">🧾 Demande de devis express</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      <p class="pricing-note">
+        ✅ Déplacement inclus dans un rayon de <strong>20 km</strong> autour de Villeneuve-sur-Lot.
+        Au-delà&nbsp;: <strong>+0,50 €/km</strong> (aller-retour).
+        Pour les cas complexes / volumétrie importante, un <strong>devis personnalisé</strong> est réalisé.
+        Les <strong>pièces matérielles</strong> ne sont pas incluses lorsque mentionnées.
+      </p>
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
