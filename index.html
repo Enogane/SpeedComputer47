@@ -45,22 +45,84 @@
   <link rel="preload" as="image" href="background.png">
   <link rel="preload" as="image" href="logo.png">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Ajouts styles (avis + icônes + séparation) -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Icônes dans boutons/menu */
+    .btn .icon, .dropdown-item .icon{
+      height:22px; width:22px; object-fit:contain; border-radius:4px;
+    }
+
+    /* Dropdown "Avis" (header) */
+    .dropdown{ position:relative; }
+    .dropdown-menu{
+      position:absolute; right:0; top:calc(100% + 8px);
+      min-width:220px; z-index:50; display:none; padding:8px;
+      background:#0b1220; border:1px solid #1f2937; border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.35);
+    }
+    .dropdown.open .dropdown-menu{ display:block; }
+    .dropdown-item{
+      display:flex; align-items:center; gap:10px; padding:8px 10px;
+      border-radius:10px; color:#e5e7eb; text-decoration:none;
+    }
+    .dropdown-item:hover{ background:rgba(14,165,233,.15); }
+
+    /* Bloc réseaux sociaux sous contact */
+    .social-row{ margin: 12px auto 20px; }
+    .social-row .social-icons{ display:flex; flex-wrap:wrap; gap:12px; }
+    .btn.social{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; }
+
+    /* Séparateur avant footer */
+    hr.sep{ border:0; height:1px; background:rgba(255,255,255,.08); margin:16px 0 0; }
+  </style>
 </head>
 <body>
   <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- HEADER (commun) -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
         <img src="logo.png" alt="SpeedComputer47 logo">
         <span class="site-name">SpeedComputer47</span>
       </a>
+
       <nav class="links" aria-label="Navigation">
         <a class="btn ghost" href="index.html">Accueil</a>
         <a class="btn ghost" href="particuliers.html">Particuliers</a>
         <a class="btn ghost" href="pro.html">Entreprises</a>
+
+        <!-- Bouton Avis (menu déroulant) -->
+        <div class="dropdown" id="reviewsDropdown">
+          <button class="btn" id="btnReviews" aria-expanded="false" aria-controls="reviewsMenu">⭐ Avis</button>
+          <div class="dropdown-menu" id="reviewsMenu" role="menu">
+            <a class="dropdown-item" target="_blank" rel="noopener"
+               href="https://g.page/r/CbsMlPzTZUw2EAE/review">
+              <img class="icon" src="google-avis.jpg" alt="Google"> Google
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener"
+               href="https://www.facebook.com/speedcomputer47/">
+              <img class="icon" src="Facebook_icon.svg.png" alt="Facebook"> Facebook
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener"
+               href="https://www.pagesjaunes.fr/pros/64032762">
+              <img class="icon" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
+            </a>
+            <a class="dropdown-item" target="_blank" rel="noopener"
+               href="https://www.linkedin.com/company/speedcomputer47/">
+              <img class="icon" src="linkedin-logo.png" alt="LinkedIn"> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Bouton Contact / Devis -->
+        <a class="btn ghost" href="#contact">📩 Contact / Devis</a>
+
+        <!-- Appel -->
         <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
       </nav>
     </div>
@@ -119,7 +181,6 @@
       </div>
     </section>
 
-  
     <!-- ZONE -->
     <section id="zone">
       <div class="container">
@@ -144,9 +205,8 @@
           <p class="muted">Réponse rapide. Expliquez votre besoin, on vous rappelle.</p>
           <p class="big">📞 <a href="tel:+33666235143">06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a></p>
           <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-                
-
         </div>
+
         <div class="card">
           <h3>Demande de devis express</h3>
           <form id="devisForm">
@@ -160,66 +220,97 @@
         </div>
       </div>
     </section>
+
+    <!-- AVIS / RÉSEAUX SOCIAUX -->
+    <div class="social-row container">
+      <h2 class="section-title">⭐ Laisser un avis sur nos réseaux sociaux</h2>
+      <div class="social-icons">
+        <a class="btn social" target="_blank" rel="noopener"
+           href="https://g.page/r/CbsMlPzTZUw2EAE/review" title="Avis Google" aria-label="Avis Google">
+          <img class="icon" src="google-avis.jpg" alt="Google">
+          <span>Google</span>
+        </a>
+
+        <a class="btn ghost social" target="_blank" rel="noopener"
+           href="https://www.facebook.com/speedcomputer47/" title="Facebook" aria-label="Facebook">
+          <img class="icon" src="Facebook_icon.svg.png" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+
+        <a class="btn ghost social" target="_blank" rel="noopener"
+           href="https://www.pagesjaunes.fr/pros/64032762" title="PagesJaunes" aria-label="PagesJaunes">
+          <img class="icon" src="pagejaune.webp" alt="PagesJaunes">
+          <span>PagesJaunes</span>
+        </a>
+
+        <a class="btn ghost social" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/company/speedcomputer47/" title="LinkedIn" aria-label="LinkedIn">
+          <img class="icon" src="linkedin-logo.png" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Séparateur net avant le footer -->
+    <hr class="sep">
   </main>
-        
-<div class="social-row">
 
-  <h2 class="section-title">⭐ Laisser un avis sur nos réseaux sociaux</h2>
- 
-<div>
-  <a class="btn social" target="_blank" rel="noopener"
-     href="https://g.page/r/CbsMlPzTZUw2EAE/review" title="Avis Google" aria-label="Avis Google">
-    <img class="icon" src="les-avis-google-business.jpg.webp" alt="Google">
-    
-  </a>
-
-  <a class="btn ghost social" target="_blank" rel="noopener"
-     href="https://www.facebook.com/speedcomputer47/" title="Facebook" aria-label="Facebook">
-    <img class="icon" src="Facebook_icon.svg.png" alt="Facebook">
-    
-  </a>
-
-  <a class="btn ghost social" target="_blank" rel="noopener"
-     href="https://www.pagesjaunes.fr/pros/64032762" title="PagesJaunes" aria-label="PagesJaunes">
-    <img class="icon" src="pagejaune.webp" alt="PagesJaunes">
-    
-  </a>
-
-  <a class="btn ghost social" target="_blank" rel="noopener"
-     href="https://www.linkedin.com/company/speedcomputer47/" title="LinkedIn" aria-label="LinkedIn">
-    <img class="icon" src="linkedin-logo.png" alt="LinkedIn">
-    
-  </a>
-</div
   <!-- FOOTER -->
   <footer>
     <div class="container foot">
       <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales & Politique de confidentialité</a></p>
+      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
     </div>
-
-     </a>
-    
   </footer>
 
+  <!-- Bouton appel flottant -->
   <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
 
+  <!-- SCRIPTS -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Année auto
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
 
-    // Devis express mailto
+    // Devis express -> mailto
     const form = document.getElementById('devisForm');
-    form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      const d = new FormData(form);
-      const subject = encodeURIComponent('Demande de devis – SpeedComputer47');
-      const body = encodeURIComponent(
-        `Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nBesoin:\n${d.get('message')}`
-      );
-      window.location.href = `mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
-    });
-    
+    if (form){
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const d = new FormData(form);
+        const subject = encodeURIComponent('Demande de devis – SpeedComputer47');
+        const body = encodeURIComponent(
+          `Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nBesoin:\n${d.get('message')}`
+        );
+        window.location.href = `mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
+      });
+    }
+
+    // Dropdown "Avis"
+    const dd = document.getElementById('reviewsDropdown');
+    const btnReviews = document.getElementById('btnReviews');
+    const menu = document.getElementById('reviewsMenu');
+
+    if (btnReviews && dd && menu){
+      btnReviews.addEventListener('click', (e)=>{
+        e.preventDefault();
+        dd.classList.toggle('open');
+        btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
+      });
+      document.addEventListener('click', (e)=>{
+        if (!dd.contains(e.target)) {
+          dd.classList.remove('open');
+          btnReviews.setAttribute('aria-expanded','false');
+        }
+      });
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape'){
+          dd.classList.remove('open');
+          btnReviews.setAttribute('aria-expanded','false');
+        }
+      });
+    }
   </script>
 </body>
 </html>
