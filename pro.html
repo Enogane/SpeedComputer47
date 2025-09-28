@@ -44,45 +44,40 @@
     }
   }
   </script>
-</head>
-<body class="bg"><!-- si ta classe de fond est différente, remplace 'bg' -->
 
-  <!-- Header commun -->
+
+  <!-- HEADER (commun) -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="container nav">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="SpeedComputer47" class="brand-logo" />
-        <span class="brand-title">SpeedComputer47</span>
+        <img src="logo.png" alt="SpeedComputer47 logo">
+        <span class="site-name">SpeedComputer47</span>
       </a>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="particuliers.html">Particuliers</a></li>
-          <li><a class="active" href="pro.html">Professionnels</a></li>
-          <li><a href="mentions.html">Mentions</a></li>
-        </ul>
+      </a>>
+      <nav class="links" aria-label="Navigation">
+        <a class="btn ghost" href="index.html">Accueil</a>
+        <a class="btn ghost" href="particuliers.html" aria-current="page">Particuliers</a>
+        <a class="btn ghost" href="pro.html">Entreprises</a>
+        <a class="btn ghost" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Voir nos avis</a>
+        <a class="btn ghost" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mentions.html">Mentions légales</a>
+        <a class="btn primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero (même style que les autres pages) -->
+  <!-- Hero -->
   <section class="hero hero--pro">
     <div class="container">
       <h1>Support & maintenance informatique pour professionnels</h1>
       <p class="lead">
-        Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité et réseau.<br>
-        <strong>Essai 1 mois sans engagement</strong>, puis <strong>engagement 12 mois</strong> au tarif dégressif.
+        Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité, réseau.
+        <br/>Essai 1 mois sans engagement, puis tarif dégressif avec engagement 12 mois.
       </p>
       <div class="hero-actions">
         <a href="mailto:contact@speedcomputer47.fr" class="btn btn-primary">Demander un devis</a>
         <a href="#forfaits" class="btn">Voir les forfaits</a>
       </div>
-      <!-- Petits “kpis” (réutilise la grille de style existante) -->
-      <ul class="kpis">
-        <li><span>≤ 24h</span><small>Délais d’intervention Pro</small></li>
-        <li><span>25–40 €</span><small>/poste/mois (selon formule)</small></li>
-        <li><span>20 km</span><small>inclus (au-delà +0,50 €/km)</small></li>
-      </ul>
     </div>
   </section>
 
@@ -92,14 +87,14 @@
     <section class="section">
       <div class="container">
         <h2>Interventions ponctuelles</h2>
-        <p class="muted">Pour les besoins immédiats, sans engagement. Déplacement ≤ 20 km inclus.</p>
+        <p class="muted">Pour les besoins immédiats, sans engagement.</p>
 
         <div class="cards cards--3">
           <article class="card">
             <h3>Intervention sur site (1h)</h3>
             <p>Dépannage, diagnostic, configuration.</p>
             <p class="price"><strong>75 € HT</strong> <span class="muted">/ 90 € TTC</span></p>
-            <p class="note">Au-delà de 20 km : +0,50 €/km.</p>
+            <p class="note">Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km.</p>
           </article>
 
           <article class="card">
@@ -117,19 +112,19 @@
 
         <div class="cards cards--3">
           <article class="card">
-            <h3>Installation / réinstallation poste</h3>
-            <p>Poste prêt à l’emploi (hors migration complexe).</p>
+            <h4>Installation / réinstallation poste</h4>
+            <p>Poste prêt à l’emploi (sans migration complexe).</p>
             <p class="price"><strong>120 € HT</strong> <span class="muted">/ 144 € TTC</span></p>
           </article>
 
           <article class="card">
-            <h3>Migration données & paramétrage</h3>
+            <h4>Migration données & paramétrage</h4>
             <p>PC→PC, disque→PC, profils, logiciels.</p>
             <p class="price"><strong>150 € HT</strong> <span class="muted">/ 180 € TTC</span></p>
           </article>
 
           <article class="card">
-            <h3>Audit réseau & sécurité</h3>
+            <h4>Audit réseau & sécurité</h4>
             <p>État des lieux, rapport & recommandations.</p>
             <p class="price"><strong>200 € HT</strong> <span class="muted">/ 240 € TTC</span></p>
           </article>
@@ -141,7 +136,7 @@
     <section id="forfaits" class="section section--alt">
       <div class="container">
         <h2>Forfaits maintenance — au poste</h2>
-        <p class="muted">Testez 1 mois sans engagement, puis bénéficiez du tarif dégressif avec l’engagement 12 mois.</p>
+        <p class="muted">Essai 1 mois sans engagement, puis prix dégressif avec engagement 12 mois.</p>
 
         <div class="table-wrapper">
           <table class="table">
@@ -205,7 +200,8 @@
         </div>
 
         <p class="note">
-          Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km. Ajout d’un poste : +30 €/poste/mois (sans engagement) ou 25 €/poste/mois (engagé).
+          Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km.
+          Ajout d’un poste hors tranche : +30 €/poste/mois (sans engagement) ou 25 €/poste/mois (engagé).
         </p>
 
         <div class="actions">
@@ -284,7 +280,7 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ courte -->
     <section class="section">
       <div class="container">
         <h2>FAQ</h2>
@@ -305,7 +301,7 @@
       </div>
     </section>
 
-    <!-- CTA final -->
+    <!-- Call to action final -->
     <section class="section section--cta">
       <div class="container">
         <h2>Parlons de votre besoin</h2>
@@ -319,7 +315,7 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer commun -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> SpeedComputer47 — Villeneuve-sur-Lot (47)</p>
@@ -327,6 +323,14 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
+
+
+
+
