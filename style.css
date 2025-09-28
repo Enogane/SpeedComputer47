@@ -97,7 +97,7 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
   /* Icônes dans les boutons */
   .btn .icon {
     height: 1em;          /* s’aligne sur la taille du texte */
-    width: 20px;
+    width: 40px;
     margin-right: 8px;
     vertical-align: -2px;  /* léger alignement visuel */
     border-radius: 2px;
