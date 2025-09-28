@@ -94,16 +94,43 @@ footer{border-top:1px solid var(--line);background:#0b0d10}
 .service-card h3{margin:0 0 6px;font-size:18px}
 .service-card p{margin:0;color:#cbd3dc;line-height:1.5}
 
-  /* Icônes dans les boutons */
-  .btn .icon {
-    height: 1em;          /* s’aligne sur la taille du texte */
-    width: 40px;
-    margin-right: 8px;
-    vertical-align: -2px;  /* léger alignement visuel */
-    border-radius: 2px;
-  }
-  .btn.ghost .icon { opacity: 0.9; }
+/* Zone réseaux sociaux - taille et alignement icônes + boutons */
+.social-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
 
+.social-label{
+  font-weight:600;
+  color:#cbd5e1; /* gris clair */
+  margin-right:8px;
+}
+
+/* Boutons sociaux : on garde le style .btn/.ghost existant, on ajuste l'intérieur */
+.btn.social{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px;           /* un peu plus grand */
+  border-radius:12px;
+}
+
+/* Icônes plus grandes */
+.btn.social .icon{
+  height:26px;                  /* ⇦ taille icône (augmente si tu veux 28–32px) */
+  width:26px;
+  object-fit:contain;
+  border-radius:6px;            /* coins doux pour logos carrés */
+}
+
+/* Mobile : un chouïa plus compact */
+@media (max-width:640px){
+  .btn.social{ padding:8px 12px; }
+  .btn.social .icon{ height:22px; width:22px; }
+}
 
 /* Map */
 .map-img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
