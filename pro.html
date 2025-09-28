@@ -1,120 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Informatique pour entreprises (TPE/PME) | SpeedComputer47</title>
-  <meta name="description" content="Maintenance, support N1/N2 illimité, supervision proactive, cybersécurité, sauvegardes, Microsoft 365/Google Workspace, réseau & Wi-Fi pro.">
-  <link rel="canonical" href="https://speedcomputer47.fr/pro.html">
+  <title>Professionnels — Maintenance & Support Informatique | SpeedComputer47</title>
+  <meta name="description" content="Support et maintenance informatique pour TPE/PME : interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité, réseau. Essai 1 mois, engagement 12 mois dégressif." />
+  <link rel="icon" href="/favicon.ico" />
 
-  <meta name="google-site-verification" content="YOUR_GSC_TOKEN" />
+  <!-- Styles minimalistes, sans dépendances -->
+  <style>
+    :root{
+      --bg:#0b0f1a; --card:#111827; --muted:#9ca3af; --text:#e5e7eb; --primary:#22d3ee; --accent:#a78bfa; --ok:#34d399; --warn:#f59e0b; --danger:#f87171;
+      --ring:0 0 0 3px rgba(34,211,238,.25);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial; background:linear-gradient(180deg,#0b0f1a 0%, #0f172a 100%); color:var(--text);}
+    a{color:var(--primary); text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1100px; margin:auto; padding:24px}
+    .grid{display:grid; gap:16px}
+    .grid-2{grid-template-columns:1fr; }
+    .grid-3{grid-template-columns:1fr; }
+    @media(min-width:860px){ .grid-2{grid-template-columns:1.1fr .9fr} .grid-3{grid-template-columns:repeat(3,1fr)} }
+    .card{background:linear-gradient(180deg,#101827 0%, #0d1324 100%); border:1px solid #1f2937; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .badge{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.12); color:#cbd5e1; font-size:12px}
+    .title{font-size: clamp(24px,3.5vw,44px); line-height:1.1; margin:8px 0 12px}
+    .subtitle{color:var(--muted); font-size:16px}
+    .kpis{display:flex; gap:16px; flex-wrap:wrap; margin-top:16px}
+    .kpi{background:#0c1224; border:1px solid #1e293b; border-radius:12px; padding:12px 14px; min-width:120px}
+    .kpi b{display:block; font-size:18px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; font-weight:600; border:1px solid #1f2937; background:#0c1426}
+    .btn-primary{background:linear-gradient(90deg, var(--primary), #60a5fa); color:#0b1020; border:none}
+    .btn-secondary{background:#0c1426; color:var(--text)}
+    .btn:hover{box-shadow:var(--ring)}
+    .section-title{font-size: clamp(20px,2.5vw,28px); margin:0 0 8px}
+    .muted{color:var(--muted)}
+    table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; background:#0d1428; border:1px solid #1f2937}
+    th,td{padding:12px 14px; text-align:left; vertical-align:top}
+    thead th{background:#0b1224; color:#e2e8f0; font-weight:700; border-bottom:1px solid #1f2937}
+    tbody tr:not(:last-child) td{border-bottom:1px solid #172033}
+    .chip{display:inline-block; padding:4px 8px; border-radius:999px; background:#0c172e; border:1px solid #1f2937; font-size:12px; color:#cbd5e1}
+    .list{margin:0; padding-left:18px}
+    .list li{margin:6px 0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .divider{height:1px; background:linear-gradient(90deg,transparent, #1f2a44, transparent); margin:24px 0}
+    footer{border-top:1px solid #1f2937; margin-top:32px; padding-top:24px; color:var(--muted)}
+    .note{font-size:13px; color:#9aa5b1}
+    .ok{color:var(--ok)} .warn{color:var(--warn)}
+    .pill{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; border:1px solid #1f2937; background:#0c1528; color:#d1d5db; font-size:12px}
+    .hero{position:relative; overflow:hidden}
+    .hero::after{content:""; position:absolute; inset:-60px -80px auto auto; width:360px; height:360px; background:radial-gradient(closest-side, rgba(167,139,250,.22), transparent); filter:blur(12px); transform:translate(20px,-20px)}
+    .shadow-ring{box-shadow:0 0 0 1px #1f2937, 0 15px 35px rgba(0,0,0,.25)}
+    .price{font-weight:800; font-size:18px}
+    .small{font-size:12px; color:#9aa5b1}
+  </style>
 
-  <!-- Consent & GTM -->
-  <script>
-    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-    gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+  <!-- Données structurées LocalBusiness (adapter N° tel / adresse si besoin) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"SpeedComputer47",
+    "image":"https://speedcomputer47.fr/assets/logo.png",
+    "url":"https://speedcomputer47.fr",
+    "telephone":"+33 6 00 00 00 00",
+    "address":{"@type":"PostalAddress","addressLocality":"Villeneuve-sur-Lot","addressRegion":"Nouvelle-Aquitaine","postalCode":"47300","addressCountry":"FR"},
+    "areaServed":"Lot-et-Garonne",
+    "sameAs":["https://www.linkedin.com/company/speedcomputer47","https://www.facebook.com/speedcomputer47"]
+  }
   </script>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NV4GWPHR');</script>
-
-  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html"><img src="logo.png" alt="Logo"><span class="site-name">SpeedComputer47</span></a>
-      <nav class="links">
-        <a class="btn ghost" href="index.html">Accueil</a>
-        <a class="btn ghost" href="particuliers.html">Particuliers</a>
-        <a class="btn ghost active" href="pro.html">Entreprises</a>
-        <a class="btn" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">⭐ Voir nos avis</a>
-        <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">LinkedIn</a>
-        <a class="btn ghost" href="mentions.html">Mentions légales</a>
-        <a class="btn primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-      </nav>
+<body>
+  <header class="container hero">
+    <span class="badge">TPE / PME — Support & Maintenance</span>
+    <h1 class="title">Support informatique pro, simple et clair.<br/>Essai 1 mois, puis forfait au poste.</h1>
+    <p class="subtitle">Interventions ponctuelles, contrats de maintenance, sauvegardes, cybersécurité, réseau. Délais rapides sur tout le Lot-et-Garonne.</p>
+    <div class="kpis">
+      <div class="kpi"><b>≤ 24h</b><span class="muted">Délai d’intervention (Pro)</span></div>
+      <div class="kpi"><b>à partir de 25€</b><span class="muted">/poste/mois (engagé 12 mois)</span></div>
+      <div class="kpi"><b>20 km</b><span class="muted">de déplacement inclus</span></div>
+    </div>
+    <div class="cta">
+      <a href="/contact.html" class="btn btn-primary">Demander un devis</a>
+      <a href="#forfaits" class="btn btn-secondary">Voir les forfaits</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero has-bg">
-      <div class="container hero-grid">
-        <div>
-          <h1>Informatique pour entreprises (TPE/PME)</h1>
-          <p class="lead">Contrats de maintenance, support N1/N2 illimité, supervision proactive, cybersécurité, sauvegardes, Microsoft 365/Google Workspace, réseau & Wi-Fi pro.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="tel:+33666235143">📞 Audit 15 min gratuit</a>
-            <a class="btn" href="#packs">Demander une offre</a>
-          </div>
+  <main class="container">
+    <!-- Interventions ponctuelles -->
+    <section id="interventions" class="card shadow-ring">
+      <h2 class="section-title">Interventions ponctuelles</h2>
+      <p class="muted">Pour les besoins immédiats sans engagement.</p>
+      <div class="divider"></div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Sur site (1h)</h3>
+          <p class="muted">Dépannage, diagnostic, configuration.</p>
+          <p class="price">75 € HT <span class="small">/ 90 € TTC</span></p>
+          <p class="small">Déplacement ≤ 20 km inclus, au-delà +0,50 €/km.</p>
         </div>
-        <aside class="card">
-          <h3>Services clés</h3>
-          <ul class="list">
-            <li>• Helpdesk illimité (téléphone / téléassistance)</li>
-            <li>• Interventions sur site (selon formule)</li>
-            <li>• Supervision & mises à jour</li>
-            <li>• Sauvegardes locales & cloud, PRA</li>
-            <li>• Sécurité : durcissement, anti-malware, audit</li>
-            <li>• Messagerie pro (M365/Google), migrations</li>
-            <li>• Réseau & Wi-Fi professionnel</li>
-            <li>• Sensibilisation & formations</li>
-          </ul>
-        </aside>
+        <div class="card">
+          <h3>Demi-journée (4h)</h3>
+          <p class="muted">Interventions lourdes, déploiements.</p>
+          <p class="price">240 € HT <span class="small">/ 288 € TTC</span></p>
+        </div>
+        <div class="card">
+          <h3>Journée (7h)</h3>
+          <p class="muted">Projets, migrations, multi-postes.</p>
+          <p class="price">420 € HT <span class="small">/ 504 € TTC</span></p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>Installation / réinstallation poste</h4>
+          <p class="muted">Sans migration complexe.</p>
+          <p class="price">120 € HT <span class="small">/ 144 € TTC</span></p>
+        </div>
+        <div class="card">
+          <h4>Migration données & paramétrage</h4>
+          <p class="muted">PC→PC, disque→PC, profils.</p>
+          <p class="price">150 € HT <span class="small">/ 180 € TTC</span></p>
+        </div>
+        <div class="card">
+          <h4>Audit réseau & sécurité</h4>
+          <p class="muted">Rapport + recommandations.</p>
+          <p class="price">200 € HT <span class="small">/ 240 € TTC</span></p>
+        </div>
       </div>
     </section>
 
-    <section class="container">
-      <h2 class="section-title">Formules mensuelles (HT / poste / mois)</h2>
-      <div class="card">
-        <table class="table">
-          <thead>
-            <tr class="row">
-              <th>Formule</th><th>1–5</th><th>6–10</th><th>11–20</th><th>Inclus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="row"><td><strong>Light</strong></td><td>25€</td><td>22€</td><td>20€</td><td>Support N1/N2 de base, mises à jour essentielles, assistance ponctuelle</td></tr>
-            <tr class="row"><td><strong>Standard</strong></td><td>45€</td><td>42€</td><td>40€</td><td>Support N1/N2 illimité, assistance à distance illimitée, 1 intervention / mois, maintenance préventive</td></tr>
-            <tr class="row"><td><strong>Premium</strong></td><td>75€</td><td>72€</td><td>70€</td><td>Interventions illimitées, supervision proactive, audit cybersécurité annuel, formation sensibilisation</td></tr>
-          </tbody>
-        </table>
+    <!-- Forfaits au poste -->
+    <section id="forfaits" class="card shadow-ring">
+      <h2 class="section-title">Forfaits maintenance au poste</h2>
+      <p class="muted">Essai 1 mois sans engagement, puis tarif dégressif avec engagement 12 mois.</p>
+      <div class="divider"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Formule</th>
+            <th>Nombre de postes</th>
+            <th>Contenu</th>
+            <th>Essai 1 mois<br/><span class="small">sans engagement</span></th>
+            <th>Engagement 12 mois<br/><span class="small ok">prix dégressif</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Essentielle</strong></td>
+            <td>1 à 5</td>
+            <td>
+              <ul class="list">
+                <li>Mises à jour & optimisation</li>
+                <li>Antivirus géré</li>
+                <li>Support tél. & prise en main à distance</li>
+                <li>Intervention sous 48h</li>
+              </ul>
+            </td>
+            <td><span class="price">40 € HT</span> / poste</td>
+            <td><span class="price">35 € HT</span> / poste</td>
+          </tr>
+          <tr>
+            <td><strong>Pro</strong></td>
+            <td>6 à 10</td>
+            <td>
+              <ul class="list">
+                <li>Tous les services “Essentielle”</li>
+                <li>Sauvegarde cloud/locale incluse (jusqu’à 500 Go)</li>
+                <li>Intervention sous 24h</li>
+                <li>2h de formation/an offerte</li>
+              </ul>
+            </td>
+            <td><span class="price">35 € HT</span> / poste</td>
+            <td><span class="price">30 € HT</span> / poste</td>
+          </tr>
+          <tr>
+            <td><strong>Premium</strong></td>
+            <td>11 et +</td>
+            <td>
+              <ul class="list">
+                <li>Tous les services “Pro”</li>
+                <li>Audit annuel du parc</li>
+                <li>Supervision réseau & sécurité en continu</li>
+                <li>Intervention prioritaire sous 12h</li>
+                <li>Formation cybersécurité incluse</li>
+              </ul>
+            </td>
+            <td><span class="price">30 € HT</span> / poste</td>
+            <td><span class="price">25 € HT</span> / poste</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="note" style="margin-top:10px">
+        Déplacement ≤ 20 km inclus. Au-delà, +0,50 €/km. Ajout d’un poste hors tranche : +30 € /poste/mois (sans engagement) ou 25 € /poste/mois (engagé).
+      </p>
+
+      <div class="cta">
+        <a href="/contact.html" class="btn btn-primary">Tester 1 mois sans engagement</a>
+        <a href="/contact.html" class="btn btn-secondary">Recevoir un contrat 12 mois</a>
       </div>
     </section>
 
-    <section class="container">
-      <h2 class="section-title">Services sur devis</h2>
-      <div class="services-grid">
-        <div class="service-card"><h3>ERP/CRM & intégrations</h3><p>Paramétrage, déploiement, intégrations, support versions.</p></div>
-        <div class="service-card"><h3>Hébergement/Cloud</h3><p>Sites/applications, serveurs virtualisés, cloud privé/hybride.</p></div>
-        <div class="service-card"><h3>Mobilité & MDM</h3><p>Déploiement smartphones/tablettes, gestion MDM, sécurisation.</p></div>
-        <div class="service-card"><h3>VoIP & UC</h3><p>Solutions VoIP, intégration téléphonie + messagerie + réunion.</p></div>
-        <div class="service-card"><h3>BI & Reporting</h3><p>Tableaux de bord, rapports, aide à la décision.</p></div>
-        <div class="service-card"><h3>Automatisation / API</h3><p>Workflows internes, intégrations (API, Zapier), scripts.</p></div>
-        <div class="service-card"><h3>SLA & 24/7</h3><p>Disponibilité renforcée, temps de réponse/ résolution garantis.</p></div>
-        <div class="service-card"><h3>Conseil & Transfo</h3><p>Feuille de route IT, gestion de projet & migrations.</p></div>
-        <div class="service-card"><h3>Sécurité avancée</h3><p>Pentest, audits RGPD/ISO, SOC partenaire.</p></div>
-        <div class="service-card"><h3>PRA / PCA</h3><p>Continuité d’activité, multi-sites, haute dispo.</p></div>
-        <div class="service-card"><h3>IoT / domotique indus</h3><p>Intégration capteurs/automation selon secteur.</p></div>
-        <div class="service-card"><h3>Multi-sites / langues</h3><p>Parcs multi-villes/pays, support multilingue.</p></div>
-      </div>
-      <div class="cta-row" style="margin-top:12px">
-        <a class="btn primary" href="tel:+33666235143">📞 Nous appeler</a>
-        <a class="btn" href="mailto:contact@speedcomputer47.fr">✉️ Demander un devis</a>
+    <!-- Sécurité & Réseau -->
+    <section id="securite-reseau" class="card shadow-ring">
+      <h2 class="section-title">Sécurité & Réseau</h2>
+      <div class="divider"></div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="pill">Antivirus Pro</div>
+          <h3>Protection par poste</h3>
+          <p class="muted">Déploiement centralisé, supervision, alertes.</p>
+          <p class="price">40 € HT <span class="small">+ abonnement logiciel</span></p>
+        </div>
+        <div class="card">
+          <div class="pill">Pare-feu</div>
+          <h3>Firewall & filtrage web</h3>
+          <p class="muted">Sécurisation de périmètre, VPN, politiques.</p>
+          <p class="price">Sur devis</p>
+        </div>
+        <div class="card">
+          <div class="pill">Sauvegardes</div>
+          <h3>Local & Cloud</h3>
+          <p class="muted">Stratégie 3-2-1, tests de restauration, monitoring.</p>
+          <p class="price">Inclus en Pro/Premium • Options sur mesure</p>
+        </div>
       </div>
     </section>
+
+    <!-- Formations -->
+    <section id="formations" class="card shadow-ring">
+      <h2 class="section-title">Formations & accompagnement</h2>
+      <div class="divider"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th><th>Prix HT</th><th>Conditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Formation bureautique (Word, Excel, Teams…)</td>
+            <td>100 € / h</td>
+            <td>Sur site, minimum 2h</td>
+          </tr>
+          <tr>
+            <td>Sensibilisation cybersécurité (atelier collectif)</td>
+            <td>300 €</td>
+            <td>Session 2h, 5–10 personnes</td>
+          </tr>
+          <tr>
+            <td>Accompagnement transition numérique</td>
+            <td>Sur devis</td>
+            <td>Diagnostic & plan d’action</td>
+          </tr>
+          <tr>
+            <td>Audit RGPD simplifié</td>
+            <td>Sur devis</td>
+            <td>Rapport & recommandations</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FAQ courte -->
+    <section id="faq" class="card shadow-ring">
+      <h2 class="section-title">Questions fréquentes</h2>
+      <div class="divider"></div>
+      <div class="grid">
+        <div class="card">
+          <h3>Comment fonctionne l’essai 1 mois ?</h3>
+          <p class="muted">Vous bénéficiez des services inclus dans la formule choisie pendant 30 jours, sans engagement. À l’issue, vous pouvez basculer vers l’engagement 12 mois (tarif dégressif) ou arrêter.</p>
+        </div>
+        <div class="card">
+          <h3>Pouvons-nous ajouter / retirer des postes ?</h3>
+          <p class="muted">Oui, à tout moment. Les ajouts sont facturés au prix par poste de votre formule. En engagement, le tarif par poste reste dégressif.</p>
+        </div>
+        <div class="card">
+          <h3>Zone d’intervention</h3>
+          <p class="muted">Lot-et-Garonne. Déplacement ≤ 20 km inclus depuis Villeneuve-sur-Lot. Au-delà, +0,50 €/km.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="card shadow-ring">
+      <h2 class="section-title">Parlons de votre besoin</h2>
+      <p class="muted">Un ticket ponctuel, un audit, ou un contrat au poste ? Nous répondons sous 24h.</p>
+      <div class="cta">
+        <a href="/contact.html" class="btn btn-primary">Demander un devis</a>
+        <a href="tel:+33600000000" class="btn btn-secondary">Appeler maintenant</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid grid-2">
+        <div>
+          <strong>SpeedComputer47</strong><br/>
+          Villeneuve-sur-Lot — Lot-et-Garonne<br/>
+          <a href="tel:+33600000000">+33 6 00 00 00 00</a> • <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a><br/>
+          <span class="muted">SIREN / Mentions légales sur la page dédiée.</span>
+        </div>
+        <div>
+          <span class="muted">© <span id="y"></span> SpeedComputer47 — Tous droits réservés.</span>
+        </div>
+      </div>
+    </footer>
   </main>
 
-  <footer>
-    <div class="container foot">
-      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales</a></p>
-    </div>
-  </footer>
-  <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
