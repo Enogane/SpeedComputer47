@@ -101,6 +101,36 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 /* Floating call */
 .floating-call{position:fixed;right:16px;bottom:16px;background:var(--brand);color:#0b0d10;padding:14px 16px;border-radius:999px;border:2px solid #0b0d10;font-weight:800;z-index:60;box-shadow:0 8px 30px #0008}
 
+/* Contact QR Code */
+.contact-qr {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-qr--card {
+  padding: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: inline-flex;
+}
+.contact-qr img {
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: white;
+  padding: 4px;
+  flex-shrink: 0;
+}
+.contact-qr p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
 /* Legal */
 .legal{padding-top:28px}
 .legal-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px}
