@@ -293,6 +293,21 @@
         }
       });
     }
+
+
+  // Modal QR
+  const qrBtn = document.getElementById('qrBtn');
+  const qrModal = document.getElementById('qrModal');
+  const qrClose = document.getElementById('qrClose');
+  if (qrBtn && qrModal && qrClose){
+    const openQR = ()=> qrModal.classList.add('open');
+    const closeQR = ()=> qrModal.classList.remove('open');
+    qrBtn.addEventListener('click', openQR);
+    qrClose.addEventListener('click', closeQR);
+    qrModal.addEventListener('click', (e)=>{ if(e.target === qrModal) closeQR(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeQR(); });
+  }
+    
   </script>
 <!-- Modal QR -->
 <div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
