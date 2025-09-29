@@ -69,10 +69,10 @@
   <header class="sc47-header">
     <div class="sc47-container">
       <!-- Brand -->
-      <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-        <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="64" height="64">
-        <span class="sc47-name">SpeedComputer47</span>
-      </a>
+<a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+  <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="84" height="84">
+  <span class="sc47-name">SpeedComputer47</span>
+</a>
 
       <!-- Burger (mobile) -->
       <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sc47Nav">☰</button>
@@ -87,7 +87,11 @@
         <!-- Actions (droite) -->
         <div class="sc47-actions">
           <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
-<img src="qrcode-preview.webp" alt="QR-code" class="sc47-logo" width="64" height="64">
+<!-- QR vers contact (vCard ou fiche Google) -->
+<button class="qr-badge" id="qrBtn" aria-haspopup="dialog" aria-controls="qrModal">
+  <img src="qrcode-preview.webp" alt="" aria-hidden="true">
+  <span>QR contact</span>
+</button>
           <!-- Avis -->
           <div class="sc47-dropdown dropdown" id="reviewsDropdown">
             <button class="sc47-btn" id="btnReviews" aria-expanded="false" aria-controls="reviewsMenu">⭐ Laisser un avis</button>
@@ -290,5 +294,16 @@
       });
     }
   </script>
+<!-- Modal QR -->
+<div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+  <div class="qr-card">
+    <h3 id="qrTitle">Enregistrer le contact</h3>
+    <img src="qrcode-preview.webp" alt="QR code de contact SpeedComputer47">
+    <div>
+      <button class="btn qr-close" id="qrClose">Fermer</button>
+    </div>
+  </div>
+</div>
+  
 </body>
 </html>
