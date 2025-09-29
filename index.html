@@ -9,15 +9,15 @@
   <link rel="canonical" href="https://speedcomputer47.fr/">
   <meta name="robots" content="index, follow">
 
-  <!-- Search Console (remplace par ton token ou supprime si vérif DNS) -->
+  <!-- Search Console (remplace le token si tu n'utilises pas la vérif DNS) -->
   <meta name="google-site-verification" content="YOUR_GSC_TOKEN" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Social -->
   <meta property="og:title" content="SpeedComputer47 – Informatique à domicile & entreprises (Villeneuve-sur-Lot et 50 km)">
   <meta property="og:description" content="Dépannage, installation, cybersécurité, formation, domotique. Zones : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban...">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://speedcomputer47.fr/">
-  <meta property="og:image" content="https://speedcomputer47.fr/logo.png">
+  <meta property="og:image" content="https://speedcomputer47.fr/logo.webp">
   <meta property="og:locale" content="fr_FR">
 
   <!-- Couleur navigateur -->
@@ -42,95 +42,74 @@
   <!-- End Google Tag Manager -->
 
   <!-- CSS -->
-  <link rel="preload" as="image" href="background.png">
-  <link rel="preload" as="image" href="logo.png">
+  <link rel="preload" as="image" href="background.webp">
+  <link rel="preload" as="image" href="logo.webp">
+  <link rel="icon" href="logo.webp">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Ajouts styles (avis + icônes + séparation) -->
+  <!-- Petits ajouts styles (avis + icônes + séparation) -->
   <style>
     html { scroll-behavior: smooth; }
-
-    /* Icônes dans boutons/menu */
-    .btn .icon, .dropdown-item .icon{
-      height:22px; width:22px; object-fit:contain; border-radius:4px;
-    }
-
-    /* Dropdown "Avis" (header) */
-    .dropdown{ position:relative; }
-    .dropdown-menu{
-      position:absolute; right:0; top:calc(100% + 8px);
-      min-width:220px; z-index:50; display:none; padding:8px;
-      background:#0b1220; border:1px solid #1f2937; border-radius:12px;
-      box-shadow:0 8px 24px rgba(0,0,0,.35);
-    }
-    .dropdown.open .dropdown-menu{ display:block; }
-    .dropdown-item{
-      display:flex; align-items:center; gap:10px; padding:8px 10px;
-      border-radius:10px; color:#e5e7eb; text-decoration:none;
-    }
-    .dropdown-item:hover{ background:rgba(14,165,233,.15); }
-
-    /* Bloc réseaux sociaux sous contact */
-    .social-row{ margin: 12px auto 20px; }
-    .social-row .social-icons{ display:flex; flex-wrap:wrap; gap:12px; }
-    .btn.social{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; }
-
-    /* Séparateur avant footer */
-    hr.sep{ border:0; height:1px; background:rgba(255,255,255,.08); margin:16px 0 0; }
+    .btn .icon, .dropdown-item .icon{height:22px;width:22px;object-fit:contain;border-radius:4px}
+    .dropdown{position:relative}
+    .dropdown-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:220px;z-index:50;display:none;padding:8px;background:#0b1220;border:1px solid #1f2937;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .dropdown.open .dropdown-menu{display:block}
+    .dropdown-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none}
+    .dropdown-item:hover{background:rgba(14,165,233,.15)}
+    .social-row{margin:12px auto 20px}
+    .social-row .social-icons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn.social{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px}
+    hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
   </style>
 </head>
 <body>
   <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
- <header class="sc47-header">
-  <div class="sc47-container">
-    <!-- Brand -->
-    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-      <img src="logo.png" alt="SpeedComputer47" class="sc47-logo">
-      <span class="sc47-name">SpeedComputer47</span>
-    </a>
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <!-- Brand -->
+      <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+        <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="64" height="64">
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
 
-    <!-- Burger (mobile) -->
-    <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false">
-      ☰
-    </button>
+      <!-- Burger (mobile) -->
+      <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sc47Nav">☰</button>
 
-    <!-- Nav -->
-    <nav class="sc47-nav" id="sc47Nav" aria-label="Navigation principale">
-      <a class="sc47-link" href="index.html" data-match="index.html">Accueil</a>
-      <a class="sc47-link" href="particuliers.html" data-match="particuliers.html">Particuliers</a>
-      <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
+      <!-- Nav -->
+      <nav class="sc47-nav" id="sc47Nav" aria-label="Navigation principale">
+        <a class="sc47-link" href="index.html" data-match="index.html">Accueil</a>
+        <a class="sc47-link" href="particuliers.html" data-match="particuliers.html">Particuliers</a>
+        <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
+        <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
 
-      <!-- Actions alignées à droite -->
-      <div class="sc47-actions">
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
+        <!-- Actions (droite) -->
+        <div class="sc47-actions">
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
 
-        <!-- Avis (après le téléphone) -->
-        <div class="sc47-dropdown" id="sc47Reviews">
-          <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">
-            ⭐ Laisser un avis
-          </button>
-          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
-              <img class="sc47-ico" src="google-avis.jpg" alt="Google"> Google
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
-              <img class="sc47-ico" src="Facebook_icon.svg.png" alt="Facebook"> Facebook
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
-              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
-              <img class="sc47-ico" src="linkedin-logo.png" alt="LinkedIn"> LinkedIn
-            </a>
+          <!-- Avis -->
+          <div class="sc47-dropdown dropdown" id="reviewsDropdown">
+            <button class="sc47-btn" id="btnReviews" aria-expanded="false" aria-controls="reviewsMenu">⭐ Laisser un avis</button>
+            <div class="sc47-menu dropdown-menu" id="reviewsMenu" role="menu" aria-labelledby="btnReviews">
+              <a class="sc47-item dropdown-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
+                <img class="sc47-ico icon" src="avis-google.webp" alt="" width="22" height="22"> Google
+              </a>
+              <a class="sc47-item dropdown-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
+                <img class="sc47-ico icon" src="Facebook.webp" alt="" width="22" height="22"> Facebook
+              </a>
+              <a class="sc47-item dropdown-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
+                <img class="sc47-ico icon" src="pagejaune.webp" alt="" width="22" height="22"> PagesJaunes
+              </a>
+              <a class="sc47-item dropdown-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
+                <img class="sc47-ico icon" src="linkedin.webp" alt="" width="22" height="22"> LinkedIn
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <!-- HERO -->
@@ -159,6 +138,7 @@
           </ul>
         </aside>
       </div>
+      <img class="hero__bg" src="background.webp" alt="Dépannage informatique : stéthoscope sur clavier" width="1600" height="900" loading="lazy" decoding="async">
     </section>
 
     <!-- INTERVENTIONS -->
@@ -192,7 +172,7 @@
         <div class="card">
           <p class="muted">Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux, Sainte-Livrade, Monflanquin…</p>
           <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Speedcomputer47/@44.4431447,0.172656,140424m/data=!3m1!1e3!4m6!3m5!1s0x227c8ec59d7aa1e5:0x364c65d3fc940cbb!8m2!3d44.4363233!4d0.6824206!16s%2Fg%2F11ykhl8l2k?entry=ttu">
-            <img class="map-img" src="zone_remplie.png" alt="Périmètre d’intervention de SpeedComputer47">
+            <img class="map-img" src="zone_remplie.webp" alt="Périmètre d’intervention de SpeedComputer47" width="1200" height="800" loading="lazy" decoding="async">
           </a>
           <div class="cta-row">
             <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir//Speedcomputer47/">📍 Itinéraire Google Maps</a>
@@ -225,9 +205,6 @@
       </div>
     </section>
 
-   
-
-    <!-- Séparateur net avant le footer -->
     <hr class="sep">
   </main>
 
@@ -241,13 +218,38 @@
   </footer>
 
   <!-- Bouton appel flottant -->
-  <a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
+  <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
+
+  <!-- JSON-LD (valide) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ComputerRepairService",
+    "name":"Speedcomputer47",
+    "url":"https://speedcomputer47.fr/",
+    "image":"https://speedcomputer47.fr/logo.webp",
+    "telephone":"+33666235143",
+    "areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Fumel","Lot-et-Garonne"],
+    "address":{"@type":"PostalAddress","addressLocality":"Villeneuve-sur-Lot","addressRegion":"Nouvelle-Aquitaine","postalCode":"47300","addressCountry":"FR"},
+    "description":"Dépannage, installation, cybersécurité, formation et maintenance informatique. Interventions à domicile et en entreprise (≈50 km)."
+  }
+  </script>
 
   <!-- SCRIPTS -->
   <script>
     // Année auto
     const y = document.getElementById('year');
     if (y) y.textContent = new Date().getFullYear();
+
+    // Burger menu
+    const burger = document.getElementById('sc47Burger');
+    const nav = document.getElementById('sc47Nav');
+    if (burger && nav){
+      burger.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
 
     // Devis express -> mailto
     const form = document.getElementById('devisForm');
@@ -263,7 +265,7 @@
       });
     }
 
-    // Dropdown "Avis"
+    // Dropdown Avis (IDs alignés)
     const dd = document.getElementById('reviewsDropdown');
     const btnReviews = document.getElementById('btnReviews');
     const menu = document.getElementById('reviewsMenu');
