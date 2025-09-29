@@ -11,7 +11,6 @@
   <meta name="google-site-verification" content="YOUR_GSC_TOKEN" />
   <meta name="theme-color" content="#0b0d10">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="SpeedComputer47 – Informatique à domicile & entreprises (Villeneuve-sur-Lot et 50 km)">
   <meta property="og:description" content="Dépannage, installation, cybersécurité, formation, domotique. Zones : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban...">
   <meta property="og:type" content="website">
@@ -19,7 +18,6 @@
   <meta property="og:image" content="https://speedcomputer47.fr/logo.webp">
   <meta property="og:locale" content="fr_FR">
 
-  <!-- Consent Mode v2 (par défaut refusé) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -29,36 +27,22 @@
     });
   </script>
 
-  <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NV4GWPHR');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Assets -->
   <link rel="preload" as="image" href="background.webp">
   <link rel="preload" as="image" href="logo.webp">
   <link rel="icon" href="logo.webp">
   <link rel="stylesheet" href="style.css?v=8">
 
-  <!-- Overrides / alignement header + fond global + icônes -->
   <style>
-    html,body{height:100%} html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth}
     body{
       color:#d1d5db;
       background:#0a0f17;
       position:relative;
-    }
-    /* Fond image sur tout le site + voile de lecture */
-    body::before{
-      content:"";
-      position:fixed; inset:0; z-index:-1;
-      background:
-        radial-gradient(60% 60% at 50% 0%, rgba(0,0,0,.55), rgba(0,0,0,.88)),
-        url('background.webp') center top / cover no-repeat fixed;
-      filter:saturate(.95) brightness(.9);
     }
 
     /* Grille & conteneurs */
@@ -66,39 +50,7 @@
     section{padding:36px 0}
     .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
     .muted{color:#9ca3af}
-
-    /* Header unifié */
-    .sc47-header{position:sticky;top:0;z-index:40;background:#0b0f16;border-bottom:1px solid #111827}
-    .sc47-container{display:flex;align-items:center;gap:14px;padding:12px 0}
-    .sc47-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .sc47-logo{width:44px;height:44px;border-radius:10px;object-fit:cover}
-    .sc47-name{font-weight:800;font-size:22px;color:#38bdf8}
-    .sc47-burger{display:none;margin-left:auto;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;border-radius:10px;padding:8px 10px;cursor:pointer}
-    .sc47-nav{display:flex;align-items:center;gap:10px;margin-left:auto;flex-wrap:wrap}
-    .sc47-link,.sc47-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937}
-    .sc47-link:hover,.sc47-btn:hover{background:#111b2e}
-    .sc47-link--ghost{background:transparent}
-    .sc47-link.is-active{outline:2px solid rgba(56,189,248,.4)}
-    .sc47-btn--primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
-    .sc47-btn--primary:hover{filter:brightness(.95)}
-    .sc47-actions{display:flex;align-items:center;gap:10px;margin-left:16px}
-
-    /* Dropdown Avis */
-    .dropdown{position:relative}
-    .dropdown-menu{
-      position:absolute;right:0;top:calc(100% + 8px);min-width:220px;z-index:50;display:none;
-      padding:8px;background:#0b1220;border:1px solid #1f2937;border-radius:12px;
-      box-shadow:0 8px 24px rgba(0,0,0,.35)
-    }
-    .dropdown.open .dropdown-menu{display:block}
-    .dropdown-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none}
-    .dropdown-item:hover{background:rgba(14,165,233,.15)}
-    .btn .icon,.dropdown-item .icon{height:22px;width:22px;object-fit:contain;border-radius:4px}
-
-    /* Hero */
-    .hero.has-bg .hero__bg{display:none} /* on laisse le fond global gérer l'image */
-    .hero-grid{display:grid;grid-template-columns:1fr;gap:18px}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    
     .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
     .list{padding-left:16px;margin:0} .list li{margin:2px 0}
     .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
@@ -134,37 +86,11 @@
       background:#f59e0b;color:#111827;border:1px solid #f59e0b;
       padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)
     }
-
-    /* QR badge + modal */
-    .qr-badge{
-      display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:12px;
-      background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;cursor:pointer
-    }
-    .qr-badge img{height:22px;width:22px;border-radius:4px}
-    .qr-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:60}
-    .qr-modal.open{display:flex}
-    .qr-card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px;max-width:360px;width:92%;text-align:center}
-    .qr-card img{max-width:220px;width:100%;height:auto;border-radius:12px;border:1px solid #1f2937;display:block;margin:8px auto}
-    .qr-close{background:#0f172a;border:1px solid #1f2937;color:#e5e7eb}
-    .qr-close:hover{background:#111b2e}
-
-    /* Responsive header */
-    @media (max-width:880px){
-      .sc47-burger{display:block}
-      .sc47-nav{
-        position:fixed;left:0;right:0;top:60px;background:#0b0f16;border-top:1px solid #111827;
-        display:none;flex-direction:column;gap:8px;padding:10px 4%;z-index:39
-      }
-      .sc47-nav.open{display:flex}
-      .sc47-actions{margin-left:0;align-self:stretch;justify-content:space-between}
-    }
   </style>
 </head>
 <body>
-  <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- HEADER -->
   <header class="sc47-header">
     <div class="sc47-container">
       <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
@@ -178,34 +104,27 @@
         <a class="sc47-link" href="index.html" data-match="index.html">Accueil</a>
         <a class="sc47-link" href="particuliers.html" data-match="particuliers.html">Particuliers</a>
         <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
-<a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
-        <div class="sc47-actions">
-          
-
-          <!-- QR vers contact -->
-          <button class="qr-badge" id="qrBtn" aria-haspopup="dialog" aria-controls="qrModal">
-            <img src="qrcode-preview.webp" alt="" aria-hidden="true">
-            <span>QR contact</span>
-          </button>
-        
         <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
-
-
-          <!-- Avis (après le téléphone) -->
-          <div class="dropdown" id="reviewsDropdown">
-            <button class="sc47-btn" id="btnReviews" aria-expanded="false" aria-controls="reviewsMenu">⭐ Laisser un avis</button>
-            <div class="dropdown-menu" id="reviewsMenu" role="menu" aria-labelledby="btnReviews">
-              <a class="dropdown-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
-                <img class="icon" src="avis-google.webp" alt="" width="22" height="22"> Google
+        
+        <div class="sc47-actions">
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+          
+          <div class="sc47-dropdown" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">
+              ⭐ Laisser un avis
+            </button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
+                <img class="sc47-ico" src="avis-google.webp" alt="Google"> Google
               </a>
-              <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
-                <img class="icon" src="Facebook.webp" alt="" width="22" height="22"> Facebook
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
+                <img class="sc47-ico" src="Facebook.webp" alt="Facebook"> Facebook
               </a>
-              <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
-                <img class="icon" src="pagejaune.webp" alt="" width="22" height="22"> PagesJaunes
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
+                <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
               </a>
-              <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
-                <img class="icon" src="linkedin.webp" alt="" width="22" height="22"> LinkedIn
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
+                <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"> LinkedIn
               </a>
             </div>
           </div>
@@ -215,8 +134,7 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero has-bg">
+    <section class="hero hero--bg">
       <div class="container hero-grid">
         <div>
           <h1>Dépannage, installation & formation informatique</h1>
@@ -232,43 +150,17 @@
         </div>
         <aside class="card" aria-label="Prestations phares">
           <h3>Prestations phares</h3>
-<ul class="list">
-  <li>
-    <a href="depannage-informatique-villeneuve-sur-lot.html"
-       title="Dépannage et assistance PC / Mac à Villeneuve-sur-Lot">
-      • Dépannage et assistance PC / Mac
-    </a>
-  </li>
-  <li>
-    <a href="installation-informatique-marmande.html"
-       title="Installation PC, box, imprimante, logiciels à Marmande">
-      • Installation PC, box, imprimante, logiciels
-    </a>
-  </li>
-  <li>
-    <a href="reparation-pc-agen.html"
-       title="Suppression de virus et optimisation PC à Agen">
-      • Suppression de virus, optimisation PC
-    </a>
-  </li>
-  <li>
-    <a href="formation-bureautique-cybersecurite-lot-et-garonne.html"
-       title="Formation bureautique et cybersécurité en Lot-et-Garonne">
-      • Formation bureautique et cybersécurité
-    </a>
-  </li>
-  <li>
-    <a href="domotique-tv-connectee-smartphone-fumel.html"
-       title="Domotique, TV connectée, smartphone à Fumel">
-      • Domotique, TV connectée, smartphone
-    </a>
-  </li>
-</ul>
+          <ul class="list">
+            <li><a href="depannage-informatique-villeneuve-sur-lot.html">• Dépannage et assistance PC / Mac</a></li>
+            <li><a href="installation-informatique-marmande.html">• Installation PC, box, imprimante, logiciels</a></li>
+            <li><a href="reparation-pc-agen.html">• Suppression de virus, optimisation PC</a></li>
+            <li><a href="formation-bureautique-cybersecurite-lot-et-garonne.html">• Formation bureautique et cybersécurité</a></li>
+            <li><a href="domotique-tv-connectee-smartphone-fumel.html">• Domotique, TV connectée, smartphone</a></li>
+          </ul>
         </aside>
       </div>
     </section>
 
-    <!-- INTERVENTIONS -->
     <section id="interventions">
       <div class="container">
         <h2 class="section-title">Interventions les plus demandées</h2>
@@ -280,11 +172,9 @@
           <div class="card"><h3>📧 Messagerie</h3><p>Outlook, Gmail, sauvegardes, signatures, anti-spam.</p></div>
           <div class="card"><h3>☁️ Sauvegarde & NAS</h3><p>Synology/QNAP, Time Machine, sauvegardes locales & cloud.</p></div>
         </div>
-
         <p class="muted" style="margin-top:12px">
           Zone couverte : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban et communes voisines.
         </p>
-
         <div class="cta-row">
           <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
           <a class="btn" href="#contact">🧾 Demande de devis express</a>
@@ -292,7 +182,6 @@
       </div>
     </section>
 
-    <!-- ZONE -->
     <section id="zone">
       <div class="container">
         <h2 class="section-title">Zone d’intervention (≈ 50 km)</h2>
@@ -308,16 +197,14 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <div class="container contact-grid">
         <div>
           <h2 class="section-title">Contact</h2>
           <p class="muted">Réponse rapide. Expliquez votre besoin, on vous rappelle.</p>
-          <p class="big">📞 <a href="tel:+33666235143">06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a></p>
+          <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
           <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
         </div>
-
         <div class="card">
           <h3>Demande de devis express</h3>
           <form id="devisForm">
@@ -331,23 +218,19 @@
         </div>
       </div>
     </section>
-
     <hr class="sep">
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container foot">
       <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
+      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales & Politique de confidentialité</a></p>
     </div>
   </footer>
 
-  <!-- Bouton appel flottant -->
   <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -362,7 +245,6 @@
   }
   </script>
 
-  <!-- JS -->
   <script>
     // Année auto
     const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
@@ -389,10 +271,9 @@
     }
 
     // Dropdown Avis
-    const dd=document.getElementById('reviewsDropdown');
-    const btnReviews=document.getElementById('btnReviews');
-    const menu=document.getElementById('reviewsMenu');
-    if(btnReviews && dd && menu){
+    const dd = document.getElementById('sc47Reviews');
+    const btnReviews = document.getElementById('sc47ReviewsBtn');
+    if(btnReviews && dd){
       btnReviews.addEventListener('click',(e)=>{
         e.preventDefault(); dd.classList.toggle('open');
         btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
@@ -418,28 +299,6 @@
         window.location.href=`mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
       });
     }
-
-    // Modal QR
-    const qrBtn=document.getElementById('qrBtn');
-    const qrModal=document.getElementById('qrModal');
-    const qrClose=document.getElementById('qrClose');
-    if(qrBtn && qrModal && qrClose){
-      const openQR=()=>qrModal.classList.add('open');
-      const closeQR=()=>qrModal.classList.remove('open');
-      qrBtn.addEventListener('click', openQR);
-      qrClose.addEventListener('click', closeQR);
-      qrModal.addEventListener('click',(e)=>{ if(e.target===qrModal) closeQR(); });
-      document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeQR(); });
-    }
   </script>
-
-  <!-- Modal QR -->
-  <div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
-    <div class="qr-card">
-      <h3 id="qrTitle">Enregistrer le contact</h3>
-      <img src="qrcode-preview.webp" alt="QR code de contact SpeedComputer47">
-      <div><button class="btn qr-close" id="qrClose">Fermer</button></div>
-    </div>
-  </div>
 </body>
 </html>
