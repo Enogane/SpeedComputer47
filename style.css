@@ -38,8 +38,15 @@ a:hover{text-decoration:underline}
 
 /* ===================== HERO ===================== */
 .hero{position:relative;border-bottom:1px solid var(--line)}
-/* on évite le doublon d’image de fond : l’image est portée par .hero__bg */
-.hero.has-bg{background:none}
+.hero.has-bg{background:none} /* Compatibilité ancien système */
+
+/* Règle unifiée pour le fond du hero */
+.hero--bg {
+  background:
+    radial-gradient(60% 60% at 50% 0%, rgba(0,0,0,.55), rgba(0,0,0,.88)),
+    url('background.webp') center top / cover no-repeat;
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns:minmax(0,1fr) 420px;
