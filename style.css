@@ -228,3 +228,7 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 }
 .qr-card img{width:260px;height:260px;object-fit:contain}
 .qr-close{margin-top:10px}
+/* Liste zones en colonnes (lisible mobile + desktop) */
+.list-cols{columns:2; column-gap:16px}
+@media(min-width:980px){.list-cols{columns:3}}
+.list-cols li{break-inside:avoid}
