@@ -4,14 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Dépannage et Assistance PC/Mac à Villeneuve-sur-Lot et alentour  | SpeedComputer47</title>
+  <title>Dépannage et Assistance PC/Mac à Villeneuve-sur-Lot et alentour | SpeedComputer47</title>
   <meta name="description" content="Service de dépannage et d'assistance informatique pour PC Windows et Apple Mac à Villeneuve-sur-Lot. Intervention rapide à domicile pour ordinateurs lents, virus, pannes et problèmes logiciels.">
   <link rel="canonical" href="https://speedcomputer47.fr/depannage-informatique-villeneuve-sur-lot.html">
-  
+
+  <!-- Perf -->
   <link rel="preload" as="image" href="background.webp">
   <link rel="preload" as="image" href="logo.webp">
-  <link rel="icon" href="logo.webp">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="icon" href="logo.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css?v=9">
 
   <style>
     html{scroll-behavior:smooth}
@@ -23,20 +24,73 @@
     .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
     .list{padding-left:16px;margin:0} .list li{margin:2px 0}
     .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
     .btn:hover{background:#111b2e}
-    .lead{color:#c7d2fe}
+    .lead{color: inherit;} /* texte du hero "normal" */
     .pay{margin-top:8px}
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+
+    /* HEADER (identique au site) */
+    .sc47-header{position:sticky;top:0;z-index:50;background:#0a0f17cc;backdrop-filter:blur(6px);border-bottom:1px solid #1f2937}
+    .sc47-container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .sc47-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#e5e7eb}
+    .sc47-logo{width:56px;height:56px;border-radius:10px} /* taille logo demandée */
+    .sc47-name{font-weight:800}
+    .sc47-burger{display:inline-flex;align-items:center;justify-content:center;padding:8px 10px;border-radius:10px;border:1px solid #1f2937;background:#0f172a;color:#e5e7eb}
+    .sc47-nav{display:flex;align-items:center;gap:14px}
+    .sc47-link{padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none;border:1px solid transparent}
+    .sc47-link:hover{background:#0f172a;border-color:#1f2937}
+    .sc47-link.is-active{background:#111b2e;border-color:#1f2937}
+    .sc47-actions{display:flex;align-items:center;gap:10px;margin-left:8px}
+    .sc47-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+    .sc47-btn--primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
+    .sc47-dropdown{position:relative}
+    .sc47-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:220px;background:#0c121d;border:1px solid #1f2937;border-radius:12px;padding:8px;display:none}
+    .sc47-dropdown.open .sc47-menu{display:block}
+    .sc47-item{display:flex;align-items:center;gap:10px;padding:8px;border-radius:10px;color:#e5e7eb;text-decoration:none}
+    .sc47-item:hover{background:#0f172a}
+    .sc47-ico{width:18px;height:18px}
+    @media(max-width:900px){
+      .sc47-burger{display:flex}
+      .sc47-nav{position:fixed;right:12px;top:64px;flex-direction:column;align-items:stretch;gap:8px;padding:12px;background:#0c121d;border:1px solid #1f2937;border-radius:14px;display:none;width:min(92vw,360px)}
+      .sc47-nav.open{display:flex}
+      .sc47-actions{flex-direction:column;align-items:stretch;margin-left:0}
+    }
+    @media(min-width:901px){.sc47-burger{display:none}}
+
+    /* HERO image + overlay (mêmes réglages que l'accueil) */
+    .hero{position:relative;overflow:hidden}
+    .hero--bg{
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(99,102,241,.15), transparent 60%),
+        radial-gradient(1200px 600px at 80% 0%, rgba(245,158,11,.12), transparent 60%),
+        #0a0f17 url('background.webp') center 25% / cover no-repeat;
+      min-height: 420px;
+    }
+    .hero--bg::before{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(180deg, rgba(10,15,23,.35) 0%, rgba(10,15,23,.55) 40%, rgba(10,15,23,.75) 100%);
+    }
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:16px;align-items:center;padding:24px 0}
+    @media(min-width:980px){
+      .hero-grid{grid-template-columns:1.1fr .9fr;min-height:460px}
+      .hero--bg{background-position:center 35%}
+    }
+
+    /* Contact */
     .contact-grid{display:grid;grid-template-columns:1fr;gap:18px}
     @media(min-width:980px){.contact-grid{grid-template-columns:1fr 1.1fr}}
     .contact-grid input,.contact-grid textarea{width:100%;padding:10px;border-radius:10px;background:#0b0f16;border:1px solid #1f2937;color:#e5e7eb}
     .big{font-size:18px} .mail a{word-break:break-all}
+
+    /* Footer */
     hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
     footer{padding:18px 0 30px;color:#9ca3af}
     .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
     .foot p{margin:0}
+
+    /* Appel flottant */
     .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
   </style>
 </head>
@@ -45,19 +99,19 @@
   <header class="sc47-header">
     <div class="sc47-container">
       <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-        <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="84" height="84">
+        <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="84" height="84" loading="lazy" decoding="async">
         <span class="sc47-name">SpeedComputer47</span>
       </a>
       <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sc47Nav">☰</button>
       <nav class="sc47-nav" id="sc47Nav" aria-label="Navigation principale">
-        <a class="sc47-link" href="index.html">Accueil</a>
-        <a class="sc47-link" href="particuliers.html">Particuliers</a>
-        <a class="sc47-link" href="pro.html">Entreprises</a>
+        <a class="sc47-link" href="index.html" data-match="index.html">Accueil</a>
+        <a class="sc47-link" href="particuliers.html" data-match="particuliers.html">Particuliers</a>
+        <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
         <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
         <div class="sc47-actions">
-          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
           <div class="sc47-dropdown" id="sc47Reviews">
-            <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false">⭐ Laisser un avis</button>
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">⭐ Laisser un avis</button>
             <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
               <a class="sc47-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">Google</a>
               <a class="sc47-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">Facebook</a>
@@ -69,71 +123,165 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero hero--bg">
       <div class="container hero-grid">
         <div>
-          <h1>Dépannage et Assistance PC</h1>
+          <h1>PC lent, démarrage interminable ? On le remet à neuf.</h1>
           <p class="lead">
-            Votre ordinateur est lent, ne démarre plus ou affiche des messages d'erreur ? Nous intervenons rapidement à domicile à Villeneuve-sur-Lot pour tout problème sur PC Windows et Apple Mac.
+            Spécialistes Windows & macOS à Villeneuve-sur-Lot : <strong>migration SSD avec clonage</strong>,
+            <strong>nettoyage/optimisation</strong>, suppression de <strong>virus</strong>, ajout de <strong>RAM</strong>,
+            et <strong>réinstallation propre</strong> si nécessaire. Intervention à domicile, explications claires, et
+            conservation de vos données quand c’est possible.
           </p>
           <div class="cta-row">
             <a class="btn primary" href="tel:+33666235143">📞 Urgence ? Appelez-nous</a>
-            <a class="btn" href="#contact">🧾 Obtenir un devis</a>
+            <a class="btn" href="#solutions">🧾 Devis & conseils</a>
           </div>
-          <p class="muted pay">💳 CB & sans contact, Apple/Google Pay, Virements & espèces.</p>
+          <p class="muted pay">💳 CB & sans contact • Apple/Google Pay • Virements & espèces.</p>
         </div>
-        <aside class="card" aria-label="Nos atouts">
-          <h3>Notre service de dépannage</h3>
+        <aside class="card" aria-label="Notre service de dépannage">
+          <h3>Notre service</h3>
           <ul class="list">
-            <li>Intervention rapide sur <strong>Villeneuve-sur-Lot</strong></li>
-            <li>Diagnostic précis et transparent</li>
-            <li>Réparation matérielle et logicielle</li>
-            <li>Conseils pour éviter les futures pannes</li>
-            <li>Assistance pour tous niveaux</li>
+            <li>Diagnostic rapide et transparent</li>
+            <li>Clonage vers SSD pour garder vos applis</li>
+            <li>Nettoyage complet + mises à jour</li>
+            <li>Réglages démarrage et performance</li>
+            <li>Conseils pour éviter les rechutes</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section id="pannes">
+    <!-- CAUSES -->
+    <section id="causes">
       <div class="container">
-        <h2 class="section-title">Nous résolvons les pannes les plus courantes</h2>
-        <p class="muted" style="max-width: 800px;">Que votre souci soit matériel ou logiciel, nous avons la solution pour redonner une seconde jeunesse à votre ordinateur.</p>
-        <div class="cards" style="margin-top: 16px;">
-          <div class="card"><h3>💻 Ordinateur Lent ou Bloqué</h3><p>Optimisation du démarrage, nettoyage système, remplacement du disque dur par un SSD pour une vitesse fulgurante.</p></div>
-          <div class="card"><h3>🛡️ Suppression de Virus et Malwares</h3><p>Éradication des virus, logiciels espions et publicités intempestives. Installation d'une protection efficace.</p></div>
-          <div class="card"><h3>⚙️ Problèmes Logiciels</h3><p>Résolution des erreurs, des plantages de logiciels (bureautique, messagerie...) et réinstallation de programmes.</p></div>
-          <div class="card"><h3>🖥️ Pannes Matérielles</h3><p>Diagnostic de composants défectueux (disque dur, mémoire RAM, alimentation) et remplacement sur devis.</p></div>
-          <div class="card"><h3>📶 Connexion Internet & Wi-Fi</h3><p>Dépannage de votre box, amélioration de la couverture Wi-Fi et résolution des problèmes de connexion réseau.</p></div>
-          <div class="card"><h3>🖨️ Imprimantes et Périphériques</h3><p>Installation, configuration et dépannage de vos imprimantes, scanners, webcams et autres appareils.</p></div>
+        <h2 class="section-title">Pourquoi votre PC rame&nbsp;?</h2>
+        <div class="cards">
+          <div class="card"><h3>Disque dur mécanique (HDD)</h3><p>Un HDD est 5 à 10× plus lent qu’un SSD. Le passage au SSD transforme l’usage au quotidien.</p></div>
+          <div class="card"><h3>Trop de programmes au démarrage</h3><p>Des logiciels inutiles se lancent en arrière-plan et monopolisent la mémoire.</p></div>
+          <div class="card"><h3>Malwares & logiciels indésirables</h3><p>Barres d’outils, adwares, PUPs et virus saturent le système.</p></div>
+          <div class="card"><h3>RAM insuffisante</h3><p>Avec 4–8 Go, Windows/macOS peut vite saturer selon vos usages (navigateur, bureautique, photos…).</p></div>
+          <div class="card"><h3>Chauffe & poussière</h3><p>La surchauffe bride le processeur (throttling) et ralentit tout l’ordinateur.</p></div>
+          <div class="card"><h3>Fichiers système abîmés</h3><p>Après des années d’usage, une réinstallation propre peut être plus saine et durable.</p></div>
         </div>
       </div>
     </section>
-    
-    <section id="contact">
-        <div class="container contact-grid">
-            <div>
-                <h2 class="section-title">Contact pour un dépannage à Villeneuve-sur-Lot</h2>
-                <p class="muted">Expliquez-nous votre panne, nous vous fournissons une première estimation et fixons un rendez-vous rapidement.</p>
-                <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
-                <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-                <div class="contact-qr contact-qr--card">
-                    <img src="qrcode-preview.webp" alt="QR code de contact SpeedComputer47">
-                    <p>Scannez pour ajouter<br>le contact</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Demande de devis express</h3>
-                <form id="devisForm">
-                    <label>Nom / Prénom<br><input required name="name" type="text" placeholder="Votre nom"></label><br><br>
-                    <label>Email<br><input required name="email" type="email" placeholder="vous@exemple.fr"></label><br><br>
-                    <label>Téléphone<br><input required name="phone" type="tel" placeholder="06 xx xx xx xx"></label><br><br>
-                    <label>Décrivez votre panne<br><textarea required name="message" rows="5" placeholder="Ex: Mon ordinateur portable ne s'allume plus..."></textarea></label><br><br>
-                    <button class="btn primary" type="submit">Envoyer la demande</button>
-                    <p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
-                </form>
-            </div>
+
+    <!-- SOLUTIONS -->
+    <section id="solutions">
+      <div class="container">
+        <h2 class="section-title">Nos solutions efficaces</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>🚀 Passage SSD + clonage</h3>
+            <p>On remplace le disque par un <strong>SSD</strong> (SATA/NVMe). <strong>Clonage</strong> pour garder vos programmes, favoris et réglages quand c’est possible. Démarrage en quelques secondes.</p>
+          </div>
+          <div class="card">
+            <h3>🧹 Nettoyage & optimisation</h3>
+            <p>Suppression des malwares/PUPs, nettoyage des programmes inutiles, mises à jour, réglages du démarrage et du navigateur.</p>
+          </div>
+          <div class="card">
+            <h3>🧠 Ajout de RAM</h3>
+            <p>Analyse de compatibilité, installation et test mémoire pour fluidifier multitâche et navigation.</p>
+          </div>
+          <div class="card">
+            <h3>🧩 Réinstallation propre</h3>
+            <p>Quand le système est trop abîmé : réinstallation, pilotes, mises à jour, applications essentielles et <strong>récupération de données</strong> si besoin.</p>
+          </div>
+          <div class="card">
+            <h3>🔒 Sécurisation</h3>
+            <p>Antivirus, mises à jour, sauvegardes locales/cloud et bonnes pratiques pour durer.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- MÉTHODE -->
+    <section id="methode">
+      <div class="container">
+        <h2 class="section-title">Comment on procède</h2>
+        <div class="cards">
+          <div class="card"><h3>1) Diagnostic</h3><p>Bilan sur place (disque, RAM, santé système) et recommandations claires.</p></div>
+          <div class="card"><h3>2) Intervention</h3><p>Clonage, installation SSD/RAM, nettoyage, réinstallation si nécessaire.</p></div>
+          <div class="card"><h3>3) Contrôle & conseils</h3><p>Vérifications de performance, explications et astuces pour garder un PC rapide.</p></div>
+        </div>
+        <p class="muted" style="margin-top:8px">Zone : Villeneuve-sur-Lot et ≈50 km (Agen, Marmande, Fumel, Bergerac, Cahors, Montauban…).</p>
+      </div>
+    </section>
+
+    <!-- TARIFS RÉF -->
+    <section id="tarifs">
+      <div class="container">
+        <h2 class="section-title">Tarifs indicatifs (TTC)</h2>
+        <div class="card">
+          <ul class="list">
+            <li><strong>Diagnostic simple</strong> : 25–35 €</li>
+            <li><strong>Nettoyage / optimisation</strong> : 50–70 €</li>
+            <li><strong>Passage SSD + clonage (main d’œuvre)</strong> : 60–80 € <em>(hors prix du SSD)</em></li>
+            <li><strong>Ajout RAM (main d’œuvre)</strong> : 50–70 € <em>(hors pièces)</em></li>
+            <li><strong>Réinstallation Windows</strong> : 90–120 € <em>(avec/ sans sauvegarde selon cas)</em></li>
+          </ul>
+          <p class="muted" style="margin-top:8px">Déplacement inclus ≤ 20 km autour de Villeneuve-sur-Lot. Au-delà : +0,50 €/km. Pour les cas complexes/volumétrie importante : devis personnalisé.</p>
+          <div class="cta-row"><a class="btn" href="particuliers.html#tarifs">→ Voir la grille détaillée</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Vais-je perdre mes données&nbsp;?</h3>
+            <p>Notre priorité est de <strong>conserver vos fichiers</strong>. Le <strong>clonage</strong> migre l’existant. Si l’état du système ne le permet pas, on propose une <strong>réinstallation + transfert</strong> après sauvegarde.</p>
+          </div>
+          <div class="card">
+            <h3>Faut-il racheter Windows&nbsp;?</h3>
+            <p>Dans la majorité des cas, <strong>non</strong> : l’activation Windows est détectée automatiquement après réinstallation sur le même matériel.</p>
+          </div>
+          <div class="card">
+            <h3>Combien de temps pour une migration SSD&nbsp;?</h3>
+            <p>Selon la capacité à cloner et l’état du disque : généralement <strong>1 à 2 h</strong> d’intervention (hors gros volumes).</p>
+          </div>
+          <div class="card">
+            <h3>Quel SSD choisir&nbsp;?</h3>
+            <p>On conseille un <strong>SSD SATA 2,5”</strong> pour la compatibilité maximale, ou <strong>NVMe</strong> si votre machine le supporte, pour des débits supérieurs.</p>
+          </div>
+          <div class="card">
+            <h3>PC portable ou fixe&nbsp;?</h3>
+            <p>On intervient sur les deux. Pour certains portables <em>ultra-fins</em>, l’accès aux composants peut demander plus de temps (prévenu avant).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p class="muted">Expliquez votre panne, on vous rappelle vite avec une estimation claire.</p>
+          <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
+          <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
+          <div class="contact-qr contact-qr--card">
+            <img src="qrcode-preview.webp" alt="QR code de contact SpeedComputer47" loading="lazy" decoding="async">
+            <p>Scannez pour ajouter<br>le contact</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Demande de devis express</h3>
+          <form id="devisForm">
+            <label>Nom / Prénom<br><input required name="name" type="text" placeholder="Votre nom"></label><br><br>
+            <label>Email<br><input required name="email" type="email" placeholder="vous@exemple.fr"></label><br><br>
+            <label>Téléphone<br><input required name="phone" type="tel" placeholder="06 xx xx xx xx"></label><br><br>
+            <label>Décrivez votre panne<br><textarea required name="message" rows="5" placeholder="Ex : PC très lent / passage SSD + clonage, erreurs au démarrage…"></textarea></label><br><br>
+            <button class="btn primary" type="submit">Envoyer la demande</button>
+            <p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
+          </form>
+        </div>
+      </div>
     </section>
 
     <hr class="sep">
@@ -150,7 +298,10 @@
   <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
 
   <script>
+    // Année
     const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+
+    // Burger
     const burger=document.getElementById('sc47Burger'), nav=document.getElementById('sc47Nav');
     if(burger&&nav){
       burger.addEventListener('click',()=>{
@@ -163,6 +314,8 @@
         }
       });
     }
+
+    // Dropdown Avis
     const dd=document.getElementById('sc47Reviews'), btnReviews=document.getElementById('sc47ReviewsBtn');
     if(btnReviews&&dd){
       btnReviews.addEventListener('click',e=>{
@@ -170,7 +323,10 @@
         btnReviews.setAttribute('aria-expanded',dd.classList.contains('open'));
       });
       document.addEventListener('click',e=>{if(!dd.contains(e.target))dd.classList.remove('open')});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'){dd.classList.remove('open');btnReviews.setAttribute('aria-expanded','false')}})
     }
+
+    // Devis express -> mailto
     const form=document.getElementById('devisForm');
     if(form){
       form.addEventListener('submit',e=>{
