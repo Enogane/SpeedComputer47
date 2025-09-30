@@ -25,7 +25,7 @@
   <!-- Consent par défaut (priorité confidentialité) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
+    function gtag(){dataLayer.push(arguments);}
     gtag('consent','default',{
       ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied',
       analytics_storage:'denied', wait_for_update: 500
@@ -65,7 +65,7 @@
     .lead{color:#c7d2fe}
     .pay{margin-top:8px}
 
-    /* Header aligné */
+    /* Header aligné (même que l'index corrigé précédent) */
     .sc47-header{position:sticky;top:0;z-index:50;background:#0a0f17cc;backdrop-filter:blur(6px);border-bottom:1px solid #1f2937}
     .sc47-container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
     .sc47-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#e5e7eb}
@@ -97,13 +97,26 @@
     }
     @media(min-width:901px){.sc47-burger{display:none}}
 
-    /* Hero avec background */
+    /* Hero avec background — réglages image + overlay pour lisibilité */
     .hero{position:relative;overflow:hidden}
-    .hero--bg{background:radial-gradient(1200px 600px at 20% 0%, rgba(99,102,241,.15), transparent 60%),
-                          radial-gradient(1200px 600px at 80% 0%, rgba(245,158,11,.12), transparent 60%),
-                          #0a0f17 url('background.webp') center/cover no-repeat}
+    .hero--bg{
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(99,102,241,.15), transparent 60%),
+        radial-gradient(1200px 600px at 80% 0%, rgba(245,158,11,.12), transparent 60%),
+        #0a0f17 url('background.webp') center 25% / cover no-repeat;
+      min-height:420px;
+    }
+    .hero--bg::before{
+      content:""; position:absolute; inset:0; pointer-events:none;
+      /* voile pour améliorer le contraste du texte sur l'image */
+      background:linear-gradient(180deg, rgba(10,15,23,.35) 0%, rgba(10,15,23,.55) 40%, rgba(10,15,23,.75) 100%);
+    }
     .hero-grid{display:grid;grid-template-columns:1fr;gap:16px;align-items:center;padding:24px 0}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr;min-height:460px}}
+    @media(min-width:980px){
+      .hero-grid{grid-template-columns:1.1fr .9fr;min-height:460px}
+      /* On remonte un peu la zone de focus de l'image en desktop */
+      .hero--bg{background-position:center 35%}
+    }
 
     /* Interventions */
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
@@ -146,7 +159,7 @@
         <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
         <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
         <div class="sc47-actions">
-          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
           <div class="sc47-dropdown" id="sc47Reviews">
             <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">⭐ Laisser un avis</button>
             <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
@@ -213,7 +226,7 @@
           </div>
 
           <div class="card clickable" role="button" tabindex="0" onclick="location.href='wifi-reseau-Casseneuil.html';">
-            <h3>📶 Wi‑Fi / réseau</h3>
+            <h3>📶 Wi-Fi / réseau</h3>
             <p>Box, CPL, routeur, amélioration de la couverture maison/bureau.</p>
           </div>
 
@@ -224,7 +237,7 @@
 
           <div class="card clickable" role="button" tabindex="0" onclick="location.href='messagerieCahors.html';">
             <h3>✉️ Messagerie</h3>
-            <p>Outlook, Gmail, sauvegardes, signatures, anti‑spam.</p>
+            <p>Outlook, Gmail, sauvegardes, signatures, anti-spam.</p>
           </div>
 
           <div class="card clickable" role="button" tabindex="0" onclick="location.href='sauvegardetonneins.html';">
@@ -261,7 +274,7 @@
         <div>
           <h2 class="section-title">Contact</h2>
           <p class="muted">Réponse rapide. Expliquez votre besoin, on vous rappelle.</p>
-          <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
+          <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
           <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
           <div class="contact-qr contact-qr--card">
             <img src="qrcode-preview.webp" alt="QR code de contact SpeedComputer47" loading="lazy" decoding="async">
@@ -276,7 +289,7 @@
             <label>Téléphone<br><input required name="phone" type="tel" placeholder="06 xx xx xx xx"></label><br><br>
             <label>Votre besoin<br><textarea required name="message" rows="5" placeholder="Décrivez le problème / installation souhaitée"></textarea></label><br><br>
             <button class="btn primary" type="submit">Envoyer la demande</button>
-            <p class="muted" style="margin-top:8px">Un email pré‑rempli s’ouvre dans votre messagerie.</p>
+            <p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
           </form>
         </div>
       </div>
