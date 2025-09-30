@@ -118,42 +118,76 @@
     <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false">
       ☰
     </button>
+  </script>
 
-    <!-- Nav -->
-    <nav class="sc47-nav" id="sc47Nav" aria-label="Navigation principale">
-      <a class="sc47-link" href="index.html" data-match="index.html">Accueil</a>
-      <a class="sc47-link" href="particuliers.html" data-match="particuliers.html">Particuliers</a>
-      <a class="sc47-link" href="pro.html" data-match="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
+  <!-- Petite amélioration du tableau en mobile -->
+  <style>
+    html{scroll-behavior:smooth}
+    body{color:#d1d5db; background:#0a0f17; position:relative;}
+    .container,.sc47-container{width:min(1200px,92%);margin:0 auto}
+    section{padding:36px 0}
+    .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
+    .muted{color:#9ca3af}
+    .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
+    .list{padding-left:16px;margin:0} .list li{margin:2px 0}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+    .btn:hover{background:#111b2e}
+    .lead{color:#c7d2fe}
+    .pay{margin-top:8px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .contact-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:980px){.contact-grid{grid-template-columns:1fr 1.1fr}}
+    .contact-grid input,.contact-grid textarea{width:100%;padding:10px;border-radius:10px;background:#0b0f16;border:1px solid #1f2937;color:#e5e7eb}
+    .big{font-size:18px} .mail a{word-break:break-all}
+    hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
+    footer{padding:18px 0 30px;color:#9ca3af}
+    .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
+    .foot p{margin:0}
+    .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+  </style>
+</head>
+<body>
 
-      <!-- Actions alignées à droite -->
-      <div class="sc47-actions">
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
-
-        <!-- Avis (après le téléphone) -->
-        <div class="sc47-dropdown" id="sc47Reviews">
-          <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">
-            ⭐ Laisser un avis
-          </button>
-          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
-              <img class="sc47-ico" src="google-avis.jpg" alt="Google"> Google
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
-              <img class="sc47-ico" src="Facebook_icon.svg.png" alt="Facebook"> Facebook
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
-              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
-            </a>
-            <a class="sc47-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
-              <img class="sc47-ico" src="linkedin-logo.webp" alt="LinkedIn"> LinkedIn
-            </a>
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+        <img src="logo.webp" alt="SpeedComputer47" class="sc47-logo" width="84" height="84">
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
+      <button class="sc47-burger" id="sc47Burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sc47Nav">☰</button>
+      <nav class="sc47-nav" id="sc47Nav" aria-label="Navigation principale">
+        <a class="sc47-link" href="index.html">Accueil</a>
+        <a class="sc47-link" href="particuliers.html">Particuliers</a>
+        <a class="sc47-link" href="pro.html">Entreprises</a>
+        <a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
+        <div class="sc47-actions">
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+          
+          <div class="sc47-dropdown" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false" aria-controls="sc47ReviewsMenu">
+              ⭐ Laisser un avis
+            </button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://g.page/r/CbsMlPzTZUw2EAE/review">
+                <img class="sc47-ico" src="avis-google.webp" alt="Google"> Google
+              </a>
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.facebook.com/speedcomputer47/">
+                <img class="sc47-ico" src="Facebook.webp" alt="Facebook"> Facebook
+              </a>
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.pagesjaunes.fr/pros/64032762">
+                <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"> PagesJaunes
+              </a>
+              <a class="sc47-item" target="_blank" rel="noopener" href="https://www.linkedin.com/company/speedcomputer47/">
+                <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"> LinkedIn
+              </a>
+               </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
 
   <!-- HERO -->
   <section class="hero hero--bg">
