@@ -1,0 +1,23 @@
+
+# --- SpeedComputer47: nettoyer anciennes URLs WordPress & flux ---
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1) Marquer comme supprimées (410 Gone) les flux WP et /wp-admin
+RewriteRule ^feed/?$ - [G,L]
+RewriteRule ^comments/feed/?$ - [G,L]
+RewriteRule ^category/[^/]+/feed/?$ - [G,L]
+RewriteRule ^wp-admin/?$ - [G,L]
+
+# 2) Rediriger proprement d'anciennes pages WP vers les pages actuelles
+# (adapter les cibles si besoin)
+RewriteRule ^hello-world/?$ / [R=301,L]
+RewriteRule ^sample-page/?$ / [R=301,L]
+RewriteRule ^a-propos/?$ /mentions.html [R=301,L]
+RewriteRule ^services/?$ /index.html#services [R=301,L]
+RewriteRule ^contact/?$ /index.html#contact [R=301,L]
+RewriteRule ^61-2/?$ / [R=301,L]
+</IfModule>
+
+# --- Fin ---
