@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>Dépannage informatique Villeneuve-sur-Lot | SpeedComputer47</title>
- <meta name="description" content="Dépannage informatique à Villeneuve-sur-Lot. Réparation PC/Mac, installation, maintenance, cybersécurité. Intervention rapide à domicile et en entreprise."/>
+  <meta name="description" content="Dépannage informatique à Villeneuve-sur-Lot. Réparation PC/Mac, installation, maintenance, cybersécurité. Intervention rapide à domicile et en entreprise."/>
 
   <link rel="canonical" href="https://speedcomputer47.fr/"/>
   <meta name="robots" content="index, follow"/>
@@ -18,6 +18,7 @@
   <link rel="alternate" href="https://speedcomputer47.fr/" hreflang="x-default"/>
   <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
 
+  <meta property="og:site_name" content="SpeedComputer47"/>
   <meta property="og:title" content="Dépannage informatique à Villeneuve-sur-Lot | SpeedComputer47"/>
   <meta property="og:description" content="Dépannage, installation, cybersécurité et formation autour de Villeneuve-sur-Lot. Interventions à domicile & en entreprise."/>
   <meta property="og:type" content="website"/>
@@ -27,10 +28,15 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="fr_FR"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Dépannage informatique Villeneuve-sur-Lot | SpeedComputer47"/>
+  <meta name="twitter:description" content="Dépannage, installation, cybersécurité et formation autour de Villeneuve-sur-Lot. Interventions à domicile & en entreprise."/>
 
   <link rel="preload" as="image" href="background.webp"/>
   <link rel="preload" as="image" href="logo.webp"/>
   <link rel="icon" type="image/webp" href="logo.webp"/>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192">
+
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
@@ -43,9 +49,10 @@
     .link-inline{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
     .link-inline:hover{ text-decoration-thickness:2px; }
     @media (max-width:880px){ .list a.list-link{display:block;padding:10px 0} }
-    /* */
     .card--link { display: block; text-decoration: none; color: inherit; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
     .card--link:hover, .card--link:focus { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    /* Optionnel : liste villes en 3 colonnes sur desktop */
+    @media (min-width:1024px){ #zones-desservies .city-list{ columns:3; column-gap:1.5rem; } }
   </style>
 
   <script>
@@ -111,11 +118,11 @@
       }
     ],
     "areaServed": [
-      {"@type": "City", "name": "Villeneuve-sur-Lot"},
-      {"@type": "City", "name": "Agen"},
-      {"@type": "City", "name": "Marmande"},
-      {"@type": "City", "name": "Fumel"},
-      {"@type": "AdministrativeArea", "name": "Lot-et-Garonne"}
+      "Villeneuve-sur-Lot","Agen","Marmande","Tonneins","Fumel","Nérac","Sainte-Livrade-sur-Lot","Casseneuil","Pujols",
+      "Penne-d’Agenais","Saint-Sylvestre-sur-Lot","Bias","Le Passage","Boé","Bon-Encontre","Pont-du-Casse","Laroque-Timbaut",
+      "Cancon","Monflanquin","Villeréal","Castillonnès","Tournon-d’Agenais","Montaigu-de-Quercy","Miramont-de-Guyenne","Lauzun",
+      "Clairac","Aiguillon","Damazan","Lavardac","Barbaste","Prayssas","Le Temple-sur-Lot","Dolmayrac","Saint-Étienne-de-Fougères",
+      "Hautefage-la-Tour","Allez-et-Cazeneuve","Lédat","Monsempron-Libos","Montayral","Puy-l’Évêque","Lot-et-Garonne"
     ],
     "sameAs": [
       "https://www.facebook.com/speedcomputer47/",
@@ -197,29 +204,27 @@
       <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
       <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
 
-    
-        <!-- Desktop : dropdown complet -->
-        <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-          <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-            <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
-            </a>
-            <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
-            </a>
-            <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
-            </a>
-            <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
-            </a>
-          </div>
+      <!-- Desktop : dropdown complet -->
+      <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+        <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+        <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+          <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
+            <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
+          </a>
+          <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
+            <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
+          </a>
+          <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
+            <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
+          </a>
+          <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
+            <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
+          </a>
         </div>
-
-        <!-- Téléphone -->
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
       </div>
+
+      <!-- Téléphone -->
+      <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
     </nav>
   </div>
 </header>
@@ -235,13 +240,13 @@
           </p>
           <h2>Votre partenaire informatique de proximité</h2>
           <p>
-            Basés à <a href="/#zone" class="link-inline">Villeneuve-sur-Lot, nous intervenons dans un rayon d’environ 50 km</a> :
-            <a href="/reparation-pc-agen.html">Agen</a>,
-            <a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">Marmande</a>,
-            <a href="/domotique-tv-connectee-smartphone-fumel.html">Fumel</a>,
-            <a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">Sainte-Livrade</a>,
-            <a href="/depannage-informatique-tonneins.html">Tonneins</a>,
-            Monflanquin…
+            Basés à <a href="index.html#zone" class="link-inline">Villeneuve-sur-Lot, nous intervenons dans un rayon d’environ 50 km</a> :
+            <a href="index.html#zone">Agen</a>,
+            <a href="index.html#zone">Marmande</a>,
+            <a href="index.html#zone">Fumel</a>,
+            <a href="index.html#zone">Sainte-Livrade</a>,
+            <a href="index.html#zone">Tonneins</a>,
+            <a href="index.html#zone">Monflanquin</a>…
           </p>
           <h2>Nos services pour particuliers</h2>
           <ul class="list">
@@ -257,14 +262,6 @@
             <li><a href="/wifi-reseau-Casseneuil.html" class="list-link"><strong>Réseaux fiables et sécurisés</strong> — Wi-Fi, VLAN, routeurs, couverture maison/bureau.</a></li>
             <li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html" class="list-link"><strong>Cybersécurité TPE/PME</strong> — anti-malwares, sensibilisation, bonnes pratiques.</a></li>
             <li><a href="/#contact" class="list-link"><strong>Assistance rapide sur site ou à distance</strong> — prise en charge express, télémaintenance sécurisée.</a></li>
-          </ul>
-          <h2>Pourquoi nous choisir ?</h2>
-          <ul class="list">
-            <li><strong>+10 ans d’expérience</strong> en dépannage et maintenance.</li>
-            <li><strong>Réactivité</strong> : intervention rapide / urgence possible.</li>
-            <li><strong>Proximité</strong> : un interlocuteur unique, à l’écoute.</li>
-            <li><strong>Transparence</strong> : devis clairs, tarifs compétitifs.</li>
-            <li><strong>Confiance</strong> : des dizaines d’avis positifs vérifiés.</li>
           </ul>
         </div>
         <aside class="card" aria-label="Prestations phares">
@@ -303,7 +300,16 @@
             <h3>☁️ Sauvegarde & NAS</h3><p>Synology/QNAP, Time Machine, sauvegardes locales & cloud.</p>
           </a>
         </div>
-        <p class="muted" style="margin-top:12px">Zone couverte : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban et communes voisines.</p>
+        <p class="muted" style="margin-top:12px">Zone couverte :
+          <a href="index.html#zone">Villeneuve-sur-Lot</a>,
+          <a href="index.html#zone">Agen</a>,
+          <a href="index.html#zone">Marmande</a>,
+          <a href="index.html#zone">Fumel</a>,
+          <a href="index.html#zone">Bergerac</a>,
+          <a href="index.html#zone">Cahors</a>,
+          <a href="index.html#zone">Montauban</a>
+          et communes voisines.
+        </p>
         <div class="cta-row">
           <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
           <a class="btn" href="/#contact">🧾 Demande de devis express</a>
@@ -311,36 +317,104 @@
       </div>
     </section>
 
-    <section id="avis-clients">
+    <!-- Bloc villes HÉRO (cohérent #zone) + carte -->
+    <section>
       <div class="container">
-        <h2 class="section-title">Avis clients</h2>
-        <div class="card"><p><strong>Milovan A. ★★★★★</strong><br>Rapide, efficace, agréable, je recommande !</p></div>
-        <div class="card"><p><strong>Em Em ★★★★★</strong><br>Accueil chaleureux, responsable compétent.</p></div>
-        <div class="card"><p><strong>Estelle Z. ★★★★★</strong><br>Monsieur très gentil, très pro.</p></div>
-        <div class="card"><p><strong>M 1.0 ★★★★★</strong><br>Parfait.</p></div>
-        <p class="muted">👉 Plus de témoignages sur notre <a href="/avis.html">page dédiée</a>.</p>
+        <p>
+          Besoin d’un <strong>dépanneur informatique à Villeneuve-sur-Lot</strong> ou dans les environs ? <strong>SpeedComputer47</strong> intervient à domicile pour résoudre vos problèmes informatiques : PC lent, Wi-Fi instable, virus, sauvegardes, imprimantes ou domotique.
+          Nos interventions couvrent
+          <a href="index.html#zone">Villeneuve-sur-Lot</a>,
+          <a href="index.html#zone">Agen</a>,
+          <a href="index.html#zone">Marmande</a>,
+          <a href="index.html#zone">Fumel</a>,
+          <a href="index.html#zone">Casseneuil</a>,
+          <a href="index.html#zone">Pujols</a>,
+          <a href="index.html#zone">Cahors</a>
+          et <a href="index.html#zone">tout le Lot-et-Garonne</a>.
+        </p>
+
+        <a class="map-link" href="https://www.google.com/maps?cid=12187311756453986915" target="_blank" rel="noopener">
+          <img class="map-img" src="/zone.webp?v=3" width="1200" height="800" loading="lazy" decoding="async" alt="Zone d’intervention SpeedComputer47 autour de Villeneuve-sur-Lot (≈ 50 km)"/>
+        </a>
+        <div class="cta-row">
+          <a class="btn" href="https://www.google.com/maps?cid=12187311756453986915" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a>
+        </div>
       </div>
     </section>
 
-    <p>
-  Besoin d’un <strong>dépanneur informatique à Villeneuve-sur-Lot</strong> ou dans les environs ? <strong>SpeedComputer47</strong> intervient à domicile pour résoudre vos problèmes informatiques : PC lent, Wi-Fi instable, virus, sauvegardes, imprimantes ou domotique.
-  Nos interventions couvrent
-  <a href="index.html#zone">Villeneuve-sur-Lot</a>,
-  <a href="index.html#zone">Agen</a>,
-  <a href="index.html#zone">Marmande</a>,
-  <a href="index.html#zone">Fumel</a>,
-  <a href="index.html#zone">Casseneuil</a>,
-  <a href="index.html#zone">Pujols</a>,
-  <a href="index.html#zone">Cahors</a>
-  et <a href="index.html#zone">tout le Lot-et-Garonne</a>.
-</p>
-          <a class="map-link" href="https://www.google.com/maps?cid=12187311756453986915" target="_blank" rel="noopener">
-            <img class="map-img" src="/zone.webp?v=3" width="1200" height="800" loading="lazy" decoding="async" alt="Zone d’intervention SpeedComputer47 autour de Villeneuve-sur-Lot (≈ 50 km)"/>
-          </a>
-          <div class="cta-row">
-            <a class="btn" href="https://www.google.com/maps?cid=12187311756453986915" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a>
-          </div>
-        </div>
+    <!-- ancre réelle pour #zone -->
+    <span id="zone" style="position:relative; top:-110px; display:block;"></span>
+
+    <section id="zones-desservies">
+      <div class="container">
+        <h2>Dépannage informatique à domicile — Villeneuve-sur-Lot et 50 km autour (villes desservies)</h2>
+        <p>Intervention rapide pour particuliers et professionnels dans un rayon d’environ <strong>50&nbsp;km autour de Villeneuve-sur-Lot</strong> : assistance PC/Mac, Wi-Fi, suppression de virus, sauvegarde &amp; NAS, récupération de données et formation. Pour connaître le détail des secteurs et prendre rendez-vous, consultez la section <a href="index.html#zone">Zones</a> et la rubrique <a href="index.html#contact">Contact</a>.</p>
+
+        <nav aria-label="Villes desservies (50 km)">
+          <ul class="city-list" role="list" style="columns:2; column-gap:1.25rem; margin:0; padding-left:1rem;">
+            <li><a href="index.html#zone">Villeneuve-sur-Lot</a></li>
+            <li><a href="index.html#zone">Agen</a></li>
+            <li><a href="index.html#zone">Marmande</a></li>
+            <li><a href="index.html#zone">Tonneins</a></li>
+            <li><a href="index.html#zone">Fumel</a></li>
+            <li><a href="index.html#zone">Nérac</a></li>
+            <li><a href="index.html#zone">Sainte-Livrade-sur-Lot</a></li>
+            <li><a href="index.html#zone">Casseneuil</a></li>
+            <li><a href="index.html#zone">Pujols</a></li>
+            <li><a href="index.html#zone">Penne-d’Agenais</a></li>
+            <li><a href="index.html#zone">Saint-Sylvestre-sur-Lot</a></li>
+            <li><a href="index.html#zone">Bias</a></li>
+            <li><a href="index.html#zone">Le Passage</a></li>
+            <li><a href="index.html#zone">Boé</a></li>
+            <li><a href="index.html#zone">Bon-Encontre</a></li>
+            <li><a href="index.html#zone">Pont-du-Casse</a></li>
+            <li><a href="index.html#zone">Laroque-Timbaut</a></li>
+            <li><a href="index.html#zone">Cancon</a></li>
+            <li><a href="index.html#zone">Monflanquin</a></li>
+            <li><a href="index.html#zone">Villeréal</a></li>
+            <li><a href="index.html#zone">Castillonnès</a></li>
+            <li><a href="index.html#zone">Tournon-d’Agenais</a></li>
+            <li><a href="index.html#zone">Montaigu-de-Quercy</a></li>
+            <li><a href="index.html#zone">Miramont-de-Guyenne</a></li>
+            <li><a href="index.html#zone">Lauzun</a></li>
+            <li><a href="index.html#zone">Clairac</a></li>
+            <li><a href="index.html#zone">Aiguillon</a></li>
+            <li><a href="index.html#zone">Damazan</a></li>
+            <li><a href="index.html#zone">Lavardac</a></li>
+            <li><a href="index.html#zone">Barbaste</a></li>
+            <li><a href="index.html#zone">Prayssas</a></li>
+            <li><a href="index.html#zone">Le Temple-sur-Lot</a></li>
+            <li><a href="index.html#zone">Dolmayrac</a></li>
+            <li><a href="index.html#zone">Saint-Étienne-de-Fougères</a></li>
+            <li><a href="index.html#zone">Hautefage-la-Tour</a></li>
+            <li><a href="index.html#zone">Allez-et-Cazeneuve</a></li>
+            <li><a href="index.html#zone">Lédat</a></li>
+            <li><a href="index.html#zone">Monsempron-Libos</a></li>
+            <li><a href="index.html#zone">Montayral</a></li>
+            <li><a href="index.html#zone">Puy-l’Évêque</a></li>
+          </ul>
+        </nav>
+
+        <!-- JSON-LD : zone de chalandise / areaServed (répété localement pour le bloc zones) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Dépannage informatique à domicile",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "SpeedComputer47",
+            "url": "https://speedcomputer47.fr/"
+          },
+          "areaServed": [
+            "Villeneuve-sur-Lot","Agen","Marmande","Tonneins","Fumel","Nérac","Sainte-Livrade-sur-Lot","Casseneuil","Pujols",
+            "Penne-d’Agenais","Saint-Sylvestre-sur-Lot","Bias","Le Passage","Boé","Bon-Encontre","Pont-du-Casse","Laroque-Timbaut",
+            "Cancon","Monflanquin","Villeréal","Castillonnès","Tournon-d’Agenais","Montaigu-de-Quercy","Miramont-de-Guyenne","Lauzun",
+            "Clairac","Aiguillon","Damazan","Lavardac","Barbaste","Prayssas","Le Temple-sur-Lot","Dolmayrac","Saint-Étienne-de-Fougères",
+            "Hautefage-la-Tour","Allez-et-Cazeneuve","Lédat","Monsempron-Libos","Montayral","Puy-l’Évêque","Lot-et-Garonne"
+          ]
+        }
+        </script>
       </div>
     </section>
 
@@ -412,76 +486,6 @@
       </div>
     </section>
 
-<section id="zones-desservies">
-  <h2>Dépannage informatique à domicile — Villeneuve-sur-Lot et 50 km autour (villes desservies)</h2>
-  <p>Intervention rapide pour particuliers et professionnels dans un rayon d’environ <strong>50&nbsp;km autour de Villeneuve-sur-Lot</strong> : assistance PC/Mac, Wi-Fi, suppression de virus, sauvegarde &amp; NAS, récupération de données et formation. Pour connaître le détail des secteurs et prendre rendez-vous, consultez la section <a href="index.html#zone">Zones</a> et la rubrique <a href="index.html#contact">Contact</a>.</p>
-
-  <nav aria-label="Villes desservies (50 km)">
-    <ul class="city-list" role="list" style="columns:2; column-gap:1.25rem; margin:0; padding-left:1rem;">
-      <li><a href="index.html#zone">Villeneuve-sur-Lot</a></li>
-      <li><a href="index.html#zone">Agen</a></li>
-      <li><a href="index.html#zone">Marmande</a></li>
-      <li><a href="index.html#zone">Tonneins</a></li>
-      <li><a href="index.html#zone">Fumel</a></li>
-      <li><a href="index.html#zone">Nérac</a></li>
-      <li><a href="index.html#zone">Sainte-Livrade-sur-Lot</a></li>
-      <li><a href="index.html#zone">Casseneuil</a></li>
-      <li><a href="index.html#zone">Pujols</a></li>
-      <li><a href="index.html#zone">Penne-d’Agenais</a></li>
-      <li><a href="index.html#zone">Saint-Sylvestre-sur-Lot</a></li>
-      <li><a href="index.html#zone">Bias</a></li>
-      <li><a href="index.html#zone">Le Passage</a></li>
-      <li><a href="index.html#zone">Boé</a></li>
-      <li><a href="index.html#zone">Bon-Encontre</a></li>
-      <li><a href="index.html#zone">Pont-du-Casse</a></li>
-      <li><a href="index.html#zone">Laroque-Timbaut</a></li>
-      <li><a href="index.html#zone">Cancon</a></li>
-      <li><a href="index.html#zone">Monflanquin</a></li>
-      <li><a href="index.html#zone">Villeréal</a></li>
-      <li><a href="index.html#zone">Castillonnès</a></li>
-      <li><a href="index.html#zone">Tournon-d’Agenais</a></li>
-      <li><a href="index.html#zone">Montaigu-de-Quercy</a></li>
-      <li><a href="index.html#zone">Miramont-de-Guyenne</a></li>
-      <li><a href="index.html#zone">Lauzun</a></li>
-      <li><a href="index.html#zone">Clairac</a></li>
-      <li><a href="index.html#zone">Aiguillon</a></li>
-      <li><a href="index.html#zone">Damazan</a></li>
-      <li><a href="index.html#zone">Lavardac</a></li>
-      <li><a href="index.html#zone">Barbaste</a></li>
-      <li><a href="index.html#zone">Prayssas</a></li>
-      <li><a href="index.html#zone">Le Temple-sur-Lot</a></li>
-      <li><a href="index.html#zone">Dolmayrac</a></li>
-      <li><a href="index.html#zone">Saint-Étienne-de-Fougères</a></li>
-      <li><a href="index.html#zone">Hautefage-la-Tour</a></li>
-      <li><a href="index.html#zone">Allez-et-Cazeneuve</a></li>
-      <li><a href="index.html#zone">Lédat</a></li>
-      <li><a href="index.html#zone">Monsempron-Libos</a></li>
-      <li><a href="index.html#zone">Montayral</a></li>
-      <li><a href="index.html#zone">Puy-l’Évêque</a></li>
-    </ul>
-  </nav>
-</section>
-
-<!-- JSON-LD : zone de chalandise / areaServed -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Dépannage informatique à domicile",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "SpeedComputer47",
-    "url": "https://speedcomputer47.fr/"
-  },
-  "areaServed": [
-    "Villeneuve-sur-Lot","Agen","Marmande","Tonneins","Fumel","Nérac","Sainte-Livrade-sur-Lot","Casseneuil","Pujols",
-    "Penne-d’Agenais","Saint-Sylvestre-sur-Lot","Bias","Le Passage","Boé","Bon-Encontre","Pont-du-Casse","Laroque-Timbaut",
-    "Cancon","Monflanquin","Villeréal","Castillonnès","Tournon-d’Agenais","Montaigu-de-Quercy","Miramont-de-Guyenne","Lauzun",
-    "Clairac","Aiguillon","Damazan","Lavardac","Barbaste","Prayssas","Le Temple-sur-Lot","Dolmayrac","Saint-Étienne-de-Fougères",
-    "Hautefage-la-Tour","Allez-et-Cazeneuve","Lédat","Monsempron-Libos","Montayral","Puy-l’Évêque","Lot-et-Garonne"
-  ]
-}
-</script>
   </main>
 
   <footer>
