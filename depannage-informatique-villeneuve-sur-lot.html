@@ -5,17 +5,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dépannage informatique à Villeneuve-sur-Lot — PC & Mac | SpeedComputer47</title>
-<meta name="description" content="Dépannage à domicile/atelier, virus, optimisation, Wi‑Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.">
+<meta name="description" content="Dépannage à domicile/atelier, virus, optimisation, Wi-Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.">
 <link rel="canonical" href="https://speedcomputer47.fr/depannage-informatique-villeneuve-sur-lot.html">
 <meta property="og:site_name" content="SpeedComputer47">
 <meta property="og:title" content="Dépannage informatique à Villeneuve-sur-Lot — PC & Mac | SpeedComputer47">
-<meta property="og:description" content="Dépannage à domicile/atelier, virus, optimisation, Wi‑Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.">
+<meta property="og:description" content="Dépannage à domicile/atelier, virus, optimisation, Wi-Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.">
+
+<!-- Optionnel mais recommandé : cohérence perfs avec l'index -->
+<link rel="preload" as="image" href="background.webp"/>
 
 <style>
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;background:#0e0e0f;color:#e8e8e8;line-height:1.6}
-  a{color:#8ab4ff;text-decoration:none}a:hover{text-decoration:underline}
+  /* ===== Style harmonisé sur l'index (fond image + voile sombre) ===== */
+  :root{
+    --bg-img: url('background.webp');
+    --bg-overlay: rgba(11,13,16,.88); /* voile pour lisibilité */
+  }
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;
+    /* deux calques : voile + image, position identique à l'index */
+    background:
+      linear-gradient(180deg, var(--bg-overlay), var(--bg-overlay)),
+      var(--bg-img) center / cover fixed no-repeat #0e0e0f;
+    color:#e8e8e8;
+    line-height:1.6;
+  }
+  a{color:#8ab4ff;text-decoration:none}
+  a:hover{text-decoration:underline}
   .container{max-width:1150px;margin:0 auto;padding:0 16px}
-  .nav{background:#0e0e0f;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{background:transparent;border-bottom:1px solid rgba(255,255,255,.08)}
   .nav .container{display:flex;justify-content:space-between;align-items:center;padding:14px 16px}
   .logo{color:#fff;font-weight:700;letter-spacing:.2px}
   nav a{margin-right:16px}
@@ -26,12 +44,14 @@
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
   .card{background:#121214;border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:16px}
   .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  @media(max-width:900px){.two-cols{grid-template-columns:1fr} nav a{display:inline-block;margin:8px 12px 0 0}}
+  @media(max-width:900px){
+    .two-cols{grid-template-columns:1fr}
+    nav a{display:inline-block;margin:8px 12px 0 0}
+  }
   .site-footer{background:#121214;margin-top:32px;border-top:1px solid rgba(255,255,255,.08);padding:24px 0;color:#bdbdbd}
   .badge{display:inline-block;padding:.25rem .5rem;border:1px solid rgba(255,255,255,.2);border-radius:.375rem;margin-left:.5rem}
   .btn-cta{display:inline-block;margin-top:12px}
 </style>
-
 
 </head>
 <body>
@@ -53,34 +73,35 @@
 <main class="container">
 
 <h1>Dépannage informatique — PC & Mac à Villeneuve-sur-Lot <span class="badge">Villeneuve-sur-Lot</span></h1>
-<p class="lead">Dépannage à domicile/atelier, virus, optimisation, Wi‑Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.</p>
+<p class="lead">Dépannage à domicile/atelier, virus, optimisation, Wi-Fi, réinstallation Windows/macOS à Villeneuve-sur-Lot et 50 km.</p>
 <p><strong>Zone d’intervention :</strong> Villeneuve-sur-Lot et jusqu’à <strong>50 km</strong> autour (Agen, Tonneins, Marmande, Nérac, Fumel, Casseneuil…). Déplacement rapide et prise en charge à distance possible.</p>
 
 <div class="cards">
   <a class="card" href="index.html#contact"><h3>📞 Contact</h3><p>Devis gratuit — réponse rapide.</p></a>
-  <a class="card" href="index.html#zones"><h3>📍 Zones</h3><p>Villeneuve-sur-Lot (50 km) • Voir la carte</p></a>
+  <!-- ancre harmonisée : #zone -->
+  <a class="card" href="index.html#zone"><h3>📍 Zones</h3><p>Villeneuve-sur-Lot (50 km) • Voir la carte</p></a>
   <a class="card" href="services.html"><h3>🧰 Tous nos services</h3><p>Dépannage, réseaux, sécurité, sauvegarde, formation…</p></a>
 </div>
 
 <div class="two-cols">
   <div>
     <h2>Particuliers — confort & sécurité au quotidien</h2>
-    <p>Nous intervenons à domicile à Villeneuve-sur-Lot et alentours pour garantir un ordinateur qui démarre vite, un Wi‑Fi stable, des données sauvegardées et protégées, et des outils simples. Explications claires, respect de votre budget et solutions durables.</p>
+    <p>Nous intervenons à domicile à Villeneuve-sur-Lot et alentours pour garantir un ordinateur qui démarre vite, un Wi-Fi stable, des données sauvegardées et protégées, et des outils simples. Explications claires, respect de votre budget et solutions durables.</p>
     <ul>
       <li>Diagnostic matériel/logiciel, nettoyage profond, optimisation.</li>
       <li>Suppression virus/malwares, configuration antivirus fiable.</li>
       <li>Sauvegardes locales & cloud (test de restauration inclus).</li>
-      <li>Wi‑Fi domestique (mesh/répéteurs/CPL), imprimantes & périphériques.</li>
+      <li>Wi-Fi domestique (mesh/répéteurs/CPL), imprimantes & périphériques.</li>
       <li>Conseils d’achat : le bon matériel au bon prix.</li>
     </ul>
   </div>
   <div>
     <h2>Professionnels — disponibilité, sécurité, traçabilité</h2>
-    <p>TPE/PME, commerces et professions libérales : nous sécurisons votre activité avec des procédures claires, des sauvegardes 3‑2‑1, de la supervision et un support réactif. Documentation fournie et interlocuteur unique pour vos demandes.</p>
+    <p>TPE/PME, commerces et professions libérales : nous sécurisons votre activité avec des procédures claires, des sauvegardes 3-2-1, de la supervision et un support réactif. Documentation fournie et interlocuteur unique pour vos demandes.</p>
     <ul>
       <li>Contrats de maintenance & infogérance avec SLA.</li>
       <li>NAS & sauvegardes, PRA/PCA, restaurations testées.</li>
-      <li>Réseaux pro : VLAN, VPN site‑à‑site, QoS, Wi‑Fi entreprise.</li>
+      <li>Réseaux pro : VLAN, VPN site-à-site, QoS, Wi-Fi entreprise.</li>
       <li>RGPD : gestion des accès, MFA, politiques de mots de passe.</li>
     </ul>
   </div>
@@ -89,7 +110,7 @@
 <h2>Aller plus loin</h2>
 <ul>
   <li><a href="sauvegarde-nas-villeneuve-sur-lot.html">Mettre en place une vraie sauvegarde</a></li>
-<li><a href="reseaux-wifi-villeneuve-sur-lot.html">Améliorer votre réseau & Wi‑Fi</a></li>
+  <li><a href="reseaux-wifi-villeneuve-sur-lot.html">Améliorer votre réseau & Wi-Fi</a></li>
   <li><a target="_blank" rel="noopener" href="https://www.synology.com/fr-fr">Synology</a> • <a target="_blank" rel="noopener" href="https://www.qnap.com/fr-fr">QNAP</a></li>
   <li><a target="_blank" rel="noopener" href="https://support.microsoft.com/">Support Microsoft</a> • <a target="_blank" rel="noopener" href="https://support.apple.com/">Support Apple</a></li>
 </ul>
@@ -101,7 +122,7 @@
 <footer class="site-footer">
   <div class="container">
     <p><strong>SpeedComputer47</strong> — Villeneuve-sur-Lot & alentours (50 km)</p>
-    <p><a href="mentions-legales.html">Mentions légales &amp; Confidentialité</a> • <a href="index.html#zones">Zones d’intervention</a></p>
+    <p><a href="mentions-legales.html">Mentions légales &amp; Confidentialité</a> • <a href="index.html#zone">Zones d’intervention</a></p>
   </div>
 </footer>
 
