@@ -102,7 +102,7 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 .contact-qr{margin-top:20px;display:flex;align-items:center;gap:16px}
 .contact-qr--card{padding:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;display:inline-flex}
 .contact-qr img{border-radius:8px;width:90px;height:90px;object-fit:contain;background:#fff;padding:4px;flex-shrink:0}
-.contact-qr p{margin:0;font-weight:600;color:var(--muted);line-height:1.4}
+.contact-qr p{margin:0;font-weight:600;color:#9aa4b2;line-height:1.4}
 
 /* Legal */
 .legal{padding-top:28px}
@@ -144,15 +144,28 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 .sc47-burger{display:none;margin-left:auto;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;border-radius:10px;padding:8px 10px;cursor:pointer}
 
 /* Nav & links */
-.sc47-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-left:auto}
-.sc47-link{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937}
+.sc47-nav{
+  display:flex;align-items:center;gap:10px;
+  margin-left:auto;
+  flex-wrap:nowrap;            /* ✅ une seule ligne en desktop */
+  white-space:nowrap;          /* empêche le retour à la ligne */
+}
+.sc47-link{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 14px;border-radius:12px;text-decoration:none;
+  color:#e5e7eb;background:#0f172a;border:1px solid #1f2937;white-space:nowrap
+}
 .sc47-link:hover{background:#111b2e}
 .sc47-link--ghost{background:transparent}
 .sc47-link.is-active{outline:2px solid rgba(56,189,248,.4)}
 
 /* Actions */
-.sc47-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
-.sc47-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937}
+.sc47-actions{
+  display:flex;align-items:center;gap:10px;margin-left:12px;flex:0 0 auto;
+}
+.sc47-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;color:#e5e7eb;background:#0f172a;border:1px solid #1f2937;white-space:nowrap
+}
 .sc47-btn:hover{background:#111b2e}
 .sc47-btn--primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
 .sc47-btn--primary:hover{filter:brightness(.95)}
@@ -171,10 +184,12 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
   .sc47-nav{
     position:fixed;left:0;right:0;top:96px;
     background:#0b0f16;border-top:1px solid #111827;display:none;flex-direction:column;gap:8px;
-    padding:10px 4%;z-index:39
+    padding:10px 4%;z-index:39;
+    white-space:normal; /* on réautorise le retour en mobile */
   }
   .sc47-nav.open{display:flex}
-  .sc47-actions{margin-left:0;align-self:stretch;justify-content:flex-start}
+  .sc47-actions{margin-left:0;align-self:stretch;justify-content:flex-start;flex-direction:column;align-items:stretch;gap:12px}
+  .sc47-actions .sc47-btn{width:100%;justify-content:center;font-size:16px;line-height:1.2;padding:14px 16px}
 }
 
 /* Map */
@@ -199,28 +214,10 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 /* ========= Option A : helpers + layout mobile pour Avis ========= */
 .desktop-only{display:block}
 .mobile-only{display:none}
-
 @media (max-width:880px){
   .desktop-only{display:none}
   .mobile-only{display:inline-flex}
-
-  .sc47-actions{
-    flex-direction:column;
-    align-items:stretch;
-    gap:12px;
-    margin-left:0;
-    justify-content:flex-start; /* pour coller Avis au-dessus du numéro */
-  }
-
-  .sc47-actions .sc47-btn{
-    width:100%;
-    justify-content:center;
-    font-size:16px;
-    line-height:1.2;
-    padding:14px 16px;
-  }
-
-  /* Si le dropdown desktop était visible par erreur sur mobile */
+  /* Dropdown en bloc si ouvert en mobile */
   .sc47-dropdown{width:100%}
   .sc47-dropdown .sc47-btn{width:100%;justify-content:center}
   .sc47-menu{position:static;right:auto;top:auto;display:none;margin-top:6px}
