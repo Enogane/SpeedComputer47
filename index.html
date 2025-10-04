@@ -4,13 +4,19 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <!-- SEO -->
+  <!-- SEO de base -->
   <title>Dépannage informatique Villeneuve-sur-Lot | SpeedComputer47</title>
   <meta name="description" content="Dépannage informatique à Villeneuve-sur-Lot et dans le Lot-et-Garonne. Réparation PC/Mac, installation, maintenance et cybersécurité. Intervention rapide à domicile et en entreprise."/>
   <link rel="canonical" href="https://speedcomputer47.fr/"/>
   <meta name="robots" content="index, follow"/>
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="google-site-verification" content="YOUR_GSC_TOKEN"/>
   <meta name="theme-color" content="#0b0d10"/>
+
+  <!-- Hreflang + Sitemap hint -->
+  <link rel="alternate" href="https://speedcomputer47.fr/" hreflang="fr-FR"/>
+  <link rel="alternate" href="https://speedcomputer47.fr/" hreflang="x-default"/>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Dépannage informatique à Villeneuve-sur-Lot | SpeedComputer47"/>
@@ -18,10 +24,33 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://speedcomputer47.fr/"/>
   <meta property="og:image" content="https://speedcomputer47.fr/logo.webp"/>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="fr_FR"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <!-- Consent par défaut -->
+  <!-- Perf: préchargements + préconnexions -->
+  <link rel="preload" as="image" href="background.webp"/>
+  <link rel="preload" as="image" href="logo.webp"/>
+  <link rel="icon" type="image/webp" href="logo.webp"/>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=11"/>
+
+  <!-- Petites aides UX (scroll + lien inline) -->
+  <style>
+    html{scroll-behavior:smooth}
+    #zone,#map{scroll-margin-top:110px}
+    @media (max-width:880px){#zone,#map{scroll-margin-top:120px}}
+    .link-inline{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+    .link-inline:hover{ text-decoration-thickness:2px; }
+    /* Rendre toute la ligne cliquable dans les listes en mobile */
+    @media (max-width:880px){ .list a.list-link{display:block;padding:10px 0} }
+  </style>
+
+  <!-- Consent par défaut (priorité confidentialité) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -38,15 +67,22 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NV4GWPHR');</script>
 
-  <!-- Perf -->
-  <link rel="preload" as="image" href="background.webp"/>
-  <link rel="preload" as="image" href="logo.webp"/>
-  <link rel="icon" type="image/webp" href="logo.webp"/>
+  <!-- JSON-LD : WebSite + SearchAction (sitelinks searchbox) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://speedcomputer47.fr/",
+    "name":"SpeedComputer47",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.google.com/search?q=site:speedcomputer47.fr+{search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=10"/>
-
-  <!-- JSON-LD LocalBusiness -->
+  <!-- JSON-LD LocalBusiness (enrichi) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -71,16 +107,20 @@
       "postalCode":"47300",
       "addressCountry":"FR"
     },
+    "geo":{"@type":"GeoCoordinates","latitude":44.404,"longitude":0.705},
+    "hasMap":"https://www.google.com/maps/dir//Speedcomputer47/",
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"19:00"}
+    ],
     "areaServed":[
       "Villeneuve-sur-Lot","Agen","Marmande","Fumel","Casseneuil","Pujols",
       "Tonneins","Saint-Sylvestre-sur-Lot","Cahors","Sainte-Livrade-sur-Lot","Lot-et-Garonne"
     ],
-    "openingHours":"Mo-Sa 09:00-19:00",
     "description":"Dépannage et services informatiques à domicile et en entreprise dans un rayon de 50 km autour de Villeneuve-sur-Lot."
   }
   </script>
 
-  <!-- ✅ JSON-LD avis + note moyenne (ComputerRepairService) -->
+  <!-- JSON-LD avis + note moyenne (ComputerRepairService) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -131,7 +171,7 @@
   }
   </script>
 
-  <!-- ✅ JSON-LD FAQ (améliore le SEO “People Also Ask”) -->
+  <!-- JSON-LD FAQ (People Also Ask) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -159,49 +199,51 @@
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- =================== HEADER =================== -->
-<header class="sc47-header">
-  <div class="sc47-container">
-    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-      <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
-      <span class="sc47-name">SpeedComputer47</span>
-    </a>
+  <!-- =================== HEADER =================== -->
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+        <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
 
-    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+      <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
 
-    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
-      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
-      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
-      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+      <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+        <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
+        <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
+        <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
+        <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
 
+        <div class="sc47-actions">
+          <!-- Mobile : bouton Avis simple -->
+          <a class="sc47-btn mobile-only" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">⭐ Laisser un avis</a>
 
-
-        <!-- Desktop : dropdown complet -->
-        <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-          <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-            <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
-            </a>
-            <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
-            </a>
-            <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
-            </a>
-            <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
-            </a>
+          <!-- Desktop : dropdown complet -->
+          <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
+                <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
+              </a>
+              <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
+                <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
+              </a>
+              <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
+                <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
+              </a>
+              <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
+                <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Téléphone -->
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-      </div>
-    </nav>
-  </div>
-</header>
+          <!-- Téléphone -->
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <!-- =================== MAIN =================== -->
   <main>
@@ -216,87 +258,67 @@
 
           <h2>Votre partenaire informatique de proximité</h2>
           <p>
-          Basés à <a href="/#zone" class="link-inline">Villeneuve-sur-Lot, nous intervenons dans un rayon d’environ 50 km</a> :
-
+            Basés à <a href="/#zone" class="link-inline">Villeneuve-sur-Lot, nous intervenons dans un rayon d’environ 50&nbsp;km</a> :
             <a href="/reparation-pc-agen.html">Agen</a>, 
             <a href="/installation-informatique-marmande.html">Marmande</a>, 
-            <a href="/domotique-tv-connectee-smartphone-fumel.html">Fumel</a>
-             <a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">Sainte-Livrade</a>,
-             <a href="/depannage-informatique-tonneins.html">Tonneins</a>,
-             <a href="/depannage-informatique-fumel.html">Monflanquin</a>, 
-           
+            <a href="/domotique-tv-connectee-smartphone-fumel.html">Fumel</a>, 
+            <a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">Sainte-Livrade</a>,
+            <a href="/depannage-informatique-tonneins.html">Tonneins</a>,
+            Monflanquin…
           </p>
 
-         <h2>Nos services pour particuliers</h2>
-<ul class="list">
-  <li>
-    <a href="/depannage-informatique-villeneuve-sur-lot.html">
-      <strong>Réparation de PC et Mac</strong>
-    </a>
-    : remplacement de pièces, optimisation, nettoyage.
-  </li>
+          <h2>Nos services pour particuliers</h2>
+          <ul class="list">
+            <li>
+              <a href="/depannage-informatique-villeneuve-sur-lot.html" class="list-link">
+                <strong>Réparation de PC et Mac</strong> — remplacement de pièces, optimisation, nettoyage.
+              </a>
+            </li>
+            <li>
+              <a href="/suppression-virus-malware-Pujols.html" class="list-link">
+                <strong>Suppression de virus et malwares</strong> — désinfection, protection et mises à jour.
+              </a>
+            </li>
+            <li>
+              <a href="/installation-informatique-marmande.html" class="list-link">
+                <strong>Installation et configuration</strong> — ordinateurs, box internet, imprimantes, scanners.
+              </a>
+            </li>
+            <li>
+              <a href="/formation-bureautique-cybersecurite-lot-et-garonne.html" class="list-link">
+                <strong>Formation &amp; assistance</strong> — bureautique, navigation sécurisée, emails, sauvegardes.
+              </a>
+            </li>
+          </ul>
 
-  <li>
-    <a href="/suppression-virus-malware-Pujols.html">
-      <strong>Suppression de virus et malwares</strong>
-    </a>
-    : désinfection, protection et mises à jour.
-  </li>
-
-  <li>
-    <a href="/installation-informatique-marmande.html">
-      <strong>Installation et configuration</strong>
-    </a>
-    : ordinateurs, box internet, imprimantes, scanners.
-  </li>
-
-  <li>
-    <a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">
-      <strong>Formation &amp; assistance</strong>
-    </a>
-    : bureautique, navigation sécurisée, emails, sauvegardes.
-  </li>
-</ul>
-
-<h2>Services entreprises</h2>
-<ul class="list">
-  <li>
-    <a href="/depannage-informatique-villeneuve-sur-lot.html">
-      <strong>Maintenance préventive et corrective</strong>
-    </a>
-    : suivi du parc, mises à jour, interventions planifiées.
-  </li>
-
-  <li>
-    <a href="/sauvegardetonneins.html">
-      <strong>Sauvegardes locales et cloud (NAS Synology, QNAP…)</strong>
-    </a>
-    : stratégie 3-2-1, sauvegardes automatiques, restauration.
-  </li>
-
-  <li>
-    <a href="/wifi-reseau-Casseneuil.html">
-      <strong>Réseaux fiables et sécurisés</strong>
-    </a>
-    : Wi-Fi, VLAN, routeurs, couverture maison/bureau.
-  </li>
-
-  <li>
-    <a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">
-      <strong>Cybersécurité TPE/PME</strong>
-    </a>
-    : anti-malwares, sensibilisation, bonnes pratiques.
-  </li>
-
-  <li>
-    <a href="/#contact">
-      <strong>Assistance rapide sur site ou à distance</strong>
-    </a>
-    : prise en charge express, télémaintenance sécurisée.
-  </li>
-</ul>
-
- 
+          <h2>Services entreprises</h2>
+          <ul class="list">
+            <li>
+              <a href="/depannage-informatique-villeneuve-sur-lot.html" class="list-link">
+                <strong>Maintenance préventive et corrective</strong> — suivi du parc, mises à jour, interventions planifiées.
+              </a>
+            </li>
+            <li>
+              <a href="/sauvegardetonneins.html" class="list-link">
+                <strong>Sauvegardes locales et cloud (NAS Synology, QNAP…)</strong> — stratégie 3-2-1, automatisation, restauration.
+              </a>
+            </li>
+            <li>
+              <a href="/wifi-reseau-Casseneuil.html" class="list-link">
+                <strong>Réseaux fiables et sécurisés</strong> — Wi-Fi, VLAN, routeurs, couverture maison/bureau.
+              </a>
+            </li>
+            <li>
+              <a href="/formation-bureautique-cybersecurite-lot-et-garonne.html" class="list-link">
+                <strong>Cybersécurité TPE/PME</strong> — anti-malwares, sensibilisation, bonnes pratiques.
+              </a>
+            </li>
+            <li>
+              <a href="/#contact" class="list-link">
+                <strong>Assistance rapide sur site ou à distance</strong> — prise en charge express, télémaintenance sécurisée.
+              </a>
+            </li>
+          </ul>
 
           <h2>Pourquoi nous choisir ?</h2>
           <ul class="list">
@@ -311,11 +333,11 @@
         <aside class="card" aria-label="Prestations phares">
           <h3>Prestations phares</h3>
           <ul class="list">
-            <li><a href="depannage-informatique-villeneuve-sur-lot.html">• Dépannage et assistance PC / Mac</a></li>
-            <li><a href="installation-informatique-marmande.html">• Installation PC, box, imprimante, logiciels</a></li>
-            <li><a href="reparation-pc-agen.html">• Suppression de virus, optimisation PC</a></li>
-            <li><a href="formation-bureautique-cybersecurite-lot-et-garonne.html">• Formation bureautique et cybersécurité</a></li>
-            <li><a href="domotique-tv-connectee-smartphone-fumel.html">• Domotique, TV connectée, smartphone</a></li>
+            <li><a href="/depannage-informatique-villeneuve-sur-lot.html">• Dépannage et assistance PC / Mac</a></li>
+            <li><a href="/installation-informatique-marmande.html">• Installation PC, box, imprimante, logiciels</a></li>
+            <li><a href="/reparation-pc-agen.html">• Suppression de virus, optimisation PC</a></li>
+            <li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">• Formation bureautique et cybersécurité</a></li>
+            <li><a href="/domotique-tv-connectee-smartphone-fumel.html">• Domotique, TV connectée, smartphone</a></li>
           </ul>
         </aside>
       </div>
@@ -348,7 +370,7 @@
         <p class="muted" style="margin-top:12px">Zone couverte : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban et communes voisines.</p>
         <div class="cta-row">
           <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
-          <a class="btn" href="#contact">🧾 Demande de devis express</a>
+          <a class="btn" href="/#contact">🧾 Demande de devis express</a>
         </div>
       </div>
 
@@ -359,7 +381,7 @@
           <div class="card"><p><strong>Em Em ★★★★★</strong><br>Accueil chaleureux, responsable compétent.</p></div>
           <div class="card"><p><strong>Estelle Z. ★★★★★</strong><br>Monsieur très gentil, très pro.</p></div>
           <div class="card"><p><strong>M 1.0 ★★★★★</strong><br>Parfait.</p></div>
-          <p class="muted">👉 Plus de témoignages sur notre <a href="avis.html">page dédiée</a>.</p>
+          <p class="muted">👉 Plus de témoignages sur notre <a href="/avis.html">page dédiée</a>.</p>
         </div>
       </section>
     </section>
@@ -370,7 +392,15 @@
         <div class="card">
           <p class="muted">Villeneuve-sur-Lot, Agen, Marmande, Fumel, Bergerac, Cahors, Montauban, Nérac, Tonneins, Casteljaloux, Sainte-Livrade, Monflanquin…</p>
           <a class="map-link" href="https://www.google.com/maps/dir//Speedcomputer47/" target="_blank" rel="noopener">
-            <img class="map-img" src="zone.webp" width="1200" height="800" alt="Périmètre d’intervention de SpeedComputer47" decoding="async" loading="lazy"/>
+            <img
+              class="map-img"
+              src="zone-1200.webp"
+              srcset="zone-600.webp 600w, zone-900.webp 900w, zone-1200.webp 1200w, zone-1600.webp 1600w"
+              sizes="(max-width: 640px) 92vw, (max-width: 1100px) 92vw, 1100px"
+              width="1200" height="800"
+              loading="lazy" decoding="async"
+              alt="Zone d’intervention SpeedComputer47 autour de Villeneuve-sur-Lot (≈ 50 km)"
+            />
           </a>
           <div class="cta-row">
             <a class="btn" href="https://www.google.com/maps/dir//Speedcomputer47/" target="_blank" rel="noopener">📍 Itinéraire Google Maps</a>
@@ -407,16 +437,47 @@
 
     <hr class="sep"/>
 
-    <!-- Ressources -->
-    <section class="resources" aria-label="Ressources utiles">
-      <h2>Ressources utiles</h2>
-      <ul>
-        <li><a href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a></li>
-        <li><a href="https://www.ssi.gouv.fr/" target="_blank" rel="noopener">ANSSI</a></li>
-        <li><a href="https://support.microsoft.com/" target="_blank" rel="noopener">Support Microsoft</a></li>
-        <li><a href="https://support.apple.com/fr-fr" target="_blank" rel="noopener">Support Apple</a></li>
-        <li><a href="https://www.cnil.fr/" target="_blank" rel="noopener">CNIL</a></li>
-      </ul>
+    <!-- Maillage interne : Liens rapides -->
+    <section id="liens-rapides">
+      <div class="container">
+        <h2 class="section-title">Liens rapides</h2>
+        <div class="card" style="margin-bottom:14px">
+          <h3>Services populaires</h3>
+          <ul class="list list-cols">
+            <li><a href="/depannage-informatique-villeneuve-sur-lot.html">Dépannage informatique Villeneuve-sur-Lot</a></li>
+            <li><a href="/reparation-pc-agen.html">Réparation PC / Mac à Agen</a></li>
+            <li><a href="/installation-informatique-marmande.html">Installation informatique à Marmande</a></li>
+            <li><a href="/wifi-reseau-Casseneuil.html">Wi-Fi & Réseau à Casseneuil</a></li>
+            <li><a href="/suppression-virus-malware-Pujols.html">Suppression de virus (Pujols & alentours)</a></li>
+            <li><a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">Imprimantes & périphériques (Sainte-Livrade)</a></li>
+            <li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">PC lent : SSD & clonage</a></li>
+            <li><a href="/messagerieCahors.html">Messagerie (Outlook/Gmail) à Cahors</a></li>
+            <li><a href="/sauvegardetonneins.html">Sauvegarde & NAS à Tonneins</a></li>
+            <li><a href="/domotique-tv-connectee-smartphone-fumel.html">Domotique & TV connectée à Fumel</a></li>
+            <li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation & cybersécurité</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Dépannage par ville</h3>
+          <ul class="list list-cols">
+            <li><a href="/depannage-informatique-agen.html">Agen</a></li>
+            <li><a href="/depannage-informatique-villeneuve-sur-lot.html">Villeneuve-sur-Lot</a></li>
+            <li><a href="/depannage-informatique-marmande.html">Marmande</a></li>
+            <li><a href="/depannage-informatique-le-passage.html">Le Passage</a></li>
+            <li><a href="/depannage-informatique-tonneins.html">Tonneins</a></li>
+            <li><a href="/depannage-informatique-nerac.html">Nérac</a></li>
+            <li><a href="/depannage-informatique-boe.html">Boé</a></li>
+            <li><a href="/depannage-informatique-bon-encontre.html">Bon-Encontre</a></li>
+            <li><a href="/depannage-informatique-sainte-livrade-sur-lot.html">Sainte-Livrade-sur-Lot</a></li>
+            <li><a href="/depannage-informatique-fumel.html">Fumel</a></li>
+          </ul>
+          <div class="cta-row" style="margin-top:10px">
+            <a class="btn" href="/#contact">📩 Demander un devis</a>
+            <a class="btn" href="/depannage-informatique-villeneuve-sur-lot.html">Voir les prestations locales</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Zones internes -->
@@ -441,13 +502,13 @@
     <div class="container foot">
       <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
       <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-      <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
+      <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
     </div>
   </footer>
 
   <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
 
-  <!-- Résumé Schema.org -->
+  <!-- Résumé Schema.org court -->
   <script type="application/ld+json">
     {
       "@context":"https://schema.org",
