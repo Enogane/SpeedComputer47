@@ -21,7 +21,7 @@ a:hover{text-decoration:underline}
 .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
 @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
 
-/* ============ Header (ancienne version générique – OK de la garder) ============ */
+/* Header générique (legacy) */
 .site-header{position:sticky;top:0;z-index:50;background:#0b0d10cc;backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:14px}
@@ -36,17 +36,14 @@ a:hover{text-decoration:underline}
 .btn.active{outline:2px solid var(--brand)}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
 
-/* ===================== HERO ===================== */
+/* HERO */
 .hero{position:relative;border-bottom:1px solid var(--line)}
-.hero.has-bg{background:none} /* Compatibilité ancien système */
-
-/* Règle unifiée pour le fond du hero */
+.hero.has-bg{background:none}
 .hero--bg {
   background:
     radial-gradient(60% 60% at 50% 0%, rgba(0,0,0,.55), rgba(0,0,0,.88)),
     url('background.webp') center top / cover no-repeat;
 }
-
 .hero-grid{
   display:grid;
   grid-template-columns:minmax(0,1fr) 420px;
@@ -59,7 +56,7 @@ h1{font-size:42px;line-height:1.15;margin:14px 0 8px}
 .lead{color:var(--muted);font-size:18px;margin:0 0 18px}
 .pay{margin-top:12px}
 
-/* image du hero (sous le bloc) */
+/* image du hero */
 .hero__bg{
   display:block;
   width:100%;
@@ -102,34 +99,10 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 .floating-call{position:fixed;right:16px;bottom:16px;background:var(--brand);color:#0b0d10;padding:14px 16px;border-radius:999px;border:2px solid #0b0d10;font-weight:800;z-index:60;box-shadow:0 8px 30px #0008}
 
 /* Contact QR Code */
-.contact-qr {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.contact-qr--card {
-  padding: 12px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  display: inline-flex;
-}
-.contact-qr img {
-  border-radius: 8px;
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  background: white;
-  padding: 4px;
-  flex-shrink: 0;
-}
-.contact-qr p {
-  margin: 0;
-  font-weight: 600;
-  color: var(--muted);
-  line-height: 1.4;
-}
+.contact-qr{margin-top:20px;display:flex;align-items:center;gap:16px}
+.contact-qr--card{padding:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;display:inline-flex}
+.contact-qr img{border-radius:8px;width:90px;height:90px;object-fit:contain;background:#fff;padding:4px;flex-shrink:0}
+.contact-qr p{margin:0;font-weight:600;color:var(--muted);line-height:1.4}
 
 /* Legal */
 .legal{padding-top:28px}
@@ -157,7 +130,7 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 .btn.social .icon{height:28px;width:28px;object-fit:contain;border-radius:6px}
 @media (max-width:640px){.btn.social{padding:8px 12px}.btn.social .icon{height:22px;width:22px}}
 
-/* ============ Header unifié SpeedComputer47 (actuel) ============ */
+/* ============ Header unifié SpeedComputer47 ============ */
 .sc47-header{position:sticky;top:0;z-index:40;background:#0b0f16;border-bottom:1px solid #111827}
 .sc47-container{width:min(1100px,92%);margin:0 auto;display:flex;align-items:center;gap:14px;padding:12px 0}
 
@@ -196,45 +169,58 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 @media (max-width: 880px){
   .sc47-burger{display:block}
   .sc47-nav{
-    position:fixed;left:0;right:0;top:96px; /* menu clair sous le header + logo 84px */
+    position:fixed;left:0;right:0;top:96px;
     background:#0b0f16;border-top:1px solid #111827;display:none;flex-direction:column;gap:8px;
     padding:10px 4%;z-index:39
   }
   .sc47-nav.open{display:flex}
-  .sc47-actions{margin-left:0;align-self:stretch;justify-content:space-between}
+  .sc47-actions{margin-left:0;align-self:stretch;justify-content:flex-start}
 }
 
 /* Map */
 .map-img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
 .map-link:hover .map-img{outline:2px solid var(--accent)}
 
-/* ================== QR badge & modal ================== */
-.qr-badge{
-  display:flex;align-items:center;gap:8px;
-  padding:8px 10px;border:1px solid #2b3440;border-radius:12px;
-  background:#121826;color:#e7edf8;cursor:pointer;
-}
+/* QR badge & modal */
+.qr-badge{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid #2b3440;border-radius:12px;background:#121826;color:#e7edf8;cursor:pointer}
 .qr-badge img{width:40px;height:40px;object-fit:contain}
 @media (max-width:640px){.qr-badge img{width:32px;height:32px}}
-
-.qr-modal{
-  position:fixed;inset:0;background:rgba(0,0,0,.6);
-  display:none;align-items:center;justify-content:center;z-index:100;
-}
+.qr-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:100}
 .qr-modal.open{display:flex}
-.qr-card{
-  background:#0f141c;border:1px solid #233041;border-radius:16px;
-  padding:16px;text-align:center;max-width:92%;width:360px;
-}
+.qr-card{background:#0f141c;border:1px solid #233041;border-radius:16px;padding:16px;text-align:center;max-width:92%;width:360px}
 .qr-card img{width:260px;height:260px;object-fit:contain}
 .qr-close{margin-top:10px}
-/* Liste zones en colonnes (lisible mobile + desktop) */
+
+/* Liste zones */
 .list-cols{columns:2; column-gap:16px}
 @media(min-width:980px){.list-cols{columns:3}}
 .list-cols li{break-inside:avoid}
 
+/* ========= Option A : helpers + layout mobile pour Avis ========= */
+.desktop-only{display:block}
+.mobile-only{display:none}
 
-  /* Si jamais le dropdown restait visible, on le force en bloc */
+@media (max-width:880px){
+  .desktop-only{display:none}
+  .mobile-only{display:inline-flex}
+
+  .sc47-actions{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+    margin-left:0;
+    justify-content:flex-start; /* pour coller Avis au-dessus du numéro */
+  }
+
+  .sc47-actions .sc47-btn{
+    width:100%;
+    justify-content:center;
+    font-size:16px;
+    line-height:1.2;
+    padding:14px 16px;
+  }
+
+  /* Si le dropdown desktop était visible par erreur sur mobile */
   .sc47-dropdown{width:100%}
   .sc47-dropdown .sc47-btn{width:100%;justify-content:center}
   .sc47-menu{position:static;right:auto;top:auto;display:none;margin-top:6px}
