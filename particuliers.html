@@ -1,514 +1,158 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Particuliers | SpeedComputer47</title>
-<meta content="Services informatiques et dépannage à domicile." name="description"/>
-<link href="https://speedcomputer47.fr/particuliers.html" rel="canonical"/>
-<meta content="Dépannage informatique – Particuliers | SpeedComputer47" property="og:title"/>
-<meta content="Dépannage PC/Mac à domicile, sauvegardes, réinstallation Windows, Wi-Fi, imprimantes, domotique. Tarifs TTC — Villeneuve-sur-Lot et 50 km." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://speedcomputer47.fr/particuliers.html" property="og:url"/>
-<meta content="https://speedcomputer47.fr/logo.webp" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="#121417" name="theme-color"/>
-<link href="style.css" rel="stylesheet"/>
-<link as="image" href="background.webp" rel="preload"/>
-<link as="image" href="logo.webp" rel="preload"/>
-<script type="application/ld+json">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dépannage informatique particuliers Villeneuve-sur-Lot | SpeedComputer47</title>
+  <meta name="description" content="Dépannage, assistance et maintenance informatique à domicile pour particuliers à Villeneuve-sur-Lot et dans le Lot-et-Garonne. Services PC/Mac, Wi-Fi, imprimantes, virus, sauvegardes, formation. Intervention rapide et tarifs transparents."/>
+  <link rel="canonical" href="https://speedcomputer47.fr/particuliers.html"/>
+  <meta property="og:title" content="Dépannage informatique particuliers | Villeneuve-sur-Lot"/>
+  <meta property="og:description" content="Assistance informatique complète pour particuliers : réparation, installation, sécurité, formation. Villeneuve-sur-Lot et 50 km autour."/>
+  <meta property="og:image" content="https://speedcomputer47.fr/logo.webp"/>
+  <meta name="theme-color" content="#0b0d10"/>
+  <link rel="stylesheet" href="style.css?v=11"/>
+  
+  <!-- Données structurées SEO 2025: WebPage + Fil d'Ariane + FAQ -->
+  <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "SpeedComputer47",
-    "image": "https://speedcomputer47.fr/logo.webp",
-    "url": "https://speedcomputer47.fr/",
-    "telephone": "+33666235143",
-    "email": "contact@speedcomputer47.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "8 rue Gambetta",
-      "postalCode": "47300",
-      "addressLocality": "Villeneuve-sur-Lot",
-      "addressCountry": "FR"
-    },
-    "geo": { "@type":"GeoCoordinates", "latitude": 44.4097, "longitude": 0.7047 },
-    "areaServed": ["Villeneuve-sur-Lot","Agen","Marmande","Fumel","Bergerac","Cahors","Montauban","Nérac","Tonneins","Casteljaloux"],
-    "priceRange": "€",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Tarifs particuliers (TTC)",
-      "itemListElement": [
-    {
-      "@type": "OfferCatalog",
-      "name": "Niveau entrée / de base",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Diagnostic simple / estimation", "price": "25", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Dépannage / assistance (1h)", "price": "55", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Dépannage 1h30", "price": "80", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Nettoyage / optimisation PC", "price": "50", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Suppression virus / malwares", "price": "65", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Réinstallation Windows (sans sauvegarde)", "price": "90", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Réinstallation + sauvegarde / transfert (petit volume)", "price": "120", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation logiciel(s) essentiels", "price": "40", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation imprimante / périphérique", "price": "30", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Remplacement disque dur / SSD (hors pièces)", "price": "60", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Ajout mémoire RAM (hors pièces)", "price": "50", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation / configuration box / modem", "price": "60", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Mise en place réseau Wi-Fi / câblé (petit réseau)", "price": "80", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation / paramétrage antivirus", "price": "40", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Conseils cybersécurité (1h)", "price": "60", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Formation / accompagnement 1h (bureautique, internet…)", "price": "50", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation caméra IP / domotique simple", "price": "70", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Mise en service TV / box multimédia", "price": "40", "priceCurrency": "EUR" }
-      ]
-    },
-    {
-      "@type": "OfferCatalog",
-      "name": "Niveau complexité modérée",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Diagnostic simple / estimation", "price": "35", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Dépannage / assistance (1h)", "price": "70", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Dépannage 1h30", "price": "100", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Nettoyage / optimisation PC", "price": "70", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Suppression virus / malwares", "price": "85", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Réinstallation Windows (sans sauvegarde)", "price": "120", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Réinstallation + sauvegarde / transfert (petit volume)", "price": "150", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation logiciel(s) essentiels", "price": "60", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation imprimante / périphérique", "price": "50", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Remplacement disque dur / SSD (hors pièces)", "price": "80", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Ajout mémoire RAM (hors pièces)", "price": "70", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation / configuration box / modem", "price": "80", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Mise en place réseau Wi-Fi / câblé (petit réseau)", "price": "100", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation / paramétrage antivirus", "price": "60", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Conseils cybersécurité (1h)", "price": "80", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Formation / accompagnement 1h (bureautique, internet…)", "price": "70", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Installation caméra IP / domotique simple", "price": "100", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Mise en service TV / box multimédia", "price": "60", "priceCurrency": "EUR" }
-      ]
-    }
-  ]
-},
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "25",
-      "highPrice": "150",
-      "offerCount": "36"
-    },
-    "hasOffer": {
-      "@type": "Offer",
-      "name": "Frais de déplacement au-delà de 20 km",
-      "priceCurrency": "EUR",
-      "priceSpecification": {
-        "@type": "DeliveryChargeSpecification",
-        "appliesToDeliveryMethod": "https://schema.org/OnSiteInHomeService",
-        "eligibleRegion": "Au-delà de 20 km depuis Villeneuve-sur-Lot",
-        "priceCurrency": "EUR",
-        "price": "0.50",
-        "unitText": "KILOMETER"
-      },
-      "description": "Déplacement gratuit jusqu’à 20 km. Au-delà : +0,50 €/km. Cas complexes/volumétrie importante : devis personnalisé."
-    }
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "@id":"https://speedcomputer47.fr/particuliers.html#webpage",
+    "url":"https://speedcomputer47.fr/particuliers.html",
+    "name":"Dépannage informatique particuliers à Villeneuve-sur-Lot",
+    "description":"Dépannage, assistance et maintenance informatique à domicile pour particuliers à Villeneuve-sur-Lot et dans le Lot-et-Garonne.",
+    "inLanguage":"fr-FR",
+    "isPartOf":{"@type":"WebSite","name":"SpeedComputer47","url":"https://speedcomputer47.fr/"}
   }
   </script>
-<style>
-    html{scroll-behavior:smooth}
-    body{color:#d1d5db; background:#0a0f17; position:relative;}
-    .container,.sc47-container{width:min(1200px,92%);margin:0 auto}
-    section{padding:36px 0}
-    .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
-    .muted{color:#9ca3af}
-    .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
-    .list{padding-left:16px;margin:0} .list li{margin:2px 0}
-    .list a {text-decoration:none; color: #c7d2fe;} /* <-- MODIFICATION ICI */
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
-    .btn:hover{background:#111b2e}
-    .lead{color:#c7d2fe}
-    .pay{margin-top:8px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-    .contact-grid{display:grid;grid-template-columns:1fr;gap:18px}
-    @media(min-width:980px){.contact-grid{grid-template-columns:1fr 1.1fr}}
-    .contact-grid input,.contact-grid textarea{width:100%;padding:10px;border-radius:10px;background:#0b0f16;border:1px solid #1f2937;color:#e5e7eb}
-    .big{font-size:18px} .mail a{word-break:break-all}
-    hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
-    footer{padding:18px 0 30px;color:#9ca3af}
-    .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
-    .foot p{margin:0}
-    .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-    .service-card a {text-decoration: none; color: inherit; display: block;}
-  </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr/particuliers.html","email":"contact@speedcomputer47.fr","telephone":"06 66 23 51 43","areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Fumel","Casseneuil","Pujols","Tonneins","Saint-Sylvestre-sur-Lot","Cahors","Sainte-Livrade-sur-Lot","Lot-et-Garonne"],"sameAs":["https://www.facebook.com/speedcomputer47/","https://www.linkedin.com/company/speedcomputer47/","https://www.pagesjaunes.fr/pros/64032762","https://speedcomputer47.fr/"],"address":{"@type":"PostalAddress","addressLocality":"Villeneuve-sur-Lot","addressRegion":"Nouvelle-Aquitaine","postalCode":"47300","addressCountry":"FR"},"openingHours":"Mo-Sa 09:00-19:00","description":"Dépannage et services informatiques à domicile et en entreprise dans un rayon de 50 km autour de Villeneuve‑sur‑Lot."}</script></head>
-<body><!-- =================== HEADER =================== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
+      {"@type":"ListItem","position":2,"name":"Particuliers","item":"https://speedcomputer47.fr/particuliers.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Intervenez-vous à domicile autour de Villeneuve-sur-Lot ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous intervenons à domicile dans un rayon d’environ 50 km (Agen, Marmande, Fumel, Tonneins, Nérac, Sainte-Livrade, Monflanquin, etc.)."}},
+      {"@type":"Question","name":"Pouvez-vous accélérer un ordinateur très lent ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Après diagnostic, nous proposons le passage sur SSD avec clonage des données, l’optimisation du démarrage et les mises à jour de sécurité."}},
+      {"@type":"Question","name":"Installez-vous les imprimantes et le Wi‑Fi ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous installons et configurons imprimantes, scanners, box Internet, Wi‑Fi et réseau domestique pour une connexion stable dans toute la maison."}},
+      {"@type":"Question","name":"Quels sont vos tarifs pour les particuliers ?","acceptedAnswer":{"@type":"Answer","text":"Le diagnostic débute à 25 € TTC. Une heure d’intervention est à partir de 55 € TTC. Les opérations plus complexes (virus, réinstallation Windows, sauvegardes) sont détaillées dans notre grille tarifaire sur la page."}},
+      {"@type":"Question","name":"Proposez-vous une assistance à distance ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Pour de nombreux soucis logiciels (mises à jour, messagerie, nettoyage), l’intervention peut se faire à distance après accord."}}
+    ]
+  }
+  </script>
+</head>
+<body>
 <header class="sc47-header">
   <div class="sc47-container">
-    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-      <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
-      <span class="sc47-name">SpeedComputer47</span>
-    </a>
-
-    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
-
-    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
-      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
-      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
-      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
-
-
-
-        <!-- Desktop : dropdown complet -->
-        <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-          <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-            <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
-            </a>
-            <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
-            </a>
-            <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
-            </a>
-            <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
-              <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
-            </a>
-          </div>
-        </div>
-
-        <!-- Téléphone -->
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-      </div>
+    <a class="sc47-brand" href="index.html"><img src="logo.webp" alt="SpeedComputer47" width="84" height="84"/></a>
+    <nav class="sc47-nav">
+      <a href="index.html">Accueil</a>
+      <a href="particuliers.html" class="is-active">Particuliers</a>
+      <a href="pro.html">Entreprises</a>
+      <a href="/#contact">Contact / Devis</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="hero hero--bg">
-<div class="container hero-grid">
-<div>
-<h1>Dépannage &amp; installation à domicile sur Villeneuve-sur-Lot et alentour (particuliers)</h1>
-<p class="lead">
-            PC/Mac lents, Wi-Fi capricieux, imprimantes, box internet, cybersécurité, sauvegardes, réinstallation,
-            domotique et TV connectées. Intervention rapide autour de Villeneuve-sur-Lot.
-          </p>
-<div class="cta-row">
-<a class="btn primary" href="tel:+33666235143">📞 Appeler</a>
-<a class="btn" href="#tarifs">🧾 Devis gratuit</a>
-</div>
-<p class="muted pay">💳 CB &amp; sans contact via SumUp • Apple/Google Pay • Virements &amp; espèces.</p>
-</div>
-<div>
-<div class="card">
-<h3>Interventions fréquentes</h3>
-<ul class="list">
-<li><a href="pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">• PC lent → passage SSD + optimisation</a></li>
-<li><a href="reparation-pc-agen.html">• Suppression de virus &amp; sécurisation</a></li>
-<li><a href="wifi-reseau-Casseneuil.html">• Wi-Fi / réseau maison (box, CPL, routeur)</a></li>
-<li><a href="installation-informatique-marmande.html">• Imprimantes : installation &amp; dépannage</a></li>
-<li><a href="messagerieCahors.html">• Messagerie (Outlook, Gmail) &amp; sauvegardes</a></li>
-<li><a href="formation-bureautique-cybersecurite-lot-et-garonne.html">• Formation : bureautique &amp; bonnes pratiques</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="services">
-<div class="container">
-<h2 class="section-title">Prestations courantes</h2>
-<div class="services-grid">
-<div class="service-card">
-<a href="depannage-informatique-villeneuve-sur-lot.html">
-<h3>🖥️ Dépannage / réparation</h3>
-<p>Diagnostic, pannes matérielles &amp; logicielles, portables &amp; PC de bureau.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="installation-informatique-marmande.html">
-<h3>⚙️ Installation &amp; configuration</h3>
-<p>Nouveaux PC, Windows, logiciels essentiels, imprimantes &amp; périphériques, box/routeurs.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="wifi-reseau-Casseneuil.html">
-<h3>🌐 Réseaux &amp; connectivité</h3>
-<p>Wi-Fi, CPL, répéteurs, réseau câblé, sécurisation et partage.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="suppression-virus-malware-Pujols.html">
-<h3>🛡️ Sécurité</h3>
-<p>Antivirus, firewall, suppression malwares, mises à jour &amp; durcissement.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="sauvegardetonneins.html">
-<h3>💾 Sauvegarde &amp; récupération</h3>
-<p>Sauvegardes locales/cloud, récupération de fichiers, migration de données.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="formation-bureautique-cybersecurite-lot-et-garonne.html">
-<h3>📚 Formation &amp; assistance</h3>
-<p>Bureautique, internet, messagerie, réseaux sociaux, prise en main à distance.</p>
-</a>
-</div>
-<div class="service-card">
-<a href="domotique-tv-connectee-smartphone-fumel.html">
-<h3>🏠 Maison connectée</h3>
-<p>Caméras IP, TV connectée, box multimédia, domotique simple.</p>
-</a>
-</div>
-</div>
-</div>
-</section>
-<section id="tarifs">
-<div class="container">
-<h2 class="section-title">Tarifs particuliers (TTC)</h2>
-<div class="card" style="overflow:auto">
-<table aria-label="Grille tarifaire particuliers TTC à deux niveaux" class="table pricing">
-<caption class="sr-only">Tarifs particuliers avec deux niveaux : entrée / de base et complexité modérée</caption>
-<thead>
-<tr class="row">
-<th class="cat">Catégorie</th>
-<th>Service</th>
-<th>Tarif entrée / de base</th>
-<th>Tarif complexité modérée</th>
-<th>Conditions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-<td data-label="Service">Diagnostic simple / estimation</td>
-<td data-label="Entrée"><strong>25 €</strong></td>
-<td data-label="Complexité"><strong>35 €</strong></td>
-<td data-label="Conditions">Déplacement ≤ 20 km inclus</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-<td data-label="Service">Dépannage / assistance 1 h (petite tâche)</td>
-<td data-label="Entrée"><strong>55 €</strong></td>
-<td data-label="Complexité"><strong>70 €</strong></td>
-<td data-label="Conditions">Selon complexité ou matériel ancien</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-<td data-label="Service">Dépannage 1 h 30</td>
-<td data-label="Entrée"><strong>80 €</strong></td>
-<td data-label="Complexité"><strong>100 €</strong></td>
-<td data-label="Conditions">Pour pannes lourdes (virus, OS…)</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🖥️ Dépannage informatique</td>
-<td data-label="Service">Nettoyage / optimisation PC</td>
-<td data-label="Entrée"><strong>50 €</strong></td>
-<td data-label="Complexité"><strong>70 €</strong></td>
-<td data-label="Conditions">Inclut mises à jour &amp; nettoyage</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
-<td data-label="Service">Suppression virus / malwares</td>
-<td data-label="Entrée"><strong>65 €</strong></td>
-<td data-label="Complexité"><strong>85 €</strong></td>
-<td data-label="Conditions">Selon gravité / volume de fichiers</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">⚙️ Réinstallation &amp; configuration</td>
-<td data-label="Service">Réinstallation Windows (sans sauvegarde)</td>
-<td data-label="Entrée"><strong>90 €</strong></td>
-<td data-label="Complexité"><strong>120 €</strong></td>
-<td data-label="Conditions">Selon version &amp; temps requis</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">⚙️ Réinstallation &amp; configuration</td>
-<td data-label="Service">Réinstallation + sauvegarde / transfert (petit volume)</td>
-<td data-label="Entrée"><strong>120 €</strong></td>
-<td data-label="Complexité"><strong>150 €</strong></td>
-<td data-label="Conditions">Supplément si volumétrie importante</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">⚙️ Réinstallation &amp; configuration</td>
-<td data-label="Service">Installation logiciel(s) essentiels</td>
-<td data-label="Entrée"><strong>40 €</strong></td>
-<td data-label="Complexité"><strong>60 €</strong></td>
-<td data-label="Conditions">Selon nombre de logiciels</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🔧 Matériel &amp; périphériques</td>
-<td data-label="Service">Installation imprimante / périphérique</td>
-<td data-label="Entrée"><strong>30 €</strong></td>
-<td data-label="Complexité"><strong>50 €</strong></td>
-<td data-label="Conditions">Selon difficulté / compatibilité</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🔧 Matériel &amp; périphériques</td>
-<td data-label="Service">Remplacement disque dur / SSD (hors pièces)</td>
-<td data-label="Entrée"><strong>60 €</strong></td>
-<td data-label="Complexité"><strong>80 €</strong></td>
-<td data-label="Conditions">Main d’œuvre uniquement</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🔧 Matériel &amp; périphériques</td>
-<td data-label="Service">Ajout mémoire RAM (hors pièces)</td>
-<td data-label="Entrée"><strong>50 €</strong></td>
-<td data-label="Complexité"><strong>70 €</strong></td>
-<td data-label="Conditions">Selon installation / compatibilité</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🌐 Réseau &amp; Internet</td>
-<td data-label="Service">Installation / configuration box / modem</td>
-<td data-label="Entrée"><strong>60 €</strong></td>
-<td data-label="Complexité"><strong>80 €</strong></td>
-<td data-label="Conditions">Selon complexité FAI / logement</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🌐 Réseau &amp; Internet</td>
-<td data-label="Service">Mise en place réseau Wi-Fi / câblé (petit réseau)</td>
-<td data-label="Entrée"><strong>80 €</strong></td>
-<td data-label="Complexité"><strong>100 €</strong></td>
-<td data-label="Conditions">Maison / surface modérée</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
-<td data-label="Service">Installation / paramétrage antivirus</td>
-<td data-label="Entrée"><strong>40 €</strong></td>
-<td data-label="Complexité"><strong>60 €</strong></td>
-<td data-label="Conditions">Selon licence &amp; nombre de postes</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🛡️ Sécurité</td>
-<td data-label="Service">Conseils cybersécurité (1 h)</td>
-<td data-label="Entrée"><strong>60 €</strong></td>
-<td data-label="Complexité"><strong>80 €</strong></td>
-<td data-label="Conditions">Audit léger, bonnes pratiques</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">📚 Formation &amp; accompagnement</td>
-<td data-label="Service">Formation / accompagnement 1 h (bureautique, internet…)</td>
-<td data-label="Entrée"><strong>50 €</strong></td>
-<td data-label="Complexité"><strong>70 €</strong></td>
-<td data-label="Conditions">Selon niveau &amp; lieu d’intervention</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
-<td data-label="Service">Installation caméra IP / domotique simple</td>
-<td data-label="Entrée"><strong>70 €</strong></td>
-<td data-label="Complexité"><strong>100 €</strong></td>
-<td data-label="Conditions">Selon distance / configuration</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">🏠 Maison connectée</td>
-<td data-label="Service">Mise en service TV / box multimédia</td>
-<td data-label="Entrée"><strong>40 €</strong></td>
-<td data-label="Complexité"><strong>60 €</strong></td>
-<td data-label="Conditions">Smart TV, apps, réseau…</td>
-</tr>
-<tr class="row">
-<td class="cat" data-label="Catégorie">👔 Solutions pros (TPE/PME)</td>
-<td data-label="Service">Maintenance parc, sauvegardes &amp; sécurisation réseau</td>
-<td data-label="Entrée"><strong>—</strong></td>
-<td data-label="Complexité"><strong>Sur devis</strong></td>
-<td data-label="Conditions">Déplacement selon distance — <a href="pro.html">voir nos offres</a></td>
-</tr>
-</tbody>
-</table>
-<p class="pricing-note">
-            ✅ Déplacement inclus dans un rayon de <strong>20 km</strong> autour de Villeneuve-sur-Lot.
-            Au-delà : <strong>+0,50 €/km</strong> (aller-retour).
-            Pour les cas complexes / volumétrie importante, un <strong>devis personnalisé</strong> est réalisé.
-            Les <strong>pièces matérielles</strong> ne sont pas incluses lorsque mentionnées.
-          </p>
-</div>
-</div>
-</section>
-<section class="section section--alt" id="contact">
-<div class="container">
-<h2 class="section-title">Contact</h2>
-<p class="muted">Un ticket ponctuel, un audit, ou un contrat au poste ? Réponse sous 24h ouvrées.</p>
-<div class="cards">
-<article class="card">
-<p>📞 <a class="btn ghost" href="tel:+33666235143">06 66 23 51 43</a></p>
-<p>✉️ <a class="btn ghost" href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-</article>
-<article class="card">
-<h3>Devis express par e-mail</h3>
-<p class="muted">Décrivez votre besoin (parc, postes, contraintes, délais).</p>
-<a class="btn primary" href="mailto:contact@speedcomputer47.fr?subject=Demande de devis – Entreprise&amp;body=Bonjour,%0A%0ANous souhaitons un devis pour :%0A- Nombre de postes :%0A- Formule (Essentielle/Pro/Prime) :%0A- Engagement (1/3/6/12 mois) :%0A- Options (serveur, pare-feu, M365/Workspace...) :%0A- Ville / distance approx. :%0A%0AMerci,">📩 Envoyer ma demande</a>
-</article>
-</div>
-</div>
-</section>
+  <section class="hero hero--bg">
+    <div class="container">
+      <h1>Dépannage informatique à domicile pour particuliers</h1>
+      <p>Besoin d’un <strong>dépanneur informatique à Villeneuve-sur-Lot</strong> ou dans les environs ? <strong>SpeedComputer47</strong> intervient à domicile pour résoudre vos problèmes informatiques : PC lent, Wi-Fi instable, virus, sauvegardes, imprimantes ou domotique. Nos interventions couvrent <a href="/depannage-informatique-villeneuve-sur-lot.html">Villeneuve-sur-Lot</a>, <a href="/installation-informatique-agen.html">Agen</a>, <a href="/installation-informatique-marmande.html">Marmande</a>, <a href="/domotique-tv-connectee-smartphone-fumel.html">Fumel</a>, <a href="/wifi-reseau-Casseneuil.html">Casseneuil</a>, <a href="/suppression-virus-malware-Pujols.html">Pujols</a>, <a href="/messagerieCahors.html">Cahors</a> et tout le Lot-et-Garonne.</p>
+      <p>Nos services incluent : <a href='/reparation-pc-agen.html'><strong>réparation de PC/Mac</strong></a>, <a href='/installation-informatique-marmande.html'><strong>installation de box et Wi-Fi</strong></a>, <a href='/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html'><strong>nettoyage et optimisation</strong></a>, <a href='/formation-bureautique-cybersecurite-lot-et-garonne.html'><strong>formation bureautique</strong></a> et <a href='/formation-bureautique-cybersecurite-lot-et-garonne.html'><strong>cybersécurité</strong></a>.  <strong>réparation de PC/Mac</strong>, <strong>installation de box et Wi-Fi</strong>, <strong>nettoyage et optimisation</strong>, <strong>formation bureautique</strong> et <strong>cybersécurité</strong>. Que vous soyez à Monflanquin, Nérac, Sainte-Livrade-sur-Lot ou Tonneins, nous venons directement chez vous.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+        <a class="btn" href="/#contact">🧾 Devis express</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contenu-seo">
+    <div class="container">
+      <h2>Votre expert informatique local dans le Lot-et-Garonne</h2>
+      <p>Depuis plus de dix ans, <strong>SpeedComputer47</strong> dépanne et conseille les particuliers dans tout le <strong>Lot-et-Garonne</strong>. Nous intervenons sur site ou à distance pour résoudre vos pannes informatiques avec réactivité et pédagogie. Qu’il s’agisse d’un ordinateur lent, d’un virus persistant ou d’une imprimante qui ne fonctionne plus, nous apportons des solutions fiables, durables et adaptées à votre budget.</p>
+      <h3>Nos domaines d’intervention les plus demandés</h3>
+      <ul class="list">
+        <li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">Optimisation de PC lent / installation SSD</a> — gain de performance immédiat.</li>
+        <li><a href="/suppression-virus-malware-Pujols.html">Suppression de virus et malwares</a> — nettoyage complet et protection renforcée.</li>
+        <li><a href="/wifi-reseau-Casseneuil.html">Configuration Wi-Fi et réseau</a> — amélioration de la couverture et stabilité du signal.</li>
+        <li><a href="/installation-informatique-marmande.html">Installation box Internet et imprimantes</a> — paramétrage complet à domicile.</li>
+        <li><a href="/sauvegardetonneins.html">Sauvegarde et récupération de données</a> — protection de vos fichiers importants.</li>
+        <li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation informatique et cybersécurité</a> — apprenez à utiliser vos outils sereinement.</li>
+      </ul>
+      <h3>Pourquoi choisir SpeedComputer47 ?</h3>
+      <p>Nous privilégions la <strong>transparence des tarifs</strong>, la <strong>proximité</strong> et la <strong>qualité du service</strong>. Chaque client bénéficie d’un diagnostic clair et d’un suivi personnalisé. Nos interventions se font sous 24 à 48 h selon disponibilité, avec possibilité d’urgence le jour même. Nous acceptons les paiements CB, Apple Pay, Google Pay et virements.</p>
+      <h3>Un service complet, du diagnostic à la prévention</h3>
+      <p>Après chaque dépannage, nous fournissons des conseils pratiques pour entretenir vos équipements : nettoyage régulier, mises à jour automatiques, antivirus efficace et bonnes pratiques de sauvegarde. Pour les familles et seniors, nos formations à domicile permettent de maîtriser les bases d’Internet, la messagerie, la bureautique (Word, Excel, PDF) et la protection en ligne.</p>
+    </div>
+  </section>
+
+  <section id="tarifs">
+    <div class="container">
+      <h2>💰 Tarifs dépannage informatique particuliers (TTC)</h2>
+      <table class="table pricing">
+        <thead><tr><th>Service</th><th>Tarif de base</th><th>Complexité moyenne</th><th>Remarques</th></tr></thead>
+        <tbody>
+          <tr><td>Diagnostic simple</td><td>25 €</td><td>35 €</td><td>Inclus si intervention réalisée</td></tr>
+          <tr><td>Dépannage 1 h</td><td>55 €</td><td>70 €</td><td>Petites pannes logicielles ou matérielles</td></tr>
+          <tr><td>Nettoyage / optimisation</td><td>50 €</td><td>70 €</td><td>Suppression fichiers inutiles et démarrage rapide</td></tr>
+          <tr><td>Suppression virus / malware</td><td>65 €</td><td>85 €</td><td>Nettoyage complet et installation antivirus</td></tr>
+          <tr><td>Réinstallation Windows (sans sauvegarde)</td><td>90 €</td><td>120 €</td><td>Licence requise, installation complète</td></tr>
+          <tr><td>Réinstallation + sauvegarde</td><td>120 €</td><td>150 €</td><td>Inclut transfert de données</td></tr>
+          <tr><td>Installation imprimante / périphérique</td><td>30 €</td><td>50 €</td><td>USB / Wi-Fi</td></tr>
+          <tr><td>Installation Wi-Fi / réseau</td><td>60 €</td><td>100 €</td><td>Maison individuelle, CPL, routeur</td></tr>
+          <tr><td>Ajout SSD / RAM (hors pièces)</td><td>60 €</td><td>80 €</td><td>Amélioration performances</td></tr>
+          <tr><td>Formation bureautique 1h</td><td>50 €</td><td>70 €</td><td>Word, Excel, messagerie, sécurité</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">Déplacement inclus dans un rayon de 20 km autour de Villeneuve-sur-Lot. Au-delà : +0,50 €/km (aller-retour).</p>
+    </div>
+  </section>
+
+  <section class="seo-links">
+    <div class="container">
+      <h2>Zones d’intervention et pages associées</h2>
+      <p>Nous couvrons un large secteur : <a href="/depannage-informatique-agen.html">Agen</a>, <a href="/depannage-informatique-marmande.html">Marmande</a>, <a href="/depannage-informatique-fumel.html">Fumel</a>, <a href="/depannage-informatique-tonneins.html">Tonneins</a>, <a href="/depannage-informatique-nerac.html">Nérac</a>, <a href="/depannage-informatique-sainte-livrade-sur-lot.html">Sainte-Livrade-sur-Lot</a>, <a href="/installation-informatique-bergerac.html">Bergerac</a>, <a href="/installation-informatique-cahors.html">Cahors</a>, <a href="/installation-informatique-monflanquin.html">Monflanquin</a> et toutes les communes du <strong>Lot-et-Garonne</strong>.</p>
+      <p>Liens internes utiles : <a href="/domotique-tv-connectee-smartphone-fumel.html">domotique et TV connectée</a>, <a href="/messagerieCahors.html">configuration messagerie</a>, <a href="/wifi-reseau-Casseneuil.html">Wi-Fi et réseau domestique</a>, <a href="/sauvegardetonneins.html">sauvegarde & cloud</a>, <a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">formation & cybersécurité</a>.</p>
+    </div>
+  </section>
+
+  <section id="faq" aria-label="FAQ particuliers">
+    <div class="container">
+      <h2>FAQ – Particuliers</h2>
+      <div class="card"><p><strong>Intervenez-vous à domicile autour de Villeneuve-sur-Lot ?</strong><br/>Oui, dans un rayon d’environ 50 km : <a href="/depannage-informatique-agen.html">Agen</a>, <a href="/depannage-informatique-marmande.html">Marmande</a>, <a href="/depannage-informatique-fumel.html">Fumel</a>, <a href="/depannage-informatique-tonneins.html">Tonneins</a>, <a href="/depannage-informatique-nerac.html">Nérac</a>, <a href="/depannage-informatique-sainte-livrade-sur-lot.html">Sainte-Livrade-sur-Lot</a>, <a href="/installation-informatique-monflanquin.html">Monflanquin</a>…</p></div>
+      <div class="card"><p><strong>Pouvez-vous accélérer un ordinateur très lent ?</strong><br/>Oui : <a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">passage au SSD avec clonage</a>, optimisation et mises à jour.</p></div>
+      <div class="card"><p><strong>Installez-vous les imprimantes et le Wi‑Fi ?</strong><br/>Oui : <a href="/installation-informatique-marmande.html">imprimantes</a>, <a href="/wifi-reseau-Casseneuil.html">Wi‑Fi et réseau domestique</a>, box Internet.</p></div>
+      <div class="card"><p><strong>Quels sont vos tarifs particuliers ?</strong><br/>Diagnostic dès 25 € TTC, dépannage 1h dès 55 € TTC. Détails dans la section <a href="#tarifs">tarifs</a>.</p></div>
+      <div class="card"><p><strong>Faites-vous de l’assistance à distance ?</strong><br/>Oui, pour les soucis logiciels (messagerie, nettoyage, mises à jour).</p></div>
+    </div>
+  </section>
+
+<section id="contact">
+    <div class="container">
+      <h2>📩 Contact rapide</h2>
+      <p>Réponse sous 24 h. Appelez ou envoyez votre demande de devis.</p>
+      <a class="btn primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+      <a class="btn" href="mailto:contact@speedcomputer47.fr">✉️ contact@speedcomputer47.fr</a>
+    </div>
+  </section>
 </main>
-<script>
-  // Dropdown Avis
-    const dd = document.getElementById('sc47Reviews');
-    const btnReviews = document.getElementById('sc47ReviewsBtn');
-    if(btnReviews && dd){
-      btnReviews.addEventListener('click',(e)=>{
-        e.preventDefault(); dd.classList.toggle('open');
-        btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
-      });
-      document.addEventListener('click',(e)=>{
-        if(!dd.contains(e.target)){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
-      });
-      document.addEventListener('keydown',(e)=>{
-        if(e.key==='Escape'){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
-      });
-    }
 
-    </script>
-
-<section aria-label="Zones d’intervention" class="zones-internes">
-<h2>Zones d’intervention &amp; pages locales</h2>
-<ul>
-<li><a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">configurationperipheriqueSainte Livrade sur Lot</a></li>
-<li><a href="/cybersecurite-entreprise.html">cybersecurite entreprise</a></li>
-<li><a href="/depannage-informatique-villeneuve-sur-lot.html">depannage informatique villeneuve sur lot</a></li>
-<li><a href="/domotique-tv-connectee-smartphone-fumel.html">domotique tv connectee smartphone fumel</a></li>
-<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">formation bureautique cybersecurite lot et garonne</a></li>
-<li><a href="/google-workspace.html">google workspace</a></li>
-<li><a href="/installation-informatique-agen.html">installation informatique agen</a></li>
-<li><a href="/installation-informatique-bergerac.html">installation informatique bergerac</a></li>
-<li><a href="/installation-informatique-cahors.html">installation informatique cahors</a></li>
-<li><a href="/installation-informatique-casseneuil.html">installation informatique casseneuil</a></li>
-<li><a href="/installation-informatique-casteljaloux.html">installation informatique casteljaloux</a></li>
-<li><a href="/installation-informatique-fumel.html">installation informatique fumel</a></li>
-<li><a href="/installation-informatique-marmande.html">installation informatique marmande</a></li>
-<li><a href="/installation-informatique-monflanquin.html">installation informatique monflanquin</a></li>
-<li><a href="/installation-informatique-nerac.html">installation informatique nerac</a></li>
-<li><a href="/installation-informatique-sainte-livrade-sur-lot.html">installation informatique sainte livrade sur lot</a></li>
-<li><a href="/installation-informatique-tonneins.html">installation informatique tonneins</a></li>
-<li><a href="/installation-informatique-villeneuve-sur-lot.html">installation informatique villeneuve sur lot</a></li>
-<li><a href="/mentions.html">mentions</a></li>
-<li><a href="/messagerie-pro.html">messagerie pro</a></li>
-<li><a href="/messagerieCahors.html">messagerieCahors</a></li>
-<li><a href="/microsoft-365.html">microsoft 365</a></li>
-<li><a href="/migration-deploiement.html">migration deploiement</a></li>
-<li><a href="/migration-deploiementbias.html">migration deploiementbias</a></li>
-<li><a href="/particuliers.html">particuliers</a></li>
-<li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">pc lent ssd clonage Saint Sylvestre sur Lot</a></li>
-<li><a href="/pro.html">pro</a></li>
-<li><a href="/reparation-pc-agen.html">reparation pc agen</a></li>
-<li><a href="/sauvegarde-entreprise.html">sauvegarde entreprise</a></li>
-<li><a href="/sauvegardetonneins.html">sauvegardetonneins</a></li>
-<li><a href="/serveur-nas-manage.html">serveur nas manage</a></li>
-<li><a href="/suppression-virus-malware-Pujols.html">suppression virus malware Pujols</a></li>
-<li><a href="/wifi-reseau-Casseneuil.html">wifi reseau Casseneuil</a></li>
-<li><a href="/wifi-reseau-entreprise.html">wifi reseau entreprise</a></li>
-</ul>
-</section>
 <footer>
-<div class="container foot">
-<p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
-<p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-<p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
-</div>
+  <div class="container foot">
+    <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+    <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
+    <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales</a></p>
+  </div>
 </footer>
-<a class="floating-call" href="tel:+33666235143">📞 Appeler</a>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
