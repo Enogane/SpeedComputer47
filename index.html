@@ -553,5 +553,54 @@
       });
     }
   </script>
+
+  <!-- ====== Bannière cookies minimale (Consent Mode v2) ====== -->
+<div id="cookie-banner" style="position:fixed;inset:auto 0 0 0;z-index:9999;background:#0b0d10;color:#fff;padding:16px;box-shadow:0 -6px 20px rgba(0,0,0,.25);font:14px/1.45 system-ui,Segoe UI,Roboto,Ubuntu,Arial">
+  <div style="max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+    <div style="flex:1 1 420px">
+      Nous utilisons des cookies pour la mesure d’audience et (optionnel) la personnalisation publicitaire.
+      <a href="/mentions.html" style="color:#7bd2ff;text-decoration:underline">En savoir plus</a>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button id="cb-reject" style="padding:10px 14px;border:1px solid #777;background:#1b1f24;color:#fff;border-radius:6px;cursor:pointer">Tout refuser</button>
+      <button id="cb-accept" style="padding:10px 14px;border:0;background:#2bb673;color:#08150e;border-radius:6px;cursor:pointer;font-weight:700">Tout accepter</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const KEY='sc47-consent';
+  const saved=localStorage.getItem(KEY);
+  const banner=document.getElementById('cookie-banner');
+
+  function hide(){ if(banner) banner.style.display='none'; }
+  function updateConsent(granted){
+    // Toujours accorder la mesure si accepté
+    const analytics = granted ? 'granted' : 'denied';
+    const ads = granted ? 'granted' : 'denied';
+    gtag('consent','update',{
+      analytics_storage: analytics,
+      ad_storage: ads,
+      ad_user_data: ads,
+      ad_personalization: ads
+    });
+  }
+
+  if(saved){ hide(); updateConsent(saved==='granted'); }
+
+  document.getElementById('cb-accept')?.addEventListener('click',()=>{
+    localStorage.setItem(KEY,'granted');
+    updateConsent(true);
+    hide();
+  });
+  document.getElementById('cb-reject')?.addEventListener('click',()=>{
+    localStorage.setItem(KEY,'denied');
+    updateConsent(false);
+    hide();
+  });
+})();
+</script>
+<!-- ====== /Bannière cookies ====== -->
+
 </body>
 </html>
