@@ -232,3 +232,11 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
 .list-cols{columns:2; column-gap:16px}
 @media(min-width:980px){.list-cols{columns:3}}
 .list-cols li{break-inside:avoid}
+
+
+  /* Si jamais le dropdown restait visible, on le force en bloc */
+  .sc47-dropdown{width:100%}
+  .sc47-dropdown .sc47-btn{width:100%;justify-content:center}
+  .sc47-menu{position:static;right:auto;top:auto;display:none;margin-top:6px}
+  .sc47-dropdown.open .sc47-menu{display:block}
+}
