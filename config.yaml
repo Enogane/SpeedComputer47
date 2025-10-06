@@ -1,0 +1,83 @@
+# ==============================================================================
+#        CONFIGURATION GLOBALE OPTIMISÉE POUR SPEEDCOMPUTER47 - SEO 2025
+# ==============================================================================
+
+# --- Configuration de Base Essentielle pour Google ---
+baseURL: "https://speedcomputer47.fr/"
+languageCode: "fr-FR"  # Très important : Indique à Google que le site est en Français (France).
+title: "Dépannage Informatique à Villeneuve-sur-Lot | SpeedComputer47" # Le titre le plus important pour votre SEO.
+theme: "PaperMod" # Remplacez par le nom de votre thème si différent.
+enableRobotsTXT: true   # Indispensable : Crée un fichier robots.txt pour guider les robots de Google.
+
+# --- Paramètres du Site (params) ---
+# C'est ici que l'on donne les informations clés à Google et aux visiteurs.
+params:
+  # --- Informations SEO et Identité ---
+  author: "SpeedComputer47"
+  description: "Service de dépannage et d'assistance informatique à domicile à Villeneuve-sur-Lot (47). Réparation PC/Mac, suppression de virus, récupération de données et maintenance." # C'est le texte qui apparaît sous votre titre dans Google.
+  copyright: "© 2025 SpeedComputer47 - Tous droits réservés."
+  contact: "contact@speedcomputer47.fr" # Gardez la cohérence avec les autres informations en ligne.
+
+  # --- Optimisation pour le partage sur les réseaux sociaux (Open Graph & Twitter Cards) ---
+  # Ces informations s'affichent quand un lien de votre site est partagé sur Facebook, WhatsApp, etc.
+  # C'est un signal de qualité pour Google.
+  images: ["images/logo-speedcomputer47.png"] # IMPORTANT : Créez un dossier 'static/images/' et placez-y votre logo. Ce sera l'image par défaut lors d'un partage.
+
+  # --- Profils Sociaux et Professionnels ---
+  # Google aime voir que votre entreprise est une entité réelle et connectée.
+  # Remplacez les '#' par vos vraies URLs. Si vous n'en avez pas, supprimez la ligne.
+  socialIcons:
+    - name: "facebook"
+      url: "#"
+    - name: "linkedin"
+      url: "#"
+    # - name: "googlemybusiness" # Vous pouvez créer une icône personnalisée et mettre le lien de votre fiche Google
+    #   url: "#"
+
+  # --- Paramètres spécifiques au thème (à vérifier avec la documentation de votre thème) ---
+  # J'ai mis des exemples courants pour le thème PaperMod.
+  ShowShareButtons: true   # Affiche les boutons de partage.
+  ShowReadingTime: false   # Temps de lecture, pas très utile pour un site de service.
+  ShowPostNavLinks: true   # Liens vers l'article suivant/précédent.
+  ShowBreadCrumbs: true    # Fil d'Ariane (Accueil > Services > ...), excellent pour le SEO.
+
+# --- Menus de Navigation ---
+# Une navigation claire aide les utilisateurs et Google à comprendre la structure du site.
+menu:
+  main:
+    - identifier: accueil
+      name: Accueil
+      url: /
+      weight: 10
+    - identifier: services
+      name: Nos Services
+      url: /services/
+      weight: 20
+    - identifier: contact
+      name: Contact & Devis
+      url: /contact/
+      weight: 30
+    # - identifier: blog
+    #   name: Blog & Conseils
+    #   url: /blog/
+    #   weight: 40
+
+# --- Configuration des Sorties et des Fichiers Générés ---
+outputs:
+  home:
+    - HTML
+    - RSS     # Flux RSS, toujours un bon signal pour Google.
+    - JSON    # Utile pour le futur.
+
+# --- Configuration du Sitemap ---
+# Le sitemap est la carte de votre site que vous donnez à Google.
+sitemap:
+  changefreq: "monthly"  # Fréquence de mise à jour probable de vos pages.
+  priority: 0.7          # Priorité par rapport aux autres pages.
+  filename: "sitemap.xml"
+
+# --- Taxonomies (Catégories et Tags) ---
+# Permet d'organiser votre contenu si vous avez un blog.
+taxonomies:
+  category: "categories"
+  tag: "tags"
