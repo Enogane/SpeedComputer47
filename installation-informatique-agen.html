@@ -80,6 +80,7 @@
     {"@type":"City","name":"Casteljaloux"}
   ]
 }
+</script>
 
 <!-- Fil d’Ariane -->
 <script type="application/ld+json">
@@ -145,34 +146,6 @@
 </head>
 
 <body>
-
-  <script>
-// Dropdown Avis
-const dd = document.getElementById('sc47Reviews');
-const btnReviews = document.getElementById('sc47ReviewsBtn');
-
-if (btnReviews && dd) {
-  btnReviews.addEventListener('click', (e) => {
-    e.preventDefault();
-    dd.classList.toggle('open');
-    btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!dd.contains(e.target)) {
-      dd.classList.remove('open');
-      btnReviews.setAttribute('aria-expanded', 'false');
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      dd.classList.remove('open');
-      btnReviews.setAttribute('aria-expanded', 'false');
-    }
-  });
-}
-</script>
 <!-- =================== HEADER =================== -->
 <header class="sc47-header">
   <div class="sc47-container">
@@ -316,6 +289,35 @@ if (btnReviews && dd) {
     <p>© SpeedComputer47 — Installation informatique à Agen et Agglomération</p>
   </div>
 </footer>
+
+<!-- Script : Dropdown Avis (placé en bas pour garantir que le DOM est prêt) -->
+<script>
+// Dropdown Avis
+const dd = document.getElementById('sc47Reviews');
+const btnReviews = document.getElementById('sc47ReviewsBtn');
+
+if (btnReviews && dd) {
+  btnReviews.addEventListener('click', (e) => {
+    e.preventDefault();
+    dd.classList.toggle('open');
+    btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dd.contains(e.target)) {
+      dd.classList.remove('open');
+      btnReviews.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dd.classList.remove('open');
+      btnReviews.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+</script>
 
 </body>
 </html>
