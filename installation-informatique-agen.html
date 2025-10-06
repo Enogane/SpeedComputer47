@@ -161,6 +161,34 @@
 </head>
 
 <body>
+
+  <script>
+// Dropdown Avis
+const dd = document.getElementById('sc47Reviews');
+const btnReviews = document.getElementById('sc47ReviewsBtn');
+
+if (btnReviews && dd) {
+  btnReviews.addEventListener('click', (e) => {
+    e.preventDefault();
+    dd.classList.toggle('open');
+    btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dd.contains(e.target)) {
+      dd.classList.remove('open');
+      btnReviews.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dd.classList.remove('open');
+      btnReviews.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+</script>
 <!-- =================== HEADER =================== -->
 <header class="sc47-header">
   <div class="sc47-container">
