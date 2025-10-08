@@ -554,11 +554,34 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
     display:none;position:absolute;right:0;top:calc(100% + 8px);z-index:50;min-width:220px;padding:8px;
     background:#0b1220;border:1px solid #1f2937;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35)
   }
-  .sc47-dropdown.open .sc47-menu{display:block}
-  .sc47-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none}
-  .sc47-item:hover{background:rgba(14,165,233,.15)}
-  .sc47-ico{width:22px;height:22px;object-fit:contain;border-radius:4px}
+/* ====== Avis : caler le widget sur la largeur du site ====== */
+#avis .ti-widget,
+#avis .ti-widget .ti-widget-container,
+#avis .ti-widget iframe,
+#avis .trustindex-widget,
+#avis .trustindex-widget iframe {
+  width: 100% !important;
+  max-width: 1280px !important;           /* = .container max-width */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
 
-  .sc47-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:#e5e7eb;text-decoration:none}
-  .sc47-item:hover{background:rgba(14,165,233,.15)}
-  .sc47-ico{width:22px;height:22px;object-fit:contain;border-radius:4px}
+/* Titre/bandeau/contrôles centrés à la même largeur */
+#avis .ti-header,
+#avis .ti-controls,
+#avis .ti-footer {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Si la section a un fond full-bleed, on contraint son contenu au container */
+.section.fullbleed > .container {
+  max-width: 1280px;
+  width: calc(100% - 40px); /* 20px de padding gauche + droite comme ta .container */
+  margin-inline: auto;
+}
+
+/* Evite tout débordement horizontal éventuel du widget */
+#avis { overflow-x: hidden; }
