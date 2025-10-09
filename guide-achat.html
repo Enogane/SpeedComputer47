@@ -102,10 +102,11 @@
             color: #eee;
         }
         .local-service-box p { color: #eee; }
-
-        /* Section reconditionné (déjà sombre, on s'assure de la cohérence) */
-        #reconditionne { padding-top: 2rem; padding-bottom: 2rem; } /* Plus besoin de couleur de fond ici */
-        #reconditionne .card.product-card { background: #181a1f; color: #ccc; border: 1px solid #333; }
+        
+        /* Section reconditionné */
+        #reconditionne { padding-top: 2rem; padding-bottom: 2rem; }
+        #reconditionne .card.product-card { background: #181a1f; color: #ccc; border: 1px solid #333; transform: none; box-shadow: none; }
+        #reconditionne .card.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); border-color: #444; }
         #reconditionne .card.product-card h3 { color: #fff; }
 
     </style>
@@ -131,7 +132,34 @@
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="sc47-header"></header>
+    <header class="sc47-header">
+      <div class="sc47-container">
+        <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+          <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+          <span class="sc47-name">SpeedComputer47</span>
+        </a>
+        <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+        <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+          <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
+          <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
+          <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
+          <a class="sc47-link" data-match="guide-achat.html" href="guide-achat.html">Guide d'Achat</a>
+          <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+          <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google</a>
+              <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook</a>
+              <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
+              <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
+              <a class="sc47-item" href="https://www.l3vl.com/pro/72210" target="_blank" rel="noopener"><img class="sc47-ico" src="LOGAGV.webp" alt="CAGV"/> Grand villeneuvois</a>
+              <a class="sc47-item" href="https://www.amazon.fr/?&linkCode=sl2&tag=speedcomputer-21&linkId=2d8d02ced5e1e1ecec4bcc82569ebf67&language=fr_FR&ref_=as_li_ss_tl" target="_blank" rel="noopener"><img class="sc47-ico" src="logoamazon.webp" alt="amazon"/> Amazon</a>
+            </div>
+          </div>
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+        </nav>
+      </div>
+    </header>
 
     <main>
         <section class="intro-guide hero--bg">
@@ -155,156 +183,191 @@
              </nav>
         </div>
 
-        <section id="accessoires" class="product-section container section-anchor">
-            <h2>🔧 1. Accessoires Informatiques Essentiels</h2>
-            <article class="product-review">
-                <h4>Station d'accueil USB-C (Ex: UGREEN, Anker)</h4>
-                <p><strong>Pour qui ?</strong> Indispensable pour tous les possesseurs d'ordinateurs portables récents qui n'ont que des ports USB-C. Parfait pour le télétravail afin de recréer un bureau complet avec un seul câble.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> C'est la fin du cauchemar des adaptateurs ! Je conseille une station d'accueil à tous mes clients professionnels à Villeneuve-sur-Lot. Vous branchez un seul câble à votre portable et retrouvez instantanément votre écran externe, votre clavier, votre souris, et même votre connexion réseau filaire. Pour un bureau propre et une productivité maximale, c'est un investissement minime avec un retour énorme.</p>
-                </div>
-                <a href="https://www.amazon.fr/s?k=station+d+accueil+usb+c+ugreen&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection sur Amazon</a>
-            </article>
-            <article class="product-review">
-                <h4>Webcam de qualité (Ex: Logitech C920 HD Pro)</h4>
-                <p><strong>Pour qui ?</strong> Pour les professionnels en télétravail, les familles qui veulent rester en contact, et tous ceux qui en ont marre de l'image granuleuse de la webcam intégrée à leur portable.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> La différence de qualité est flagrante. Une bonne webcam comme la C920 change radicalement la perception lors des visioconférences. L'image est nette, lumineuse, et le son des microphones intégrés est bien meilleur. C'est un accessoire qui renvoie une image de professionnalisme et de sérieux. L'installation est un simple branchement USB.</p>
-                </div>
-                 <a href="https://www.amazon.fr/dp/B07MM4V7S4?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir la Logitech C920 sur Amazon</a>
-            </article>
-        </section>
+        <div class="container">
+            <section id="accessoires" class="section-anchor">
+                <h2>🔧 1. Accessoires Informatiques Essentiels</h2>
+                <article class="product-review">
+                    <h4>Station d'accueil USB-C (Ex: UGREEN, Anker)</h4>
+                    <p><strong>Pour qui ?</strong> Indispensable pour tous les possesseurs d'ordinateurs portables récents qui n'ont que des ports USB-C. Parfait pour le télétravail afin de recréer un bureau complet avec un seul câble.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> C'est la fin du cauchemar des adaptateurs ! Je conseille une station d'accueil à tous mes clients professionnels à Villeneuve-sur-Lot. Vous branchez un seul câble à votre portable et retrouvez instantanément votre écran externe, votre clavier, votre souris, et même votre connexion réseau filaire. Pour un bureau propre et une productivité maximale, c'est un investissement minime avec un retour énorme.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/s?k=station+d+accueil+usb+c+ugreen&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection sur Amazon</a>
+                </article>
+                <article class="product-review">
+                    <h4>Webcam de qualité (Ex: Logitech C920 HD Pro)</h4>
+                    <p><strong>Pour qui ?</strong> Pour les professionnels en télétravail, les familles qui veulent rester en contact, et tous ceux qui en ont marre de l'image granuleuse de la webcam intégrée à leur portable.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> La différence de qualité est flagrante. Une bonne webcam comme la C920 change radicalement la perception lors des visioconférences. L'image est nette, lumineuse, et le son des microphones intégrés est bien meilleur. C'est un accessoire qui renvoie une image de professionnalisme et de sérieux. L'installation est un simple branchement USB.</p>
+                    </div>
+                     <a href="https://www.amazon.fr/dp/B07MM4V7S4?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir la Logitech C920 sur Amazon</a>
+                </article>
+            </section>
 
-        <section id="stockage" class="product-section container section-anchor">
-            <h2>🧱 2. Solutions de Stockage et Sauvegarde</h2>
-            <article class="product-review">
-                <h4>Serveur NAS Synology (Ex: DS224+)</h4>
-                <h5 style="margin-top:1rem;">Usage pour les Particuliers</h5>
-                <p><strong>Pour qui ?</strong> Pour la famille qui veut centraliser toutes ses photos et vidéos en un seul endroit sécurisé, accessible partout, sans payer d'abonnement mensuel au Cloud.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert (Particuliers) :</strong> C'est comme avoir son propre cloud privé à la maison. C'est la solution que j'installe pour sauvegarder automatiquement les photos des smartphones de toute la famille. C'est fiable, sécurisé, et ça met fin à la peur de perdre ses souvenirs.</p>
+            <section id="stockage" class="section-anchor">
+                <h2>🧱 2. Solutions de Stockage et Sauvegarde</h2>
+                <article class="product-review">
+                    <h4>Serveur NAS Synology (Ex: DS224+)</h4>
+                    <h5 style="margin-top:1rem; color: #fff;">Usage pour les Particuliers</h5>
+                    <p><strong>Pour qui ?</strong> Pour la famille qui veut centraliser toutes ses photos et vidéos en un seul endroit sécurisé, accessible partout, sans payer d'abonnement mensuel au Cloud.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert (Particuliers) :</strong> C'est comme avoir son propre cloud privé à la maison. C'est la solution que j'installe pour sauvegarder automatiquement les photos des smartphones de toute la famille. C'est fiable, sécurisé, et ça met fin à la peur de perdre ses souvenirs.</p>
+                    </div>
+                    <h5 style="margin-top:2rem; color: #fff;">Usage pour les Professionnels (TPE/PME)</h5>
+                    <p><strong>Pour qui ?</strong> Pour les petites entreprises qui ont besoin d'un serveur de fichiers centralisé pour collaborer, avec des sauvegardes automatiques et un accès distant sécurisé.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert (Professionnels) :</strong> Pour mes clients TPE à Villeneuve et alentours, le Synology DS224+ est le premier pas vers une infrastructure pro. Il permet de gérer les permissions, partager des fichiers lourds et surtout, de se protéger des ransomwares avec une bonne stratégie de sauvegarde.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/dp/B0CBYZWF3Z?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le prix du Synology DS224+ sur Amazon</a>
+                </article>
+                 <div class="local-service-box">
+                    <p><strong>⚙️ Besoin d'aide pour configurer votre NAS à Villeneuve-sur-Lot ?</strong><br>
+                    De l'installation des disques à la configuration des sauvegardes, je propose un service complet pour mettre en place votre solution de stockage sécurisée. <a href="/#contact" class="link-inline">Contactez-moi !</a></p>
                 </div>
-                <h5 style="margin-top:2rem;">Usage pour les Professionnels (TPE/PME)</h5>
-                <p><strong>Pour qui ?</strong> Pour les petites entreprises qui ont besoin d'un serveur de fichiers centralisé pour collaborer, avec des sauvegardes automatiques et un accès distant sécurisé.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert (Professionnels) :</strong> Pour mes clients TPE à Villeneuve et alentours, le Synology DS224+ est le premier pas vers une infrastructure pro. Il permet de gérer les permissions, partager des fichiers lourds et surtout, de se protéger des ransomwares avec une bonne stratégie de sauvegarde.</p>
-                </div>
-                <a href="https://www.amazon.fr/dp/B0CBYZWF3Z?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le prix du Synology DS224+ sur Amazon</a>
-            </article>
-             <div class="local-service-box">
-                <p><strong>⚙️ Besoin d'aide pour configurer votre NAS à Villeneuve-sur-Lot ?</strong><br>
-                De l'installation des disques à la configuration des sauvegardes, je propose un service complet pour mettre en place votre solution de stockage sécurisée. <a href="/#contact" class="link-inline">Contactez-moi !</a></p>
-            </div>
-        </section>
+            </section>
 
-        <section id="securite" class="product-section container section-anchor">
-            <h2>🧲 3. Sécurité & Cybersécurité</h2>
-             <article class="product-review">
-                <h4>Bitdefender Total Security 2025 (5 appareils)</h4>
-                <p><strong>Pour qui ?</strong> Pour les familles qui veulent une protection complète et simple à gérer sur tous leurs appareils (PC, Mac, smartphones).</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> Bitdefender reste une référence. Son mode "Autopilot" prend les bonnes décisions de sécurité sans déranger l'utilisateur, ce qui est parfait pour un public non technique. Le contrôle parental est aussi un vrai plus.</p>
-                </div>
-                <a href="https://amzn.to/4n2pZEx" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir l'offre 1 an sur Amazon</a>
-            </article>
-            <article class="product-review">
-                <h4>Caméra Extérieure Solaire (Ex: Tapo C410 KIT 2K)</h4>
-                <p><strong>Pour qui ?</strong> Pour ceux qui veulent surveiller une zone extérieure (entrée, jardin, garage) sans se soucier des câbles d'alimentation et en étant protégé contre les coupures de courant.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> Face aux coupures de courant, cette caméra solaire est la solution. Elle continue de fonctionner sur batterie et, plus important, d'enregistrer sur sa carte microSD même si le Wi-Fi est coupé. C'est la garantie d'avoir les images quoi qu'il arrive, un excellent choix pour surveiller une zone en toute autonomie.</p>
-                </div>
-                <a href="https://www.amazon.fr/dp/B0CXP3C5M7?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le kit caméra solaire Tapo C410 sur Amazon</a>
-            </article>
-        </section>
+            <section id="securite" class="section-anchor">
+                <h2>🧲 3. Sécurité & Cybersécurité</h2>
+                 <article class="product-review">
+                    <h4>Bitdefender Total Security 2025 (5 appareils)</h4>
+                    <p><strong>Pour qui ?</strong> Pour les familles qui veulent une protection complète et simple à gérer sur tous leurs appareils (PC, Mac, smartphones).</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> Bitdefender reste une référence. Son mode "Autopilot" prend les bonnes décisions de sécurité sans déranger l'utilisateur, ce qui est parfait pour un public non technique. Le contrôle parental est aussi un vrai plus.</p>
+                    </div>
+                    <a href="https://amzn.to/4n2pZEx" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir l'offre 1 an sur Amazon</a>
+                </article>
+                <article class="product-review">
+                    <h4>Caméra Extérieure Solaire (Ex: Tapo C410 KIT 2K)</h4>
+                    <p><strong>Pour qui ?</strong> Pour ceux qui veulent surveiller une zone extérieure (entrée, jardin, garage) sans se soucier des câbles d'alimentation et en étant protégé contre les coupures de courant.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> Face aux coupures de courant, cette caméra solaire est la solution. Elle continue de fonctionner sur batterie et, plus important, d'enregistrer sur sa carte microSD même si le Wi-Fi est coupé. C'est la garantie d'avoir les images quoi qu'il arrive, un excellent choix pour surveiller une zone en toute autonomie.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/dp/B0CXP3C5M7?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le kit caméra solaire Tapo C410 sur Amazon</a>
+                </article>
+            </section>
 
-        <section id="reseau" class="product-section container section-anchor">
-            <h2>📶 4. Réseau & Connectivité</h2>
-            <article class="product-review">
-                <h4>TP-Link Deco X50 (Système Mesh Wi-Fi 6)</h4>
-                <p><strong>Pour qui ?</strong> Idéal pour les familles vivant dans une maison avec plusieurs étages ou des murs épais, où le Wi-Fi de la box ne passe pas partout.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> C'est le système que je recommande le plus à mes clients à Villeneuve et alentours, surtout dans les maisons en pierre du Lot-et-Garonne. Le passage d'une borne à l'autre est totalement transparent. C'est un investissement qui change la vie numérique à la maison.</p>
+            <section id="reseau" class="section-anchor">
+                <h2>📶 4. Réseau & Connectivité</h2>
+                <article class="product-review">
+                    <h4>TP-Link Deco X50 (Système Mesh Wi-Fi 6)</h4>
+                    <p><strong>Pour qui ?</strong> Idéal pour les familles vivant dans une maison avec plusieurs étages ou des murs épais, où le Wi-Fi de la box ne passe pas partout.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> C'est le système que je recommande le plus à mes clients à Villeneuve et alentours, surtout dans les maisons en pierre du Lot-et-Garonne. Le passage d'une borne à l'autre est totalement transparent. C'est un investissement qui change la vie numérique à la maison.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/dp/B09LVG58VX?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le prix du pack de 3 sur Amazon</a>
+                </article>
+                <article class="product-review">
+                    <h4>Point d'accès Wi-Fi 6 Pro (Ex: TP-Link Omada EAP610)</h4>
+                     <p><strong>Pour qui ?</strong> Pour les TPE/PME, les commerces, les gîtes ou les professions libérales qui ont besoin d'un Wi-Fi stable, performant et capable de gérer de nombreux utilisateurs simultanément.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert (Professionnels) :</strong> On passe ici à la catégorie supérieure. Alimenté par un câble réseau (PoE), ce point d'accès se fixe au plafond pour une couverture optimale. Il permet de créer un réseau Wi-Fi "Invités" totalement séparé de votre réseau pro, une obligation pour la sécurité. C'est la solution que j'installe pour une fiabilité à toute épreuve.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/dp/B098K3VCHC?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le point d'accès Omada sur Amazon</a>
+                </article>
+                <div class="local-service-box">
+                    <p><strong>🏠 Un problème de Wi-Fi à Villeneuve-sur-Lot et ses environs ?</strong><br>
+                    Que vous soyez un particulier ou un professionnel, je propose un service d'audit et d'installation à domicile pour garantir une couverture réseau parfaite. <a href="/#contact" class="link-inline">Contactez-moi pour un devis !</a></p>
                 </div>
-                <a href="https://www.amazon.fr/dp/B09LVG58VX?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le prix du pack de 3 sur Amazon</a>
-            </article>
-            <article class="product-review">
-                <h4>Point d'accès Wi-Fi 6 Pro (Ex: TP-Link Omada EAP610)</h4>
-                 <p><strong>Pour qui ?</strong> Pour les TPE/PME, les commerces, les gîtes ou les professions libérales qui ont besoin d'un Wi-Fi stable, performant et capable de gérer de nombreux utilisateurs simultanément.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert (Professionnels) :</strong> On passe ici à la catégorie supérieure. Alimenté par un câble réseau (PoE), ce point d'accès se fixe au plafond pour une couverture optimale. Il permet de créer un réseau Wi-Fi "Invités" totalement séparé de votre réseau pro, une obligation pour la sécurité. C'est la solution que j'installe pour une fiabilité à toute épreuve.</p>
-                </div>
-                <a href="https://www.amazon.fr/dp/B098K3VCHC?tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir le point d'accès Omada sur Amazon</a>
-            </article>
-            <div class="local-service-box">
-                <p><strong>🏠 Un problème de Wi-Fi à Villeneuve-sur-Lot et ses environs ?</strong><br>
-                Que vous soyez un particulier ou un professionnel, je propose un service d'audit et d'installation à domicile pour garantir une couverture réseau parfaite. <a href="/#contact" class="link-inline">Contactez-moi pour un devis !</a></p>
-            </div>
-        </section>
+            </section>
 
-        <section id="domotique" class="product-section container section-anchor">
-            <h2>📺 5. Domotique & Maison Connectée</h2>
-             <article class="product-review">
-                <h4>Prises Connectées (Ex: TP-Link Tapo, Konyks)</h4>
-                <p><strong>Pour qui ?</strong> Pour tous ceux qui veulent débuter dans la maison connectée. Idéal pour les personnes âgées pour contrôler un appareil à distance (lampe, ventilateur...).</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> C'est le produit de domotique le plus simple et le plus utile. J'en ai installé pour des clients seniors qui peuvent désormais allumer une lampe depuis leur fauteuil. C'est aussi très pratique pour simuler une présence pendant les vacances. L'installation prend deux minutes via le smartphone.</p>
-                </div>
-                <a href="https://www.amazon.fr/s?k=prise+connectee+tapo&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir un lot de prises connectées sur Amazon</a>
-            </article>
-        </section>
-        
-        <section id="bureautique" class="product-section container section-anchor">
-            <h2>💡 6. Bureautique et Productivité</h2>
-            <article class="product-review">
-                <h4>Imprimante Multifonction Laser (Ex: Brother)</h4>
-                <p><strong>Pour qui ?</strong> Pour les familles et les petites entreprises qui impriment régulièrement et qui en ont assez des cartouches jet d'encre qui sèchent et coûtent une fortune.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> J'oriente 90% de mes clients vers le laser monochrome. Le coût à la page est dérisoire, le toner ne sèche pas même après des mois d'inactivité, et la vitesse d'impression est incomparable. Les modèles multifonctions avec scanner sont parfaits pour numériser tous les documents administratifs. C'est un investissement rapidement rentabilisé.</p>
-                </div>
-                <a href="https://www.amazon.fr/s?k=imprimante+laser+monochrome+multifonction+brother&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir les imprimantes laser Brother sur Amazon</a>
-            </article>
-             <article class="product-review">
-                <h4>Écran secondaire 24 ou 27 pouces (Ex: Dell, Iiyama)</h4>
-                <p><strong>Pour qui ?</strong> Indispensable pour toute personne en télétravail ou qui passe beaucoup de temps sur son ordinateur. Le gain en productivité est immédiat.</p>
-                <div class="expert-quote">
-                    <p><strong>Mon avis d'expert :</strong> Travailler sur un seul écran de portable est épuisant. Un deuxième écran permet d'afficher ses mails d'un côté et son document de travail de l'autre, par exemple. C'est le jour et la nuit en termes de confort visuel et d'efficacité. Je recommande une dalle IPS pour les couleurs justes et un pied réglable en hauteur pour l'ergonomie.</p>
-                </div>
-                <a href="https://www.amazon.fr/s?k=ecran+pc+27+pouces+ips&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection d'écrans 27" sur Amazon</a>
-            </article>
-        </section>
-
-        <section id="reconditionne" class="product-section container section-anchor">
-            <h2>♻️ Le Reconditionné Intelligent</h2>
-            <p class="lead" style="text-align:center; margin-bottom: 2rem;">Pourquoi se tourner vers le reconditionné ? Parce qu'un ordinateur portable professionnel d'occasion surclasse presque toujours un modèle neuf grand public au même prix.</p>
-            <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center; color: #ccc;">Les gammes professionnelles (Dell Latitude, Lenovo ThinkPad, HP EliteBook) sont conçues pour durer 5 à 10 ans avec des matériaux nobles (magnésium, aluminium), des charnières renforcées et des claviers résistants. Un modèle neuf à 500€ sera souvent en plastique, plus lent et moins fiable sur le long terme.</p>
-            <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center; color: #ccc;">En tant que technicien, je vois la différence tous les jours en atelier. Ma sélection se porte sur ces machines réputées pour leur fiabilité et leur facilité de maintenance. C'est un choix économique, écologique et surtout, un gage de qualité et de durabilité.</p>
+            <section id="domotique" class="section-anchor">
+                <h2>📺 5. Domotique & Maison Connectée</h2>
+                 <article class="product-review">
+                    <h4>Prises Connectées (Ex: TP-Link Tapo, Konyks)</h4>
+                    <p><strong>Pour qui ?</strong> Pour tous ceux qui veulent débuter dans la maison connectée. Idéal pour les personnes âgées pour contrôler un appareil à distance (lampe, ventilateur...).</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> C'est le produit de domotique le plus simple et le plus utile. J'en ai installé pour des clients seniors qui peuvent désormais allumer une lampe depuis leur fauteuil. C'est aussi très pratique pour simuler une présence pendant les vacances. L'installation prend deux minutes via le smartphone.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/s?k=prise+connectee+tapo&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir un lot de prises connectées sur Amazon</a>
+                </article>
+            </section>
             
-            <div class="product-grid" style="margin-top: 2rem;">
-                <article class="card product-card">
-                    
-                    <h3>PC Portable : Dell Latitude</h3>
-                    <p class="product-description"><strong>Mon avis d'expert :</strong> La gamme Latitude est conçue pour durer. Châssis renforcé, clavier exceptionnel, maintenance facile... Le meilleur rapport qualité/prix pour du télétravail ou de la bureautique intensive.</p>
-                    <a href="https://www.amazon.fr/s?k=dell+latitude+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
+            <section id="bureautique" class="section-anchor">
+                <h2>💡 6. Bureautique et Productivité</h2>
+                <article class="product-review">
+                    <h4>Imprimante Multifonction Laser (Ex: Brother)</h4>
+                    <p><strong>Pour qui ?</strong> Pour les familles et les petites entreprises qui impriment régulièrement et qui en ont assez des cartouches jet d'encre qui sèchent et coûtent une fortune.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> J'oriente 90% de mes clients vers le laser monochrome. Le coût à la page est dérisoire, le toner ne sèche pas même après des mois d'inactivité, et la vitesse d'impression est incomparable. Les modèles multifonctions avec scanner sont parfaits pour numériser tous les documents administratifs. C'est un investissement rapidement rentabilisé.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/s?k=imprimante+laser+monochrome+multifonction+brother&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir les imprimantes laser Brother sur Amazon</a>
                 </article>
-                <article class="card product-card">
-                   
-                    <h3>PC Portable : Lenovo ThinkPad</h3>
-                    <p class="product-description"><strong>Mon avis d'expert :</strong> Le ThinkPad est une légende pour son clavier, considéré comme le meilleur du marché. Si vous tapez beaucoup de texte, c'est le choix du confort et de la fiabilité.</p>
-                    <a href="https://www.amazon.fr/s?k=lenovo+thinkpad+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
+                 <article class="product-review">
+                    <h4>Écran secondaire 24 ou 27 pouces (Ex: Dell, Iiyama)</h4>
+                    <p><strong>Pour qui ?</strong> Indispensable pour toute personne en télétravail ou qui passe beaucoup de temps sur son ordinateur. Le gain en productivité est immédiat.</p>
+                    <div class="expert-quote">
+                        <p><strong>Mon avis d'expert :</strong> Travailler sur un seul écran de portable est épuisant. Un deuxième écran permet d'afficher ses mails d'un côté et son document de travail de l'autre, par exemple. C'est le jour et la nuit en termes de confort visuel et d'efficacité. Je recommande une dalle IPS pour les couleurs justes et un pied réglable en hauteur pour l'ergonomie.</p>
+                    </div>
+                    <a href="https://www.amazon.fr/s?k=ecran+pc+27+pouces+ips&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection d'écrans 27" sur Amazon</a>
                 </article>
-                <article class="card product-card">
-                   
-                    <h3>PC Portable : HP EliteBook</h3>
-                    <p class="product-description"><strong>Mon avis d'expert :</strong> L'EliteBook allie performance et design avec sa finition souvent en aluminium. Vous avez accès à une machine premium pour le prix d'un portable grand public neuf.</p>
-                     <a href="https://www.amazon.fr/s?k=hp+elitebook+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
-                </article>
+            </section>
+        </div>
+
+        <section id="reconditionne" class="section-anchor">
+            <div class="container">
+                <h2>♻️ Le Reconditionné Intelligent</h2>
+                <p class="lead" style="text-align:center; margin-bottom: 2rem;">Pourquoi se tourner vers le reconditionné ? Parce qu'un ordinateur portable professionnel d'occasion surclasse presque toujours un modèle neuf grand public au même prix.</p>
+                <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center;">Les gammes professionnelles (Dell Latitude, Lenovo ThinkPad, HP EliteBook) sont conçues pour durer 5 à 10 ans avec des matériaux nobles (magnésium, aluminium), des charnières renforcées et des claviers résistants. Un modèle neuf à 500€ sera souvent en plastique, plus lent et moins fiable sur le long terme.</p>
+                <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center;">En tant que technicien, je vois la différence tous les jours en atelier. Ma sélection se porte sur ces machines réputées pour leur fiabilité et leur facilité de maintenance. C'est un choix économique, écologique et surtout, un gage de qualité et de durabilité.</p>
+                
+                <div class="product-grid" style="margin-top: 2rem;">
+                    <article class="card product-card card--link">
+                        <a href="https://www.amazon.fr/s?k=dell+latitude+reconditionné&tag=speedcomputer-21" target="_blank" rel="sponsored nofollow noopener">
+                            <img src="https://placehold.co/400x260/444/ccc?text=Photo+Dell+Latitude" alt="PC Portable Dell Latitude reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                            <h3>PC Portable : Dell Latitude</h3>
+                            <p class="product-description"><strong>Mon avis d'expert :</strong> La gamme Latitude est conçue pour durer. Châssis renforcé, clavier exceptionnel, maintenance facile... Le meilleur rapport qualité/prix pour du télétravail ou de la bureautique intensive.</p>
+                        </a>
+                    </article>
+                    <article class="card product-card card--link">
+                        <a href="https://www.amazon.fr/s?k=lenovo+thinkpad+reconditionné&tag=speedcomputer-21" target="_blank" rel="sponsored nofollow noopener">
+                            <img src="https://placehold.co/400x260/444/ccc?text=Photo+Lenovo+ThinkPad" alt="PC Portable Lenovo ThinkPad reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                            <h3>PC Portable : Lenovo ThinkPad</h3>
+                            <p class="product-description"><strong>Mon avis d'expert :</strong> Le ThinkPad est une légende pour son clavier, considéré comme le meilleur du marché. Si vous tapez beaucoup de texte, c'est le choix du confort et de la fiabilité.</p>
+                        </a>
+                    </article>
+                    <article class="card product-card card--link">
+                        <a href="https://www.amazon.fr/s?k=hp+elitebook+reconditionné&tag=speedcomputer-21" target="_blank" rel="sponsored nofollow noopener">
+                            <img src="https://placehold.co/400x260/444/ccc?text=Photo+HP+EliteBook" alt="PC Portable HP EliteBook reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                            <h3>PC Portable : HP EliteBook</h3>
+                            <p class="product-description"><strong>Mon avis d'expert :</strong> L'EliteBook allie performance et design avec sa finition souvent en aluminium. Vous avez accès à une machine premium pour le prix d'un portable grand public neuf.</p>
+                        </a>
+                    </article>
+                </div>
             </div>
         </section>
         
     </main>
 
-    <footer class="sc47-footer"></script>
+    <footer>
+      <div class="container foot">
+        <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+        <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
+        <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
+        <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
+      </div>
+    </footer>
 
+    <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
+
+    <script>
+      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+      const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+      document.querySelectorAll('.sc47-link[data-match]').forEach(a=>{ if(a.getAttribute('data-match').toLowerCase()===path){ a.classList.add('is-active'); } });
+      const burger=document.getElementById('sc47Burger');
+      const nav=document.getElementById('sc47Nav');
+      if(burger && nav){
+        burger.addEventListener('click', ()=>{ const open=nav.classList.toggle('open'); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+        document.addEventListener('click',(e)=>{ if(!nav.contains(e.target) && !burger.contains(e.target)){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); } });
+      }
+      const dd = document.getElementById('sc47Reviews');
+      const btnReviews = document.getElementById('sc47ReviewsBtn');
+      if(btnReviews && dd){
+        btnReviews.addEventListener('click',(e)=>{ e.preventDefault(); dd.classList.toggle('open'); btnReviews.setAttribute('aria-expanded', dd.classList.contains('open')); });
+        document.addEventListener('click',(e)=>{ if(!dd.contains(e.target)){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); } });
+        document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); } });
+      }
+    </script>
+    
     <div id="cookie-banner"></div>
     <script></script>
 </body>
