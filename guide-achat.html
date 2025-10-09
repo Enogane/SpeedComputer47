@@ -211,25 +211,60 @@
                 </article>
                 <div class="local-service-box"><p><strong>⚙️ Besoin d'aide pour configurer votre NAS à Villeneuve-sur-Lot ?</strong><br>De l'installation des disques à la configuration des sauvegardes, je propose un service complet pour mettre en place votre solution de stockage sécurisée. <a href="/#contact" class="link-inline">Contactez-moi !</a></p></div>
 
-                <div class="choix-guide">
-                    <h3>Comment choisir sa solution de stockage ?</h3>
-                    <ol>
-                        <li><strong>Vitesse ou capacité ?</strong> Un SSD (Solid State Drive) est ultra-rapide et rend votre ordinateur bien plus réactif. Un disque dur classique (HDD) offre une très grande capacité de stockage pour un prix bien plus bas. Le combo idéal : un SSD pour le système, un HDD pour les données.</li>
-                        <li><strong>De combien d'espace avez-vous réellement besoin ?</strong> Pour des documents bureautiques, 512 Go suffisent largement. Si vous stockez des photos et vidéos en haute résolution, visez au minimum 1 To ou 2 To.</li>
-                        <li><strong>Sauvegarde locale (NAS) ou Cloud ?</strong> Le Cloud est simple, mais implique un abonnement et une dépendance à internet. Un NAS est un investissement initial plus élevé, mais vous offre un contrôle total sur vos données, sans frais mensuels.</li>
-                    </ol>
-                </div>
-                <div class="faq-section">
-                    <h3>Questions Fréquentes</h3>
-                    <details>
-                        <summary>C'est quoi la règle de sauvegarde "3-2-1" ?</summary>
-                        <div class="faq-answer"><p>C'est la méthode de référence : avoir au moins <strong>3 copies</strong> de vos données, sur <strong>2 supports différents</strong> (ex: votre PC et un disque externe), dont <strong>1 copie hors-site</strong> (ex: au bureau, chez un ami, ou dans le cloud). C'est la meilleure protection contre le vol, l'incendie ou les ransomwares. Je peux vous aider à la mettre en place.</p></div>
-                    </details>
-                    <details>
-                        <summary>Mon NAS est-il automatiquement protégé contre les virus ?</summary>
-                        <div class="faq-answer"><p>Non, il doit être configuré correctement. Des options comme les "snapshots" (instantanés) permettent de revenir à une version antérieure de vos fichiers, rendant les attaques par ransomware inefficaces. C'est une configuration que je réalise pour mes clients professionnels à Villeneuve-sur-Lot.</p></div>
-                    </details>
-                </div>
+<!-- Blocs UX : Stockage -->
+<div class="choix-guide">
+  <h3>Comment choisir votre stockage ?</h3>
+
+  <details>
+    <summary>SSD 2,5" vs NVMe : que prendre ?</summary>
+    <div class="faq-answer">
+      <p><strong>NVMe</strong> = très rapide mais nécessite un port M.2.
+      <strong>SSD 2,5"</strong> = compatibilité maximale et <em>gain énorme</em> vs disque mécanique sur un PC ancien.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>HDD externe 2,5" ou 3,5" ?</summary>
+    <div class="faq-answer">
+      <p><strong>2,5"</strong> (USB, auto-alimenté) = portable. 
+      <strong>3,5"</strong> (secteur) = plus de capacité/€ mais moins mobile.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>NAS 1, 2 ou 4 baies ?</summary>
+    <div class="faq-answer">
+      <p><strong>2 baies</strong> (RAID1) = redondance simple.
+      <strong>4 baies</strong> = évolutivité/RAID5.
+      Solo = pas de redondance (à éviter en pro).</p>
+    </div>
+  </details>
+</div>
+
+<div class="expert-quote">
+  <p><strong>Mon avis d'expert :</strong> en particulier, je recommande <strong>SSD système</strong> + <strong>HDD externe</strong>. 
+  En pro : <strong>NAS Synology + onduleur</strong> et un <strong>backup hors-site</strong> (S3/Drive) pour la règle <strong>3-2-1</strong>.</p>
+</div>
+
+<div class="faq-section">
+  <h3>FAQ (Stockage)</h3>
+
+  <details>
+    <summary>La redondance NAS remplace-t-elle une sauvegarde ?</summary>
+    <div class="faq-answer">
+      <p>Non. Le RAID couvre uniquement la <em>panne d'un disque</em> (pas l’effacement, le vol ou un ransomware).
+      Conservez une <strong>copie déconnectée</strong> ou <strong>distante</strong>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Faut-il chiffrer ses sauvegardes ?</summary>
+    <div class="faq-answer">
+      <p>Oui pour toute donnée sensible. Utilisez le chiffrement <strong>AES-256</strong> du NAS ou des supports
+      chiffrés matériels (IronKey, iStorage).</p>
+    </div>
+  </details>
+</div>
             </section>
 
             <section id="securite" class="section-anchor">
