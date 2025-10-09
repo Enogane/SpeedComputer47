@@ -20,23 +20,23 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <title>Maintenance informatique entreprises Villeneuve‑sur‑Lot | SpeedComputer47</title>
-  <meta name="description" content="Maintenance informatique pour entreprises à Villeneuve‑sur‑Lot : assistance illimitée, supervision, sauvegardes cloud, cybersécurité et réseau. Interventions sur site dans tout le Lot‑et‑Garonne."/>
+  <title>Maintenance informatique entreprises Villeneuve-sur-Lot | SpeedComputer47</title>
+  <meta name="description" content="Maintenance informatique pour entreprises à Villeneuve-sur-Lot : assistance illimitée, supervision, sauvegardes cloud, cybersécurité et réseau. Interventions sur site dans tout le Lot-et-Garonne."/>
   <link rel="canonical" href="https://speedcomputer47.fr/pro.html"/>
   <meta name="robots" content="index, follow"/>
 
   <!-- Open Graph / Twitter -->
   <meta property="og:site_name" content="SpeedComputer47"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Maintenance informatique entreprises à Villeneuve‑sur‑Lot | SpeedComputer47"/>
-  <meta property="og:description" content="Contrats de maintenance, supervision 24/7, sauvegardes cloud et interventions rapides pour PME à Villeneuve‑sur‑Lot et 50 km."/>
+  <meta property="og:title" content="Maintenance informatique entreprises à Villeneuve-sur-Lot | SpeedComputer47"/>
+  <meta property="og:description" content="Contrats de maintenance, supervision 24/7, sauvegardes cloud et interventions rapides pour PME à Villeneuve-sur-Lot et 50 km."/>
   <meta property="og:url" content="https://speedcomputer47.fr/pro.html"/>
   <meta property="og:image" content="https://speedcomputer47.fr/logo.webp"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
   <meta property="og:locale" content="fr_FR"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Maintenance informatique entreprises Villeneuve‑sur‑Lot | SpeedComputer47"/>
+  <meta name="twitter:title" content="Maintenance informatique entreprises Villeneuve-sur-Lot | SpeedComputer47"/>
   <meta name="twitter:description" content="Support et maintenance informatique pour PME : assistance illimitée, sauvegardes, cybersécurité et réseau professionnel."/>
   <meta name="theme-color" content="#0b0d10"/>
 
@@ -59,7 +59,7 @@
     .muted{color:#9ca3af}
     .lead{color:#c7d2fe}
     .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;align-items:start}
     .list{padding-left:16px;margin:0}.list li{margin:2px 0}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
     .btn:hover{background:#111b2e}
@@ -74,9 +74,20 @@
     .hero-box{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
     .breadcrumbs{max-width:1100px;margin:0 auto;padding:10px 16px;font-size:.95rem;color:var(--muted)}
     .breadcrumbs a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+
+    /* === Alignement cartes forfaits === */
+    #packs{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:16px;
+      align-items:start;
+    }
+    #packs .card{display:flex;flex-direction:column;height:100%}
+    #packs .features{margin:0 0 10px}
+    #packs .cta-row{margin-top:auto}
   </style>
 
-  <!-- ===== JSON‑LD ===== -->
+  <!-- ===== JSON-LD ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -112,7 +123,7 @@
     "@type": "WebPage",
     "@id": "https://speedcomputer47.fr/pro.html#webpage",
     "url": "https://speedcomputer47.fr/pro.html",
-    "name": "Maintenance informatique entreprises à Villeneuve‑sur‑Lot",
+    "name": "Maintenance informatique entreprises à Villeneuve-sur-Lot",
     "description": "Support et maintenance informatique pour PME : assistance illimitée, sauvegardes, cybersécurité et réseau professionnel.",
     "inLanguage": "fr-FR",
     "isPartOf": {"@type":"WebSite","name":"SpeedComputer47","url":"https://speedcomputer47.fr/"},
@@ -165,7 +176,7 @@
           </div>
         </div>
 
-        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
       </nav>
     </div>
   </header>
@@ -180,7 +191,7 @@
     <div class="container hero-grid">
       <div>
         <h1>Support & maintenance informatique pour professionnels</h1>
-        <p class="lead muted">Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité & réseau.<br><strong>Essai 1 mois sans engagement</strong>, puis <strong>engagement 3/6/12 mois</strong> à tarif dégressif.</p>
+        <p class="lead muted">Interventions ponctuelles, contrats au poste, sauvegardes, cybersécurité & réseau.<br><strong>Essai 1 mois sans engagement</strong>, puis <strong>engagement 3/6/12 mois</strong> à tarif dégressif.</p>
         <div class="cta-row">
           <a class="btn primary" href="mailto:contact@speedcomputer47.fr">Demander un devis</a>
           <a class="btn" href="#forfaits">Voir les forfaits</a>
@@ -190,28 +201,91 @@
         <h3>Interventions fréquentes</h3>
         <ul class="list muted">
           <li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">PC lents → optimisation & SSD</a></li>
-          <li><a href="/wifi-reseau-entreprise.html">Réseau & Wi‑Fi d’entreprise</a></li>
+          <li><a href="/wifi-reseau-entreprise.html">Réseau & Wi-Fi d’entreprise</a></li>
           <li><a href="/sauvegarde-entreprise.html">Sauvegardes local & cloud</a></li>
           <li><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité (AV, filtrage, MFA)</a></li>
-          <li><a href="/migration-deploiement.html">Migrations & déploiements multi‑postes</a></li>
+          <li><a href="/migration-deploiement.html">Migrations & déploiements multi-postes</a></li>
         </ul>
       </aside>
     </div>
   </section>
 
   <main>
+    <!-- ===== Contenu SEO principal (~650 mots) ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Maintenance informatique à Villeneuve-sur-Lot (PME & indépendants)</h2>
+        <p>
+          <strong>SpeedComputer47</strong> accompagne les entreprises de <strong>Villeneuve-sur-Lot</strong> et du 
+          <strong>Lot-et-Garonne</strong> (Agen, Marmande, Fumel, Pujols, Sainte-Livrade) avec une maintenance informatique
+          simple et efficace&nbsp;: assistance illimitée, supervision des postes, <strong>sauvegardes</strong> (NAS + cloud)
+          et <strong>cybersécurité</strong> adaptée aux TPE/PME. Notre priorité&nbsp;: des postes fiables, un <strong>Wi-Fi</strong> stable
+          et des données protégées, sans perdre de temps ni exploser le budget.
+        </p>
+        <h3>Pourquoi une maintenance gérée en 2025&nbsp;?</h3>
+        <p>
+          Les PME utilisent messagerie cloud, outils collaboratifs, objets connectés (imprimantes, <em>caméras IP</em>), et du télétravail.
+          Le risque ne vient pas seulement des pannes&nbsp;: ce sont les <strong>rançongiciels</strong>, le <strong>phishing</strong> et les 
+          <strong>mots de passe réutilisés</strong> qui provoquent la plupart des incidents. Une <strong>maintenance managée</strong> évite les
+          interruptions, met en place les <strong>mises à jour automatiques</strong>, contrôle les sauvegardes et <strong>détecte tôt</strong> les anomalies.
+          Résultat&nbsp;: moins d’urgences, plus de sérénité. Pour sensibiliser vos équipes, l’<a href="https://secnumacademie.gouv.fr/" target="_blank" rel="noopener">ANSSI (SecNumAcadémie)</a> propose une formation gratuite.
+        </p>
+        <h3>Ce que nous gérons pour vous</h3>
+        <ul class="list">
+          <li><strong>Assistance illimitée</strong> (téléphone, télémaintenance, sur site) avec délais d’intervention clairs.</li>
+          <li><strong>Supervision 24/7</strong> (selon offre)&nbsp;: santé des postes, mises à jour, espace disque, état antivirus.</li>
+          <li><strong>Cybersécurité</strong>&nbsp;: antivirus géré, filtrage web, MFA conseillé, bonnes pratiques (phishing, mots de passe). <a href="https://www.cnil.fr/fr/securite" target="_blank" rel="noopener">Recommandations CNIL</a>.</li>
+          <li><strong>Sauvegarde 3-2-1</strong>&nbsp;: <strong>NAS</strong> sur site + <strong>cloud</strong> avec <strong>tests de restauration</strong> réguliers.</li>
+          <li><strong>Réseau & Wi-Fi</strong>&nbsp;: étude de couverture, <strong>VLAN invité/IoT</strong>, QoS, routeurs/points d’accès adaptés.</li>
+          <li><strong>Messagerie pro</strong>&nbsp;: durcissement SPF/DKIM/DMARC, archivage, règles anti-fraude (<a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes" target="_blank" rel="noopener">fiches réflexes</a>).</li>
+          <li><strong>Parc & déploiements</strong>&nbsp;: nouveaux postes, migrations, profils, Microsoft 365 ou Google Workspace.</li>
+        </ul>
+        <p class="muted">
+          Besoin d’un diagnostic rapide&nbsp;? Demandez un <strong>audit express</strong> pour prioriser les actions à plus fort impact (sécurité messagerie, sauvegarde, réseau).
+        </p>
+        <h3>Forfaits au poste&nbsp;: Essentielle, Pro, Prime</h3>
+        <p>
+          Nos <strong>contrats au poste</strong> s’ajustent à votre parc et à votre niveau d’exigence&nbsp;:<br>
+          <strong>Essentielle</strong>&nbsp;: base solide pour TPE — mises à jour, antivirus géré, support à distance, ≤ 48 h ouvrées.<br>
+          <strong>Pro</strong>&nbsp;: ajoute <strong>sauvegarde incluse</strong> (pool 500 Go), ≤ 24 h, et <strong>2 h de formation/an</strong> (phishing, MFA).<br>
+          <strong>Prime</strong>&nbsp;: <strong>supervision 24/7</strong>, priorité ≤ 12 h, audit annuel et sensibilisation équipe.
+        </p>
+        <p>
+          Commencez <strong>1 mois sans engagement</strong>, puis choisissez <strong>3/6/12 mois</strong> à tarif dégressif. Les déplacements ≤ 20 km autour de Villeneuve-sur-Lot sont inclus (au-delà&nbsp;: frais au km).
+        </p>
+        <h3>Ce que vous gagnez au quotidien</h3>
+        <ul class="list">
+          <li><strong>Moins de pannes</strong> et moins de temps perdu.</li>
+          <li><strong>Restauration</strong> possible en cas d’erreur ou d’attaque (tests de restau vérifiés).</li>
+          <li><strong>Réseau fiable</strong> pour la visioconférence, la téléphonie et les outils métier.</li>
+          <li><strong>Conformité raisonnée</strong>&nbsp;: journalisation basique, accès invités, séparation IoT quand c’est pertinent.</li>
+        </ul>
+        <p>
+          Problèmes de Wi-Fi&nbsp;? Lisez <a href="/blog-wifi-lent-villeneuve-sur-lot-solutions.html">Wi-Fi lent&nbsp;: causes & solutions</a>.
+          Choisir un antivirus en 2025&nbsp;? <a href="/blog-comparatif-antivirus-2025-bitdefender-norton.html">Bitdefender vs Norton</a>.
+          Sécurité d’ensemble&nbsp;? <a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité PME</a>.
+          Matériel recommandé (routeurs, NAS, onduleurs)&nbsp;: <a href="/guide-achat.html">Guide d’achat</a>.
+        </p>
+        <p><strong>Villeneuve-sur-Lot</strong> et 50 km&nbsp;: Agen, Marmande, Fumel, Casseneuil, Pujols, Sainte-Livrade-sur-Lot, Monflanquin, Tonneins… Intervention <strong>sur site</strong> ou <strong>à distance</strong> selon l’urgence.</p>
+        <p class="cta-row">
+          <a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
+          <a class="btn" href="mailto:contact@speedcomputer47.fr?subject=Demande de devis – Entreprise">📩 Demander un devis</a>
+        </p>
+      </div>
+    </section>
+
     <!-- Interventions ponctuelles -->
     <section class="section">
       <div class="container">
         <h2 class="section-title">Interventions ponctuelles</h2>
         <p class="muted">Pour les besoins immédiats, sans engagement.</p>
         <div class="cards">
-          <article class="card"><h3>Intervention sur site (1 h)</h3><p class="muted">Dépannage, diagnostic, configuration.</p><p class="price"><strong>75 € HT</strong> <span class="muted">/ 90 € TTC</span></p><p class="note">Déplacement ≤ 20 km inclus. Au‑delà : +0,50 €/km (AR).</p></article>
-          <article class="card"><h3>Demi‑journée (4 h)</h3><p class="muted">Interventions lourdes, déploiements.</p><p class="price"><strong>250 € HT</strong> <span class="muted">/ 300 € TTC</span></p></article>
-          <article class="card"><h3>Journée (7 h)</h3><p class="muted">Projets, migrations, multi‑postes.</p><p class="price"><strong>450 € HT</strong> <span class="muted">/ 540 € TTC</span></p></article>
-          <article class="card"><h3>Installation / réinstallation poste</h3><p class="muted">Poste prêt à l’emploi (hors migration complexe).</p><p class="price"><strong>108,33 € HT</strong> <span class="muted">/ 130 € TTC</span></p></article>
-          <article class="card"><h3>Migration données & paramétrage</h3><p class="muted">PC→PC, profils, logiciels (par poste).</p><p class="price"><strong>141,67 € HT</strong> <span class="muted">/ 170 € TTC</span></p></article>
-          <article class="card"><h3>Audit réseau & sécurité</h3><p class="muted">État des lieux, rapport & recommandations.</p><p class="price"><strong>200 € HT</strong> <span class="muted">/ 240 € TTC</span></p></article>
+          <article class="card"><h3>Intervention sur site (1 h)</h3><p class="muted">Dépannage, diagnostic, configuration.</p><p class="price"><strong>75 € HT</strong> <span class="muted">/ 90 € TTC</span></p><p class="note">Déplacement ≤ 20 km inclus. Au-delà : +0,50 €/km (AR).</p></article>
+          <article class="card"><h3>Demi-journée (4 h)</h3><p class="muted">Interventions lourdes, déploiements.</p><p class="price"><strong>250 € HT</strong> <span class="muted">/ 300 € TTC</span></p></article>
+          <article class="card"><h3>Journée (7 h)</h3><p class="muted">Projets, migrations, multi-postes.</p><p class="price"><strong>450 € HT</strong> <span class="muted">/ 540 € TTC</span></p></article>
+          <article class="card"><h3>Installation / réinstallation poste</h3><p class="muted">Poste prêt à l’emploi (hors migration complexe).</p><p class="price"><strong>108,33 € HT</strong> <span class="muted">/ 130 € TTC</span></p></article>
+          <article class="card"><h3>Migration données & paramétrage</h3><p class="muted">PC→PC, profils, logiciels (par poste).</p><p class="price"><strong>141,67 € HT</strong> <span class="muted">/ 170 € TTC</span></p></article>
+          <article class="card"><h3>Audit réseau & sécurité</h3><p class="muted">État des lieux, rapport & recommandations.</p><p class="price"><strong>200 € HT</strong> <span class="muted">/ 240 € TTC</span></p></article>
         </div>
       </div>
     </section>
@@ -220,14 +294,14 @@
     <section class="section section--alt" id="forfaits">
       <div class="container">
         <h2 class="section-title">Forfaits maintenance — au poste</h2>
-        <p class="muted">Essai 1 mois sans engagement, puis tarifs dégressifs selon <strong>volume</strong> et <strong>engagement 3/6/12 mois</strong>.</p>
+        <p class="muted">Essai 1 mois sans engagement, puis tarifs dégressifs selon <strong>volume</strong> et <strong>engagement 3/6/12 mois</strong>.</p>
         <div aria-label="Configurateur de forfaits" class="card cfg" role="region">
           <label>Nombre de postes <input id="seats" inputmode="numeric" max="20" min="1" style="margin-left:8px;width:90px" type="number" value="6"/></label>
-          <label>Engagement <select id="term" style="margin-left:8px"><option value="1">1 mois (sans engagement)</option><option value="3">3 mois (–5%)</option><option value="6">6 mois (–10%)</option><option value="12">12 mois (–15%)</option></select></label>
-          <span class="muted">Déplacement ≤ 20 km inclus, puis +0,50 €/km</span>
+          <label>Engagement <select id="term" style="margin-left:8px"><option value="1">1 mois (sans engagement)</option><option value="3">3 mois (–5%)</option><option value="6">6 mois (–10%)</option><option value="12">12 mois (–15%)</option></select></label>
+          <span class="muted">Déplacement ≤ 20 km inclus, puis +0,50 €/km</span>
         </div>
         <div class="cards" id="packs"><!-- injecté par JS --></div>
-        <p class="note">Pièces & licences non incluses lorsque mentionnées. Sauvegarde incluse (Pro/Prime) : pool 500 Go par parc.</p>
+        <p class="note">Pièces & licences non incluses lorsque mentionnées. Sauvegarde incluse (Pro/Prime) : pool 500 Go par parc.</p>
       </div>
     </section>
 
@@ -236,14 +310,14 @@
       <div class="container">
         <h2 class="section-title">Services pour entreprises</h2>
         <div class="cards">
-          <article class="card"><h3><a href="/wifi-reseau-entreprise.html">Réseau & Wi‑Fi d’entreprise</a></h3><p class="muted">Audit, câblage, VLAN, bornes, QoS, VPN.</p></article>
-          <article class="card"><h3><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité</a></h3><p class="muted">Antivirus géré, durcissement, MFA, pare‑feu & VPN.</p></article>
+          <article class="card"><h3><a href="/wifi-reseau-entreprise.html">Réseau & Wi-Fi d’entreprise</a></h3><p class="muted">Audit, câblage, VLAN, bornes, QoS, VPN.</p></article>
+          <article class="card"><h3><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité</a></h3><p class="muted">Antivirus géré, durcissement, MFA, pare-feu & VPN.</p></article>
           <article class="card"><h3><a href="/sauvegarde-entreprise.html">Sauvegarde & PRA</a></h3><p class="muted">NAS & cloud managés, tests réguliers.</p></article>
-          <article class="card"><h3><a href="/microsoft-365.html">Microsoft 365</a></h3><p class="muted">Licences, migration, sécurité & gouvernance.</p></article>
+          <article class="card"><h3><a href="/microsoft-365.html">Microsoft 365</a></h3><p class="muted">Licences, migration, sécurité & gouvernance.</p></article>
           <article class="card"><h3><a href="/google-workspace.html">Google Workspace</a></h3><p class="muted">Déploiement, migration, MDM & sécurité.</p></article>
           <article class="card"><h3><a href="/serveur-nas-manage.html">Serveur / NAS managé</a></h3><p class="muted">Supervision, patchs, snapshots & restauration.</p></article>
-          <article class="card"><h3><a href="/migration-deploiement.html">Migrations & déploiements</a></h3><p class="muted">Windows, profils, messagerie, multi‑postes.</p></article>
-          <article class="card"><h3><a href="/messagerie-pro.html">Messagerie pro</a></h3><p class="muted">Sécurité e‑mail, antiphishing & archivage.</p></article>
+          <article class="card"><h3><a href="/migration-deploiement.html">Migrations & déploiements</a></h3><p class="muted">Windows, profils, messagerie, multi-postes.</p></article>
+          <article class="card"><h3><a href="/messagerie-pro.html">Messagerie pro</a></h3><p class="muted">Sécurité e-mail, antiphishing & archivage.</p></article>
         </div>
       </div>
     </section>
@@ -253,24 +327,59 @@
       <div class="container">
         <h2 class="section-title">Ressources utiles</h2>
         <div class="cards">
-          <article class="card"><h3><a href="/blog-depannage-informatique-villeneuve-sur-lot.html">Dépannage informatique – Villeneuve‑sur‑Lot</a></h3><p class="muted">Nos conseils et interventions types.</p></article>
-          <article class="card"><h3><a href="/blog-wifi-lent-villeneuve-sur-lot-solutions.html">Wi‑Fi lent : causes & solutions</a></h3><p class="muted">Diagnostic, Mesh, VLAN invité.</p></article>
-          <article class="card"><h3><a href="/blog-comparatif-antivirus-2025-bitdefender-norton.html">Comparatif antivirus 2025</a></h3><p class="muted">Bitdefender vs Norton, packs pros & particuliers.</p></article>
-          <article class="card"><h3><a href="/guide-achat.html#securite">Guide d’achat : sécurité</a></h3><p class="muted">Sélection antivirus/EDR et routeurs pro.</p></article>
-          <article class="card"><h3><a href="/guide-achat.html#nas">Guide d’achat : NAS & sauvegarde</a></h3><p class="muted">NAS + cloud (liens affiliés Amazon).</p></article>
+          <article class="card"><h3><a href="/blog-depannage-informatique-villeneuve-sur-lot.html">Dépannage informatique – Villeneuve-sur-Lot</a></h3><p class="muted">Nos conseils et interventions types.</p></article>
+          <article class="card"><h3><a href="/blog-wifi-lent-villeneuve-sur-lot-solutions.html">Wi-Fi lent : causes & solutions</a></h3><p class="muted">Diagnostic, Mesh, VLAN invité.</p></article>
+          <article class="card"><h3><a href="/blog-comparatif-antivirus-2025-bitdefender-norton.html">Comparatif antivirus 2025</a></h3><p class="muted">Bitdefender vs Norton, packs pros & particuliers.</p></article>
+          <article class="card"><h3><a href="/guide-achat.html#securite">Guide d’achat : sécurité</a></h3><p class="muted">Sélection antivirus/EDR et routeurs pro.</p></article>
+          <article class="card"><h3><a href="/guide-achat.html#nas">Guide d’achat : NAS & sauvegarde</a></h3><p class="muted">NAS + cloud (liens affiliés Amazon).</p></article>
+        </div>
+        <p class="cta-row" style="margin-top:8px">
+          <a class="btn" href="/blog.html">Voir tous les articles du blog</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Références officielles -->
+    <section class="section" id="refs-officielles" aria-label="Références officielles">
+      <div class="container">
+        <h2 class="section-title">Références officielles (sécurité & conformité)</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>ANSSI – Guides TPE/PME</h3>
+            <p class="muted">Bonnes pratiques, durcissement, gestion des mots de passe et MFA.</p>
+            <p><a class="btn" href="https://www.ssi.gouv.fr/particulier/bonnes-pratiques/" target="_blank" rel="noopener">Bonnes pratiques</a></p>
+            <p><a class="btn" href="https://secnumacademie.gouv.fr/" target="_blank" rel="noopener">SecNumAcadémie (formation gratuite)</a></p>
+          </article>
+          <article class="card">
+            <h3>Cybermalveillance.gouv.fr</h3>
+            <p class="muted">Prévention, fiches réflexes, assistance en cas d’attaque.</p>
+            <p><a class="btn" href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener">Portail officiel</a></p>
+            <p><a class="btn" href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes" target="_blank" rel="noopener">Fiches réflexes</a></p>
+          </article>
+          <article class="card">
+            <h3>CNIL – Données & RGPD</h3>
+            <p class="muted">Obligations de base pour TPE/PME, registre, mots de passe.</p>
+            <p><a class="btn" href="https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on" target="_blank" rel="noopener">RGPD : l’essentiel</a></p>
+            <p><a class="btn" href="https://www.cnil.fr/fr/securite" target="_blank" rel="noopener">Sécurité & mots de passe</a></p>
+          </article>
+          <article class="card">
+            <h3>Service-Public Pro</h3>
+            <p class="muted">Télétravail, sécurité informatique, fiches pratiques.</p>
+            <p><a class="btn" href="https://www.service-public.fr/professionnels-entreprises" target="_blank" rel="noopener">Portail entreprises</a></p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ visible + JSON-LD déjà en place (si besoin, dupliquer) -->
+    <!-- FAQ -->
     <section class="section section--alt" id="faq">
       <div class="container">
         <h2 class="section-title">FAQ – Entreprises</h2>
         <div class="cards">
-          <article class="card"><h3>Faut‑il un engagement dès le départ ?</h3><p class="muted">Non. Vous pouvez tester 1 mois sans engagement, puis choisir 3/6/12 mois à tarif dégressif.</p></article>
-          <article class="card"><h3>La sauvegarde est‑elle incluse ?</h3><p class="muted">Oui pour les offres Pro/Prime : pool 500 Go pour l’ensemble du parc, supervision incluse.</p></article>
-          <article class="card"><h3>Intervenez‑vous hors Villeneuve‑sur‑Lot ?</h3><p class="muted">Oui, dans un rayon d’environ 50 km (Agen, Marmande, Fumel, Bergerac, Cahors, Montauban…).</p></article>
-          <article class="card"><h3>Quels délais d’intervention ?</h3><p class="muted">Essentielle ≤ 48 h ouvrées • Pro ≤ 24 h • Prime ≤ 12 h (priorité).</p></article>
+          <article class="card"><h3>Faut-il un engagement dès le départ ?</h3><p class="muted">Oui, vous pouvez tester 1 mois sans engagement, puis choisir 3/6/12 mois à tarif dégressif.</p></article>
+          <article class="card"><h3>La sauvegarde est-elle incluse ?</h3><p class="muted">Oui pour les offres Pro/Prime : pool 500 Go pour l’ensemble du parc, supervision incluse.</p></article>
+          <article class="card"><h3>Intervenez-vous hors Villeneuve-sur-Lot ?</h3><p class="muted">Oui, dans un rayon d’environ 50 km (Agen, Marmande, Fumel, Bergerac, Cahors, Montauban…).</p></article>
+          <article class="card"><h3>Quels délais d’intervention ?</h3><p class="muted">Essentielle ≤ 48 h ouvrées • Pro ≤ 24 h • Prime ≤ 12 h (priorité).</p></article>
         </div>
       </div>
     </section>
@@ -279,14 +388,14 @@
     <section class="section" id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <p class="muted">Un ticket ponctuel, un audit ou un contrat au poste ? Réponse sous 24 h ouvrées.</p>
+        <p class="muted">Un ticket ponctuel, un audit ou un contrat au poste ? Réponse sous 24 h ouvrées.</p>
         <div class="cards">
           <article class="card">
-            <p>📞 <a class="btn" href="tel:+33666235143">06 66 23 51 43</a></p>
+            <p>📞 <a class="btn" href="tel:+33666235143">06 66 23 51 43</a></p>
             <p>✉️ <a class="btn" href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
           </article>
           <article class="card">
-            <h3>Devis express par e‑mail</h3>
+            <h3>Devis express par e-mail</h3>
             <p class="muted">Décrivez votre besoin (parc, postes, contraintes, délais).</p>
             <a class="btn primary" href="mailto:contact@speedcomputer47.fr?subject=Demande de devis – Entreprise&body=Bonjour,%0A%0ANous souhaitons un devis pour :%0A- Nombre de postes :%0A- Formule (Essentielle/Pro/Prime) :%0A- Engagement (1/3/6/12 mois) :%0A- Options (serveur, pare-feu, M365/Workspace...) :%0A- Ville / distance approx. :%0A%0AMerci,">📩 Envoyer ma demande</a>
           </article>
@@ -300,12 +409,12 @@
     <div class="container">
       <h2>Zones d’intervention & pages locales</h2>
       <ul>
-        <li><a href="/installation-informatique-villeneuve-sur-lot.html">Installation informatique – Villeneuve‑sur‑Lot</a></li>
+        <li><a href="/installation-informatique-villeneuve-sur-lot.html">Installation informatique – Villeneuve-sur-Lot</a></li>
         <li><a href="/installation-informatique-agen.html">Installation informatique – Agen</a></li>
         <li><a href="/installation-informatique-marmande.html">Installation informatique – Marmande</a></li>
-        <li><a href="/wifi-reseau-entreprise.html">Wi‑Fi / Réseau – Entreprise</a></li>
+        <li><a href="/wifi-reseau-entreprise.html">Wi-Fi / Réseau – Entreprise</a></li>
         <li><a href="/sauvegarde-entreprise.html">Sauvegarde – Entreprise</a></li>
-        <li><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité – Lot‑et‑Garonne</a></li>
+        <li><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité – Lot-et-Garonne</a></li>
       </ul>
     </div>
   </section>
@@ -313,8 +422,8 @@
   <!-- FOOTER -->
   <footer>
     <div class="container foot">
-      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve‑sur‑Lot</p>
-      <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
+      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+      <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
       <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
       <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
     </div>
@@ -348,12 +457,38 @@
     const seatsEl=document.getElementById('seats'), termEl=document.getElementById('term'), packsEl=document.getElementById('packs');
     function tierFor(n){ if(n<=5)return'tier1'; if(n<=10)return'tier2'; return'tier3'; }
     function euro(n){ return n.toFixed(2).replace('.', ',')+' €'; }
-    function render(){ const n=Math.min(20, Math.max(1, parseInt(seatsEl.value||'1',10))); seatsEl.value=n; const t=parseInt(termEl.value,10); const disc=discounts[t]||0; const tier=tierFor(n);
-      packsEl.innerHTML=''; Object.keys(base).forEach(pack=>{ const priceBase=base[pack][tier], priceSeat=priceBase*(1-disc), total=priceSeat*n; const li=features[pack].map(f=>`<li>• ${f}</li>`).join('');
-        packsEl.insertAdjacentHTML('beforeend',`<article class="card"><h3 style="margin:0 0 6px">${pack}</h3><p class="muted" style="margin:0 0 8px">${n<=5?'1–5 postes':(n<=10?'6–10 postes':'11–20 postes')} • Engagement ${t} mois</p><ul class="list muted" style="margin:0 0 10px">${li}</ul><div class="price"><p style="margin:0"><strong>${euro(priceSeat)}</strong> / poste / mois (HT)</p><p class="muted" style="margin:4px 0 8px">Total parc : <strong>${euro(total)}</strong> / mois (HT)</p></div><div class="cta-row"><a class="btn" href="#contact">Demander un devis</a></div></article>`); }); }
+    function render(){ 
+      const n=Math.min(20, Math.max(1, parseInt(seatsEl.value||'1',10))); 
+      seatsEl.value=n; const t=parseInt(termEl.value,10); const disc=discounts[t]||0; const tier=tierFor(n);
+      packsEl.innerHTML='';
+      Object.keys(base).forEach(pack=>{
+        const priceBase=base[pack][tier], priceSeat=priceBase*(1-disc), total=priceSeat*n;
+        const li=features[pack].map(f=>`<li>• ${f}</li>`).join('');
+        packsEl.insertAdjacentHTML('beforeend',`
+          <article class="card">
+            <h3 style="margin:0 0 6px">${pack}</h3>
+            <p class="muted" style="margin:0 0 8px">${n<=5?'1–5 postes':(n<=10?'6–10 postes':'11–20 postes')} • Engagement ${t} mois</p>
+            <ul class="list muted features" style="margin:0 0 10px">${li}</ul>
+            <div class="price">
+              <p style="margin:0"><strong>${euro(priceSeat)}</strong> / poste / mois (HT)</p>
+              <p class="muted" style="margin:4px 0 8px">Total parc : <strong>${euro(total)}</strong> / mois (HT)</p>
+            </div>
+            <div class="cta-row"><a class="btn" href="#contact">Demander un devis</a></div>
+          </article>`);
+      });
+    }
     if(seatsEl&&termEl&&packsEl){ seatsEl.addEventListener('input',render); termEl.addEventListener('change',render); render(); }
     // Auto-tag Amazon (affilié)
     (function(){ const TAG='speedcomputer-21'; document.querySelectorAll('a[href*="amazon.fr/"]').forEach(a=>{ try{ const u=new URL(a.href, location.href); if(!u.searchParams.get('tag')) u.searchParams.set('tag', TAG); a.href=u.toString(); a.setAttribute('target','_blank'); a.setAttribute('rel','sponsored nofollow noopener'); }catch(e){} }); })();
+    // Ouvrir automatiquement les sites officiels dans un nouvel onglet
+    (function(){
+      const domains=["ssi.gouv.fr","secnumacademie.gouv.fr","cybermalveillance.gouv.fr","cnil.fr","service-public.fr"];
+      document.querySelectorAll('a[href]').forEach(a=>{
+        try{ const u=new URL(a.href, location.href);
+          if(domains.some(d=>u.hostname.endsWith(d))){ a.setAttribute('target','_blank'); a.setAttribute('rel','noopener'); }
+        }catch(e){}
+      });
+    })();
   </script>
 </body>
 </html>
