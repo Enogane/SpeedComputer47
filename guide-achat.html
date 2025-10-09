@@ -46,6 +46,8 @@
         .link-inline{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
         .link-inline:hover{ text-decoration-thickness:2px; }
         .affiliate-note{font-size:.95rem;color:#6b7280;margin:.5rem 0}
+        .card--link { display: block; text-decoration: none; color: inherit; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+        .card--link:hover, .card--link:focus { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
 
         /* MISE EN FORME SOMBRE ET UNIFIÉE DU GUIDE */
         .quick-nav { background: #181a1f; border: 1px solid #333; padding: 20px; margin: 2rem 0; border-radius: 12px; }
@@ -65,11 +67,11 @@
         .local-service-box { background: linear-gradient(45deg, rgba(44, 47, 54, 1), rgba(24, 26, 31, 1)); border: 1px solid var(--accent); border-radius: 12px; padding: 24px; margin: 30px 0; text-align: center; color: #eee; }
         .local-service-box p { color: #eee; }
         #reconditionne { padding-top: 2rem; padding-bottom: 2rem; }
-        #reconditionne .card.product-card { background: #181a1f; color: #ccc; border: 1px solid #333; transform: none; box-shadow: none; }
+        #reconditionne .card.product-card { background: #181a1f; color: #ccc; border: 1px solid #333; transform: none; box-shadow: none; padding: 1.5rem; }
         #reconditionne .card.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); border-color: #444; }
         #reconditionne .card.product-card h3 { color: #fff; }
 
-        /* == ✅ STYLES pour "Comment Choisir" et FAQ ✅ == */
+        /* "Comment Choisir" et FAQ */
         .choix-guide, .faq-section { margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; }
         .choix-guide h3, .faq-section h3 { color: var(--accent); font-size: 1.4rem; margin-bottom: 1.5rem; }
         .choix-guide ol { list-style: none; padding-left: 0; counter-reset: guide-counter; }
@@ -82,7 +84,6 @@
         .faq-section details[open] summary::after { transform: rotate(180deg); }
         .faq-section .faq-answer { padding: 0 16px 16px; color: #ccc; line-height: 1.6; }
         .faq-section .faq-answer p { margin: 0; }
-
     </style>
     
     <script>
@@ -106,14 +107,43 @@
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="sc47-header"></header>
+    <header class="sc47-header">
+      <div class="sc47-container">
+        <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+          <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+          <span class="sc47-name">SpeedComputer47</span>
+        </a>
+        <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+        <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+          <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
+          <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
+          <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
+          <a class="sc47-link" data-match="guide-achat.html" href="guide-achat.html">Guide d'Achat</a>
+          <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+          <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google</a>
+              <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook</a>
+              <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
+              <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
+              <a class="sc47-item" href="https://www.l3vl.com/pro/72210" target="_blank" rel="noopener"><img class="sc47-ico" src="LOGAGV.webp" alt="CAGV"/> Grand villeneuvois</a>
+              <a class="sc47-item" href="https://www.amazon.fr/?&linkCode=sl2&tag=speedcomputer-21&linkId=2d8d02ced5e1e1ecec4bcc82569ebf67&language=fr_FR&ref_=as_li_ss_tl" target="_blank" rel="noopener"><img class="sc47-ico" src="logoamazon.webp" alt="amazon"/> Amazon</a>
+            </div>
+          </div>
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+        </nav>
+      </div>
+    </header>
 
     <main>
-        <section class="intro-guide hero--bg">
-            <h1>Le Guide d'Achat de Votre Expert Informatique</h1>
-            <p class="lead">
-                Bienvenue sur mon guide d'achat ! En tant que technicien à Villeneuve-sur-Lot, je teste et répare du matériel tous les jours. Vous trouverez ici une sélection rigoureuse de produits (neufs et reconditionnés) que je recommande personnellement pour leur fiabilité et leur rapport qualité/prix. Mon but est de vous aider à faire le bon choix, en toute confiance.
-            </p>
+        <section class="hero hero--bg">
+            <div class="container">
+                <h1>Le Guide d'Achat de Votre Expert Informatique</h1>
+                <p class="lead">
+                    Bienvenue sur mon guide d'achat ! En tant que technicien à Villeneuve-sur-Lot, je teste et répare du matériel tous les jours. Vous trouverez ici une sélection rigoureuse de produits (neufs et reconditionnés) que je recommande personnellement pour leur fiabilité et leur rapport qualité/prix. Mon but est de vous aider à faire le bon choix, en toute confiance.
+                </p>
+            </div>
         </section>
 
         <div class="container">
@@ -229,7 +259,7 @@
                     <h3>Questions Fréquentes</h3>
                     <details>
                         <summary>Un antivirus gratuit est-il suffisant ?</summary>
-                        <div class="faq-answer"><p>Pour un usage très basique, c'est mieux que rien. Mais les suites payantes offrent des protections cruciàles contre les menaces modernes : anti-phishing (faux emails), protection des transactions bancaires, et une meilleure détection des ransomwares. L'investissement est minime par rapport aux risques.</p></div>
+                        <div class="faq-answer"><p>Pour un usage très basique, c'est mieux que rien. Mais les suites payantes offrent des protections cruciales contre les menaces modernes : anti-phishing (faux emails), protection des transactions bancaires, et une meilleure détection des ransomwares. L'investissement est minime par rapport aux risques.</p></div>
                     </details>
                     <details>
                         <summary>Mes caméras connectées sont-elles sécurisées ?</summary>
@@ -359,7 +389,7 @@
                     </article>
                     <article class="card product-card card--link">
                         <a href="https://www.amazon.fr/s?k=lenovo+thinkpad+reconditionné&tag=speedcomputer-21" target="_blank" rel="sponsored nofollow noopener">
-                           
+                         
                             <h3>PC Portable : Lenovo ThinkPad</h3>
                             <p class="product-description"><strong>Mon avis d'expert :</strong> Le ThinkPad est une légende pour son clavier, considéré comme le meilleur du marché. Si vous tapez beaucoup de texte, c'est le choix du confort et de la fiabilité.</p>
                         </a>
@@ -377,9 +407,36 @@
         
     </main>
 
-    <footer></footer>
+    <footer class="sc47-footer">
+      <div class="container foot">
+        <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+        <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
+        <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
+        <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
+      </div>
+    </footer>
+
     <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
-    <script></script>
+
+    <script>
+      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+      const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+      document.querySelectorAll('.sc47-link[data-match]').forEach(a=>{ if(a.getAttribute('data-match').toLowerCase()===path){ a.classList.add('is-active'); } });
+      const burger=document.getElementById('sc47Burger');
+      const nav=document.getElementById('sc47Nav');
+      if(burger && nav){
+        burger.addEventListener('click', ()=>{ const open=nav.classList.toggle('open'); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+        document.addEventListener('click',(e)=>{ if(!nav.contains(e.target) && !burger.contains(e.target)){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); } });
+      }
+      const dd = document.getElementById('sc47Reviews');
+      const btnReviews = document.getElementById('sc47ReviewsBtn');
+      if(btnReviews && dd){
+        btnReviews.addEventListener('click',(e)=>{ e.preventDefault(); dd.classList.toggle('open'); btnReviews.setAttribute('aria-expanded', dd.classList.contains('open')); });
+        document.addEventListener('click',(e)=>{ if(!dd.contains(e.target)){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); } });
+        document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); } });
+      }
+    </script>
+    
     <div id="cookie-banner"></div>
     <script></script>
 </body>
