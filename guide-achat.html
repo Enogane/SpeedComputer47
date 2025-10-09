@@ -38,58 +38,76 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css?v=13"/>
+    <link rel="stylesheet" href="style.css?v=14"/>
     <style>
         html{scroll-behavior:smooth}
         .section-anchor, #zone, #map{scroll-margin-top:110px}
         @media (max-width:880px){.section-anchor, #zone, #map{scroll-margin-top:120px}}
         .link-inline{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
         .link-inline:hover{ text-decoration-thickness:2px; }
-        .card--link { display: block; text-decoration: none; color: inherit; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
-        .card--link:hover, .card--link:focus { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
         .affiliate-note{font-size:.95rem;color:#6b7280;margin:.5rem 0}
 
-        /* STYLES SPÉCIFIQUES AU GUIDE D'ACHAT */
-        .quick-nav { background: #f7f7f7; padding: 20px; margin: 2rem 0; border-radius: 8px; }
+        /* ================================================================== */
+        /* == ✅ NOUVELLE MISE EN FORME SOMBRE ET UNIFIÉE POUR LE GUIDE ✅ == */
+        /* ================================================================== */
+
+        /* Menu de navigation rapide */
+        .quick-nav { background: #181a1f; border: 1px solid #333; padding: 20px; margin: 2rem 0; border-radius: 12px; }
         .quick-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0; margin: 0; }
-        .quick-nav a { display: block; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 5px; text-decoration: none; text-align: center; font-weight: 600; transition: background 0.2s, color 0.2s; }
-        .quick-nav a:hover { background: var(--accent); color: white; }
-        .product-review { border: 1px solid #eee; padding: 20px; margin-bottom: 25px; border-radius: 8px; background: #fdfdfd; }
-        .product-review h4 { margin-top: 0; }
-        .product-review .expert-quote { background: #f4f8ff; border-left: 4px solid var(--accent); padding: 15px; margin: 15px 0; font-style: italic; }
-        .product-review .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 15px 0; }
-        .product-review .pros-cons ul { padding-left: 20px; margin: 0; }
-        .product-review .pros-cons li { margin-bottom: 5px; }
-        .local-service-box { background: #fffaf0; border: 1px solid #ffeada; border-radius: 8px; padding: 20px; margin: 30px 0; text-align: center; }
+        .quick-nav a { display: block; padding: 10px; background: #2c2f36; border: 1px solid #444; color: #eee; border-radius: 8px; text-decoration: none; text-align: center; font-weight: 600; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+        .quick-nav a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-        /* FIX: Visibilité du texte sur les fonds clairs */
-        .product-review,
-        .local-service-box,
-        .quick-nav a {
-            color: #333; /* Couleur de texte foncée */
+        /* Style de base des cartes de produits */
+        .product-review {
+            background: #181a1f;
+            border: 1px solid #333;
+            padding: 24px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            color: #ccc;
         }
-
-        /* STYLES pour la section Reconditionné en thème sombre */
-        #reconditionne {
-            background: #181a1f; /* Gris foncé pour s'harmoniser avec le thème */
-            color: #ccc; /* Texte principal en gris clair */
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            border-top: 1px solid #333;
-        }
-        #reconditionne h2,
-        #reconditionne .lead,
-        #reconditionne p {
-            color: #fff; /* Titres et paragraphes en blanc pour ressortir */
-        }
-        #reconditionne .card.product-card {
-            background: #2c2f36; /* Fond de carte légèrement plus clair */
-            color: #ccc; /* Texte de carte en gris clair */
-            border: 1px solid #444;
-        }
-        #reconditionne .card.product-card h3 {
+        .product-review h2, .product-review h3, .product-review h4 {
             color: #fff;
+            margin-top: 0;
         }
+        .product-review strong { color: #fff; }
+
+        /* Citation de l'expert */
+        .product-review .expert-quote {
+            background: #25282e;
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            color: #ddd;
+        }
+
+        /* Section Avantages / Inconvénients */
+        .product-review .pros-cons { display: grid; grid-template-columns: 1fr; gap: 20px; margin: 20px 0; }
+        @media (min-width: 640px) { .product-review .pros-cons { grid-template-columns: 1fr 1fr; } }
+        .product-review .pros-cons ul { list-style: none; padding-left: 0; margin: 0; }
+        .product-review .pros-cons li { margin-bottom: 8px; display: flex; align-items: flex-start; }
+        .product-review .pros-cons li::before { content: '✅'; margin-right: 10px; color: #2ecc71; }
+        .product-review .pros-cons .cons li::before { content: '❌'; color: #e74c3c; }
+
+        /* Boîte de service local */
+        .local-service-box {
+            background: linear-gradient(45deg, rgba(44, 47, 54, 1), rgba(24, 26, 31, 1));
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+            text-align: center;
+            color: #eee;
+        }
+        .local-service-box p { color: #eee; }
+
+        /* Section reconditionné (déjà sombre, on s'assure de la cohérence) */
+        #reconditionne { padding-top: 2rem; padding-bottom: 2rem; } /* Plus besoin de couleur de fond ici */
+        #reconditionne .card.product-card { background: #181a1f; color: #ccc; border: 1px solid #333; }
+        #reconditionne .card.product-card h3 { color: #fff; }
+
     </style>
     
     <script>
@@ -113,37 +131,7 @@
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="sc47-header">
-      <div class="sc47-container">
-        <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-          <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
-          <span class="sc47-name">SpeedComputer47</span>
-        </a>
-
-        <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
-
-        <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
-          <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
-          <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
-          <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
-          <a class="sc47-link" data-match="guide-achat.html" href="guide-achat.html">Guide d'Achat</a>
-          <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
-
-          <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-            <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-              <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google</a>
-              <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook</a>
-              <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
-              <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
-              <a class="sc47-item" href="https://www.l3vl.com/pro/72210" target="_blank" rel="noopener"><img class="sc47-ico" src="LOGAGV.webp" alt="CAGV"/> Grand villeneuvois</a>
-              <a class="sc47-item" href="https://www.amazon.fr/?&linkCode=sl2&tag=speedcomputer-21&linkId=2d8d02ced5e1e1ecec4bcc82569ebf67&language=fr_FR&ref_=as_li_ss_tl" target="_blank" rel="noopener"><img class="sc47-ico" src="logoamazon.webp" alt="amazon"/> Amazon</a>
-            </div>
-          </div>
-          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-        </nav>
-      </div>
-    </header>
+    <header class="sc47-header"></header>
 
     <main>
         <section class="intro-guide hero--bg">
@@ -175,7 +163,7 @@
                 <div class="expert-quote">
                     <p><strong>Mon avis d'expert :</strong> C'est la fin du cauchemar des adaptateurs ! Je conseille une station d'accueil à tous mes clients professionnels à Villeneuve-sur-Lot. Vous branchez un seul câble à votre portable et retrouvez instantanément votre écran externe, votre clavier, votre souris, et même votre connexion réseau filaire. Pour un bureau propre et une productivité maximale, c'est un investissement minime avec un retour énorme.</p>
                 </div>
-                <a href="https://www.amazon.fr/s?k=station+d+accueil+usb+c+ugreen&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection de stations d'accueil sur Amazon</a>
+                <a href="https://www.amazon.fr/s?k=station+d+accueil+usb+c+ugreen&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">➡️ Voir une sélection sur Amazon</a>
             </article>
             <article class="product-review">
                 <h4>Webcam de qualité (Ex: Logitech C920 HD Pro)</h4>
@@ -285,119 +273,39 @@
             </article>
         </section>
 
-        <section id="reconditionne" class="section-anchor">
-            <div class="container">
-                <h2>♻️ Le Reconditionné Intelligent</h2>
-                
-                <p class="lead" style="text-align:center; margin-bottom: 2rem;">Pourquoi se tourner vers le reconditionné ? Parce qu'un ordinateur portable professionnel d'occasion surclasse presque toujours un modèle neuf grand public au même prix.</p>
-                <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center;">Les gammes professionnelles (Dell Latitude, Lenovo ThinkPad, HP EliteBook) sont conçues pour durer 5 à 10 ans avec des matériaux nobles (magnésium, aluminium), des charnières renforcées et des claviers résistants. Un modèle neuf à 500€ sera souvent en plastique, plus lent et moins fiable sur le long terme.</p>
-                <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center;">En tant que technicien, je vois la différence tous les jours en atelier. Ma sélection se porte sur ces machines réputées pour leur fiabilité et leur facilité de maintenance. C'est un choix économique, écologique et surtout, un gage de qualité et de durabilité.</p>
-                
-                <div class="product-grid" style="margin-top: 2rem;">
-                    <article class="card product-card">
-                        <img src="https://placehold.co/400x260/444/ccc?text=Photo+Dell+Latitude" alt="PC Portable Dell Latitude reconditionné, châssis professionnel robuste" width="400" height="260" loading="lazy" decoding="async">
-                        <h3>PC Portable : Dell Latitude</h3>
-                        <p class="product-description"><strong>Mon avis d'expert :</strong> La gamme Latitude est conçue pour durer. Châssis renforcé, clavier exceptionnel, maintenance facile... En reconditionné, c'est le meilleur rapport qualité/prix pour du télétravail ou de la bureautique intensive sans se ruiner.</p>
-                        <a href="https://www.amazon.fr/s?k=dell+latitude+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
-                    </article>
-                    <article class="card product-card">
-                        <img src="https://placehold.co/400x260/444/ccc?text=Photo+Lenovo+ThinkPad" alt="PC Portable Lenovo ThinkPad reconditionné, connu pour son clavier" width="400" height="260" loading="lazy" decoding="async">
-                        <h3>PC Portable : Lenovo ThinkPad</h3>
-                        <p class="product-description"><strong>Mon avis d'expert :</strong> Le ThinkPad est une légende. Son point fort est son clavier, considéré comme le meilleur du marché. Si vous tapez beaucoup de texte, c'est le choix du confort. Sa fiabilité en fait un allié parfait pour les étudiants et les professionnels nomades.</p>
-                        <a href="https://www.amazon.fr/s?k=lenovo+thinkpad+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
-                    </article>
-                    <article class="card product-card">
-                        <img src="https://placehold.co/400x260/444/ccc?text=Photo+HP+EliteBook" alt="PC Portable HP EliteBook reconditionné, avec finition en aluminium" width="400" height="260" loading="lazy" decoding="async">
-                        <h3>PC Portable : HP EliteBook</h3>
-                        <p class="product-description"><strong>Mon avis d'expert :</strong> L'EliteBook allie performance et design avec sa finition souvent en aluminium. C'est une machine pro très bien équipée qui vieillit très bien. En reconditionné, vous avez accès à une machine premium pour le prix d'un portable grand public neuf.</p>
-                         <a href="https://www.amazon.fr/s?k=hp+elitebook+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
-                    </article>
-                </div>
+        <section id="reconditionne" class="product-section container section-anchor">
+            <h2>♻️ Le Reconditionné Intelligent</h2>
+            <p class="lead" style="text-align:center; margin-bottom: 2rem;">Pourquoi se tourner vers le reconditionné ? Parce qu'un ordinateur portable professionnel d'occasion surclasse presque toujours un modèle neuf grand public au même prix.</p>
+            <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center; color: #ccc;">Les gammes professionnelles (Dell Latitude, Lenovo ThinkPad, HP EliteBook) sont conçues pour durer 5 à 10 ans avec des matériaux nobles (magnésium, aluminium), des charnières renforcées et des claviers résistants. Un modèle neuf à 500€ sera souvent en plastique, plus lent et moins fiable sur le long terme.</p>
+            <p style="max-width: 800px; margin: 0 auto 1rem auto; text-align: center; color: #ccc;">En tant que technicien, je vois la différence tous les jours en atelier. Ma sélection se porte sur ces machines réputées pour leur fiabilité et leur facilité de maintenance. C'est un choix économique, écologique et surtout, un gage de qualité et de durabilité.</p>
+            
+            <div class="product-grid" style="margin-top: 2rem;">
+                <article class="card product-card">
+                    <img src="https://placehold.co/400x260/444/ccc?text=Photo+Dell+Latitude" alt="PC Portable Dell Latitude reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                    <h3>PC Portable : Dell Latitude</h3>
+                    <p class="product-description"><strong>Mon avis d'expert :</strong> La gamme Latitude est conçue pour durer. Châssis renforcé, clavier exceptionnel, maintenance facile... Le meilleur rapport qualité/prix pour du télétravail ou de la bureautique intensive.</p>
+                    <a href="https://www.amazon.fr/s?k=dell+latitude+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
+                </article>
+                <article class="card product-card">
+                    <img src="https://placehold.co/400x260/444/ccc?text=Photo+Lenovo+ThinkPad" alt="PC Portable Lenovo ThinkPad reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                    <h3>PC Portable : Lenovo ThinkPad</h3>
+                    <p class="product-description"><strong>Mon avis d'expert :</strong> Le ThinkPad est une légende pour son clavier, considéré comme le meilleur du marché. Si vous tapez beaucoup de texte, c'est le choix du confort et de la fiabilité.</p>
+                    <a href="https://www.amazon.fr/s?k=lenovo+thinkpad+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
+                </article>
+                <article class="card product-card">
+                    <img src="https://placehold.co/400x260/444/ccc?text=Photo+HP+EliteBook" alt="PC Portable HP EliteBook reconditionné" width="400" height="260" loading="lazy" decoding="async">
+                    <h3>PC Portable : HP EliteBook</h3>
+                    <p class="product-description"><strong>Mon avis d'expert :</strong> L'EliteBook allie performance et design avec sa finition souvent en aluminium. Vous avez accès à une machine premium pour le prix d'un portable grand public neuf.</p>
+                     <a href="https://www.amazon.fr/s?k=hp+elitebook+reconditionné&tag=speedcomputer-21" class="btn primary" target="_blank" rel="sponsored nofollow noopener">Voir les offres sur Amazon Renewed</a>
+                </article>
             </div>
         </section>
         
     </main>
 
-    <footer>
-      <div class="container foot">
-        <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
-        <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
-        <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
-        <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
-      </div>
-    </footer>
+    <footer class="sc47-footer"></script>
 
-    <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
-
-    <script>
-      // Année auto
-      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
-
-      // Lien actif (index / particuliers / pro / guide)
-      const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();
-      document.querySelectorAll('.sc47-link[data-match]').forEach(a=>{
-        if(a.getAttribute('data-match').toLowerCase()===path){ a.classList.add('is-active'); }
-      });
-
-      // Burger menu
-      const burger=document.getElementById('sc47Burger');
-      const nav=document.getElementById('sc47Nav');
-      if(burger && nav){
-        burger.addEventListener('click', ()=>{
-          const open=nav.classList.toggle('open');
-          burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-        document.addEventListener('click',(e)=>{
-          if(!nav.contains(e.target) && !burger.contains(e.target)){
-            nav.classList.remove('open'); burger.setAttribute('aria-expanded','false');
-          }
-        });
-      }
-
-      // Dropdown Avis (desktop)
-      const dd = document.getElementById('sc47Reviews');
-      const btnReviews = document.getElementById('sc47ReviewsBtn');
-      if(btnReviews && dd){
-        btnReviews.addEventListener('click',(e)=>{
-          e.preventDefault(); dd.classList.toggle('open');
-          btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
-        });
-        document.addEventListener('click',(e)=>{
-          if(!dd.contains(e.target)){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
-        });
-        document.addEventListener('keydown',(e)=>{
-          if(e.key==='Escape'){ dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false'); }
-        });
-      }
-    </script>
-
-    <div id="cookie-banner" style="position:fixed;inset:auto 0 0 0;z-index:9999;background:#0b0d10;color:#fff;padding:16px;box-shadow:0 -6px 20px rgba(0,0,0,.25);font:14px/1.45 system-ui,Segoe UI,Roboto,Ubuntu,Arial">
-        <div style="max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-            <div style="flex:1 1 420px">
-                Nous utilisons des cookies pour la mesure d’audience et (optionnel) la personnalisation publicitaire.
-                <a href="/mentions.html" style="color:#7bd2ff;text-decoration:underline">En savoir plus</a>
-            </div>
-            <div style="display:flex;gap:8px;flex-wrap:wrap">
-                <button id="cb-reject" style="padding:10px 14px;border:1px solid #777;background:#1b1f24;color:#fff;border-radius:6px;cursor:pointer">Tout refuser</button>
-                <button id="cb-accept" style="padding:10px 14px;border:0;background:#2bb673;color:#08150e;border-radius:6px;cursor:pointer;font-weight:700">Tout accepter</button>
-            </div>
-        </div>
-    </div>
-    <script>
-    (function(){
-        const KEY='sc47-consent';
-        const saved=localStorage.getItem(KEY);
-        const banner=document.getElementById('cookie-banner');
-        function hide(){ if(banner) banner.style.display='none'; }
-        function updateConsent(granted){
-            const analytics = granted ? 'granted' : 'denied';
-            const ads = granted ? 'granted' : 'denied';
-            gtag('consent','update',{ analytics_storage: analytics, ad_storage: ads, ad_user_data: ads, ad_personalization: ads });
-        }
-        if(saved){ hide(); updateConsent(saved==='granted'); }
-        document.getElementById('cb-accept')?.addEventListener('click',()=>{ localStorage.setItem(KEY,'granted'); updateConsent(true); hide(); });
-        document.getElementById('cb-reject')?.addEventListener('click',()=>{ localStorage.setItem(KEY,'denied'); updateConsent(false); hide(); });
-    })();
-    </script>
+    <div id="cookie-banner"></div>
+    <script></script>
 </body>
 </html>
