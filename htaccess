@@ -21,3 +21,12 @@ Redirect 301 /sauvegardetonneins.html /sauvegarde-nas-tonneins.html
 Redirect 301 /migration-deploiementbias.html /migration-deploiement-bias.html
 Redirect 301 /Blog-comparatif-antivirus-2025-bitdefender-norton.html /blog-comparatif-antivirus-2025-bitdefender-norton.html
 Redirect 301 "/Blog-wifi-lent-villeneuve-sur-lot-solutions·html" /blog-wifi-lent-villeneuve-sur-lot-solutions.html
+# —— 410 GONE pour vieilles URLs introuvables ——
+# /tarifs et /tarifs/ (insensible à la casse)
+RedirectMatch 410 (?i)^/tarifs/?$
+
+# /D (chemin fantôme)
+Redirect 410 /D
+
+# /hello-world et /hello-world/ (les paramètres ?utm_source=... n’empêchent pas le 410)
+RedirectMatch 410 (?i)^/hello-world/?$
