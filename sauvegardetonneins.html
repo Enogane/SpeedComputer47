@@ -1,205 +1,235 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Sauvegarde &amp; récupération Tonneins | SpeedComputer47</title>
-<meta content="Mise en place de sauvegardes et récupération de données à Tonneins." name="description"/>
-<link href="https://speedcomputer47.fr/sauvegardetonneins.html" rel="canonical"/>
-<link as="image" href="background.webp" rel="preload"/>
-<link as="image" href="logo.webp" rel="preload"/>
-<link href="logo.webp" rel="icon"/>
-<link href="style.css?v=8" rel="stylesheet"/>
-<style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sauvegarde & récupération de données à Tonneins | SpeedComputer47</title>
+  <meta name="description" content="Mise en place de sauvegardes 3-2-1 (NAS + cloud) et récupération de données à Tonneins. Synology/QNAP, tests de restauration, intervention rapide."/>
+  
+  <!-- Canonique vers l’URL finale propre -->
+  <link rel="canonical" href="https://speedcomputer47.fr/sauvegarde-nas-tonneins.html"/>
+  <!-- Page source en noindex le temps d’activer la 301 -->
+  <meta name="robots" content="noindex,follow"/>
+
+  <link rel="preload" as="image" href="/background.webp"/>
+  <link rel="preload" as="image" href="/logo.webp"/>
+  <link rel="icon" type="image/webp" href="/logo.webp"/>
+  <link rel="stylesheet" href="/style.css?v=11"/>
+
+  <style>
     html{scroll-behavior:smooth}
-    body{color:#d1d5db; background:#0a0f17; position:relative;}
+    body{color:#d1d5db;background:#0a0f17}
     .container,.sc47-container{width:min(1200px,92%);margin:0 auto}
     section{padding:36px 0}
     .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
     .muted{color:#9ca3af}
     .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
-    .list{padding-left:16px;margin:0} .list li{margin:2px 0}
+    .list{padding-left:16px;margin:0}.list li{margin:2px 0}
     .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
     .btn:hover{background:#111b2e}
+    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
     .lead{color:#c7d2fe}
     .pay{margin-top:8px}
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
     .contact-grid{display:grid;grid-template-columns:1fr;gap:18px}
     @media(min-width:980px){.contact-grid{grid-template-columns:1fr 1.1fr}}
     .contact-grid input,.contact-grid textarea{width:100%;padding:10px;border-radius:10px;background:#0b0f16;border:1px solid #1f2937;color:#e5e7eb}
-    .big{font-size:18px} .mail a{word-break:break-all}
+    .big{font-size:18px}.mail a{word-break:break-all}
     hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
     footer{padding:18px 0 30px;color:#9ca3af}
     .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
     .foot p{margin:0}
     .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
   </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr/sauvegardetonneins.html","email":"contact@speedcomputer47.fr","telephone":"06 66 23 51 43","areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Fumel","Casseneuil","Pujols","Tonneins","Saint-Sylvestre-sur-Lot","Cahors","Sainte-Livrade-sur-Lot","Lot-et-Garonne"],"sameAs":["https://www.facebook.com/speedcomputer47/","https://www.linkedin.com/company/speedcomputer47/","https://www.pagesjaunes.fr/pros/64032762","https://speedcomputer47.fr/"],"address":{"@type":"PostalAddress","addressLocality":"Villeneuve-sur-Lot","addressRegion":"Nouvelle-Aquitaine","postalCode":"47300","addressCountry":"FR"},"openingHours":"Mo-Sa 09:00-19:00","description":"Dépannage et services informatiques à domicile et en entreprise dans un rayon de 50 km autour de Villeneuve‑sur‑Lot."}</script></head>
-<body>
-<header class="sc47-header">
-<div class="sc47-container">
-<a aria-label="Accueil SpeedComputer47" class="sc47-brand" href="index.html">
-<img alt="SpeedComputer47" class="sc47-logo" height="84" src="logo.webp" width="84"/>
-<span class="sc47-name">SpeedComputer47</span>
-</a>
-<button aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu" class="sc47-burger" id="sc47Burger">☰</button>
-<nav aria-label="Navigation principale" class="sc47-nav" id="sc47Nav">
-<a class="sc47-link" href="index.html">Accueil</a>
-<a class="sc47-link" href="particuliers.html">Particuliers</a>
-<a class="sc47-link" href="pro.html">Entreprises</a>
-<a class="sc47-link sc47-link--ghost" href="#contact">📩 Contact / Devis</a>
-<div class="sc47-actions">
-<a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-<div class="sc47-dropdown" id="sc47Reviews">
-<button aria-expanded="false" class="sc47-btn" id="sc47ReviewsBtn">⭐ Laisser un avis</button>
-<div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-<a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" rel="noopener" target="_blank">Google</a>
-<a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" rel="noopener" target="_blank">Facebook</a>
-</div>
-</div>
-</div>
-</nav>
-</div>
-</header>
-<main>
-<section class="hero hero--bg">
-<div class="container hero-grid">
-<div>
-<h1>Gestion des sauvegarde sur Villeneuve-sur-Lot et alentour</h1>
-<p class="lead">
-            Votre ordinateur est lent, ne démarre plus ou affiche des messages d'erreur ? Nous intervenons rapidement à domicile à Villeneuve-sur-Lot pour tout problème sur PC Windows et Apple Mac.
-          </p>
-<div class="cta-row">
-<a class="btn primary" href="tel:+33666235143">📞 Urgence ? Appelez-nous</a>
-<a class="btn" href="#contact">🧾 Obtenir un devis</a>
-</div>
-<p class="muted pay">💳 CB &amp; sans contact, Apple/Google Pay, Virements &amp; espèces.</p>
-</div>
-<aside aria-label="Nos atouts" class="card">
-<h3>Notre service de dépannage</h3>
-<ul class="list">
-<li>Intervention rapide sur <strong>Villeneuve-sur-Lot</strong></li>
-<li>Diagnostic précis et transparent</li>
-<li>Réparation matérielle et logicielle</li>
-<li>Conseils pour éviter les futures pannes</li>
-<li>Assistance pour tous niveaux</li>
-</ul>
-</aside>
-</div>
-</section>
-<section id="pannes">
-<div class="container">
-<h2 class="section-title">Nous résolvons les pannes les plus courantes</h2>
-<p class="muted" style="max-width: 800px;">Que votre souci soit matériel ou logiciel, nous avons la solution pour redonner une seconde jeunesse à votre ordinateur.</p>
-<div class="cards" style="margin-top: 16px;">
-<div class="card"><h3>💻 Ordinateur Lent ou Bloqué</h3><p>Optimisation du démarrage, nettoyage système, remplacement du disque dur par un SSD pour une vitesse fulgurante.</p></div>
-<div class="card"><h3>🛡️ Suppression de Virus et Malwares</h3><p>Éradication des virus, logiciels espions et publicités intempestives. Installation d'une protection efficace.</p></div>
-<div class="card"><h3>⚙️ Problèmes Logiciels</h3><p>Résolution des erreurs, des plantages de logiciels (bureautique, messagerie...) et réinstallation de programmes.</p></div>
-<div class="card"><h3>🖥️ Pannes Matérielles</h3><p>Diagnostic de composants défectueux (disque dur, mémoire RAM, alimentation) et remplacement sur devis.</p></div>
-<div class="card"><h3>📶 Connexion Internet &amp; Wi-Fi</h3><p>Dépannage de votre box, amélioration de la couverture Wi-Fi et résolution des problèmes de connexion réseau.</p></div>
-<div class="card"><h3>🖨️ Imprimantes et Périphériques</h3><p>Installation, configuration et dépannage de vos imprimantes, scanners, webcams et autres appareils.</p></div>
-</div>
-</div>
-</section>
-<section id="contact">
-<div class="container contact-grid">
-<div>
-<h2 class="section-title">Contact pour un dépannage à Villeneuve-sur-Lot</h2>
-<p class="muted">Expliquez-nous votre panne, nous vous fournissons une première estimation et fixons un rendez-vous rapidement.</p>
-<p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
-<p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
-<div class="contact-qr contact-qr--card">
-<img alt="QR code de contact SpeedComputer47" src="qrcode-preview.webp"/>
-<p>Scannez pour ajouter<br/>le contact</p>
-</div>
-</div>
-<div class="card">
-<h3>Demande de devis express</h3>
-<form id="devisForm">
-<label>Nom / Prénom<br/><input name="name" placeholder="Votre nom" required="" type="text"/></label><br/><br/>
-<label>Email<br/><input name="email" placeholder="vous@exemple.fr" required="" type="email"/></label><br/><br/>
-<label>Téléphone<br/><input name="phone" placeholder="06 xx xx xx xx" required="" type="tel"/></label><br/><br/>
-<label>Décrivez votre panne<br/><textarea name="message" placeholder="Ex: Mon ordinateur portable ne s'allume plus..." required="" rows="5"></textarea></label><br/><br/>
-<button class="btn primary" type="submit">Envoyer la demande</button>
-<p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
-</form>
-</div>
-</div>
-</section>
-<hr class="sep"/>
-</main>
-<section aria-label="Informations locales" class="seo-local-enhanced">
-<h2>Nos services informatiques à proximité</h2>
-<p>SpeedComputer47 intervient pour le dépannage et la maintenance informatique à domicile et en entreprise dans l’ensemble du Lot‑et‑Garonne. 
-  Nous prenons en charge la réparation d’ordinateurs PC et Mac, l’installation et la configuration de logiciels, l’optimisation des performances, la suppression de virus et l’amélioration du réseau Wi‑Fi.</p>
-<h3>Pourquoi nous choisir ?</h3>
-<ul>
-<li>Intervention rapide sur rendez‑vous</li>
-<li>Diagnostic clair et devis avant travaux</li>
-<li>Conseils de cybersécurité et sauvegarde</li>
-<li>Accompagnement à distance si nécessaire</li>
-</ul>
-<h3>Zone d’intervention</h3>
-<p>Nous couvrons Villeneuve‑sur‑Lot, Agen, Marmande, Fumel, Casseneuil, Pujols, Tonneins, Saint‑Sylvestre‑sur‑Lot, Cahors et les alentours (rayon ≈ 50 km).</p>
-<h3>FAQ</h3>
-<p><strong>Combien de temps prend une intervention ?</strong> La plupart des dépannages courants sont réalisés dans la journée selon la panne.</p>
-<p><strong>Proposez‑vous la récupération de données ?</strong> Oui, nous intervenons sur disques durs, SSD et clés USB selon l’état du support.</p>
-<p><strong>Faites‑vous l’installation à domicile ?</strong> Oui, nous installons imprimantes, box Internet, logiciels et périphériques.</p>
-<p>Besoin d’aide ? Contactez‑nous au <a href="tel:+33666235143">06 66 23 51 43</a> ou par email : <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a>.</p>
-</section>
 
-<section aria-label="Zones d’intervention" class="zones-internes">
-<h2>Zones d’intervention &amp; pages locales</h2>
-<ul>
-<li><a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">configurationperipheriqueSainte Livrade sur Lot</a></li>
-<li><a href="/cybersecurite-entreprise.html">cybersecurite entreprise</a></li>
-<li><a href="/depannage-informatique-villeneuve-sur-lot.html">depannage informatique villeneuve sur lot</a></li>
-<li><a href="/domotique-tv-connectee-smartphone-fumel.html">domotique tv connectee smartphone fumel</a></li>
-<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">formation bureautique cybersecurite lot et garonne</a></li>
-<li><a href="/google-workspace.html">google workspace</a></li>
-<li><a href="/installation-informatique-agen.html">installation informatique agen</a></li>
-<li><a href="/installation-informatique-bergerac.html">installation informatique bergerac</a></li>
-<li><a href="/installation-informatique-cahors.html">installation informatique cahors</a></li>
-<li><a href="/installation-informatique-casseneuil.html">installation informatique casseneuil</a></li>
-<li><a href="/installation-informatique-casteljaloux.html">installation informatique casteljaloux</a></li>
-<li><a href="/installation-informatique-fumel.html">installation informatique fumel</a></li>
-<li><a href="/installation-informatique-marmande.html">installation informatique marmande</a></li>
-<li><a href="/installation-informatique-monflanquin.html">installation informatique monflanquin</a></li>
-<li><a href="/installation-informatique-nerac.html">installation informatique nerac</a></li>
-<li><a href="/installation-informatique-sainte-livrade-sur-lot.html">installation informatique sainte livrade sur lot</a></li>
-<li><a href="/installation-informatique-tonneins.html">installation informatique tonneins</a></li>
-<li><a href="/installation-informatique-villeneuve-sur-lot.html">installation informatique villeneuve sur lot</a></li>
-<li><a href="/mentions.html">mentions</a></li>
-<li><a href="/messagerie-pro.html">messagerie pro</a></li>
-<li><a href="/messagerieCahors.html">messagerieCahors</a></li>
-<li><a href="/microsoft-365.html">microsoft 365</a></li>
-<li><a href="/migration-deploiement.html">migration deploiement</a></li>
-<li><a href="/migration-deploiementbias.html">migration deploiementbias</a></li>
-<li><a href="/particuliers.html">particuliers</a></li>
-<li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">pc lent ssd clonage Saint Sylvestre sur Lot</a></li>
-<li><a href="/pro.html">pro</a></li>
-<li><a href="/reparation-pc-agen.html">reparation pc agen</a></li>
-<li><a href="/sauvegarde-entreprise.html">sauvegarde entreprise</a></li>
-<li><a href="/sauvegardetonneins.html">sauvegardetonneins</a></li>
-<li><a href="/serveur-nas-manage.html">serveur nas manage</a></li>
-<li><a href="/suppression-virus-malware-Pujols.html">suppression virus malware Pujols</a></li>
-<li><a href="/wifi-reseau-Casseneuil.html">wifi reseau Casseneuil</a></li>
-<li><a href="/wifi-reseau-entreprise.html">wifi reseau entreprise</a></li>
-</ul>
-</section>
-<footer>
-<div class="container foot">
-<p><strong>SpeedComputer47</strong> — Dépannage informatique à Villeneuve-sur-Lot</p>
-<p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
-<p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
-</div>
-</footer>
-<a aria-label="Appeler SpeedComputer47" class="floating-call" href="tel:+33666235143">📞 Appeler</a>
-<script>
+  <!-- JSON-LD succinct (référence locale) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Sauvegarde & récupération de données",
+    "serviceType":"Mise en place de sauvegardes 3-2-1 et récupération",
+    "areaServed":["Tonneins","Villeneuve-sur-Lot","Agen","Marmande","Lot-et-Garonne"],
+    "provider":{"@type":"LocalBusiness","name":"SpeedComputer47","@id":"https://speedcomputer47.fr/#business"},
+    "url":"https://speedcomputer47.fr/sauvegarde-nas-tonneins.html",
+    "description":"Sauvegardes NAS + cloud, stratégie 3-2-1, tests de restauration, récupération de données (HDD/SSD/USB). Intervention à Tonneins et alentours."
+  }
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="/" aria-label="Accueil SpeedComputer47">
+        <img class="sc47-logo" src="/logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
+      <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+      <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+        <a class="sc47-link" href="/">Accueil</a>
+        <a class="sc47-link" href="/particuliers.html">Particuliers</a>
+        <a class="sc47-link" href="/pro.html">Entreprises</a>
+        <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+        <div class="sc47-actions">
+          <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+          <div class="sc47-dropdown" id="sc47Reviews">
+            <button class="sc47-btn" id="sc47ReviewsBtn" aria-expanded="false">⭐ Laisser un avis</button>
+            <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+              <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">Google</a>
+              <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero hero--bg">
+      <div class="container hero-grid">
+        <div>
+          <h1>Sauvegarde & récupération de données — Tonneins</h1>
+          <p class="lead">
+            Mettons vos données en sécurité avec une stratégie <strong>3-2-1</strong> (NAS + cloud) et des <strong>tests de restauration</strong> réguliers.
+            Intervention à <strong>Tonneins</strong> et dans un rayon de ~50 km.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="tel:+33666235143">📞 Urgence ? Appelez-nous</a>
+            <a class="btn" href="#contact">🧾 Obtenir un devis</a>
+          </div>
+          <p class="muted pay">💳 CB & sans contact, Apple/Google Pay, virements & espèces.</p>
+        </div>
+        <aside class="card" aria-label="Ce que l’on met en place">
+          <h3>Ce que l’on déploie</h3>
+          <ul class="list">
+            <li><strong>NAS Synology/QNAP</strong> configuré (utilisateurs, quotas, snapshots)</li>
+            <li><strong>Cloud chiffré</strong> (off-site) avec planification</li>
+            <li><strong>Supervision</strong> des sauvegardes et alertes</li>
+            <li><strong>Tests de restauration</strong> documentés</li>
+            <li>Conseils anti-ransomware (MFA, bonnes pratiques)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Bénéfices / cas d'usage -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">Bénéfices & cas d’usage</h2>
+        <div class="cards" style="margin-top:16px">
+          <article class="card"><h3>Sauvegardes automatisées</h3><p>Planification quotidienne/hebdo, versions, rétention.</p></article>
+          <article class="card"><h3>Restauration rapide</h3><p>Procédure testée : fichiers, dossiers, postes complets.</p></article>
+          <article class="card"><h3>PRA simple</h3><p>Reprise d’activité minimale documentée (scénarios courants).</p></article>
+          <article class="card"><h3>Protection ransomware</h3><p>Snapshots immuables, MFA, durcissement messagerie.</p></article>
+          <article class="card"><h3>Audit express</h3><p>État des lieux et priorisation des risques (mail, NAS, postes).</p></article>
+          <article class="card"><h3>Récupération de données</h3><p>HDD/SSD/USB selon l’état du support (diagnostic préalable).</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contact — Tonneins & alentours</h2>
+          <p class="muted">Expliquez votre besoin, on vous propose un plan simple et un créneau rapide.</p>
+          <p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
+          <p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
+          <div class="contact-qr contact-qr--card">
+            <img src="/qrcode-preview.webp" alt="QR code de contact SpeedComputer47" decoding="async" loading="lazy"/>
+            <p>Scannez pour ajouter<br/>le contact</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Demande de devis express</h3>
+          <form id="devisForm">
+            <label>Nom / Prénom<br/><input type="text" name="name" placeholder="Votre nom" required/></label><br/><br/>
+            <label>Email<br/><input type="email" name="email" placeholder="vous@exemple.fr" required/></label><br/><br/>
+            <label>Téléphone<br/><input type="tel" name="phone" placeholder="06 xx xx xx xx" required/></label><br/><br/>
+            <label>Votre besoin<br/><textarea name="message" rows="5" placeholder="Ex : Mettre en place un NAS + sauvegarde cloud, tests de restauration." required></textarea></label><br/><br/>
+            <button class="btn primary" type="submit">Envoyer la demande</button>
+            <p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep"/>
+  </main>
+
+  <!-- Bloc SEO local compact -->
+  <section aria-label="Informations locales" class="seo-local-enhanced">
+    <div class="container">
+      <h2>Intervention locale</h2>
+      <p>Nous intervenons à <strong>Tonneins</strong> et dans les communes voisines (Damazan, Clairac, Marmande, Aiguillon, Gontaud-de-Nogaret…), pour les particuliers et TPE/PME.</p>
+      <h3>FAQ</h3>
+      <p><strong>Vous faites les tests de restauration&nbsp;?</strong> Oui, c’est inclus dans nos forfaits Pro/Prime ou proposé ponctuellement.</p>
+      <p><strong>Cloud obligatoire&nbsp;?</strong> Recommandé pour une vraie 3-2-1. On peut démarrer en local puis ajouter le cloud.</p>
+      <p><strong>Vous installez le NAS&nbsp;?</strong> Oui (Synology/QNAP), avec comptes, droits, snapshots et accès distant sécurisé.</p>
+    </div>
+  </section>
+
+  <!-- Maillage interne (slugs normalisés) -->
+  <section aria-label="Zones d’intervention" class="zones-internes">
+    <div class="container">
+      <h2>Zones d’intervention & pages locales</h2>
+      <ul>
+        <li><a href="/configuration-peripheriques-sainte-livrade-sur-lot.html">Imprimantes & périphériques — Sainte-Livrade</a></li>
+        <li><a href="/cybersecurite-entreprise.html">Cybersécurité — Entreprises</a></li>
+        <li><a href="/depannage-informatique-villeneuve-sur-lot.html">Dépannage — Villeneuve-sur-Lot</a></li>
+        <li><a href="/domotique-tv-connectee-smartphone-fumel.html">Domotique & TV connectée — Fumel</a></li>
+        <li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation & cybersécurité — Lot-et-Garonne</a></li>
+        <li><a href="/google-workspace.html">Google Workspace</a></li>
+        <li><a href="/installation-informatique-agen.html">Installation — Agen</a></li>
+        <li><a href="/installation-informatique-bergerac.html">Installation — Bergerac</a></li>
+        <li><a href="/installation-informatique-cahors.html">Installation — Cahors</a></li>
+        <li><a href="/installation-informatique-casseneuil.html">Installation — Casseneuil</a></li>
+        <li><a href="/installation-informatique-casteljaloux.html">Installation — Casteljaloux</a></li>
+        <li><a href="/installation-informatique-fumel.html">Installation — Fumel</a></li>
+        <li><a href="/installation-informatique-marmande.html">Installation — Marmande</a></li>
+        <li><a href="/installation-informatique-monflanquin.html">Installation — Monflanquin</a></li>
+        <li><a href="/installation-informatique-nerac.html">Installation — Nérac</a></li>
+        <li><a href="/installation-informatique-sainte-livrade-sur-lot.html">Installation — Sainte-Livrade</a></li>
+        <li><a href="/installation-informatique-tonneins.html">Installation — Tonneins</a></li>
+        <li><a href="/installation-informatique-villeneuve-sur-lot.html">Installation — Villeneuve-sur-Lot</a></li>
+        <li><a href="/mentions.html">Mentions légales</a></li>
+        <li><a href="/messagerie-pro.html">Messagerie pro</a></li>
+        <li><a href="/messagerie-cahors.html">Messagerie — Cahors</a></li>
+        <li><a href="/microsoft-365.html">Microsoft 365</a></li>
+        <li><a href="/migration-deploiement.html">Migrations & déploiements</a></li>
+        <li><a href="/migration-deploiement-bias.html">Migration — Bias</a></li>
+        <li><a href="/particuliers.html">Particuliers</a></li>
+        <li><a href="/pc-lent-ssd-clonage-saint-sylvestre-sur-lot.html">PC lent — Saint-Sylvestre-sur-Lot</a></li>
+        <li><a href="/pro.html">Entreprises</a></li>
+        <li><a href="/reparation-pc-agen.html">Réparation PC — Agen</a></li>
+        <li><a href="/sauvegarde-entreprise.html">Sauvegarde — Entreprises</a></li>
+        <li><a href="/sauvegarde-nas-tonneins.html">Sauvegarde & NAS — Tonneins</a></li>
+        <li><a href="/serveur-nas-manage.html">Serveur / NAS managé</a></li>
+        <li><a href="/suppression-virus-malware-pujols.html">Suppression virus — Pujols</a></li>
+        <li><a href="/reseaux-wifi-casseneuil.html">Réseaux & Wi-Fi — Casseneuil</a></li>
+        <li><a href="/wifi-reseau-entreprise.html">Wi-Fi / Réseau — Entreprise</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <p><strong>SpeedComputer47</strong> — Dépannage informatique à Villeneuve-sur-Lot</p>
+      <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
+      <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+  <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
+
+  <script>
+    // Année
     const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+
+    // Burger
     const burger=document.getElementById('sc47Burger'), nav=document.getElementById('sc47Nav');
     if(burger&&nav){
       burger.addEventListener('click',()=>{
@@ -212,21 +242,25 @@
         }
       });
     }
+
+    // Dropdown avis
     const dd=document.getElementById('sc47Reviews'), btnReviews=document.getElementById('sc47ReviewsBtn');
     if(btnReviews&&dd){
       btnReviews.addEventListener('click',e=>{
         e.preventDefault(); dd.classList.toggle('open');
-        btnReviews.setAttribute('aria-expanded',dd.classList.contains('open'));
+        btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));
       });
-      document.addEventListener('click',e=>{if(!dd.contains(e.target))dd.classList.remove('open')});
+      document.addEventListener('click',e=>{ if(!dd.contains(e.target)) dd.classList.remove('open'); });
     }
+
+    // Devis -> mailto
     const form=document.getElementById('devisForm');
     if(form){
       form.addEventListener('submit',e=>{
         e.preventDefault();
         const d=new FormData(form);
-        const subject=encodeURIComponent('Demande de Dépannage – SpeedComputer47');
-        const body=encodeURIComponent(`Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nPanne:\n${d.get('message')}`);
+        const subject=encodeURIComponent('Demande — Sauvegarde & NAS (Tonneins)');
+        const body=encodeURIComponent(`Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nBesoin:\n${d.get('message')}`);
         window.location.href=`mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
       });
     }
