@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Accueil -->
+  <!-- Accueil (pas de /index.html) -->
   <url>
     <loc>https://speedcomputer47.fr/</loc>
     <lastmod>2025-10-10</lastmod>
@@ -10,14 +12,13 @@
   </url>
 
   <!-- Rubriques / piliers -->
-  <url><loc>https://speedcomputer47.fr/index.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://speedcomputer47.fr/particuliers.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://speedcomputer47.fr/pro.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://speedcomputer47.fr/guide-achat.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://speedcomputer47.fr/blog.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://speedcomputer47.fr/mentions.html</loc><lastmod>2025-10-03</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
-  <!-- Services principaux -->
+  <!-- Services Entreprise -->
   <url><loc>https://speedcomputer47.fr/cybersecurite-entreprise.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://speedcomputer47.fr/cybersecurite-pme-lot-et-garonne.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://speedcomputer47.fr/messagerie-pro.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -28,47 +29,47 @@
   <url><loc>https://speedcomputer47.fr/serveur-nas-manage.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://speedcomputer47.fr/wifi-reseau-entreprise.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Pages “maintenance / offres” -->
+  <!-- Offres / maintenance -->
   <url><loc>https://speedcomputer47.fr/maintenance-informatique-pme.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://speedcomputer47.fr/maintenance-informatique-pme-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Blog (articles publiés) -->
-  <url><loc>https://speedcomputer47.fr/Blog-comparatif-antivirus-2025-bitdefender-norton.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <!-- Blog (URLs finales en minuscules avec tirets) -->
+  <url><loc>https://speedcomputer47.fr/blog-comparatif-antivirus-2025-bitdefender-norton.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://speedcomputer47.fr/blog-depannage-informatique-villeneuve-sur-lot.html</loc><lastmod>2025-10-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <!-- Ajouter ici une entrée une fois le fichier “blog-wifi-lent-….html” correctement nommé -->
+  <!-- Ajouter vos prochains articles ici, avec le slug final propre -->
 
-  <!-- Local – Dépannage informatique -->
+  <!-- Local – Dépannage -->
   <url><loc>https://speedcomputer47.fr/depannage-informatique-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-agen.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-marmande.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
-  <url><loc>https://speedcomputer47.fr/depannage-informatique-nerac.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://speedcomputer47.fr/depannage-informatique-tonneins.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://speedcomputer47.fr/depannage-informatique-sainte-livrade-sur-lot.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://speedcomputer47.fr/depannage-informatique-nerac.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://speedcomputer47.fr/depannage-informatique-tonneins.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://speedcomputer47.fr/depannage-informatique-sainte-livrade-sur-lot.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-fumel.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-boe.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-bon-encontre.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
   <url><loc>https://speedcomputer47.fr/depannage-informatique-le-passage.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
 
-  <!-- Local – Installation informatique -->
+  <!-- Local – Installation -->
   <url><loc>https://speedcomputer47.fr/installation-informatique-villeneuve-sur-lot.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-agen.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
-  <url><loc>https://speedcomputer47.fr/installation-informatique-marmande.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
-  <url><loc>https://speedcomputer47.fr/installation-informatique-nerac.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://speedcomputer47.fr/installation-informatique-tonneins.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://speedcomputer47.fr/installation-informatique-marmande.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+  <url><loc>https://speedcomputer47.fr/installation-informatique-nerac.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://speedcomputer47.fr/installation-informatique-tonneins.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-casseneuil.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-fumel.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-monflanquin.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-bergerac.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-cahors.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
   <url><loc>https://speedcomputer47.fr/installation-informatique-casteljaloux.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
-  <url><loc>https://speedcomputer47.fr/installation-informatique-sainte-livrade-sur-lot.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
+  <url><loc>https://speedcomputer47.fr/configuration-installation-peripheriques.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
 
   <!-- Local – Réseau / Wi-Fi -->
-  <url><loc>https://speedcomputer47.fr/reseaux-wifi-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://speedcomputer47.fr/reseaux-wifi-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://speedcomputer47.fr/reseaux-wifi-agen.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/reseaux-wifi-marmande.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/reseaux-wifi-tonneins.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
-  <url><loc>https://speedcomputer47.fr/wifi-reseau-Casseneuil.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://speedcomputer47.fr/reseaux-wifi-casseneuil.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
 
   <!-- Local – Récupération de données -->
   <url><loc>https://speedcomputer47.fr/recuperation-donnees-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
@@ -86,15 +87,14 @@
   <url><loc>https://speedcomputer47.fr/sauvegarde-nas-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.68</priority></url>
   <url><loc>https://speedcomputer47.fr/sauvegarde-nas-agen.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
   <url><loc>https://speedcomputer47.fr/sauvegarde-nas-marmande.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
-  <url><loc>https://speedcomputer47.fr/sauvegarde-nas-tonneins.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
+  <url><loc>https://speedcomputer47.fr/sauvegarde-nas-tonneins.html</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
 
-  <!-- Autres pages locales / spécialisées -->
-  <url><loc>https://speedcomputer47.fr/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Autres spécialisées -->
+  <url><loc>https://speedcomputer47.fr/pc-lent-ssd-clonage-saint-sylvestre-sur-lot.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
   <url><loc>https://speedcomputer47.fr/domotique-tv-connectee-smartphone-fumel.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
-  <url><loc>https://speedcomputer47.fr/configurationperipheriqueSainte-Livrade-sur-Lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.56</priority></url>
 
-  <!-- Formations locales -->
-  <url><loc>https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Formations -->
+  <url><loc>https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
   <url><loc>https://speedcomputer47.fr/formation-informatique-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.66</priority></url>
   <url><loc>https://speedcomputer47.fr/formation-informatique-agen.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
   <url><loc>https://speedcomputer47.fr/formation-informatique-marmande.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.64</priority></url>
@@ -102,16 +102,14 @@
 
   <!-- Montage / upgrade PC -->
   <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-villeneuve-sur-lot.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.62</priority></url>
-  <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-agen.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-marmande.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-agen.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-marmande.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
   <url><loc>https://speedcomputer47.fr/montage-upgrade-pc-tonneins.html</loc><lastmod>2025-10-05</lastmod><changefreq>monthly</changefreq><priority>0.58</priority></url>
 
-  <!-- Messagerie locale -->
-  <url><loc>https://speedcomputer47.fr/messagerieCahors.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <!-- Messagerie (slug final propre) -->
+  <url><loc>https://speedcomputer47.fr/messagerie-cahors.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.55</priority></url>
 
-  <!-- Divers -->
+  <!-- Divers utiles -->
   <url><loc>https://speedcomputer47.fr/avis.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://speedcomputer47.fr/migration-deploiementbias.html</loc><lastmod>2025-10-07</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://speedcomputer47.fr/sauvegardetonneins.html</loc><lastmod>2025-10-03</lastmod><changefreq>monthly</changefreq><priority>0.45</priority></url>
 
 </urlset>
