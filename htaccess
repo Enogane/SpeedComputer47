@@ -30,3 +30,15 @@ Redirect 410 /D
 
 # /hello-world et /hello-world/ (les paramètres ?utm_source=... n’empêchent pas le 410)
 RedirectMatch 410 (?i)^/hello-world/?$
+### ——— Legacy WordPress slugs ———
+# Rediriger vers des pages utiles quand c'est pertinent
+RewriteRule ^contact/?$ /#contact [R=301,L]
+RewriteRule ^services/?$ / [R=301,L]          # ou /particuliers.html / pro.html si tu préfères
+RewriteRule ^a-propos/?$ / [R=301,L]
+
+# URL orpheline inconnue -> 410 (Gone)
+RewriteRule ^61-2/?$ - [R=410,L]
+
+# Flux / feed WP -> 410
+RewriteRule ^comments/feed/?$ - [R=410,L]
+RewriteRule ^feed/?$ - [R=410,L]
