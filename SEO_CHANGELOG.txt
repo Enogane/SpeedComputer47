@@ -1,4 +1,0 @@
-SEO Changes Applied (Lot 1):
-- index.html: enriched content (~600 words), optimized title/meta description, added canonical, added FAQ, added block 'Avis clients' with microdata.
-- avis.html: new page created with full Google reviews, AggregateRating microdata, link to leave a review.
-- robots.txt and sitemap.xml included.
