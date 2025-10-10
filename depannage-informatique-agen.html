@@ -33,6 +33,7 @@
 </head>
 <body>
     <!-- ===== HEADER (gabarit sc47) ===== -->
+    <!-- ===== HEADER (gabarit sc47) ===== -->
   <header class="sc47-header">
     <div class="sc47-container">
       <a class="sc47-brand" href="/index.html" aria-label="Accueil SpeedComputer47">
@@ -136,6 +137,7 @@
   </main>
   
     <!-- FOOTER -->
+    <!-- FOOTER -->
   <footer>
     <div class="container foot">
       <p><strong>SpeedComputer47</strong> â€” 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
@@ -147,4 +149,5 @@
   <script>const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();document.querySelectorAll('.sc47-link[data-match]').forEach(a=>{if(a.getAttribute('data-match').toLowerCase()===path){a.classList.add('is-active');}});const burger=document.getElementById('sc47Burger'),nav=document.getElementById('sc47Nav');if(burger&&nav){burger.addEventListener('click',()=>{const open=nav.classList.toggle('open');burger.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!burger.contains(e.target)){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');}});}const dd=document.getElementById('sc47Reviews'),btnReviews=document.getElementById('sc47ReviewsBtn');if(btnReviews&&dd){btnReviews.addEventListener('click',e=>{e.preventDefault();dd.classList.toggle('open');btnReviews.setAttribute('aria-expanded',dd.classList.contains('open'));});document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btnReviews.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){dd.classList.remove('open');btnReviews.setAttribute('aria-expanded','false');}});}</script>
 </body>
 </html>
+
 
