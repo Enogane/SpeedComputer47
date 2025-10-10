@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -57,28 +57,40 @@
 </style>
 </head>
 <body>
-<header class="sc47-header">
-  <div class="sc47-container">
-    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47"><img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47"/><span class="sc47-name">SpeedComputer47</span></a>
-    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
-    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
-      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
-      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
-      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
-      <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-        <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-        <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-          <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google</a>
-          <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook</a>
-          <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
-          <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
+  <!-- ===== HEADER (gabarit sc47) ===== -->
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="/index.html" aria-label="Accueil SpeedComputer47">
+        <img class="sc47-logo" src="/logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
+
+      <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">â˜°</button>
+
+      <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+        <a class="sc47-link" data-match="index.html" href="/index.html">Accueil</a>
+        <a class="sc47-link" data-match="particuliers.html" href="/particuliers.html">Particuliers</a>
+        <a class="sc47-link" data-match="pro.html" href="/pro.html">Entreprises</a>
+        <a class="sc47-link" data-match="guide-achat.html" href="/guide-achat.html">Guide d'Achat</a>
+        <a class="sc47-link" data-match="blog.html" href="/blog.html">Blog</a>
+        <a class="sc47-link sc47-link--ghost" href="/#contact">ðŸ“© Contact / Devis</a>
+
+        <!-- Dropdown Avis (desktop) -->
+        <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+          <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">â­ Laisser un avis</button>
+          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+            <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="/avis-google.webp" alt="Google"/> Google</a>
+            <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="/Facebook.webp" alt="Facebook"/> Facebook</a>
+            <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="/pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
+            <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="/linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
+            <a class="sc47-item" href="https://www.amazon.fr/?&linkCode=sl2&tag=speedcomputer-21&language=fr_FR" target="_blank" rel="noopener"><img class="sc47-ico" src="/logoamazon.webp" alt="Amazon"/> Amazon</a>
+          </div>
         </div>
-      </div>
-      <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
-    </nav>
-  </div>
-</header>
+
+        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">ðŸ“ž 06 66 23 51 43</a>
+      </nav>
+    </div>
+  </header>
 
 <main>
 <section class="hero hero--bg">
@@ -152,7 +164,15 @@
 </main>
 
 <a class="floating-call" href="tel:+33666235143">📞 Appeler pour une installation</a>
-<footer><div class="container foot"><p>© SpeedComputer47 — Installation informatique à Cahors</p></div></footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <p><strong>SpeedComputer47</strong> â€” 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+      <p>SIREN : 988 008 629 â€¢ SIRET : 988 008 629 00012 â€¢ TVA : FR03988008629</p>
+      <p>Â© <span id="year"></span> â€¢ <a href="/mentions.html">Mentions lÃ©gales & Politique de confidentialitÃ©</a></p>
+      <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous rÃ©alisons un bÃ©nÃ©fice sur les achats remplissant les conditions requises.</p>
+    </div>
+  </footer>
 
 <script>
 const dd=document.getElementById('sc47Reviews');const btnReviews=document.getElementById('sc47ReviewsBtn');
@@ -164,3 +184,4 @@ if(btnReviews&&dd){
 </script>
 </body>
 </html>
+

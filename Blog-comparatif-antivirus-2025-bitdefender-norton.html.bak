@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Comparatif Antivirus 2025 : Bitdefender vs Norton (Pros & Particuliers) | SpeedComputer47</title>
+  <meta name="description" content="Quel antivirus choisir en 2025 ? Bitdefender ou Norton. Conseils pour particuliers et TPE/PME : protection PC/Mac, Android/iOS, montres connectées, tablettes et caméras IP. Tarifs indicatifs, points forts/faiblesses et recommandations selon votre usage."/>
+  <link rel="canonical" href="https://speedcomputer47.fr/blog-comparatif-antivirus-2025-bitdefender-norton.html"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="SpeedComputer47"/>
+  <meta property="og:title" content="Comparatif Antivirus 2025 : Bitdefender vs Norton (Pros & Particuliers)"/>
+  <meta property="og:description" content="Bitdefender ou Norton en 2025 ? Nos conseils pour particuliers et TPE/PME, avec focus multi‑appareils : PC/Mac, smartphone, tablette, caméras IP et objets connectés."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://speedcomputer47.fr/blog-comparatif-antivirus-2025-bitdefender-norton.html"/>
+  <meta property="og:image" content="https://speedcomputer47.fr/assets/og/antivirus-2025.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192">
+  <link rel="stylesheet" href="/style.css?v=11"/>
+
+  <style>
+    html{scroll-behavior:smooth}
+    .breadcrumbs{max-width:1100px;margin:0 auto;padding:10px 16px;font-size:.95rem;color:var(--muted)}
+    .breadcrumbs a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+    .prose{max-width:860px;margin:0 auto;padding:24px;color:var(--text)}
+    .prose h1,.prose h2,.prose h3{color:var(--text)}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--border);background:var(--surface-2);border-radius:12px;padding:16px}
+    .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:12px}
+    table.comparatif{width:100%;border-collapse:collapse;min-width:720px}
+    table.comparatif th,table.comparatif td{border-top:1px solid var(--border);padding:.7rem .8rem;text-align:left}
+    table.comparatif th{white-space:nowrap}
+    .badge{display:inline-block;padding:.15rem .45rem;border:1px solid var(--border);border-radius:999px;font-size:.8rem}
+    .ok{color:#2bb673}
+    .warn{color:#f6c453}
+    .no{color:#f47272}
+    .related{max-width:860px;margin:0 auto 40px;padding:0 24px}
+    .related ul{margin:0;padding-left:1.1rem}
+  </style>
+
+  <!-- JSON‑LD: BlogPosting + Breadcrumbs + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"Comparatif Antivirus 2025 : Bitdefender vs Norton (Pros & Particuliers)",
+    "image":"https://speedcomputer47.fr/assets/og/antivirus-2025.jpg",
+    "datePublished":"2025-10-09",
+    "dateModified":"2025-10-09",
+    "author":{"@type":"Organization","name":"SpeedComputer47"},
+    "publisher":{"@type":"Organization","name":"SpeedComputer47","logo":{"@type":"ImageObject","url":"https://speedcomputer47.fr/logo.webp"}},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://speedcomputer47.fr/blog-comparatif-antivirus-2025-bitdefender-norton.html"},
+    "articleSection":"Sécurité",
+    "about":["antivirus 2025","Bitdefender","Norton","PME","particuliers","Windows","macOS","Android","iOS"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://speedcomputer47.fr/blog.html"},
+      {"@type":"ListItem","position":3,"name":"Comparatif Antivirus 2025 : Bitdefender vs Norton","item":"https://speedcomputer47.fr/blog-comparatif-antivirus-2025-bitdefender-norton.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness","ComputerRepairService"],
+    "name": "SpeedComputer47",
+    "image": "https://speedcomputer47.fr/logo.webp",
+    "url": "https://speedcomputer47.fr/",
+    "telephone": "+33666235143",
+    "address": {"@type":"PostalAddress","streetAddress":"8 rue Gambetta","addressLocality":"Villeneuve-sur-Lot","postalCode":"47300","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"}
+  }
+  </script>
+</head>
+<body>
+  <!-- ===== HEADER (template sc47) ===== -->
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="/index.html" aria-label="Accueil SpeedComputer47">
+        <img class="sc47-logo" src="/logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
+
+      <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+
+      <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+        <a class="sc47-link" data-match="index.html" href="/index.html">Accueil</a>
+        <a class="sc47-link" data-match="particuliers.html" href="/particuliers.html">Particuliers</a>
+        <a class="sc47-link" data-match="pro.html" href="/pro.html">Entreprises</a>
+        <a class="sc47-link" data-match="guide-achat.html" href="/guide-achat.html">Guide d'Achat</a>
+        <a class="sc47-link" data-match="blog.html" href="/blog.html">Blog</a>
+        <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FIL D'ARIANE -->
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+    <a href="/index.html">Accueil</a> › <a href="/blog.html">Blog</a> › Comparatif Antivirus 2025 : Bitdefender vs Norton
+  </nav>
+
+  <main>
+    <article class="prose">
+      <p class="muted">Mis à jour le <time datetime="2025-10-09">09/10/2025</time> • Lecture ≈ 7–8 min</p>
+      <h1>Comparatif Antivirus 2025 : Bitdefender vs Norton — Particuliers & TPE/PME</h1>
+      <p>
+        En 2025, les suites de sécurité vont bien au‑delà de l’antivirus : prévention des rançongiciels, pare‑feu, filtrage web, VPN, gestionnaire de mots de passe, contrôle parental et **protection multi‑appareils** (PC/Mac, Android/iOS, tablettes, montres connectées*). Voici un comparatif **clair et pratique** entre <strong>Bitdefender</strong> et <strong>Norton</strong>, avec nos **recommandations** selon que vous soyez **particulier** ou **professionnel (TPE/PME)**.
+      </p>
+
+      <div class="card" style="margin:1rem 0">
+        <strong>TL;DR</strong> — <em>Particuliers</em> : Bitdefender Total Security / Norton 360 Deluxe sont des valeurs sûres. <em>Pros</em> : Bitdefender GravityZone Business Security ou Norton for Business, selon votre besoin de supervision centralisée et d’EDR.
+      </div>
+
+      <h2>1) Particuliers : quel pack choisir ?</h2>
+      <div class="table-wrap">
+        <table class="comparatif">
+          <thead>
+            <tr>
+              <th>Critères</th>
+              <th>Bitdefender (Plus/Total/Ultimate)</th>
+              <th>Norton (360 Standard/Deluxe/Premium)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Protection malware & rançongiciel</td>
+              <td><span class="badge ok">Excellente</span> • Moteur réputé, protections comportementales</td>
+              <td><span class="badge ok">Excellente</span> • Couche cloud + heuristiques</td>
+            </tr>
+            <tr>
+              <td>VPN intégré</td>
+              <td>Selon édition (débit/quotas variables)</td>
+              <td>VPN inclus dans 360, pratique tout‑en‑un</td>
+            </tr>
+            <tr>
+              <td>Contrôle parental</td>
+              <td>Optionnel selon pack</td>
+              <td>Présent (Deluxe/Premium), simple à configurer</td>
+            </tr>
+            <tr>
+              <td>Gestionnaire de mots de passe</td>
+              <td>Intégré (basique) • Compatible navigateurs</td>
+              <td>Intégré • Facile à prendre en main</td>
+            </tr>
+            <tr>
+              <td>Impact sur les performances</td>
+              <td>Très léger sur PC récents</td>
+              <td>Léger à modéré selon modules actifs</td>
+            </tr>
+            <tr>
+              <td>Multi‑appareils</td>
+              <td>Windows/macOS/Android/iOS</td>
+              <td>Windows/macOS/Android/iOS</td>
+            </tr>
+            <tr>
+              <td>Caméras IP & objets connectés</td>
+              <td>Conseillé : réseau invité/VLAN + routeur sécurisé</td>
+              <td>Idem : isolation réseau + mises à jour régulières</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Recommandations « Particuliers »</h3>
+      <ul>
+        <li><strong>Usage familial polyvalent</strong> : <em>Bitdefender Total Security</em> ou <em>Norton 360 Deluxe</em> (5 appareils) pour couvrir PC/Mac + smartphones.</li>
+        <li><strong>Jeu & performances</strong> : légère préférence à Bitdefender pour sa sobriété en tâche de fond.</li>
+        <li><strong>Besoin VPN simple inclus</strong> : avantage pratique à Norton 360 (Deluxe/Premium).</li>
+        <li><strong>Contrôle parental</strong> : Norton 360 Deluxe est souvent le plus direct à configurer.</li>
+      </ul>
+
+      <h2>2) Pros (TPE/PME) : visibilité & supervision avant tout</h2>
+      <div class="table-wrap">
+        <table class="comparatif">
+          <thead>
+            <tr>
+              <th>Critères</th>
+              <th>Bitdefender GravityZone Business Security</th>
+              <th>Norton for Business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Console cloud / gestion centralisée</td>
+              <td><span class="badge ok">Complète</span> • Politiques fines, déploiement à distance</td>
+              <td><span class="badge ok">Solide</span> • Administration simple pour petites équipes</td>
+            </tr>
+            <tr>
+              <td>EDR / détection comportementale</td>
+              <td>Disponible selon édition (Business/Elite)</td>
+              <td>Détection avancée selon offres</td>
+            </tr>
+            <tr>
+              <td>Serveurs & postes</td>
+              <td>Windows, macOS, Linux (postes & serveurs)</td>
+              <td>Principalement postes de travail</td>
+            </tr>
+            <tr>
+              <td>Durcissement & contrôle applicatif</td>
+              <td>Politiques granulaires, sandbox, device control</td>
+              <td>Contrôles essentiels, plus simple</td>
+            </tr>
+            <tr>
+              <td>Déploiement multisites</td>
+              <td><span class="badge ok">Très à l’aise</span> pour parcs hétérogènes</td>
+              <td><span class="badge">OK</span> pour petites équipes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Recommandations « Pros »</h3>
+      <ul>
+        <li><strong>Parc &gt; 10 postes / besoins EDR</strong> : <em>Bitdefender GravityZone Business Security (ou Elite)</em> pour sa console mature et ses politiques fines.</li>
+        <li><strong>Petites équipes (3–10 postes)</strong> : <em>Norton for Business</em> convient si vous souhaitez une administration simple et un tout‑en‑un.</li>
+        <li><strong>Messagerie & navigateurs</strong> : combinez avec SPF/DKIM/DMARC et un filtrage DNS côté routeur.</li>
+      </ul>
+
+      <h2>3) Multi‑appareils : smartphones, tablettes, montres connectées & caméras IP</h2>
+      <p>
+        La sécurité ne s’arrête pas au PC : protégez aussi <strong>Android/iOS</strong> (anti‑phishing, scan apps, antivol), vos <strong>tablettes</strong> et **montres connectées*** (exposition limitée, mais durcissement du smartphone hôte indispensable). Pour les <strong>caméras IP</strong> : isolez‑les sur un **Wi‑Fi invité/VLAN**, changez les mots de passe, désactivez l’accès distant P2P si non nécessaire et appliquez les mises à jour du firmware.
+      </p>
+      <div class="card">
+        <h3>Bonnes pratiques réseau domestique / pro</h3>
+        <ul>
+          <li>Créer un <strong>Wi‑Fi invité/VLAN</strong> pour IoT (caméras, TV, objets).</li>
+          <li>Activer l’<strong>MFA</strong> sur les comptes cloud et la messagerie.</li>
+          <li>Automatiser les <strong>mises à jour</strong> (OS, navigateurs, routeur, IoT).</li>
+          <li>Utiliser un <strong>gestionnaire de mots de passe</strong> et des rôles à moindre privilège.</li>
+          <li>Mettre en place une <strong>sauvegarde 3‑2‑1</strong> (NAS + cloud) avec test de restauration.</li>
+        </ul>
+      </div>
+
+      <h2>4) Quel est le « meilleur » en 2025 ?</h2>
+      <p>
+        Il n’existe pas de meilleur universel : **choisissez selon votre contexte**.
+      </p>
+      <ul>
+        <li><strong>Vous voulez un pack famille simple</strong> : Norton 360 Deluxe (VPN + contrôle parental).</li>
+        <li><strong>Vous privilégiez la légèreté</strong> : Bitdefender (Total/Ultimate) est souvent très discret en arrière‑plan.</li>
+        <li><strong>Vous administrez un petit parc</strong> : Norton for Business est efficace et simple.</li>
+        <li><strong>Vous avez un parc plus hétérogène</strong> : Bitdefender GravityZone offre des politiques détaillées et des options EDR.</li>
+      </ul>
+
+      <div class="card" style="margin:1rem 0">
+        <p><strong>Besoin d’un conseil personnalisé ?</strong> Nous pouvons auditer votre parc/appareils et proposer la licence la plus adaptée (et éviter les doublons VPN/gestionnaire déjà inclus ailleurs).</p>
+        <p><a class="sc47-btn sc47-btn--primary" href="/#contact">Demander un devis</a></p>
+      </div>
+
+      <hr class="sep"/>
+
+      <h2>FAQ — Antivirus 2025</h2>
+      <h3>Un antivirus suffit‑il face aux rançongiciels ?</h3>
+      <p>Non. Il faut combiner protection en temps réel, mises à jour, MFA, sauvegardes 3‑2‑1 et une sensibilisation minimale au phishing.</p>
+      <h3>Faut‑il un VPN intégré ?</h3>
+      <p>Utile en Wi‑Fi public et pour limiter le pistage. Si vous avez déjà un VPN fiable, évitez le doublon : choisissez une édition sans VPN.</p>
+      <h3>iPhone/iPad ont‑ils besoin d’un antivirus ?</h3>
+      <p>Le risque d’infection classique est faible, mais les suites apportent filtrage anti‑phishing, sécurité web et fonctions antivol/contrôle parental.</p>
+      <h3>Caméras IP : antivirus ou routeur ?</h3>
+      <p>Priorité au <strong>routeur</strong> : réseau invité/VLAN, mots de passe forts, mises à jour. L’antivirus sur le PC/phone limite les risques via applications et liens malveillants.</p>
+      <h3>Licences à vie ou abonnements ?</h3>
+      <p>Privilégiez les abonnements : moteurs et signatures évoluent en continu. Les « à vie » finissent obsolètes.</p>
+
+      <section class="related" aria-label="Articles liés">
+        <h3>À lire ensuite</h3>
+        <ul>
+          <li><a href="/cybersecurite-pme-lot-et-garonne.html">Cybersécurité 2025 : Audit, formation et matériel</a></li>
+          <li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">PC lent ? Migrer vers un SSD</a></li>
+          <li><a href="/domotique-tv-connectee-smartphone-fumel.html">Maison connectée : TV, Wi‑Fi stable et sécurité des objets</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <!-- ===== FOOTER (template sc47) ===== -->
+  <footer>
+    <div class="container foot">
+      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve‑sur‑Lot</p>
+      <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012 • TVA : FR03988008629</p>
+      <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
+      <p class="affiliate-note" style="text-align:center;margin-top:.5rem">En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d’appel flottant -->
+  <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
+
+  <script>
+    // Année auto
+    const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+
+    // Lien actif dans la nav
+    const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+    document.querySelectorAll('.sc47-link[data-match]').forEach(a=>{
+      if(a.getAttribute('data-match').toLowerCase()===path){ a.classList.add('is-active'); }
+    });
+
+    // Burger menu
+    const burger=document.getElementById('sc47Burger');
+    const nav=document.getElementById('sc47Nav');
+    if(burger && nav){
+      burger.addEventListener('click', ()=>{
+        const open=nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click',(e)=>{
+        if(!nav.contains(e.target) && !burger.contains(e.target)){
+          nav.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+        }
+      });
+    }
+
+    // Auto-tag Amazon (conformité)
+    (function(){
+      const TAG = 'speedcomputer-21';
+      document.querySelectorAll('a[href*="amazon.fr/"]').forEach(a=>{
+        try{
+          const u = new URL(a.href, location.href);
+          if(!u.searchParams.get('tag')) u.searchParams.set('tag', TAG);
+          a.href = u.toString();
+          a.setAttribute('target','_blank');
+          a.setAttribute('rel','sponsored nofollow noopener');
+        }catch(e){}
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Installation informatique Nérac | SpeedComputer47</title>
+<meta name="description" content="Installation PC, imprimantes, Wi-Fi et logiciels à Nérac. Mise en service à domicile sur Nérac, Lavardac, Barbaste, Mézin. Installation propre et sécurisée."/>
+<link rel="canonical" href="https://speedcomputer47.fr/installation-informatique-nerac.html"/>
+<meta name="robots" content="index,follow"/><meta name="theme-color" content="#0b0d10"/>
+
+<link rel="preload" as="image" href="background.webp"/>
+<link rel="preload" as="image" href="logo.webp"/>
+<link rel="icon" type="image/webp" href="logo.webp"/>
+<link rel="stylesheet" href="style.css?v=9"/>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://speedcomputer47.fr/#business",
+"name":"SpeedComputer47","url":"https://speedcomputer47.fr/","image":"https://speedcomputer47.fr/logo.webp","logo":"https://speedcomputer47.fr/logo.webp",
+"telephone":"+33666235143","email":"contact@speedcomputer47.fr","priceRange":"€€","paymentAccepted":"Cash, Card, Contactless, BankTransfer","currenciesAccepted":"EUR",
+"address":{"@type":"PostalAddress","streetAddress":"8 rue Gambetta","addressLocality":"Villeneuve-sur-Lot","postalCode":"47300","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},
+"geo":{"@type":"GeoCoordinates","latitude":44.4363233,"longitude":0.6824206},
+"areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":44.4363233,"longitude":0.6824206},"geoRadius":50000},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],
+"sameAs":["https://g.page/r/CbsMlPzTZUw2EAE","https://www.facebook.com/speedcomputer47/","https://www.linkedin.com/company/speedcomputer47/","https://www.pagesjaunes.fr/pros/64032762"],
+"makesOffer":[
+  {"@type":"Offer","itemOffered":{"@type":"Service","name":"Installation PC & Mac"}},
+  {"@type":"Offer","itemOffered":{"@type":"Service","name":"Installation box internet & Wi-Fi"}},
+  {"@type":"Offer","itemOffered":{"@type":"Service","name":"Installation imprimantes & scanners"}},
+  {"@type":"Offer","itemOffered":{"@type":"Service","name":"Installation logiciels & messagerie"}}
+],
+"knowsAbout":["installation PC","mise en service Mac","box internet","Wi-Fi","imprimante","pilotes","Microsoft 365","Outlook","Gmail","sauvegarde","antivirus","partage imprimante"]}
+</script>
+
+<!-- Villes desservies (Albret) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@id":"https://speedcomputer47.fr/#business",
+"areaServed":[
+  {"@type":"City","name":"Nérac"},{"@type":"City","name":"Lavardac"},{"@type":"City","name":"Barbaste"},
+  {"@type":"City","name":"Mézin"},{"@type":"City","name":"Feugarolles"},{"@type":"City","name":"Aiguillon"},
+  {"@type":"City","name":"Agen"},{"@type":"City","name":"Villeneuve-sur-Lot"}
+]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
+  {"@type":"ListItem","position":2,"name":"Installation informatique Nérac","item":"https://speedcomputer47.fr/installation-informatique-nerac.html"}
+]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Intervenez-vous à domicile sur Nérac et l’Albret ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous installons PC/Mac, box internet, Wi-Fi et imprimantes à Nérac, Lavardac, Barbaste, Mézin… Déplacement inclus jusqu’à 20 km puis env. 0,50 €/km, rayon ≈ 50 km autour de Villeneuve-sur-Lot."}},
+  {"@type":"Question","name":"Pouvez-vous récupérer mes mails et documents ?","acceptedAnswer":{"@type":"Answer","text":"Nous configurons Microsoft 365/Outlook ou Gmail, migrons vos fichiers quand c’est possible, réglons antivirus et pilotes, et livrons une installation propre et sécurisée."}},
+  {"@type":"Question","name":"Le Wi-Fi couvre mal ma maison ?","acceptedAnswer":{"@type":"Answer","text":"Nous optimisons le placement de la box, choisissons les canaux, ajoutons répéteurs/CPL/routeur si besoin, et sécurisons le réseau (WPA2/3)."}},
+  {"@type":"Question","name":"Quels moyens de paiement ?","acceptedAnswer":{"@type":"Answer","text":"CB & sans contact (SumUp), Apple/Google Pay, virement et espèces."}}
+]}
+</script>
+
+<style>
+  html{scroll-behavior:smooth} body{color:#d1d5db;background:#0a0f17}
+  .container,.sc47-container{width:min(1200px,92%);margin:0 auto} section{padding:36px 0}
+  .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px} .muted{color:#9ca3af}
+  .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
+  .list{padding-left:16px;margin:0}.list li{margin:2px 0}
+  .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+  .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b} .btn:hover{background:#111b2e}
+  .lead{color:#fff}.hero-grid{position:relative;z-index:1}.pay{margin-top:8px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+  .list-cols{columns:2;column-gap:16px} @media(min-width:980px){.list-cols{columns:3}} .list-cols li{break-inside:avoid}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr/installation-informatique-nerac.html","email":"contact@speedcomputer47.fr","telephone":"06 66 23 51 43","areaServed":["Nérac","Lavardac","Barbaste","Mézin","Lot-et-Garonne"],"sameAs":["https://www.facebook.com/speedcomputer47/","https://www.linkedin.com/company/speedcomputer47/","https://www.pagesjaunes.fr/pros/64032762","https://speedcomputer47.fr/"],"address":{"@type":"PostalAddress","addressLocality":"Nérac","addressRegion":"Nouvelle-Aquitaine","postalCode":"47600","addressCountry":"FR"},"openingHours":"Mo-Sa 09:00-19:00","description":"Installation et mise en service PC/Mac, box internet, Wi-Fi, imprimantes et logiciels à Nérac et dans l’Albret."}
+</script>
+</head>
+
+<body>
+<header class="sc47-header">
+  <div class="sc47-container">
+    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+      <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" loading="lazy"/><span class="sc47-name">SpeedComputer47</span>
+    </a>
+    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
+      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
+      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
+      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+      <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+        <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+        <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+          <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener"><img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google</a>
+          <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook</a>
+          <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener"><img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes</a>
+          <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener"><img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn</a>
+        </div>
+      </div>
+      <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero hero--bg">
+  <div class="container hero-grid">
+    <div>
+      <h1>Installation PC, box internet, imprimante &amp; logiciels à Nérac</h1>
+      <p class="lead">À Nérac et dans l’Albret (Lavardac, Barbaste, Mézin), nous mettons en service votre informatique <strong>proprement, rapidement et en toute sécurité</strong> : PC/Mac, box &amp; Wi-Fi, imprimantes/scanners, Microsoft 365, antivirus, messagerie et sauvegardes.</p>
+      <div class="cta-row"><a class="btn primary" href="tel:+33666235143">📞 Installer chez moi</a><a class="btn" href="#services">🧾 Devis &amp; conseils</a></div>
+      <p class="muted pay">💳 CB &amp; sans contact • Apple/Google Pay • Virements &amp; espèces.</p>
+    </div>
+    <aside aria-label="Ce que vous gagnez" class="card">
+      <h3>Installation pro = sérénité</h3>
+      <ul class="list">
+        <li>Matériel <strong>configuré correctement</strong> (pilotes, mises à jour, sécurité)</li>
+        <li>Wi-Fi <strong>optimisé</strong> (canaux, mots de passe, répéteurs/CPL)</li>
+        <li>Imprimante <strong>détectée</strong> partout (USB/Wi-Fi, partage)</li>
+        <li>Logiciels &amp; mails <strong>prêts</strong> (Office, PDF, antivirus, Outlook/Gmail)</li>
+        <li><strong>Transfert de données</strong> et sauvegarde paramétrée</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="raisons">
+  <div class="container">
+    <h2 class="section-title">Pourquoi ça coince souvent à Nérac&nbsp;?</h2>
+    <p class="muted" style="max-width:800px">Maisons anciennes, murs épais, dépendances : le Wi-Fi chute vite entre pièces et étages. Les imprimantes en Wi-Fi décrochent, et les logiciels sont parfois mal activés. Nous auditons, corrigeons et documentons votre installation.</p>
+    <div class="cards" style="margin-top:16px">
+      <div class="card"><h3>📶 Wi-Fi faible ou lent</h3><p>Tests de débit, optimisation radio, répéteurs/CPL/routeur, sécurité WPA2/3.</p></div>
+      <div class="card"><h3>🖨️ Imprimante capricieuse</h3><p>Drivers constructeur, IP fixe, bon port d’impression, partage réseau fiable.</p></div>
+      <div class="card"><h3>🧩 Logiciels & licences</h3><p>Microsoft 365/LibreOffice propre, mises à jour, suppression des bloatwares.</p></div>
+      <div class="card"><h3>✉️ Messagerie</h3><p>Outlook/Gmail : comptes, signatures, carnets, archivage, règles anti-spam.</p></div>
+      <div class="card"><h3>🔐 Sécurité & sauvegarde</h3><p>Antivirus configuré, MAJ automatiques, sauvegardes locales/cloud (NAS, OneDrive, Time Machine).</p></div>
+      <div class="card"><h3>🖥️ PC/Mac prêt</h3><p>Comptes, pilotes, confidentialité, préférences. Poste livré prêt à l’emploi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Prestations d’installation &amp; mise en service (Albret)</h2>
+    <div class="cards">
+      <div class="card"><h3>💻 Installation PC &amp; Mac</h3><p>Comptes, pilotes, Windows/macOS à jour, réglages confidentialité, utilitaires, transfert fichiers/favoris.</p></div>
+      <div class="card"><h3>📦 Box internet &amp; Wi-Fi</h3><p>Branchement, placement optimisé, mesure du débit, répéteurs/CPL/routeur, mots de passe robustes.</p></div>
+      <div class="card"><h3>🖨️ Imprimantes &amp; scanners</h3><p>USB/Wi-Fi, driver constructeur, IP fixe, partage réseau, numérisation vers e-mail/dossier.</p></div>
+      <div class="card"><h3>🧰 Logiciels essentiels</h3><p>Microsoft 365/LibreOffice, PDF, lecteurs, utilitaires — désinstallation des logiciels inutiles.</p></div>
+      <div class="card"><h3>✉️ Messagerie Outlook/Gmail</h3><p>Comptes, carnets d’adresses, signatures, filtres, archivage et export si possible.</p></div>
+      <div class="card"><h3>🔒 Sécurité &amp; sauvegardes</h3><p>Antivirus, MAJ, sauvegardes automatisées (disque, NAS, cloud). Bonnes pratiques.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="container">
+    <h2 class="section-title">Intervention à domicile (Nérac &amp; Albret)</h2>
+    <div class="card">
+      <p class="muted">Déplacement inclus ≤ 20 km, puis +0,50 €/km. Particuliers &amp; Professionnels. Rayon ≈ 50 km autour de Villeneuve-sur-Lot.</p>
+      <nav aria-label="Villes desservies (liens internes)">
+        <details class="zones-toggle"><summary>Voir les villes desservies proches de Nérac</summary>
+          <ul class="list list-cols">
+            <li><a href="/installation-informatique-nerac.html">Installation informatique à Nérac</a></li>
+            <li><a href="/installation-informatique-agen.html">Installation informatique à Agen</a></li>
+            <li><a href="/installation-informatique-villeneuve-sur-lot.html">Installation informatique à Villeneuve-sur-Lot</a></li>
+            <li><a href="/installation-informatique-tonneins.html">Installation informatique à Tonneins</a></li>
+            <li><a href="/installation-informatique-marmande.html">Installation informatique à Marmande</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="floating-call" href="tel:+33666235143">📞 Appeler pour une installation</a>
+<footer><div class="container foot"><p>© SpeedComputer47 — Installation informatique à Nérac et Albret</p></div></footer>
+
+<script>
+const dd=document.getElementById('sc47Reviews'); const btnReviews=document.getElementById('sc47ReviewsBtn');
+if(btnReviews && dd){
+  btnReviews.addEventListener('click',e=>{e.preventDefault(); dd.classList.toggle('open'); btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'));});
+  document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false');}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false');}});
+}
+</script>
+</body>
+</html>

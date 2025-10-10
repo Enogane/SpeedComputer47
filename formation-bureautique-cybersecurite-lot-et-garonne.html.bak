@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Formation bureautique &amp; cybersécurité Lot‑et‑Garonne | SpeedComputer47</title>
+<meta content="Formations Word/Excel, bonnes pratiques et cybersécurité en Lot‑et‑Garonne." name="description"/>
+<link href="https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="#0b0d10" name="theme-color"/>
+<!-- Perf -->
+<link as="image" href="background.webp" rel="preload"/>
+<link as="image" href="logo.webp" rel="preload"/>
+<link href="logo.webp" rel="icon" type="image/webp"/>
+<link href="style.css?v=9" rel="stylesheet"/>
+<!-- LocalBusiness (base) -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "@id":"https://speedcomputer47.fr/#business",
+    "name":"SpeedComputer47",
+    "url":"https://speedcomputer47.fr/",
+    "image":"https://speedcomputer47.fr/logo.webp",
+    "logo":"https://speedcomputer47.fr/logo.webp",
+    "telephone":"+33666235143",
+    "email":"contact@speedcomputer47.fr",
+    "priceRange":"€€",
+    "paymentAccepted":"Cash, Card, Contactless, BankTransfer",
+    "currenciesAccepted":"EUR",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"8 rue Gambetta",
+      "addressLocality":"Villeneuve-sur-Lot",
+      "postalCode":"47300",
+      "addressRegion":"Nouvelle-Aquitaine",
+      "addressCountry":"FR"
+    },
+    "geo":{"@type":"GeoCoordinates","latitude":44.4363233,"longitude":0.6824206},
+    "areaServed":{
+      "@type":"GeoCircle",
+      "geoMidpoint":{"@type":"GeoCoordinates","latitude":44.4363233,"longitude":0.6824206},
+      "geoRadius":50000
+    },
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}
+    ],
+    "sameAs":[
+      "https://g.page/r/CbsMlPzTZUw2EAE",
+      "https://www.facebook.com/speedcomputer47/",
+      "https://www.linkedin.com/company/speedcomputer47/",
+      "https://www.pagesjaunes.fr/pros/64032762"
+    ],
+    "makesOffer":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Formation bureautique (Word, Excel, PowerPoint)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Messagerie & organisation (Outlook, Gmail)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sensibilisation cybersécurité (phishing, mots de passe, sauvegardes)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sauvegardes & cloud (OneDrive, Google Drive, Time Machine)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Prise en main PC/Mac & smartphone"}}
+    ],
+    "knowsAbout":["formation informatique","bureautique","excel","word","powerpoint","outlook","gmail","cybersécurité","phishing","mots de passe","sauvegarde","onedrive","google drive","time machine"]
+  }
+  </script>
+<!-- Service ciblé Formation -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "serviceType":"Formation bureautique & cybersécurité",
+    "provider":{"@id":"https://speedcomputer47.fr/#business"},
+    "areaServed":{"@type":"AdministrativeArea","name":"Lot-et-Garonne (50 km autour de Villeneuve-sur-Lot)"},
+    "availableChannel":{"@type":"ServiceChannel","availableLanguage":["fr"]}
+  }
+  </script>
+<!-- Fil d’Ariane -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
+      {"@type":"ListItem","position":2,"name":"Formation bureautique & cybersécurité","item":"https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html"}
+    ]
+  }
+  </script>
+<!-- FAQ -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Proposez-vous des formations à domicile et en entreprise ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous intervenons à domicile et sur site dans un rayon d’environ 50 km autour de Villeneuve-sur-Lot (Agen, Marmande, Fumel, Monflanquin, etc.)."}},
+      {"@type":"Question","name":"Quels niveaux sont acceptés ?","acceptedAnswer":{"@type":"Answer","text":"Débutant, intermédiaire et avancé. Les contenus sont adaptés à vos usages (particuliers et professionnels)."}},
+      {"@type":"Question","name":"Fournissez-vous des supports ?","acceptedAnswer":{"@type":"Answer","text":"Oui, des fiches mémo et exercices pratiques sont fournis. Un récapitulatif peut être envoyé par email suite à la session."}},
+      {"@type":"Question","name":"Combien de temps durent les sessions ?","acceptedAnswer":{"@type":"Answer","text":"De 1 h (coaching express) à 3 h (atelier thématique). Les parcours peuvent être planifiés sur plusieurs séances."}},
+      {"@type":"Question","name":"Financez-vous via CPF ?","acceptedAnswer":{"@type":"Answer","text":"Nous n’assurons pas la gestion CPF à ce jour. Règlement par CB, sans contact, virement ou espèces."}}
+    ]
+  }
+  </script>
+<style>
+    html{scroll-behavior:smooth}
+    body{color:#d1d5db;background:#0a0f17;position:relative}
+    .container,.sc47-container{width:min(1200px,92%);margin:0 auto}
+    section{padding:36px 0}
+    .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
+    .muted{color:#9ca3af}
+
+    .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
+    .list{padding-left:16px;margin:0}.list li{margin:2px 0}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
+    .btn:hover{background:#111b2e}
+
+    .lead{color:#fff}
+    .hero{position:relative;overflow:hidden}
+    .hero--bg{
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(99,102,241,.15), transparent 60%),
+        radial-gradient(1200px 600px at 80% 0%, rgba(245,158,11,.12), transparent 60%),
+        #0a0f17 url('background.webp') center 25% / cover no-repeat;
+      min-height:420px;
+    }
+    .hero--bg::before{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(180deg, rgba(10,15,23,.35) 0%, rgba(10,15,23,.55) 40%, rgba(10,15,23,.75) 100%);
+    }
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:16px;align-items:center;padding:24px 0}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr;min-height:460px}}
+
+    .contact-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:980px){.contact-grid{grid-template-columns:1fr 1.1fr}}
+    .contact-grid input,.contact-grid textarea{width:100%;padding:10px;border-radius:10px;background:#0b0f16;border:1px solid #1f2937;color:#e5e7eb}
+    .big{font-size:18px}.mail a{word-break:break-all}
+    hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
+    footer{padding:18px 0 30px;color:#9ca3af}
+    .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
+    .foot p{margin:0}
+    .floating-call{position:fixed;right:14px;bottom:14px;z-index:45;background:#f59e0b;color:#111827;border:1px solid #f59e0b;padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+
+    /* Liste zones en colonnes */
+    .list-cols{columns:2;column-gap:16px}
+    @media(min-width:980px){.list-cols{columns:3}}
+    .list-cols li{break-inside:avoid}
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"SpeedComputer47","url":"https://speedcomputer47.fr/formation-bureautique-cybersecurite-lot-et-garonne.html","email":"contact@speedcomputer47.fr","telephone":"06 66 23 51 43","areaServed":["Villeneuve-sur-Lot","Agen","Marmande","Fumel","Casseneuil","Pujols","Tonneins","Saint-Sylvestre-sur-Lot","Cahors","Sainte-Livrade-sur-Lot","Lot-et-Garonne"],"sameAs":["https://www.facebook.com/speedcomputer47/","https://www.linkedin.com/company/speedcomputer47/","https://www.pagesjaunes.fr/pros/64032762","https://speedcomputer47.fr/"],"address":{"@type":"PostalAddress","addressLocality":"Villeneuve-sur-Lot","addressRegion":"Nouvelle-Aquitaine","postalCode":"47300","addressCountry":"FR"},"openingHours":"Mo-Sa 09:00-19:00","description":"Dépannage et services informatiques à domicile et en entreprise dans un rayon de 50 km autour de Villeneuve‑sur‑Lot."}</script></head>
+<body>
+<!-- =================== HEADER =================== -->
+<header class="sc47-header">
+  <div class="sc47-container">
+    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
+      <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+      <span class="sc47-name">SpeedComputer47</span>
+    </a>
+
+    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+
+    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
+      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
+      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
+      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+
+
+
+        <!-- Desktop : dropdown complet -->
+        <div class="sc47-dropdown desktop-only" id="sc47Reviews">
+          <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
+          <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
+            <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
+              <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
+            </a>
+            <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
+              <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
+            </a>
+            <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
+              <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
+            </a>
+            <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
+              <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Téléphone -->
+        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06 66 23 51 43</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero hero--bg">
+<div class="container hero-grid">
+<div>
+<h1>Formation bureautique &amp; cybersécurité</h1>
+<p class="lead">
+            Word, Excel, PowerPoint, Outlook/Gmail, Windows/macOS, gestion des mots de passe, détection du phishing,
+            sauvegardes et cloud. <strong>À domicile &amp; en entreprise</strong> à Villeneuve-sur-Lot et 50 km.
+            Programmes sur mesure, pédagogie claire, supports fournis.
+          </p>
+<div class="cta-row">
+<a class="btn primary" href="tel:+33666235143">📞 Planifier une session</a>
+<a class="btn" href="#programmes">📚 Programmes &amp; formats</a>
+</div>
+<p class="muted pay">💳 CB &amp; sans contact • Apple/Google Pay • Virements &amp; espèces.</p>
+</div>
+<aside aria-label="Nos atouts formation" class="card">
+<h3>Pourquoi nous choisir</h3>
+<ul class="list">
+<li><strong>Sur-mesure</strong> selon vos besoins &amp; niveau</li>
+<li><strong>Exemples concrets</strong> (pro &amp; perso)</li>
+<li><strong>Supports</strong> + exercices pratiques</li>
+<li><strong>Cybersécurité</strong> utile &amp; compréhensible</li>
+<li><strong>Interventions</strong> à domicile / sur site</li>
+</ul>
+</aside>
+</div>
+</section>
+<!-- POURQUOI SE FORMER -->
+<section id="raisons">
+<div class="container">
+<h2 class="section-title">Pourquoi se former maintenant ?</h2>
+<div class="cards">
+<div class="card"><h3>📈 Gagner du temps</h3><p>Raccourcis, tableaux Excel, modèles Word, signatures Outlook : automatisez les tâches répétitives.</p></div>
+<div class="card"><h3>🛡️ Se protéger</h3><p>Reconnaître un <strong>phishing</strong>, gérer ses mots de passe, activer l’authentification à deux facteurs, éviter les arnaques.</p></div>
+<div class="card"><h3>☁️ Travailler avec le cloud</h3><p>OneDrive, Google Drive, iCloud : partage, sauvegarde et collaboration en toute simplicité.</p></div>
+<div class="card"><h3>🧭 Migrer sereinement</h3><p>Prise en main Windows 11 / macOS, organisation des fichiers, sauvegardes Time Machine.</p></div>
+<div class="card"><h3>🏠 Famille &amp; seniors</h3><p>Smartphone, photos, visio, paramétrage sécurité &amp; contrôle parental.</p></div>
+<div class="card"><h3>🏢 TPE/asso</h3><p>Bonnes pratiques, messagerie pro, sauvegardes locales/NAS, sensibilisation équipe.</p></div>
+</div>
+</div>
+</section>
+<!-- PROGRAMMES -->
+<section id="programmes">
+<div class="container">
+<h2 class="section-title">Programmes de formation</h2>
+<div class="cards">
+<div class="card"><h3>🧩 Bureautique essentielle</h3><p><strong>Word</strong> (styles, modèles), <strong>Excel</strong> (formules, tableaux, graphiques), <strong>PowerPoint</strong> (diapositives claires).</p></div>
+<div class="card"><h3>✉️ Messagerie &amp; organisation</h3><p><strong>Outlook/Gmail</strong> : filtres, dossiers/labels, signatures, agenda partagé, astuces anti-spam.</p></div>
+<div class="card"><h3>🔐 Cybersécurité</h3><p>Phishing, mots de passe, gestionnaire, 2FA, mises à jour, sauvegardes, navigation sûre et arnaques à éviter.</p></div>
+<div class="card"><h3>☁️ Cloud &amp; sauvegardes</h3><p>OneDrive / Google Drive / iCloud, partage de fichiers, <strong>Time Machine</strong>, bonnes pratiques de restauration.</p></div>
+<div class="card"><h3>🖥️ Prise en main PC/Mac</h3><p>Paramètres utiles, gestion fichiers, imprimantes, nettoyage de base, mises à jour.</p></div>
+<div class="card"><h3>👨‍👩‍👧 Famille &amp; seniors</h3><p>Smartphone, photos, visio, contrôle parental, sauvegarde simple &amp; mémoire des gestes clés.</p></div>
+</div>
+<div class="cta-row">
+<a class="btn primary" href="tel:+33666235143">📞 Discuter de votre programme</a>
+<a class="btn" href="#contact">🧾 Devis rapide</a>
+</div>
+</div>
+</section>
+<!-- FORMATS & MÉTHODE -->
+<section id="formats">
+<div class="container">
+<h2 class="section-title">Formats &amp; méthode</h2>
+<div class="cards">
+<div class="card"><h3>👤 Individuel</h3><p>Coaching à domicile, totalement adapté à vos besoins. Idéal débutants &amp; perfectionnement ciblé.</p></div>
+<div class="card"><h3>👥 Petit groupe</h3><p>Ateliers 2–6 personnes sur un thème (Excel, sécurité…). Exercices pratiques &amp; cas concrets.</p></div>
+<div class="card"><h3>🏢 En entreprise / asso</h3><p>Session de sensibilisation cybersécurité, messagerie pro, sauvegardes &amp; organisation d’équipe.</p></div>
+</div>
+<p class="muted" style="margin-top:8px">Zone : Villeneuve-sur-Lot et ≈50 km (Agen, Marmande, Fumel, Monflanquin, Sainte-Livrade, Casseneuil, Tonneins, Nérac…).</p>
+</div>
+</section>
+<!-- ZONES (SEO local) -->
+<section id="zones">
+<div class="container">
+<h2 class="section-title">Formations près de chez vous (≈ 50 km)</h2>
+<div class="card">
+<p class="muted">Particuliers &amp; Pros — déplacement inclus ≤ 20 km autour de Villeneuve-sur-Lot, puis +0,50 €/km.</p>
+<nav aria-label="Villes desservies (liens internes)">
+<details class="zones-toggle">
+<summary>Voir toutes les villes desservies</summary>
+<ul class="list list-cols">
+<!-- Formation / Cyber -->
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation bureautique &amp; cybersécurité à Villeneuve-sur-Lot</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation informatique à Agen</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation Excel/Word à Marmande</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Sensibilisation cybersécurité à Fumel</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Ateliers Outlook/Gmail à Monflanquin</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation cloud &amp; sauvegardes à Tonneins</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation Windows/macOS à Nérac</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Ateliers bureautique à Sainte-Livrade-sur-Lot</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation cybersécurité à Casseneuil</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">Formation bureautique à Monsempron-Libos</a></li>
+<!-- Liens vers autres services (maillage) -->
+<li><a href="/depannage-informatique-villeneuve-sur-lot.html">Dépannage informatique Villeneuve-sur-Lot</a></li>
+<li><a href="/reparation-pc-agen.html">Suppression de virus &amp; optimisation à Agen</a></li>
+<li><a href="/installation-informatique-marmande.html">Installation PC, box, imprimantes à Marmande</a></li>
+<li><a href="/wifi-reseau-Casseneuil.html">Wi-Fi &amp; réseau domestique</a></li>
+</ul>
+</details>
+</nav>
+<div class="cta-row" style="margin-top:12px">
+<a class="btn" href="https://www.google.com/maps/dir//Speedcomputer47/" rel="noopener" target="_blank">📍 Itinéraire Google Maps</a>
+<a class="btn primary" href="tel:+33666235143">📞 Appeler maintenant</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+<div class="container contact-grid">
+<div>
+<h2 class="section-title">Contact — Formation informatique &amp; cybersécurité</h2>
+<p class="muted">Dites-nous vos besoins (Excel, messagerie, sécurité…). On vous propose un programme adapté et un devis clair.</p>
+<p class="big">📞 <a href="tel:+33666235143">06 66 23 51 43</a></p>
+<p class="mail">✉️ <a href="mailto:contact@speedcomputer47.fr">contact@speedcomputer47.fr</a></p>
+<div class="contact-qr contact-qr--card">
+<img alt="QR code de contact SpeedComputer47" src="qrcode-preview.webp"/>
+<p>Scannez pour ajouter<br/>le contact</p>
+</div>
+</div>
+<div class="card">
+<h3>Demande de devis express</h3>
+<form id="devisForm">
+<label>Nom / Prénom<br/><input name="name" placeholder="Votre nom" required="" type="text"/></label><br/><br/>
+<label>Email<br/><input name="email" placeholder="vous@exemple.fr" required="" type="email"/></label><br/><br/>
+<label>Téléphone<br/><input name="phone" placeholder="06 xx xx xx xx" required="" type="tel"/></label><br/><br/>
+<label>Objectifs &amp; niveau<br/><textarea name="message" placeholder="Ex : Excel bases + tableaux, anti-phishing, sauvegarde cloud…" required="" rows="5"></textarea></label><br/><br/>
+<button class="btn primary" type="submit">Envoyer la demande</button>
+<p class="muted" style="margin-top:8px">Un email pré-rempli s’ouvre dans votre messagerie.</p>
+</form>
+</div>
+</div>
+</section>
+<hr class="sep"/>
+</main>
+
+<section aria-label="Zones d’intervention" class="zones-internes">
+<h2>Zones d’intervention &amp; pages locales</h2>
+<ul>
+<li><a href="/configurationperipheriqueSainte-Livrade-sur-Lot.html">configurationperipheriqueSainte Livrade sur Lot</a></li>
+<li><a href="/cybersecurite-entreprise.html">cybersecurite entreprise</a></li>
+<li><a href="/depannage-informatique-villeneuve-sur-lot.html">depannage informatique villeneuve sur lot</a></li>
+<li><a href="/domotique-tv-connectee-smartphone-fumel.html">domotique tv connectee smartphone fumel</a></li>
+<li><a href="/formation-bureautique-cybersecurite-lot-et-garonne.html">formation bureautique cybersecurite lot et garonne</a></li>
+<li><a href="/google-workspace.html">google workspace</a></li>
+<li><a href="/installation-informatique-agen.html">installation informatique agen</a></li>
+<li><a href="/installation-informatique-bergerac.html">installation informatique bergerac</a></li>
+<li><a href="/installation-informatique-cahors.html">installation informatique cahors</a></li>
+<li><a href="/installation-informatique-casseneuil.html">installation informatique casseneuil</a></li>
+<li><a href="/installation-informatique-casteljaloux.html">installation informatique casteljaloux</a></li>
+<li><a href="/installation-informatique-fumel.html">installation informatique fumel</a></li>
+<li><a href="/installation-informatique-marmande.html">installation informatique marmande</a></li>
+<li><a href="/installation-informatique-monflanquin.html">installation informatique monflanquin</a></li>
+<li><a href="/installation-informatique-nerac.html">installation informatique nerac</a></li>
+<li><a href="/installation-informatique-sainte-livrade-sur-lot.html">installation informatique sainte livrade sur lot</a></li>
+<li><a href="/installation-informatique-tonneins.html">installation informatique tonneins</a></li>
+<li><a href="/installation-informatique-villeneuve-sur-lot.html">installation informatique villeneuve sur lot</a></li>
+<li><a href="/mentions.html">mentions</a></li>
+<li><a href="/messagerie-pro.html">messagerie pro</a></li>
+<li><a href="/messagerieCahors.html">messagerieCahors</a></li>
+<li><a href="/microsoft-365.html">microsoft 365</a></li>
+<li><a href="/migration-deploiement.html">migration deploiement</a></li>
+<li><a href="/migration-deploiementbias.html">migration deploiementbias</a></li>
+<li><a href="/particuliers.html">particuliers</a></li>
+<li><a href="/pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html">pc lent ssd clonage Saint Sylvestre sur Lot</a></li>
+<li><a href="/pro.html">pro</a></li>
+<li><a href="/reparation-pc-agen.html">reparation pc agen</a></li>
+<li><a href="/sauvegarde-entreprise.html">sauvegarde entreprise</a></li>
+<li><a href="/sauvegardetonneins.html">sauvegardetonneins</a></li>
+<li><a href="/serveur-nas-manage.html">serveur nas manage</a></li>
+<li><a href="/suppression-virus-malware-Pujols.html">suppression virus malware Pujols</a></li>
+<li><a href="/wifi-reseau-Casseneuil.html">wifi reseau Casseneuil</a></li>
+<li><a href="/wifi-reseau-entreprise.html">wifi reseau entreprise</a></li>
+</ul>
+</section>
+<footer>
+<div class="container foot">
+<p><strong>SpeedComputer47</strong> — Formations bureautique &amp; cybersécurité en Lot-et-Garonne</p>
+<p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
+<p>© <span id="year"></span> • <a href="mentions.html">Mentions légales &amp; Politique de confidentialité</a></p>
+</div>
+</footer>
+<a aria-label="Appeler SpeedComputer47" class="floating-call" href="tel:+33666235143">📞 Appeler</a>
+<script>
+    const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+    const burger=document.getElementById('sc47Burger'), nav=document.getElementById('sc47Nav');
+    if(burger&&nav){
+      burger.addEventListener('click',()=>{const open=nav.classList.toggle('open');burger.setAttribute('aria-expanded',open?'true':'false')});
+      document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!burger.contains(e.target)){nav.classList.remove('open');burger.setAttribute('aria-expanded','false')}});
+    }
+    const dd=document.getElementById('sc47Reviews'), btnReviews=document.getElementById('sc47ReviewsBtn');
+    if(btnReviews&&dd){
+      btnReviews.addEventListener('click',e=>{e.preventDefault(); dd.classList.toggle('open'); btnReviews.setAttribute('aria-expanded', dd.classList.contains('open'))});
+      document.addEventListener('click',e=>{if(!dd.contains(e.target)) dd.classList.remove('open')});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'){dd.classList.remove('open'); btnReviews.setAttribute('aria-expanded','false')}});
+    }
+    const form=document.getElementById('devisForm');
+    if(form){
+      form.addEventListener('submit',e=>{
+        e.preventDefault();
+        const d=new FormData(form);
+        const subject=encodeURIComponent('Demande — Formation bureautique & cybersécurité');
+        const body=encodeURIComponent(`Nom: ${d.get('name')}\nEmail: ${d.get('email')}\nTéléphone: ${d.get('phone')}\n\nObjectifs & niveau:\n${d.get('message')}`);
+        window.location.href=`mailto:contact@speedcomputer47.fr?subject=${subject}&body=${body}`;
+      });
+    }
+  </script>
+</body>
+</html>
