@@ -583,5 +583,108 @@ footer{border-top:1px solid var(--line);background:var(--bg)}
   margin-inline: auto;
 }
 
+/* ====== Accessibilité : contraste & liens (WCAG 2.1 AA) ====== */
+
+/* 1) Couleur texte par défaut : lisible sur fond clair */
+html, body {
+  color: #333;              /* Contraste fort sur fond blanc */
+  background-color: #fff;   /* Ajuste si ton thème utilise un autre fond */
+}
+
+/* 2) Mentions d’affiliation Amazon */
+p.affiliate-note,
+p.affiliate-note[style] {    /* couvre le style inline existant */
+  color: #444 !important;    /* forcer un gris suffisamment foncé */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+/* 3) Paragraphe "muted" (éviter le gris trop pâle) */
+p.muted, .muted {
+  color: #555;               /* encore lisible mais moins “fort” que le corps */
+}
+
+/* 4) Liens clairement identifiables + soulignement */
+a {
+  color: #065fd4;            /* bleu accessible sur fond clair */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover,
+a:focus {
+  color: #044da9;
+  text-decoration: underline;
+}
+
+/* 5) Focus visible au clavier (accessibilité) */
+a:focus,
+button:focus,
+[tabindex]:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* 6) Footer très lisible (deux variantes ; garde UNE seule selon ton fond) */
+
+/* Variante A : footer sur fond clair */
+footer {
+  background: #f5f5f5;       /* clair mais distinct du blanc */
+  color: #333;
+}
+footer a {
+  color: #0b66d0;
+  text-decoration: underline;
+}
+
+/* Variante B : si ton footer a un fond sombre, dé-commente ceci et commente la variante A */
+/*
+footer {
+  background: #222;
+  color: #f2f2f2;
+}
+footer a {
+  color: #8ac7ff;
+  text-decoration: underline;
+}
+*/
+
+/* 7) Liens dans les blocs spécifiques cités (guide, zones, contact) */
+a[href="/guide-achat.html"],
+a[href="#zone"],
+a[href="#contact"] {
+  font-weight: 600;          /* renforce l’identification du lien */
+}
+
+/* 8) Tailles minimales lisibles pour petits textes */
+small,
+footer,
+footer small,
+.legal,
+.legal small {
+  font-size: 0.95rem;        /* évite <14px réels ; ajuste si besoin */
+  line-height: 1.5;
+}
+
+/* 9) Optionnel : si certains textes restent trop pâles via styles inline */
+[style*="color:#999"],
+[style*="color: #999"],
+[style*="color:#aaa"],
+[style*="color: #aaa"] {
+  color: #555 !important;
+}
+
+/* 10) Dark mode automatique (si ton site l’utilise) */
+@media (prefers-color-scheme: dark) {
+  html, body { background: #0f1115; color: #e9eaee; }
+  p.affiliate-note { color: #e0e3e7 !important; }
+  a { color: #6ea8ff; }
+  a:hover, a:focus { color: #a9c8ff; }
+  footer { background: #0b0d12; color: #e9eaee; }
+  footer a { color: #9fc3ff; }
+}
+
+
 /* Evite tout débordement horizontal éventuel du widget */
 #avis { overflow-x: hidden; }
