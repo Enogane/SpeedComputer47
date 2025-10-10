@@ -1,23 +1,23 @@
 
-# --- SpeedComputer47: nettoyer anciennes URLs WordPress & flux ---
-
-<IfModule mod_rewrite.c>
+# —— SpeedComputer47: redirects de base ——
 RewriteEngine On
 
-# 1) Marquer comme supprimées (410 Gone) les flux WP et /wp-admin
-RewriteRule ^feed/?$ - [G,L]
-RewriteRule ^comments/feed/?$ - [G,L]
-RewriteRule ^category/[^/]+/feed/?$ - [G,L]
-RewriteRule ^wp-admin/?$ - [G,L]
+# Forcer HTTPS + non-www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.speedcomputer47\.fr$ [NC]
+RewriteRule ^(.*)$ https://speedcomputer47.fr/$1 [R=301,L]
 
-# 2) Rediriger proprement d'anciennes pages WP vers les pages actuelles
-# (adapter les cibles si besoin)
-RewriteRule ^hello-world/?$ / [R=301,L]
-RewriteRule ^sample-page/?$ / [R=301,L]
-RewriteRule ^a-propos/?$ /mentions.html [R=301,L]
-RewriteRule ^services/?$ /index.html#services [R=301,L]
-RewriteRule ^contact/?$ /index.html#contact [R=301,L]
-RewriteRule ^61-2/?$ / [R=301,L]
-</IfModule>
+# /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://speedcomputer47.fr/ [R=301,L]
 
-# --- Fin ---
+# 301 des slugs anormaux (complète/ajuste selon tes renommages)
+Redirect 301 /wifi-reseau-Casseneuil.html /reseaux-wifi-casseneuil.html
+Redirect 301 /configurationperipheriqueSainte-Livrade-sur-Lot.html /configuration-peripheriques-sainte-livrade-sur-lot.html
+Redirect 301 /pc-lent-ssd-clonage-Saint-Sylvestre-sur-Lot.html /pc-lent-ssd-clonage-saint-sylvestre-sur-lot.html
+Redirect 301 /MessagerieCahors.html /messagerie-cahors.html
+Redirect 301 /suppression-virus-malware-Pujols.html /suppression-virus-malware-pujols.html
+Redirect 301 /sauvegardetonneins.html /sauvegarde-nas-tonneins.html
+Redirect 301 /migration-deploiementbias.html /migration-deploiement-bias.html
+Redirect 301 /Blog-comparatif-antivirus-2025-bitdefender-norton.html /blog-comparatif-antivirus-2025-bitdefender-norton.html
+Redirect 301 "/Blog-wifi-lent-villeneuve-sur-lot-solutions·html" /blog-wifi-lent-villeneuve-sur-lot-solutions.html
