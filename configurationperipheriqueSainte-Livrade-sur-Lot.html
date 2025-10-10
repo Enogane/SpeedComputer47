@@ -1,242 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- URGENT : 1. SNIPPET MODE CONSENTEMENT V2 (DOIT ÊTRE LE PREMIER SCRIPT) -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+  <!-- Consent Mode v2 (en premier) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+      ad_storage:'denied',
+      analytics_storage:'denied',
+      ad_user_data:'denied',
+      ad_personalization:'denied',
+      wait_for_update:500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NV4GWPHR');</script>
 
-        gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'analytics_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'wait_for_update': 500
-        });
-    </script>
-    <!-- 2. CODE DE BALISAGE GOOGLE TAG MANAGER (GTM-NV4GWPHR) -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NV4GWPHR');</script>
-    <!-- FIN GTM -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- VOTRE PLATEFORME DE CONSENTEMENT (CMP) DOIT ÊTRE INSÉRÉE ICI -->
-    <!-- (Insérez ici le script de votre bannière de gestion du consentement pour que gtag('consent', 'update', ...) soit appelé) -->
+  <title>Installation & configuration de périphériques – Sainte-Livrade-sur-Lot | SpeedComputer47</title>
+  <meta name="description" content="Installation et mise en service d’imprimantes, scanners, webcams, écrans et périphériques (USB/Wi-Fi) à Sainte-Livrade-sur-Lot et autour de Villeneuve-sur-Lot. Partage réseau, pilotes, scan vers email/NAS, dépannage à domicile."/>
+  <link rel="canonical" href="https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html"/>
+  <!-- (TEMP) si la 301 n’est pas encore posée, on peut noindex cette copie -->
+  <!-- <meta name="robots" content="noindex,follow"/> -->
 
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0b0d10"/>
+  <meta property="og:title" content="Installation & configuration de périphériques – Sainte-Livrade-sur-Lot"/>
+  <meta property="og:description" content="Mise en service d’imprimantes, scanners, webcams, écrans. Partage réseau, pilotes, scan vers email/NAS. Intervention à domicile (≈ 50 km)."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html"/>
+  <meta property="og:image" content="https://speedcomputer47.fr/logo.webp"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
 
-    <title>Configuration & installation de périphériques (imprimantes, scanners) | Villeneuve‑sur‑Lot | SpeedComputer47</title>
-    <meta name="description" content="Installation, configuration et mise en service d’imprimantes, scanners, webcams et périphériques (USB/Wi‑Fi) à Villeneuve‑sur‑Lot et dans le Lot‑et‑Garonne. Partage réseau, pilotes, scan vers email/NAS, dépannage à domicile."/>
+  <!-- Perf -->
+  <link rel="preload" as="image" href="/background.webp"/>
+  <link rel="preload" as="image" href="/logo.webp"/>
+  <link rel="icon" type="image/webp" href="/logo.webp"/>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="stylesheet" href="/style.css?v=11"/>
 
-    <link rel="canonical" href="https://speedcomputer47.fr/configuration-installation-peripheriques.html"/>
-    <link rel="alternate" href="https://speedcomputer47.fr/configuration-installation-peripheriques.html" hreflang="fr-FR"/>
-    <link rel="alternate" href="https://speedcomputer47.fr/configuration-installation-peripheriques.html" hreflang="x-default"/>
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "@id":"https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html#webpage",
+    "url":"https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html",
+    "name":"Installation & configuration de périphériques – Sainte-Livrade-sur-Lot",
+    "description":"Installation et mise en service d’imprimantes, scanners, webcams et périphériques (USB/Wi-Fi) avec partage réseau et scan vers email/NAS.",
+    "inLanguage":"fr-FR",
+    "isPartOf":{"@type":"WebSite","name":"SpeedComputer47","url":"https://speedcomputer47.fr/"}
+  }
+  </script>
 
-    <meta name="robots" content="index, follow"/>
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-    <meta name="theme-color" content="#0b0d10"/>
+  <!-- JSON-LD: Fil d’Ariane -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
+      {"@type":"ListItem","position":2,"name":"Particuliers","item":"https://speedcomputer47.fr/particuliers.html"},
+      {"@type":"ListItem","position":3,"name":"Configuration périphériques – Sainte-Livrade-sur-Lot","item":"https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html"}
+    ]
+  }
+  </script>
 
-    <meta property="og:title" content="Configuration & installation de périphériques | Villeneuve‑sur‑Lot"/>
-    <meta property="og:description" content="Mise en service et dépannage d’imprimantes, scanners, webcams, disques externes et périphériques réseau. Partage, pilotes, scan vers email/NAS, à domicile (≈50 km)."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://speedcomputer47.fr/configuration-installation-peripheriques.html"/>
-    <meta property="og:image" content="https://speedcomputer47.fr/logo.webp"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:locale" content="fr_FR"/>
-    <meta name="twitter:card" content="summary_large_image"/>
+  <!-- JSON-LD: Service localisé -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Installation & configuration de périphériques (imprimantes, scanners, webcams, écrans)",
+    "serviceType":"Mise en service périphériques USB / Wi-Fi, partage réseau, scan vers email/NAS",
+    "provider":{"@id":"https://speedcomputer47.fr/#business"},
+    "areaServed":[
+      {"@type":"City","name":"Sainte-Livrade-sur-Lot"},
+      {"@type":"City","name":"Villeneuve-sur-Lot"},
+      {"@type":"AdministrativeArea","name":"Lot-et-Garonne"}
+    ],
+    "availableChannel":{"@type":"ServiceChannel","availableLanguage":["fr"]},
+    "url":"https://speedcomputer47.fr/configuration-peripheriques-sainte-livrade-sur-lot.html"
+  }
+  </script>
 
-    <link rel="preload" as="image" href="background.webp"/>
-    <link rel="preload" as="image" href="logo.webp"/>
-    <link rel="icon" type="image/webp" href="logo.webp"/>
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-    <link rel="stylesheet" href="style.css?v=11"/>
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Intervenez-vous à domicile pour installer une imprimante ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à Sainte-Livrade-sur-Lot et dans un rayon d’environ 50 km : Villeneuve-sur-Lot, Agen, Marmande, Fumel, Tonneins, Nérac…"}},
+      {"@type":"Question","name":"Pouvez-vous partager l’imprimante sur plusieurs ordinateurs ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous configurons le partage réseau/Wi-Fi, installons les pilotes et les droits d’accès, puis testons l’impression sur chaque poste."}},
+      {"@type":"Question","name":"Mettez-vous en place le scan vers email ou NAS ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous paramétrons SMTP sécurisé (Outlook/Gmail) ou la numérisation vers dossier réseau/NAS avec les droits d’écriture."}},
+      {"@type":"Question","name":"Intervenez-vous aussi pour les entreprises ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pour la mise en service d’équipements d’impression en réseau, la gestion des accès et la sécurisation des scans vers serveurs/NAS. Voir la page Entreprises."}}
+    ]
+  }
+  </script>
 
-    <!-- Données structurées SEO 2025 : WebPage + Fil d'Ariane + FAQ (Note: J'ai conservé l'ancienne FAQ JSON-LD, vous devrez la mettre à jour pour correspondre à la nouvelle FAQ en bas de page pour un SEO optimal.) -->
-    <script type="application/ld+json">
-    {
-        "@context":"https://schema.org",
-        "@type":"WebPage",
-        "@id":"https://speedcomputer47.fr/configuration-installation-peripheriques.html#webpage",
-        "url":"https://speedcomputer47.fr/configuration-installation-peripheriques.html",
-        "name":"Configuration & installation de périphériques",
-        "description":"Installation et mise en service d’imprimantes, scanners et périphériques (USB/Wi‑Fi) avec partage réseau et scan vers email/NAS.",
-        "inLanguage":"fr-FR",
-        "isPartOf":{"@type":"WebSite","name":"SpeedComputer47","url":"https://speedcomputer47.fr/"}
+  <!-- Touch targets mobiles -->
+  <style>
+    :root{ --tap:48px }
+    a,button{min-width:var(--tap);min-height:var(--tap)}
+    a:focus-visible,button:focus-visible{outline:2px solid #f59e0b;outline-offset:2px}
+    *{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+    .sc47-burger{width:var(--tap);height:var(--tap);display:inline-grid;place-items:center}
+    .sc47-link{display:inline-flex;align-items:center;padding:12px 14px;line-height:1.2}
+    .sc47-actions .sc47-btn,.sc47-btn{min-height:var(--tap);padding:12px 18px;border-radius:12px}
+    .sc47-menu .sc47-item{display:flex;align-items:center;gap:8px;padding:12px 14px;min-height:var(--tap)}
+    .sc47-menu .sc47-ico{width:24px;height:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;min-height:var(--tap);border-radius:12px}
+    .btn.primary{font-weight:600}
+    .list a,.list a.list-link{display:inline-flex;align-items:center;gap:8px;padding:8px 6px;min-height:var(--tap)}
+    .floating-call{min-width:var(--tap);min-height:var(--tap);display:inline-flex;align-items:center;justify-content:center;padding:12px 16px}
+    footer a{display:inline-flex;align-items:center;min-height:var(--tap);padding:8px 10px}
+  </style>
+
+  <style>
+    html{scroll-behavior:smooth}
+    body{color:#d1d5db;background:#0a0f17;position:relative}
+    .container,.sc47-container{width:min(1200px,92%);margin:0 auto}
+    section{padding:36px 0}
+    .section-title{font-weight:800;font-size:22px;color:#e5e7eb;margin:0 0 6px}
+    .muted{color:#9ca3af}
+    .card{background:#0c121d;border:1px solid #1f2937;border-radius:14px;padding:16px}
+    .list{padding-left:16px;margin:0}.list li{margin:2px 0}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{background:#0f172a;border:1px solid #1f2937;color:#e5e7eb;text-decoration:none}
+    .btn.primary{background:#f59e0b;color:#111827;border-color:#f59e0b}
+    .btn:hover{background:#111b2e}
+    .lead{color:#c7d2fe}
+    .table{width:100%;border-collapse:separate;border-spacing:0}
+    .table th,.table td{border:1px solid #1f2937;padding:10px}
+    .table thead th{background:#0f172a}
+    hr.sep{border:0;height:1px;background:rgba(255,255,255,.08);margin:16px 0 0}
+    footer{padding:18px 0 30px;color:#9ca3af}
+    .foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;text-align:center}
+    .foot p{margin:0}
+    .hero{position:relative;overflow:hidden}
+    .hero--bg{
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(99,102,241,.15), transparent 60%),
+        radial-gradient(1200px 600px at 80% 0%, rgba(245,158,11,.12), transparent 60%),
+        #0a0f17 url('/background.webp') center 25%/cover no-repeat;
+      min-height:360px;
     }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context":"https://schema.org",
-        "@type":"BreadcrumbList",
-        "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Accueil","item":"https://speedcomputer47.fr/"},
-            {"@type":"ListItem","position":2,"name":"Particuliers","item":"https://speedcomputer47.fr/particuliers.html"},
-            {"@type":"ListItem","position":3,"name":"Configuration périphériques","item":"https://speedcomputer47.fr/configuration-installation-peripheriques.html"}
-        ]
-    }
-    </script>
-    <script type="application/ld+json" id="faq-jsonld">
-    {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[
-            {"@type":"Question","name":"Intervenez-vous à domicile pour installer une imprimante ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à Villeneuve‑sur‑Lot et dans un rayon d’environ 50 km : Agen, Marmande, Fumel, Tonneins, Nérac, Sainte‑Livrade…"}},
-            {"@type":"Question","name":"Pouvez-vous partager l’imprimante sur plusieurs ordinateurs ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous configurons le partage réseau/Wi‑Fi, les pilotes et les droits d’accès, puis nous testons l’impression sur chaque poste."}},
-            {"@type":"Question","name":"Mettez-vous en place le scan vers email/NAS ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nous paramétrons SMTP sécurisé pour Outlook/Gmail ou la numérisation vers dossier réseau/NAS avec droits d’écriture."}},
-            {"@type":"Question","name":"Intervenez-vous aussi pour les entreprises ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Voir la page Entreprises : réseau Wi‑Fi pro, politiques de sécurité, NAS/Sauvegardes, messagerie Microsoft 365/Google Workspace."}}
-        ]
-    }
-    </script>
-
-    <!-- UX: tap targets >=48px for mobile accessibility -->
-    <style id="ux-touch-targets">
-        :root{ --tap:48px }
-        /* Generic targets */
-        a, button { min-width: var(--tap); min-height: var(--tap); }
-        a:focus-visible, button:focus-visible{ outline:2px solid var(--accent, #f59e0b); outline-offset:2px }
-        * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-
-        /* Header / Nav */
-        .sc47-burger{ width:var(--tap); height:var(--tap); display:inline-grid; place-items:center }
-        .sc47-link{ display:inline-flex; align-items:center; padding:12px 14px; line-height:1.2 }
-        .sc47-actions .sc47-btn, .sc47-btn{ min-height:var(--tap); padding:12px 18px; border-radius:12px }
-
-        /* Dropdown menu items */
-        .sc47-menu .sc47-item{ display:flex; align-items:center; gap:8px; padding:12px 14px; min-height:var(--tap) }
-        .sc47-menu .sc47-ico{ width:24px; height:24px }
-
-        /* Primary buttons */
-        .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 18px; min-height:var(--tap); border-radius:12px }
-        .btn.primary{ font-weight:600 }
-
-        /* Lists with links */
-        .list a, .list a.list-link{ display:inline-flex; align-items:center; gap:8px; padding:8px 6px; min-height:var(--tap) }
-
-        /* Floating call */
-        .floating-call{ min-width:var(--tap); min-height:var(--tap); display:inline-flex; align-items:center; justify-content:center; padding:12px 16px }
-
-        /* Footer links */
-        footer a{ display:inline-flex; align-items:center; min-height:var(--tap); padding:8px 10px }
-
-        /* Form submit */
-        form button[type="submit"]{ min-height:var(--tap); padding:12px 18px; border-radius:12px }
-    </style>
+    .hero--bg::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(10,15,23,.35) 0%, rgba(10,15,23,.55) 40%, rgba(10,15,23,.75) 100%)}
+  </style>
 </head>
 <body>
-    <!-- BALISE <noscript> GTM (DOIT ÊTRE JUSTE APRÈS LE <body>) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- noscript GTM -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV4GWPHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-   <!-- =================== HEADER =================== -->
-<header class="sc47-header">
-  <div class="sc47-container">
-    <a class="sc47-brand" href="index.html" aria-label="Accueil SpeedComputer47">
-      <img class="sc47-logo" src="logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
-      <span class="sc47-name">SpeedComputer47</span>
-    </a>
+  <!-- =================== HEADER =================== -->
+  <header class="sc47-header">
+    <div class="sc47-container">
+      <a class="sc47-brand" href="/" aria-label="Accueil SpeedComputer47">
+        <img class="sc47-logo" src="/logo.webp" width="84" height="84" alt="SpeedComputer47" decoding="async" loading="lazy"/>
+        <span class="sc47-name">SpeedComputer47</span>
+      </a>
 
-    <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+      <button id="sc47Burger" class="sc47-burger" aria-controls="sc47Nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
 
-    <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
-      <a class="sc47-link" data-match="index.html" href="index.html">Accueil</a>
-      <a class="sc47-link" data-match="particuliers.html" href="particuliers.html">Particuliers</a>
-      <a class="sc47-link" data-match="pro.html" href="pro.html">Entreprises</a>
-      <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
+      <nav id="sc47Nav" class="sc47-nav" aria-label="Navigation principale">
+        <a class="sc47-link" href="/">Accueil</a>
+        <a class="sc47-link" href="/particuliers.html">Particuliers</a>
+        <a class="sc47-link" href="/pro.html">Entreprises</a>
+        <a class="sc47-link sc47-link--ghost" href="/#contact">📩 Contact / Devis</a>
 
-      <!-- Desktop : dropdown complet -->
-      <div class="sc47-dropdown desktop-only" id="sc47Reviews">
-        <button class="sc47-btn" id="sc47ReviewsBtn" aria-controls="sc47ReviewsMenu" aria-expanded="false">⭐ Laisser un avis</button>
-        <div class="sc47-menu" id="sc47ReviewsMenu" role="menu">
-          <a class="sc47-item" href="https://g.page/r/CbsMlPzTZUw2EAE/review" target="_blank" rel="noopener">
-            <img class="sc47-ico" src="avis-google.webp" alt="Google"/> Google
-          </a>
-          <a class="sc47-item" href="https://www.facebook.com/speedcomputer47/" target="_blank" rel="noopener">
-            <img class="sc47-ico" src="Facebook.webp" alt="Facebook"/> Facebook
-          </a>
-          <a class="sc47-item" href="https://www.pagesjaunes.fr/pros/64032762" target="_blank" rel="noopener">
-            <img class="sc47-ico" src="pagejaune.webp" alt="PagesJaunes"/> PagesJaunes
-          </a>
-          <a class="sc47-item" href="https://www.linkedin.com/company/speedcomputer47/" target="_blank" rel="noopener">
-            <img class="sc47-ico" src="linkedin.webp" alt="LinkedIn"/> LinkedIn
-          </a>
-        </div>
+        <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--bg">
+      <div class="container">
+        <h1>Installation & configuration de périphériques — Sainte-Livrade-sur-Lot</h1>
+        <p class="lead">Vous venez d’acheter une imprimante, un scanner, une webcam ou un nouvel écran ? <strong>SpeedComputer47</strong> les installe correctement, les connecte (USB/Wi-Fi) et garantit leur fonctionnement. Intervention à domicile (≈ 50 km autour de Villeneuve-sur-Lot).</p>
+        <p>
+          Nous intervenons sur : <a href="/depannage-informatique-villeneuve-sur-lot.html">Villeneuve-sur-Lot</a>,
+          <a href="/depannage-informatique-agen.html">Agen</a>,
+          <a href="/installation-informatique-marmande.html">Marmande</a>,
+          <a href="/depannage-informatique-fumel.html">Fumel</a>,
+          <a href="/wifi-reseau-casseneuil.html">Casseneuil</a> et
+          <a href="/installation-informatique-sainte-livrade-sur-lot.html">Sainte-Livrade-sur-Lot</a>.
+        </p>
       </div>
+    </section>
 
-      <!-- Téléphone -->
-      <a class="sc47-btn sc47-btn--primary" href="tel:+33666235143">📞 06&nbsp;66&nbsp;23&nbsp;51&nbsp;43</a>
-    </nav>
-  </div>
-</header>
-    <main>
-        <section class="hero hero--bg">
-            <div class="container">
-                <h1>Configuration, installation & mise en service de périphériques informatiques</h1>
-                <p>Vous venez d’acheter une imprimante, un scanner, une webcam ou un nouvel écran ? **SpeedComputer47** vous aide à les installer correctement, à les connecter à votre ordinateur ou à votre réseau Wi-Fi et à garantir leur bon fonctionnement. Nous intervenons à domicile dans un rayon de 50 km autour de <a href="/depannage-informatique-villeneuve-sur-lot.html">Villeneuve-sur-Lot</a> : <a href="/installation-informatique-marmande.html">Marmande</a>, <a href="/depannage-informatique-agen.html">Agen</a>, <a href="/depannage-informatique-fumel.html">Fumel</a>, <a href="/wifi-reseau-Casseneuil.html">Casseneuil</a> et <a href="/installation-informatique-sainte-livrade-sur-lot.html">Sainte-Livrade-sur-Lot</a>.</p>
-            </div>
-        </section>
-        <section id="contenu-seo">
-            <div class="container">
-                <h2>Processus d'installation certifié et sécurisé (Expertise E-E-A-T)</h2>
-                <p>L’installation d’un périphérique ne se limite pas au branchement. Chez **SpeedComputer47**, nous appliquons une méthodologie rigoureuse en 4 étapes, garantissant une intégration sans conflit et optimisée pour la performance et la sécurité de votre réseau domestique ou professionnel. Nous résolvons 95% des problèmes de détection ou de compatibilité en une seule intervention grâce à notre expertise multi-marques.</p>
+    <section id="contenu-seo">
+      <div class="container">
+        <h2>Processus d’installation clair & sécurisé</h2>
+        <p>L’installation ne se limite pas au branchement. Nous appliquons une méthode en 4 étapes, pour une intégration sans conflit et optimisée.</p>
 
-                <!-- AEO: Processus clair pour l'IA/AI Overviews -->
-                <h3 id="etapes-service">4 étapes pour une mise en service parfaite (Méthode SpeedComputer47) :</h3>
-                <ol class="list">
-                    <li>**Diagnostic & Compatibilité :** Vérification des pilotes et des systèmes d’exploitation (Windows 11, macOS, Linux) pour éviter tout conflit initial et garantir les Core Web Vitals (vitesse et réactivité du système).</li>
-                    <li>**Installation & Configuration Sécurisée :** Branchement physique, installation des pilotes certifiés, configuration du réseau (Wi-Fi, Ethernet), et mise en place des protocoles de sécurité réseau.</li>
-                    <li>**Optimisation des Fonctionnalités :** Configuration avancée du **Scan vers E-mail sécurisé (SMTP)**, partage multi-postes (2 à 5 PC), et réglages des disques externes (sauvegarde auto vers NAS/Cloud).</li>
-                    <li>**Tests & Formation :** Validation du fonctionnement sur tous les postes connectés et formation personnalisée à l’utilisateur sur la maintenance et les astuces d’utilisation (UX).</li>
-                </ol>
+        <h3 id="etapes-service">Nos 4 étapes</h3>
+        <ol class="list">
+          <li><strong>Diagnostic & compatibilité :</strong> vérification pilotes/systèmes (Windows, macOS, Linux) pour éviter les conflits.</li>
+          <li><strong>Installation & configuration :</strong> branchement, pilotes certifiés, Wi-Fi/Ethernet, paramètres de sécurité.</li>
+          <li><strong>Fonctionnalités avancées :</strong> scan vers e-mail (SMTP), partage multi-postes, sauvegardes vers NAS/Cloud.</li>
+          <li><strong>Tests & prise en main :</strong> validation sur chaque poste et mini-formation d’usage.</li>
+        </ol>
 
-                <h3 id="expertise-marque">Expertise technique et compatibilité (Signaux de Crédibilité)</h3>
-                <p>Notre expertise couvre l’ensemble des grandes marques et technologies, garantissant une solution fiable : Imprimantes Laser & Jet d'Encre (HP, Canon, Epson, Brother), Stockage Réseau (NAS Synology/Qnap), Webcams Pro (Logitech, Microsoft). Nous assurons la **mise en réseau complète** (TCP/IP) pour des systèmes stables et durables.</p>
+        <h3 id="expertise-marque">Marques & matériels</h3>
+        <p>Imprimantes laser/jet (HP, Canon, Epson, Brother), NAS (Synology/QNAP), webcams (Logitech/Microsoft), écrans 4K. Mise en réseau complète et fiable.</p>
 
-                <h3 id="gain-professionnel">Pourquoi cette approche professionnelle ? (Zero-Click Value Proposition)</h3>
-                <p>Un périphérique bien installé est synonyme de **productivité** et de **sécurité**. En confiant l’installation à **SpeedComputer47**, vous évitez les heures de recherche de pilotes obsolètes, les erreurs d’impression récurrentes et les failles de sécurité liées à une mauvaise configuration réseau. C’est un gain de temps immédiat et une tranquillité d'esprit durable, soutenu par notre garantie de fonctionnement. Vous transformez le "zéro clic" en reconnaissance de marque et conversion.</p>
+        <h3>Zone d’intervention</h3>
+        <p>Lot-et-Garonne : <a href="/depannage-informatique-agen.html">Agen</a>, <a href="/installation-informatique-marmande.html">Marmande</a>, <a href="/depannage-informatique-fumel.html">Fumel</a>, <a href="/depannage-informatique-tonneins.html">Tonneins</a>, <a href="/depannage-informatique-nerac.html">Nérac</a>, <a href="/installation-informatique-cahors.html">Cahors</a>, <a href="/installation-informatique-monflanquin.html">Monflanquin</a>, <a href="/installation-informatique-bergerac.html">Bergerac</a>.</p>
+      </div>
+    </section>
 
-                <h3>Zone d’intervention</h3>
-                <p>Nos services d’installation et de configuration couvrent tout le **Lot-et-Garonne** : <a href="/depannage-informatique-agen.html">Agen</a>, <a href="/installation-informatique-marmande.html">Marmande</a>, <a href="/depannage-informatique-fumel.html">Fumel</a>, <a href="/depannage-informatique-tonneins.html">Tonneins</a>, <a href="/depannage-informatique-nerac.html">Nérac</a>, <a href="/installation-informatique-cahors.html">Cahors</a>, <a href="/installation-informatique-monflanquin.html">Monflanquin</a> et <a href="/installation-informatique-bergerac.html">Bergerac</a>.</p>
-            </div>
-        </section>
-        <section id="tarifs">
-            <div class="container">
-                <h2>💰 Tarifs pour la configuration et l’installation de périphériques</h2>
-                <!-- La table des prix est excellente pour les résultats structurés (Zero-Click/AEO) -->
-                <table class="table pricing">
-                    <thead><tr><th>Service</th><th>Tarif de base</th><th>Option avancée</th><th>Détails</th></tr></thead>
-                    <tbody>
-                        <tr><td>Installation imprimante (USB/Wi-Fi)</td><td>30 €</td><td>50 €</td><td>Ajout de pilotes, tests d’impression</td></tr>
-                        <tr><td>Partage d’imprimante multi-postes</td><td>45 €</td><td>70 €</td><td>Ajout sur 2 à 3 ordinateurs, configuration réseau</td></tr>
-                        <tr><td>Scan vers email ou dossier</td><td>40 €</td><td>60 €</td><td>Configuration SMTP ou NAS</td></tr>
-                        <tr><td>Dépannage périphérique non détecté</td><td>25 €</td><td>40 €</td><td>Diagnostic USB/Wi-Fi, réinstallation pilotes</td></tr>
-                    </tbody>
-                </table>
-                <p class="muted">Déplacement inclus ≤ 20 km autour de Villeneuve-sur-Lot. Au-delà : +0,50 €/km (AR).</p>
-            </div>
-        </section>
-        <section id="faq">
-            <div class="container">
-                <h2>FAQ – Installation de périphériques (Réponses rapides pour l'IA)</h2>
-                <!-- AEO: Réponses plus complètes et directes pour l'extraction par l'IA -->
-                <div class="card"><p>**Quels périphériques installez-vous ?**<br/>Imprimantes (Laser, Jet d'Encre, Multifonctions), scanners, webcams, claviers/souris sans fil, disques durs externes (USB 3.0, Thunderbolt), écrans 4K, et périphériques réseau (NAS).</p></div>
-                <div class="card"><p>**Faites-vous la configuration à distance ?**<br/>Oui, pour les mises à jour de pilotes, les réglages Wi-Fi simples, et le dépannage logiciel léger, une assistance à distance sécurisée est disponible et facturée au quart d'heure.</p></div>
-                <div class="card"><p>**Peut-on me dépanner en urgence si mon imprimante ne fonctionne plus avant un rendez-vous important ?**<br/>Nous traitons les urgences dans la mesure de nos disponibilités. Contactez-nous directement par téléphone pour évaluer la possibilité d’une intervention rapide dans la journée.</p></div>
-                <div class="card"><p>**Intervenez-vous pour les professionnels ?**<br/>Absolument. Nos prestations couvrent également les <a href="/pro.html">entreprises et TPE</a> pour la mise en service d’équipements d’impression en réseau, la gestion des accès utilisateurs et la sécurisation des scans vers serveurs/NAS.</p></div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container foot">
-            <p>**SpeedComputer47** — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
-            <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
-            <p>© <span id="year"></span> • <a href="mentions.html">Mentions légales</a></p>
-        </div>
-    </footer>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <section id="tarifs">
+      <div class="container">
+        <h2>💰 Tarifs – configuration & installation</h2>
+        <table class="table pricing" aria-label="Tarifs configuration périphériques">
+          <thead>
+            <tr><th scope="col">Service</th><th scope="col">Tarif de base</th><th scope="col">Option avancée</th><th scope="col">Détails</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Installation imprimante (USB/Wi-Fi)</td><td>30 €</td><td>50 €</td><td>Pilotes, tests d’impression</td></tr>
+            <tr><td>Partage d’imprimante multi-postes</td><td>45 €</td><td>70 €</td><td>2 à 3 postes, config réseau</td></tr>
+            <tr><td>Scan vers e-mail ou dossier</td><td>40 €</td><td>60 €</td><td>SMTP sécurisé ou NAS</td></tr>
+            <tr><td>Dépannage périphérique non détecté</td><td>25 €</td><td>40 €</td><td>Diagnostic USB/Wi-Fi, réinstall pilotes</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">Déplacement inclus ≤ 20 km autour de Villeneuve-sur-Lot. Au-delà : +0,50 €/km (AR).</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2>FAQ – Installation de périphériques</h2>
+        <div class="card"><p><strong>Quels périphériques installez-vous ?</strong><br/>Imprimantes (laser/jet, multifonctions), scanners, webcams, claviers/souris sans fil, disques externes (USB/Thunderbolt), écrans 4K, périphériques réseau (NAS).</p></div>
+        <div class="card"><p><strong>Proposez-vous de la configuration à distance ?</strong><br/>Oui, pour pilotes, réglages Wi-Fi simples et dépannage logiciel léger, via assistance à distance sécurisée (facturation au quart d’heure).</p></div>
+        <div class="card"><p><strong>Urgence imprimante avant un rendez-vous ?</strong><br/>Appelez-nous : selon nos dispos, intervention prioritaire possible dans la journée.</p></div>
+        <div class="card"><p><strong>Et pour les professionnels ?</strong><br/>Oui. Mise en service réseau, gestion des accès, sécurisation des scans vers serveurs/NAS. Voir <a href="/pro.html">la page Entreprises</a>.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <p><strong>SpeedComputer47</strong> — 8 rue Gambetta, 47300 Villeneuve-sur-Lot</p>
+      <p>SIREN : 988 008 629 • SIRET : 988 008 629 00012</p>
+      <p>© <span id="year"></span> • <a href="/mentions.html">Mentions légales & Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+  <a class="floating-call" href="tel:+33666235143" aria-label="Appeler SpeedComputer47">📞 Appeler</a>
+
+  <script>
+    // Année
+    const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+
+    // Menu burger
+    const burger=document.getElementById('sc47Burger'), nav=document.getElementById('sc47Nav');
+    if(burger&&nav){
+      burger.addEventListener('click',()=>{const open=nav.classList.toggle('open');burger.setAttribute('aria-expanded',open?'true':'false');});
+      document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!burger.contains(e.target)){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');}});
+    }
+  </script>
 </body>
 </html>
